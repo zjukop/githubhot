@@ -1,0 +1,76 @@
+name: GitHub Daily Trends
+
+on:
+  # Run daily at 08:00 UTC (16:00 Beijing Time)
+  schedule:
+    - cron: '0 8 * * *'
+
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      language:
+        description: 'Programming language filter (empty for all)'
+        required: false
+        default: ''
+
+env:
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  generate-trends:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run GitHub Daily Trends AI
+        env:
+          # Required: LLM API Key
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL || 'https://api.openai.com/v1' }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL || 'gpt-4o-mini' }}
+
+          # Optional: GitHub token for API fallback (increases rate limits)
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+          # Optional: Language filter from manual trigger
+          TRENDING_LANGUAGE: ${{ github.event.inputs.language || '' }}
+
+          # Notification webhooks (all optional)
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+          DINGTALK_WEBHOOK_URL: ${{ secrets.DINGTALK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python main.py
+
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-report-${{ github.run_id }}
+          path: reports/*.md
+          retention-days: 30
+
+      - name: Commit and push report (optional)
+        # Only commit if there are changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add reports/*.md || true
+          git diff --staged --quiet || git commit -m "📊 Daily trends report - $(date +%Y-%m-%d)"
+          git push || echo "Nothing to push"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
