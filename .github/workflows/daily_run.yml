@@ -1,9 +1,9 @@
 name: GitHub Daily Trends
 
 on:
-  # Run daily at 08:00 UTC (16:00 Beijing Time)
+  # Run daily at 23:00 UTC (07:00 Beijing Time)
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '0 23 * * *'
 
   # Allow manual trigger
   workflow_dispatch:
@@ -37,15 +37,19 @@ jobs:
 
       - name: Run GitHub Daily Trends AI
         env:
-          # Required: LLM API Key
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL || 'https://api.openai.com/v1' }}
-          LLM_MODEL: ${{ secrets.LLM_MODEL || 'gpt-4o-mini' }}
+          # Primary LLM (Gemini)
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'gemini-3-flash-preview' }}
+
+          # Fallback LLM (Anthropic)
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FALLBACK_MODEL: ${{ vars.FALLBACK_MODEL || 'claude-opus-4-5-20251101' }}
 
           # Optional: GitHub token for API fallback (increases rate limits)
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-          # Optional: Language filter from manual trigger
+          # Configuration
+          MAX_REPOS: 10
           TRENDING_LANGUAGE: ${{ github.event.inputs.language || '' }}
 
           # Notification webhooks (all optional)
