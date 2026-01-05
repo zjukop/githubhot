@@ -17,15 +17,20 @@ class Settings(BaseSettings):
     )
 
     # LLM Configuration
-    openai_api_key: SecretStr = Field(description="OpenAI/Claude API Key")
+    gemini_api_key: SecretStr | None = Field(default=None, description="Primary Google GenAI Key")
+    openai_api_key: SecretStr | None = Field(default=None, description="OpenAI API Key (Legacy/Compat)")
     openai_base_url: str = Field(
         default="https://api.openai.com/v1",
-        description="API Base URL (change for Claude/Azure)",
+        description="API Base URL",
     )
     llm_model: str = Field(
-        default="gpt-4o-mini",
-        description="Model name to use",
+        default="gemini-2.5-flash",
+        description="Primary Model name to use",
     )
+    
+    # Fallback Configuration (Optional)
+    anthropic_api_key: SecretStr | None = Field(default=None, description="Backup Anthropic API Key")
+    fallback_model: str | None = Field(default=None, description="Backup Model name")
 
     # GitHub Configuration
     github_token: SecretStr | None = Field(

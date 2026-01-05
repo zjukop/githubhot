@@ -1,17 +1,32 @@
-"""AI Summarizer using OpenAI-compatible LLM APIs."""
+"AI Summarizer using Google GenAI (Native) with Anthropic Fallback."
 
 import json
 import re
 from dataclasses import dataclass, field
+from typing import Any
 
 from loguru import logger
-from openai import OpenAI
 from tenacity import (
     retry,
     retry_if_exception_type,
     stop_after_attempt,
     wait_exponential,
 )
+
+# Optional imports
+try:
+    from google import genai
+    from google.genai import types
+except ImportError:
+    genai = None
+    types = None
+
+try:
+    from anthropic import Anthropic
+except ImportError:
+    Anthropic = None
+
+from openai import OpenAI  # Keep for legacy/compat if needed
 
 from .config import get_settings
 from .crawler import Repository
@@ -20,23 +35,23 @@ from .crawler import Repository
 MAX_README_CHARS = 2000
 
 
-SYSTEM_PROMPT = """你是一个专业的技术博主和开源项目分析师。你的任务是分析 GitHub 项目并生成简洁、有洞察力的中文总结。
+SYSTEM_PROMPT = """你是一个专业的技术博客和开源项目分析师。你的任务是分析 GitHub 项目并生成简洁、有洞分的中文总结。
 
 分析时请关注：
 1. 项目解决了什么核心问题
-2. 技术亮点和创新点
+2. 技术点犀和创新点
 3. 目标用户群体
 4. 项目成熟度和活跃度
 
 请严格按照以下 JSON 格式返回（不要包含 markdown 代码块标记）：
 {
-    "one_liner_cn": "一句话中文介绍（20字以内，俏皮易懂，可用emoji）",
+    "one_liner_cn": "一句话中文介绍（20字以内，伈吊易懂，可用emoji）",
     "core_features": [
         "核心功能1",
         "核心功能2",
         "核心功能3"
     ],
-    "use_case": "适合什么人用？解决了什么痛点？（50字以内）",
+    "use_case": "适合什么用人？解决了什么痛点？（50字以内）",
     "score": 4,
     "score_reason": "评分理由（20字以内）"
 }
@@ -56,9 +71,9 @@ USER_PROMPT_TEMPLATE = """请分析以下 GitHub 项目：
 **描述**: {description}
 **编程语言**: {language}
 **Star 数**: {stars:,}
-**今日 Star**: {stars_today}
+**乃星期**: {stars_today}
 
-**README 内容（截取）**:
+**README 内容（截取）**: 
 ```
 {readme_truncated}
 ```
@@ -82,7 +97,7 @@ class ProjectSummary:
     def to_markdown(self) -> str:
         """Convert summary to markdown format."""
         stars_badge = "⭐" * self.score
-        top_badge = "🏆 **今日精选**" if self.is_top_pick else ""
+        top_badge = "🏆 **乃星精选**" if self.is_top_pick else ""
 
         features_md = "\n".join(f"  - {f}" for f in self.core_features)
 
@@ -90,7 +105,7 @@ class ProjectSummary:
 
 > {self.one_liner_cn}
 
-- **语言**: {self.repo.language} | **Stars**: {self.repo.stars:,} | **今日**: +{self.repo.stars_today}
+- **语言**: {self.repo.language} | **Stars**: {self.repo.stars:,} | **乃星期**: +{self.repo.stars_today}
 - **推荐指数**: {stars_badge} ({self.score}/5) - {self.score_reason}
 
 **核心功能**:
@@ -115,14 +130,33 @@ class SummaryResult:
 
 
 class AISummarizer:
-    """Summarize GitHub repos using LLM."""
+    """Summarize GitHub repos using Google GenAI (Primary) and Anthropic (Fallback)."""
 
     def __init__(self):
         self.settings = get_settings()
-        self.client = OpenAI(
-            api_key=self.settings.openai_api_key.get_secret_value(),
-            base_url=self.settings.openai_base_url,
-        )
+        
+        # 1. Primary Client (Google GenAI)
+        self.primary_client = None
+        if self.settings.gemini_api_key:
+            if genai is None:
+                logger.error("Gemini Key found but 'google-genai' not installed.")
+            else:
+                logger.info(f"Initializing Primary: Google GenAI (Model: {self.settings.llm_model})")
+                self.primary_client = genai.Client(api_key=self.settings.gemini_api_key.get_secret_value())
+        
+        # 2. Fallback Client (Anthropic)
+        self.fallback_client = None
+        if self.settings.anthropic_api_key:
+            if Anthropic is None:
+                logger.warning("Anthropic key found but library not installed.")
+            else:
+                logger.info(f"Initializing Fallback: Anthropic (Model: {self.settings.fallback_model})")
+                self.fallback_client = Anthropic(
+                    api_key=self.settings.anthropic_api_key.get_secret_value()
+                )
+
+        if not self.primary_client and not self.fallback_client:
+            logger.warning("No AI clients initialized! Summaries will fail.")
 
     def _truncate_readme(self, content: str) -> str:
         """Truncate README content to save tokens."""
@@ -130,24 +164,17 @@ class AISummarizer:
             return "(README 内容为空)"
 
         # Remove images and links to save tokens
-        content = re.sub(r"!\[.*?\]\(.*?\)", "", content)
+        content = re.sub(r"!\s*\(.*?\)", "", content) # Adjusted regex for markdown images
         content = re.sub(r"<img[^>]*>", "", content)
 
         # Keep first N characters
         if len(content) > MAX_README_CHARS:
-            content = content[:MAX_README_CHARS] + "\n... (内容已截断)"
+            content = content[:MAX_README_CHARS] + "\n... (content truncated)"
 
         return content.strip() or "(README 内容为空)"
 
-    @retry(
-        stop=stop_after_attempt(3),
-        wait=wait_exponential(multiplier=1, min=2, max=10),
-        retry=retry_if_exception_type((Exception,)),
-        before_sleep=lambda rs: logger.warning(f"LLM retry attempt {rs.attempt_number}"),
-    )
-    def _call_llm(self, repo: Repository) -> dict:
-        """Call LLM API to get project summary."""
-        user_prompt = USER_PROMPT_TEMPLATE.format(
+    def _construct_user_prompt(self, repo: Repository) -> str:
+        return USER_PROMPT_TEMPLATE.format(
             name=repo.name,
             url=repo.url,
             description=repo.description or "无描述",
@@ -157,31 +184,85 @@ class AISummarizer:
             readme_truncated=self._truncate_readme(repo.readme_content),
         )
 
-        response = self.client.chat.completions.create(
-            model=self.settings.llm_model,
-            messages=[
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": user_prompt},
-            ],
-            temperature=0.7,
-            max_tokens=500,
-        )
-
-        content = response.choices[0].message.content.strip()
-
-        # Clean up response (remove markdown code blocks if present)
+    def _clean_json_response(self, content: str) -> dict:
+        content = content.strip()
         if content.startswith("```"):
             content = re.sub(r"^```(?:json)?\n?", "", content)
             content = re.sub(r"\n?```$", "", content)
-
         return json.loads(content)
+
+    def _call_gemini(self, client: Any, model: str, prompt: str) -> dict:
+        """Call Google GenAI SDK."""
+        # Use JSON mode if available
+        config = types.GenerateContentConfig(
+            system_instruction=SYSTEM_PROMPT,
+            temperature=0.7,
+            response_mime_type="application/json"
+        )
+        
+        response = client.models.generate_content(
+            model=model,
+            contents=prompt,
+            config=config
+        )
+        return self._clean_json_response(response.text)
+
+    def _call_anthropic(self, client: Any, model: str, prompt: str) -> dict:
+        """Call Anthropic SDK."""
+        response = client.messages.create(
+            model=model,
+            max_tokens=1024,
+            system=SYSTEM_PROMPT,
+            messages=[
+                {"role": "user", "content": prompt}
+            ]
+        )
+        text = response.content[0].text if response.content else "{}"
+        return self._clean_json_response(text)
+
+    @retry(
+        stop=stop_after_attempt(3),
+        wait=wait_exponential(multiplier=1, min=2, max=10),
+        retry=retry_if_exception_type((Exception,)),
+        before_sleep=lambda rs: logger.warning(f"LLM retry attempt {rs.attempt_number}"),
+    )
+    def _call_llm_with_fallback(self, repo: Repository) -> dict:
+        """Call LLM with fallback logic."""
+        prompt = self._construct_user_prompt(repo)
+        
+        # Try Primary (Gemini)
+        if self.primary_client:
+            try:
+                return self._call_gemini(self.primary_client, self.settings.llm_model, prompt)
+            except Exception as e:
+                logger.error(f"Primary LLM ({self.settings.llm_model}) failed for {repo.name}: {e}")
+                # Fall through to fallback
+        
+        # Try Fallback (Anthropic)
+        if self.fallback_client and self.settings.fallback_model:
+            logger.info(f"Switching to Fallback LLM: {self.settings.fallback_model}")
+            try:
+                return self._call_anthropic(self.fallback_client, self.settings.fallback_model, prompt)
+            except Exception as fe:
+                logger.error(f"Fallback LLM failed for {repo.name}: {fe}")
+                raise fe
+        
+        # If we get here, either no primary was set (and no fallback), or primary failed and no fallback was set
+        if not self.primary_client and not self.fallback_client:
+             raise ValueError("No AI clients configured")
+        
+        if self.primary_client:
+             # If we had a primary but it failed and no fallback
+             raise RuntimeError("Primary LLM failed and no fallback configured")
+
+        raise RuntimeError("Unknown LLM error")
 
     def summarize_repo(self, repo: Repository) -> ProjectSummary:
         """Generate summary for a single repository."""
         summary = ProjectSummary(repo=repo)
 
         try:
-            data = self._call_llm(repo)
+            data = self._call_llm_with_fallback(repo)
 
             summary.one_liner_cn = data.get("one_liner_cn", "")
             summary.core_features = data.get("core_features", [])[:3]
@@ -196,7 +277,7 @@ class AISummarizer:
             summary.core_features = ["解析失败，请查看原项目"]
 
         except Exception as e:
-            logger.error(f"LLM call failed for {repo.name}: {e}")
+            logger.error(f"All LLM attempts failed for {repo.name}: {e}")
             summary.error = str(e)
             summary.one_liner_cn = repo.description or "API 调用失败"
             summary.core_features = ["API 调用失败，请稍后重试"]
@@ -205,11 +286,7 @@ class AISummarizer:
 
     def summarize_all(self, repos: list[Repository]) -> SummaryResult:
         """
-        Summarize all repositories and categorize into top picks and quick looks.
-
-        Selection logic for top picks:
-        1. Top N from trending list (by position)
-        2. OR highest stars_today growth
+        Summarize all repositories.
         """
         result = SummaryResult()
 
@@ -218,15 +295,11 @@ class AISummarizer:
             return result
 
         # Determine top picks
-        # Strategy: Use stars_today if available, otherwise use list position
         repos_with_growth = [r for r in repos if r.stars_today > 0]
-
         if repos_with_growth:
-            # Sort by stars growth today
             sorted_repos = sorted(repos_with_growth, key=lambda r: r.stars_today, reverse=True)
             top_pick_repos = set(r.name for r in sorted_repos[: self.settings.top_pick_count])
         else:
-            # Fall back to list position (trending order)
             top_pick_repos = set(r.name for r in repos[: self.settings.top_pick_count])
 
         # Generate summaries
