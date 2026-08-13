@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import json
+import re
+import time
 import urllib.error
 import urllib.request
 from dataclasses import dataclass
@@ -32,6 +34,9 @@ class GitHubModelsClient:
     endpoint: str = "https://models.github.ai/inference/chat/completions"
     timeout: int = 90
 
+    provider_name: str = "GitHub Models"
+    max_attempts: int = 2
+
     def analyze(self, repo: Repository) -> dict[str, Any]:
         facts = {
             "repository": repo.full_name,
@@ -53,6 +58,7 @@ class GitHubModelsClient:
         system = (
             "你是严谨的开源项目分析师。只根据用户提供的官方仓库事实写中文分析，禁止补充未提供的事实，"
             "禁止声称项目因某事件爆火。区分事实与推断：推断必须用‘从现有信息看’或‘可能’限定。"
+            "不得因为输入未包含某项资料，就断言官方没有该资料；只能写‘本次输入未提供，需进一步核实’。"
             "输出必须是 JSON 对象，不要 Markdown，不要代码围栏。每个列表包含 2-5 个完整中文句子。"
         )
         user = f"""分析以下 GitHub 仓库事实：
@@ -72,9 +78,23 @@ class GitHubModelsClient:
             "model": self.model,
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
             "temperature": 0.2,
-            "max_tokens": 1800,
+            "max_tokens": 3000,
             "response_format": {"type": "json_object"},
         }
+        last_error: AnalysisError | None = None
+        for attempt in range(1, self.max_attempts + 1):
+            try:
+                body = self._complete(payload)
+                result = parse_analysis_response(body)
+                validate_analysis(result)
+                return result
+            except AnalysisError as exc:
+                last_error = exc
+                if attempt < self.max_attempts:
+                    time.sleep(1)
+        raise AnalysisError(f"{self.provider_name} analysis failed after {self.max_attempts} attempts: {last_error}")
+
+    def _complete(self, payload: dict[str, Any]) -> dict[str, Any]:
         request = urllib.request.Request(
             self.endpoint,
             data=json.dumps(payload).encode("utf-8"),
@@ -83,33 +103,53 @@ class GitHubModelsClient:
                 "Authorization": f"Bearer {self.token}",
                 "Content-Type": "application/json",
                 "X-GitHub-Api-Version": "2026-03-10",
-                "User-Agent": "githubhot/0.2",
+                "User-Agent": "githubhot/0.3",
             },
             method="POST",
         )
         try:
             with urllib.request.urlopen(request, timeout=self.timeout) as response:
-                body = json.load(response)
+                return json.load(response)
         except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as exc:
             detail = ""
             if isinstance(exc, urllib.error.HTTPError):
                 detail = exc.read().decode("utf-8", errors="replace")[:500]
-            raise AnalysisError(f"GitHub Models request failed: {exc} {detail}".strip()) from exc
-        try:
-            result = json.loads(body["choices"][0]["message"]["content"])
-        except (KeyError, IndexError, TypeError, json.JSONDecodeError) as exc:
-            raise AnalysisError("GitHub Models returned an invalid JSON response") from exc
-        validate_analysis(result)
-        return result
+            raise AnalysisError(f"{self.provider_name} request failed: {exc} {detail}".strip()) from exc
 
 
 @dataclass(slots=True)
 class OpenAICompatibleClient(GitHubModelsClient):
     endpoint: str = "https://api.deepseek.com/chat/completions"
+    provider_name: str = "DeepSeek"
 
-    def analyze(self, repo: Repository) -> dict[str, Any]:
-        # The payload and response shape are intentionally shared with GitHub Models.
-        return super().analyze(repo)
+
+def parse_analysis_response(body: dict[str, Any]) -> dict[str, Any]:
+    try:
+        message = body["choices"][0]["message"]
+    except (KeyError, IndexError, TypeError) as exc:
+        raise AnalysisError("response is missing choices[0].message") from exc
+    content = message.get("content")
+    if isinstance(content, dict):
+        return content
+    if not isinstance(content, str) or not content.strip():
+        finish_reason = body.get("choices", [{}])[0].get("finish_reason", "unknown")
+        reasoning_present = bool(message.get("reasoning_content"))
+        raise AnalysisError(
+            f"response content is empty (finish_reason={finish_reason}, reasoning_content={reasoning_present})"
+        )
+    cleaned = content.strip()
+    cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r"\s*```$", "", cleaned)
+    try:
+        return json.loads(cleaned)
+    except json.JSONDecodeError:
+        start, end = cleaned.find("{"), cleaned.rfind("}")
+        if start >= 0 and end > start:
+            try:
+                return json.loads(cleaned[start : end + 1])
+            except json.JSONDecodeError:
+                pass
+        raise AnalysisError("response content is not a complete JSON object")
 
 
 def validate_analysis(value: Any) -> None:
@@ -122,3 +162,8 @@ def validate_analysis(value: Any) -> None:
             raise AnalysisError(f"analysis field {field!r} must contain non-empty strings")
         if expected_type is str and not value[field].strip():
             raise AnalysisError(f"analysis field {field!r} cannot be empty")
+    unsupported_absence = ("官方没有", "官方未提供", "未提供贡献指南", "没有提供")
+    text_values = [value["positioning"], value["maturity"]]
+    text_values.extend(item for field, field_type in REQUIRED_FIELDS.items() if field_type is list for item in value[field])
+    if any(phrase in text for text in text_values for phrase in unsupported_absence):
+        raise AnalysisError("analysis contains an unsupported claim that official material is absent")

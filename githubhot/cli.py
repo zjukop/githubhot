@@ -10,7 +10,7 @@ from pathlib import Path
 from githubhot.github import GitHubClient, GitHubError, summarize_readme
 from githubhot.analysis import AnalysisError, GitHubModelsClient, OpenAICompatibleClient
 from githubhot.models import Repository
-from githubhot.reporting import update_readme_index, write_digest, write_draft
+from githubhot.reporting import update_readme_index, write_deep_dive, write_digest, write_draft
 from githubhot.scoring import score_repository
 from githubhot.storage import read_candidate_payload, read_candidates, write_candidates, write_snapshot
 
@@ -45,6 +45,7 @@ def build_parser() -> argparse.ArgumentParser:
     digest.add_argument("--top", type=int, default=10)
     digest.add_argument("--date", type=date.fromisoformat, default=date.today())
     digest.add_argument("--editorial-dir", type=Path, default=Path("data/editorial"))
+    digest.add_argument("--deep-dive-dir", type=Path, default=Path("deep-dives"))
 
     index = subparsers.add_parser("index", help="Regenerate README daily article index")
     index.add_argument("--readme", type=Path, default=Path("README.md"))
@@ -143,6 +144,9 @@ def main(argv: list[str] | None = None) -> int:
                     if repo.full_name in editorial:
                         repo.analysis = editorial[repo.full_name]
             path = write_digest(args.daily_dir, repos[: args.top], query, args.date)
+            if repos:
+                deep_dive_path = write_deep_dive(args.deep_dive_dir, repos[0], args.date)
+                print(f"Published featured deep dive: {deep_dive_path}")
             update_readme_index(args.readme, args.daily_dir)
             print(f"Published daily digest: {path}")
             return 0

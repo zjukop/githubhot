@@ -1,6 +1,7 @@
 import unittest
+from unittest.mock import patch
 
-from githubhot.analysis import AnalysisError, validate_analysis
+from githubhot.analysis import AnalysisError, GitHubModelsClient, parse_analysis_response, validate_analysis
 
 
 def valid_analysis():
@@ -25,6 +26,35 @@ class AnalysisValidationTests(unittest.TestCase):
         value["limitations"] = "not a list"
         with self.assertRaises(AnalysisError):
             validate_analysis(value)
+
+    def test_rejects_unsupported_absence_claim(self) -> None:
+        value = valid_analysis()
+        value["limitations"] = ["官方未提供贡献指南。"]
+        with self.assertRaisesRegex(AnalysisError, "unsupported claim"):
+            validate_analysis(value)
+
+    def test_parses_json_code_fence(self) -> None:
+        body = {"choices": [{"message": {"content": f"```json\n{__import__('json').dumps(valid_analysis(), ensure_ascii=False)}\n```"}}]}
+        self.assertEqual(parse_analysis_response(body), valid_analysis())
+
+    def test_parses_json_surrounded_by_text(self) -> None:
+        body = {"choices": [{"message": {"content": f"结果如下：\n{__import__('json').dumps(valid_analysis(), ensure_ascii=False)}\n结束"}}]}
+        self.assertEqual(parse_analysis_response(body), valid_analysis())
+
+    def test_reports_empty_content_without_leaking_reasoning(self) -> None:
+        body = {"choices": [{"finish_reason": "length", "message": {"content": "", "reasoning_content": "secret"}}]}
+        with self.assertRaisesRegex(AnalysisError, "finish_reason=length, reasoning_content=True"):
+            parse_analysis_response(body)
+
+    @patch.object(GitHubModelsClient, "_complete")
+    def test_retries_invalid_response_once(self, complete) -> None:
+        complete.side_effect = [
+            {"choices": [{"message": {"content": "not json"}}]},
+            {"choices": [{"message": {"content": __import__('json').dumps(valid_analysis(), ensure_ascii=False)}}]},
+        ]
+        client = GitHubModelsClient(token="test", max_attempts=2)
+        self.assertEqual(client.analyze(__import__('tests.test_reporting', fromlist=['repo']).repo()), valid_analysis())
+        self.assertEqual(complete.call_count, 2)
 
 
 if __name__ == "__main__":

@@ -4,7 +4,7 @@ from datetime import date
 from pathlib import Path
 
 from githubhot.models import Repository
-from githubhot.reporting import render_digest, render_draft, update_readme_index, write_draft
+from githubhot.reporting import render_deep_dive, render_digest, render_draft, update_readme_index, write_draft
 
 
 def repo() -> Repository:
@@ -82,6 +82,20 @@ class ReportingTests(unittest.TestCase):
         self.assertIn("⬆️ 返回今日榜单", content)
         self.assertIn("python -m useful_repo", content)
         self.assertIn("v1.0.0", content)
+        self.assertIn("## 📊 今日趋势", content)
+        self.assertIn("### 🧭 独立开发机会雷达", content)
+        self.assertIn("## ⚡ 其余项目速览", content)
+        self.assertIn("deep-dives/2026/08/2026-08-13-owner-useful-repo.md", content)
+
+    def test_deep_dive_has_article_flow_and_evidence(self) -> None:
+        content = render_deep_dive(repo(), date(2026, 8, 13))
+        self.assertIn("# 🔬 owner/useful-repo 深度解读", content)
+        self.assertIn("## 😣 它在解决什么问题", content)
+        self.assertIn("## 🧩 技术机制与集成方式", content)
+        self.assertIn("## 🚦 适合谁、不适合谁", content)
+        self.assertIn("## 💡 独立开发者可以继续做什么", content)
+        self.assertIn("../../../daily/2026/08/2026-08-13.md", content)
+        self.assertIn("python -m useful_repo", content)
 
 
 if __name__ == "__main__":

@@ -40,7 +40,7 @@ fi
 
 git config user.name "githubhot-local[bot]"
 git config user.email "zjukop@users.noreply.github.com"
-git add README.md daily data/snapshots
+git add README.md daily deep-dives data/snapshots
 
 if git diff --cached --quiet; then
   echo "No daily changes to publish."
