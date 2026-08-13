@@ -1,7 +1,8 @@
 import unittest
 from unittest.mock import patch
 
-from githubhot.analysis import AnalysisError, GitHubModelsClient, parse_analysis_response, validate_analysis
+from githubhot.analysis import AnalysisError, GitHubModelsClient, normalize_analysis, parse_analysis_response, validate_analysis
+from githubhot.cli import build_parser
 
 
 def valid_analysis():
@@ -18,6 +19,11 @@ def valid_analysis():
 
 
 class AnalysisValidationTests(unittest.TestCase):
+    def test_scan_defaults_to_bounded_analysis_concurrency(self) -> None:
+        args = build_parser().parse_args(["scan"])
+        self.assertEqual(args.analysis_workers, 3)
+        self.assertEqual(args.enrich_workers, 5)
+
     def test_accepts_complete_analysis(self) -> None:
         validate_analysis(valid_analysis())
 
@@ -32,6 +38,21 @@ class AnalysisValidationTests(unittest.TestCase):
         value["limitations"] = ["官方未提供贡献指南。"]
         with self.assertRaisesRegex(AnalysisError, "unsupported claim"):
             validate_analysis(value)
+
+    def test_normalizes_string_list_fields(self) -> None:
+        value = valid_analysis()
+        value["target_users"] = "需要审查仓库的开发者。"
+        normalized = normalize_analysis(value)
+        self.assertEqual(normalized["target_users"], ["需要审查仓库的开发者。"])
+        validate_analysis(normalized)
+
+    @patch.object(GitHubModelsClient, "_complete")
+    def test_client_normalizes_string_list_field(self, complete) -> None:
+        value = valid_analysis()
+        value["target_users"] = "需要审查仓库的开发者。"
+        complete.return_value = {"choices": [{"message": {"content": __import__('json').dumps(value, ensure_ascii=False)}}]}
+        result = GitHubModelsClient(token="test").analyze(__import__('tests.test_reporting', fromlist=['repo']).repo())
+        self.assertEqual(result["target_users"], ["需要审查仓库的开发者。"])
 
     def test_parses_json_code_fence(self) -> None:
         body = {"choices": [{"message": {"content": f"```json\n{__import__('json').dumps(valid_analysis(), ensure_ascii=False)}\n```"}}]}

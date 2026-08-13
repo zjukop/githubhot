@@ -4,6 +4,7 @@ import argparse
 import json
 import os
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, timedelta
 from pathlib import Path
 
@@ -28,9 +29,12 @@ def build_parser() -> argparse.ArgumentParser:
     scan.add_argument("--output", type=Path, default=Path("data/candidates.json"))
     scan.add_argument("--snapshot-dir", type=Path, default=Path("data/snapshots"))
     scan.add_argument("--enrich", type=int, default=10, help="Fetch README and latest release for top N candidates")
+    scan.add_argument("--enrich-workers", type=int, default=5, help="Concurrent README and release requests")
     scan.add_argument("--analyze", type=int, default=0, help="Generate Chinese deep analysis for top N candidates")
     scan.add_argument("--model", default=os.environ.get("ANALYSIS_MODEL") or "deepseek-v4-flash", help="Analysis model ID")
     scan.add_argument("--analysis-provider", choices=("openai", "github"), default="openai")
+    scan.add_argument("--min-analysis-rate", type=float, default=0.8, help="Fail when fewer analyzed repos than this ratio (0-1)")
+    scan.add_argument("--analysis-workers", type=int, default=3, help="Concurrent analysis requests")
 
     draft = subparsers.add_parser("draft", help="Create a human-review article draft")
     draft.add_argument("repo", help="Repository full name from the candidate list")
@@ -74,19 +78,32 @@ def _scan(args: argparse.Namespace) -> int:
         query = "GitHub Trending · daily（Search API 账号限制时的自动降级数据源）"
     repos = [score_repository(Repository.from_api(payload)) for payload in payloads]
     repos.sort(key=lambda repo: repo.score, reverse=True)
-    for repo in repos[: args.enrich]:
+    if args.enrich_workers < 1:
+        raise ValueError("enrich-workers must be positive")
+
+    def enrich_repo(repo: Repository) -> tuple[Repository, tuple[str, str] | None, dict[str, object] | None, GitHubError | None]:
         try:
             readme = client.repository_readme(repo.full_name)
+            release = client.latest_release(repo.full_name)
+            return repo, readme, release, None
+        except GitHubError as exc:
+            return repo, None, None, exc
+
+    enrich_targets = repos[: args.enrich]
+    with ThreadPoolExecutor(max_workers=min(args.enrich_workers, len(enrich_targets) or 1)) as executor:
+        futures = [executor.submit(enrich_repo, repo) for repo in enrich_targets]
+        for future in as_completed(futures):
+            repo, readme, release, error = future.result()
+            if error:
+                repo.score_reasons.append(f"detail collection unavailable: {error}")
+                continue
             if readme:
                 markdown, repo.readme_url = readme
                 repo.readme_summary, repo.readme_features, repo.quick_start = summarize_readme(markdown)
-            release = client.latest_release(repo.full_name)
             if release:
                 repo.latest_release_name = release.get("name") or release.get("tag_name")
                 repo.latest_release_url = release.get("html_url")
                 repo.latest_release_at = release.get("published_at")
-        except GitHubError as exc:
-            repo.score_reasons.append(f"detail collection unavailable: {exc}")
     if args.analyze:
         token = (os.environ.get("DEEPSEEK_API_KEY") or os.environ.get("ANALYSIS_API_KEY")) if args.analysis_provider == "openai" else os.environ.get("GITHUB_TOKEN")
         if not token:
@@ -100,11 +117,34 @@ def _scan(args: argparse.Namespace) -> int:
             )
         else:
             analyst = GitHubModelsClient(token=token, model=args.model)
-        for repo in repos[: args.analyze]:
+        if args.analysis_workers < 1:
+            raise ValueError("analysis-workers must be positive")
+        targets = repos[: args.analyze]
+
+        def analyze_repo(repo: Repository) -> tuple[Repository, dict[str, object] | AnalysisError]:
             try:
-                repo.analysis = analyst.analyze(repo)
+                return repo, analyst.analyze(repo)
             except AnalysisError as exc:
-                repo.score_reasons.append(f"Chinese analysis unavailable: {exc}")
+                return repo, exc
+
+        with ThreadPoolExecutor(max_workers=min(args.analysis_workers, len(targets) or 1)) as executor:
+            futures = [executor.submit(analyze_repo, repo) for repo in targets]
+            for future in as_completed(futures):
+                repo, result = future.result()
+                if isinstance(result, AnalysisError):
+                    repo.score_reasons.append(f"Chinese analysis unavailable: {result}")
+                else:
+                    repo.analysis = result
+        requested = len(targets)
+        completed = sum(bool(repo.analysis) for repo in repos[:requested])
+        analysis_rate = completed / requested if requested else 1.0
+        if not 0 <= args.min_analysis_rate <= 1:
+            raise ValueError("min-analysis-rate must be between 0 and 1")
+        if analysis_rate < args.min_analysis_rate:
+            raise ValueError(
+                f"Chinese analysis success rate {completed}/{requested} ({analysis_rate:.0%}) "
+                f"is below required {args.min_analysis_rate:.0%}; refusing to publish"
+            )
     write_candidates(args.output, repos, query)
     snapshot = write_snapshot(args.snapshot_dir, repos)
 

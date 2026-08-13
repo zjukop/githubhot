@@ -26,6 +26,8 @@ REQUIRED_FIELDS = {
     "maturity": str,
 }
 
+LIST_FIELDS = tuple(field for field, expected_type in REQUIRED_FIELDS.items() if expected_type is list)
+
 
 @dataclass(slots=True)
 class GitHubModelsClient:
@@ -59,33 +61,36 @@ class GitHubModelsClient:
             "你是严谨的开源项目分析师。只根据用户提供的官方仓库事实写中文分析，禁止补充未提供的事实，"
             "禁止声称项目因某事件爆火。区分事实与推断：推断必须用‘从现有信息看’或‘可能’限定。"
             "不得因为输入未包含某项资料，就断言官方没有该资料；只能写‘本次输入未提供，需进一步核实’。"
-            "输出必须是 JSON 对象，不要 Markdown，不要代码围栏。每个列表包含 2-5 个完整中文句子。"
+            "输出必须是紧凑 JSON 对象，不要 Markdown，不要代码围栏。每个列表包含 1-3 个简短完整中文句子。"
         )
         user = f"""分析以下 GitHub 仓库事实：
 {json.dumps(facts, ensure_ascii=False, indent=2)}
 
 返回字段：
-- positioning: 80-160 字，说明它是什么、解决什么问题、与普通同类工具相比的明确特点
+- positioning: 60-120 字，说明它是什么、解决什么问题、与普通同类工具相比的明确特点
 - target_users: 目标用户与使用场景
 - core_capabilities: 核心能力及用户价值，不重复罗列名词
 - technical_analysis: 从语言、本地/云端方式、集成形态、部署或运行方式分析技术特点；没有信息就明确资料不足
 - why_it_matters: 为什么值得开发者关注，只能基于能力、活跃度与生态信号推断
 - limitations: 成熟度、依赖、平台、安全、许可证或采用成本方面需要核实的事项
 - opportunities: 围绕该项目可继续开发的工具、集成、测试、运维或体验机会；必须标注为机会假设
-- maturity: 60-120 字，综合 Stars、Issues、Release、更新时间判断，但不得把 Stars 等同于质量
+- maturity: 50-100 字，综合 Stars、Issues、Release、更新时间判断，但不得把 Stars 等同于质量
+
+JSON 格式示例（字段和类型必须完全一致）：
+{{"positioning":"一句完整定位","target_users":["用户与场景"],"core_capabilities":["能力与价值"],"technical_analysis":["技术观察"],"why_it_matters":["关注理由"],"limitations":["采用风险"],"opportunities":["机会假设：具体方向"],"maturity":"成熟度判断"}}
 """
         payload = {
             "model": self.model,
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}],
             "temperature": 0.2,
-            "max_tokens": 3000,
+            "max_tokens": 2400,
             "response_format": {"type": "json_object"},
         }
         last_error: AnalysisError | None = None
         for attempt in range(1, self.max_attempts + 1):
             try:
                 body = self._complete(payload)
-                result = parse_analysis_response(body)
+                result = normalize_analysis(parse_analysis_response(body))
                 validate_analysis(result)
                 return result
             except AnalysisError as exc:
@@ -121,6 +126,10 @@ class GitHubModelsClient:
 class OpenAICompatibleClient(GitHubModelsClient):
     endpoint: str = "https://api.deepseek.com/chat/completions"
     provider_name: str = "DeepSeek"
+
+    def _complete(self, payload: dict[str, Any]) -> dict[str, Any]:
+        payload = {**payload, "thinking": {"type": "disabled"}}
+        return super()._complete(payload)
 
 
 def parse_analysis_response(body: dict[str, Any]) -> dict[str, Any]:
@@ -167,3 +176,14 @@ def validate_analysis(value: Any) -> None:
     text_values.extend(item for field, field_type in REQUIRED_FIELDS.items() if field_type is list for item in value[field])
     if any(phrase in text for text in text_values for phrase in unsupported_absence):
         raise AnalysisError("analysis contains an unsupported claim that official material is absent")
+
+
+def normalize_analysis(value: Any) -> Any:
+    if not isinstance(value, dict):
+        return value
+    normalized = dict(value)
+    for field in LIST_FIELDS:
+        item = normalized.get(field)
+        if isinstance(item, str) and item.strip():
+            normalized[field] = [item.strip()]
+    return normalized

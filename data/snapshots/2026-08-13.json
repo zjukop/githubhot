@@ -3,25 +3,24 @@
     "full_name": "paperclipai/paperclip",
     "html_url": "https://github.com/paperclipai/paperclip",
     "description": "The open-source app everyone uses to manage agents at work",
-    "stars": 77932,
-    "forks": 14302,
-    "open_issues": 5071,
+    "stars": 77949,
+    "forks": 14304,
+    "open_issues": 5073,
     "watchers": 379,
     "language": "TypeScript",
     "license": "MIT",
     "topics": [],
     "created_at": "2026-03-02T15:01:51Z",
-    "updated_at": "2026-08-13T08:50:16Z",
-    "pushed_at": "2026-08-13T08:41:07Z",
+    "updated_at": "2026-08-13T09:34:16Z",
+    "pushed_at": "2026-08-13T09:25:45Z",
     "archived": false,
     "fork": false,
     "score": 93.08,
     "score_reasons": [
-      "77,932 stars over 164 days",
-      "estimated 475.9 stars/day since creation",
+      "77,949 stars over 164 days",
+      "estimated 476.0 stars/day since creation",
       "last push 0.0 days ago",
-      "detectable MIT license",
-      "Chinese analysis unavailable: GitHub Models returned an invalid JSON response"
+      "detectable MIT license"
     ],
     "homepage": "https://paperclip.ing",
     "default_branch": "master",
@@ -32,31 +31,63 @@
     "latest_release_name": "v2026.722.0",
     "latest_release_url": "https://github.com/paperclipai/paperclip/releases/tag/v2026.722.0",
     "latest_release_at": "2026-07-22T23:05:41Z",
-    "analysis": {}
+    "analysis": {
+      "positioning": "Paperclip 是一个开源的 AI 代理编排平台，旨在帮助团队管理工作中的多个 AI 代理。它解决了企业环境中代理管理、协作和流程编排的问题，与普通同类工具相比，其明确特点是开源、可自托管，并提供简单的命令行安装方式。",
+      "target_users": [
+        "需要管理多个 AI 代理的企业团队，如 DevOps、数据科学或自动化团队。",
+        "希望自托管代理编排工具以保障数据隐私的开发者或组织。",
+        "对开源解决方案有偏好的技术用户，用于构建内部 AI 工作流。"
+      ],
+      "core_capabilities": [
+        "提供团队级 AI 代理的编排能力，支持代理间的协作与任务分配。",
+        "通过命令行快速安装，降低部署门槛，便于集成到现有开发流程。",
+        "作为开源项目，允许用户自定义和扩展功能，满足特定业务需求。"
+      ],
+      "technical_analysis": [
+        "项目使用 TypeScript 开发，表明其代码库可能具有类型安全性和现代 JavaScript 生态兼容性。",
+        "安装方式通过 curl 脚本进行，暗示其可能支持本地或云端部署，但具体形态未在输入中说明。",
+        "集成形态和部署方式未提供详细信息，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，项目拥有较高的 Stars 和 Forks，表明社区关注度较高，可能具有活跃的贡献者生态。",
+        "频繁的发布（最新版本 v2026.722.0）和持续的推送活动，暗示项目维护活跃，迭代速度快。",
+        "开源许可（MIT）允许自由使用和修改，对开发者具有吸引力。"
+      ],
+      "limitations": [
+        "项目创建于 2026 年，相对较新，成熟度可能有限，需关注其稳定性。",
+        "开放问题数量较多（5073），可能意味着存在未解决的 bug 或功能请求，需评估维护响应速度。",
+        "本次输入未提供官方文档、功能列表或部署细节，需进一步核实其实际能力和限制。"
+      ],
+      "opportunities": [
+        "机会假设：开发与 Paperclip 集成的插件或扩展，以增强其代理管理功能。",
+        "机会假设：提供针对特定行业（如金融、医疗）的合规性配置模板，降低企业采用门槛。",
+        "机会假设：构建监控和日志分析工具，帮助用户追踪代理性能和任务执行情况。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 3 月，至今约 5 个月，但已获得 77.9k Stars 和 14.3k Forks，且发布频率较高（最新版本 v2026.722.0），表明社区活跃度和迭代速度较快。然而，开放问题数量较多（5073），可能暗示项目仍处于快速迭代期，稳定性有待观察。Stars 数量不能直接等同于质量，但高关注度反映了市场需求。"
+    }
   },
   "msitarzewski/agency-agents": {
     "full_name": "msitarzewski/agency-agents",
     "html_url": "https://github.com/msitarzewski/agency-agents",
     "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
-    "stars": 144885,
-    "forks": 23446,
+    "stars": 144914,
+    "forks": 23449,
     "open_issues": 130,
     "watchers": 1075,
     "language": "Shell",
     "license": "MIT",
     "topics": [],
     "created_at": "2025-10-13T12:12:29Z",
-    "updated_at": "2026-08-13T08:53:29Z",
+    "updated_at": "2026-08-13T09:35:55Z",
     "pushed_at": "2026-08-06T13:29:47Z",
     "archived": false,
     "fork": false,
-    "score": 87.58,
+    "score": 87.57,
     "score_reasons": [
-      "144,885 stars over 304 days",
-      "estimated 476.8 stars/day since creation",
+      "144,914 stars over 304 days",
+      "estimated 476.9 stars/day since creation",
       "last push 6.8 days ago",
-      "detectable MIT license",
-      "Chinese analysis unavailable: GitHub Models returned an invalid JSON response"
+      "detectable MIT license"
     ],
     "homepage": "",
     "default_branch": "main",
@@ -67,15 +98,48 @@
     "latest_release_name": null,
     "latest_release_url": null,
     "latest_release_at": null,
-    "analysis": {}
+    "analysis": {
+      "positioning": "A complete AI agency at your fingertips, offering a collection of specialized AI agent personalities with distinct traits and workflows. It solves the problem of generic AI assistants by providing tailored experts for diverse tasks, from frontend development to community management. Unlike ordinary tools, it emphasizes personality, processes, and proven deliverables, making it a versatile multi-agent framework.",
+      "target_users": [
+        "Developers seeking to integrate specialized AI agents into their projects",
+        "Teams looking for a flexible, personality-driven AI workforce for various tasks",
+        "Hobbyists interested in exploring AI agent architectures and customization"
+      ],
+      "core_capabilities": [
+        "Provides a growing collection of meticulously crafted AI agent personalities, each with specialized expertise",
+        "Enables users to deploy agents for specific roles, such as frontend wizards or Reddit community ninjas, enhancing task efficiency",
+        "Offers a framework for building and iterating on agent processes, potentially improving deliverable quality"
+      ],
+      "technical_analysis": [
+        "The project is written in Shell, suggesting a focus on scripting and automation, possibly for easy setup and integration",
+        "The repository does not provide explicit details on local vs. cloud deployment, integration forms, or runtime environment; further verification is needed",
+        "Given the MIT license, it is open-source and can be freely used and modified, but technical specifics remain unclear from the provided data"
+      ],
+      "why_it_matters": [
+        "With 144,914 stars and 23,449 forks, it has gained significant community attention, indicating strong interest and potential adoption",
+        "The project's active development (last push in 2026) and open issues suggest ongoing maintenance and evolution",
+        "Its unique concept of personality-driven agents may inspire new approaches to AI integration and automation"
+      ],
+      "limitations": [
+        "The project has no official releases, so versioning and stability are uncertain",
+        "The latest release is null, and the release date is not provided, indicating a lack of formal release management",
+        "Technical details such as dependencies, platform requirements, and security considerations are not provided in the input, requiring further verification"
+      ],
+      "opportunities": [
+        "机会假设：开发一个可视化配置工具，让用户更直观地定制和组合不同 agent 角色",
+        "机会假设：创建针对特定行业（如电商、客服）的 agent 模板，降低使用门槛",
+        "机会假设：构建测试套件，验证不同 agent 在真实场景下的表现，提升可靠性"
+      ],
+      "maturity": "The project has a high star count and recent activity, suggesting a strong community interest and ongoing development. However, the absence of releases and limited technical documentation indicates it may still be in an early or experimental stage. The high fork count could imply active community contributions, but the lack of release management and open issues (130) suggest potential instability. Overall, it appears to be a promising but not yet mature project."
+    }
   },
   "stablyai/orca": {
     "full_name": "stablyai/orca",
     "html_url": "https://github.com/stablyai/orca",
     "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and VPS.",
-    "stars": 44402,
-    "forks": 3092,
-    "open_issues": 3712,
+    "stars": 44445,
+    "forks": 3097,
+    "open_issues": 3715,
     "watchers": 98,
     "language": "TypeScript",
     "license": "MIT",
@@ -100,18 +164,17 @@
       "yc-backed"
     ],
     "created_at": "2026-03-17T03:28:57Z",
-    "updated_at": "2026-08-13T08:54:13Z",
-    "pushed_at": "2026-08-13T08:53:22Z",
+    "updated_at": "2026-08-13T09:35:18Z",
+    "pushed_at": "2026-08-13T09:36:27Z",
     "archived": false,
     "fork": false,
     "score": 83.05,
     "score_reasons": [
-      "44,402 stars over 149 days",
-      "estimated 297.5 stars/day since creation",
+      "44,445 stars over 149 days",
+      "estimated 297.8 stars/day since creation",
       "last push 0.0 days ago",
       "detectable MIT license",
-      "topics: ade, agent-ide, ai-agents, claude-code, cli",
-      "Chinese analysis unavailable: GitHub Models returned an invalid JSON response"
+      "topics: ade, agent-ide, ai-agents, claude-code, cli"
     ],
     "homepage": "https://onOrca.dev",
     "default_branch": "main",
@@ -122,16 +185,49 @@
     "latest_release_name": "v1.4.180",
     "latest_release_url": "https://github.com/stablyai/orca/releases/tag/v1.4.180",
     "latest_release_at": "2026-08-11T07:34:16Z",
-    "analysis": {}
+    "analysis": {
+      "positioning": "Orca 是一个面向并行代理集群的 ADE（代理开发环境），允许用户使用自己的订阅运行任意编码代理，并支持桌面、移动端和 VPS。它解决的是多代理并行工作时的编排与集成问题，与普通 IDE 相比，其明确特点是专注于并行代理的协调与统一管理。",
+      "target_users": [
+        "需要同时运行多个 AI 编码代理的开发者或团队",
+        "希望在移动端或 VPS 上管理代理工作流的用户",
+        "使用 Claude Code、Codex、Cursor Agent 等工具并寻求统一入口的开发者"
+      ],
+      "core_capabilities": [
+        "支持并行代理的编排与运行，提升多任务处理效率",
+        "跨平台可用（桌面、移动、VPS），提供灵活的使用场景",
+        "集成多种代理工具（如 Claude Code、Codex），统一管理订阅"
+      ],
+      "technical_analysis": [
+        "使用 TypeScript 开发，表明项目注重类型安全与可维护性",
+        "从描述看支持桌面、移动端和 VPS，可能采用跨平台框架或客户端-服务器架构，但具体实现未提供",
+        "集成形态包括 CLI 和终端，可能提供命令行接口，但详细部署方式需进一步核实"
+      ],
+      "why_it_matters": [
+        "高关注度（44k+ Stars）和活跃开发（近期频繁发布）表明项目在开发者社区中有较强吸引力",
+        "主题标签包含 YC-backed，可能获得创业孵化支持，增强可信度",
+        "聚焦并行代理编排，切合当前 AI 代理工作流复杂化的趋势"
+      ],
+      "limitations": [
+        "开放问题较多（3715），可能影响稳定性，需评估 issue 解决效率",
+        "许可证为 MIT，但依赖的代理工具（如 Claude Code）可能有各自的使用条款，需核实",
+        "创建时间较新（2026年3月），成熟度可能有限，需关注长期维护"
+      ],
+      "opportunities": [
+        "机会假设：开发针对 Orca 的插件或扩展，增强与更多代理工具的集成",
+        "机会假设：提供自动化测试工具，帮助验证并行代理编排的可靠性",
+        "机会假设：优化移动端体验，或开发 VPS 部署的运维监控工具"
+      ],
+      "maturity": "从 Stars 和 Forks 看项目受到广泛关注，但 Stars 不等于质量。创建于 2026 年 3 月，至今约 5 个月，已发布 v1.4.180，更新频繁，表明处于快速迭代期。开放问题较多，可能处于功能扩展与 bug 修复并行阶段，整体成熟度中等，需关注 issue 解决情况。"
+    }
   },
   "infiniflow/ragflow": {
     "full_name": "infiniflow/ragflow",
     "html_url": "https://github.com/infiniflow/ragflow",
     "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
-    "stars": 87749,
-    "forks": 10332,
-    "open_issues": 1874,
-    "watchers": 365,
+    "stars": 87773,
+    "forks": 10335,
+    "open_issues": 1875,
+    "watchers": 366,
     "language": "Go",
     "license": "Apache-2.0",
     "topics": [
@@ -151,18 +247,17 @@
       "retrieval-augmented-generation"
     ],
     "created_at": "2023-12-12T06:13:13Z",
-    "updated_at": "2026-08-13T08:53:33Z",
-    "pushed_at": "2026-08-13T08:43:15Z",
+    "updated_at": "2026-08-13T09:36:06Z",
+    "pushed_at": "2026-08-13T09:35:24Z",
     "archived": false,
     "fork": false,
-    "score": 80.08,
+    "score": 80.09,
     "score_reasons": [
-      "87,749 stars over 975 days",
+      "87,773 stars over 975 days",
       "estimated 90.0 stars/day since creation",
       "last push 0.0 days ago",
       "detectable Apache-2.0 license",
-      "topics: agent-harness, agentic-ai, agentic-retrieval, agentic-search, ai",
-      "Chinese analysis unavailable: GitHub Models returned an invalid JSON response"
+      "topics: agent-harness, agentic-ai, agentic-retrieval, agentic-search, ai"
     ],
     "homepage": "https://ragflow.io",
     "default_branch": "main",
@@ -173,13 +268,46 @@
     "latest_release_name": "v0.26.4",
     "latest_release_url": "https://github.com/infiniflow/ragflow/releases/tag/v0.26.4",
     "latest_release_at": "2026-07-07T13:26:03Z",
-    "analysis": {}
+    "analysis": {
+      "positioning": "RAGFlow 是一个开源的企业级检索增强生成（RAG）引擎，融合 RAG 与 Agent 能力，为大型语言模型构建高质量上下文层。它通过统一的上下文引擎和预置 Agent 模板，将复杂数据转化为高保真、可投入生产的 AI 系统，相比普通 RAG 工具更强调 Agent 化与上下文工程。",
+      "target_users": [
+        "需要构建生产级 RAG 应用的企业开发者",
+        "希望将复杂数据集成到 LLM 工作流的 AI 工程师",
+        "寻求可扩展 RAG 解决方案的中大型组织"
+      ],
+      "core_capabilities": [
+        "提供端到端的 RAG 工作流，支持从数据接入到 AI 系统部署的完整流程",
+        "融合 Agent 能力，使 RAG 系统具备自主决策和任务执行能力",
+        "通过预置 Agent 模板和上下文引擎，提升数据处理的准确性和效率"
+      ],
+      "technical_analysis": [
+        "项目主要使用 Go 语言开发，可能注重高性能和并发处理",
+        "采用 Apache-2.0 许可证，允许商用和修改",
+        "从仓库信息看，未明确提供本地/云端部署方式、集成形态或运行环境细节，需进一步核实"
+      ],
+      "why_it_matters": [
+        "拥有 87k+ Stars 和 10k+ Forks，社区关注度高，活跃度强",
+        "持续发布新版本（最新 v0.26.4），表明项目处于积极迭代状态",
+        "主题标签涵盖 Agentic AI、上下文工程等前沿方向，可能引领 RAG 技术演进"
+      ],
+      "limitations": [
+        "存在 1875 个开放问题，可能影响稳定性或功能完善度",
+        "本次输入未提供官方功能列表、快速开始文档，需进一步核实具体功能细节",
+        "未提供安全、平台兼容性、部署成本等信息，需评估采用风险"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对 RAGFlow 的插件或扩展，增强其与现有企业系统的集成",
+        "机会假设：可构建测试工具或基准测试集，帮助用户评估 RAGFlow 在不同场景下的性能",
+        "机会假设：可提供运维监控或自动化部署方案，降低企业采用门槛"
+      ],
+      "maturity": "从 87k Stars、10k Forks 和 1.8k 开放问题看，项目处于快速成长阶段，社区活跃但问题处理压力较大。最新版本 v0.26.4 于 2026 年 7 月发布，且仓库近期有推送，表明维护持续。综合判断，项目成熟度中等偏高，但需关注问题解决效率。"
+    }
   },
   "hugohe3/ppt-master": {
     "full_name": "hugohe3/ppt-master",
     "html_url": "https://github.com/hugohe3/ppt-master",
     "description": "AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He",
-    "stars": 46179,
+    "stars": 46235,
     "forks": 3750,
     "open_issues": 8,
     "watchers": 95,
@@ -198,18 +326,17 @@
       "slides"
     ],
     "created_at": "2025-12-10T06:54:33Z",
-    "updated_at": "2026-08-13T08:54:22Z",
-    "pushed_at": "2026-08-13T07:23:41Z",
+    "updated_at": "2026-08-13T09:34:09Z",
+    "pushed_at": "2026-08-13T09:06:46Z",
     "archived": false,
     "fork": false,
-    "score": 79.72,
+    "score": 79.74,
     "score_reasons": [
-      "46,179 stars over 246 days",
-      "estimated 187.7 stars/day since creation",
-      "last push 0.1 days ago",
+      "46,235 stars over 246 days",
+      "estimated 187.9 stars/day since creation",
+      "last push 0.0 days ago",
       "detectable MIT license",
-      "topics: ai-agent, aippt, office, powerpoint, powerpoint-generation",
-      "Chinese analysis unavailable: GitHub Models returned an invalid JSON response"
+      "topics: ai-agent, aippt, office, powerpoint, powerpoint-generation"
     ],
     "homepage": "https://hugohe3.github.io/ppt-master/",
     "default_branch": "main",
@@ -217,33 +344,64 @@
     "readme_summary": "This project is kept free and open source with the support of  Kimi ,  PackyCode ,  APIKEY.FUN ,  RunAPI ,  YouYun ZhiSuan  and other sponsors.",
     "readme_features": [],
     "quick_start": "",
-    "latest_release_name": "v4.5.0",
-    "latest_release_url": "https://github.com/hugohe3/ppt-master/releases/tag/v4.5.0",
-    "latest_release_at": "2026-08-09T06:28:02Z",
-    "analysis": {}
+    "latest_release_name": "v4.6.0",
+    "latest_release_url": "https://github.com/hugohe3/ppt-master/releases/tag/v4.6.0",
+    "latest_release_at": "2026-08-13T09:06:46Z",
+    "analysis": {
+      "positioning": "ppt-master 是一个将文档或主题转化为原生 PowerPoint 演示文稿的 AI 工具，支持原生形状、过渡动画、数据图表、表格、音频旁白及自定义模板，解决从内容到演示文稿的自动化生成问题，区别于普通工具在于生成的是可编辑的原生 PPT 而非图片或 PDF。",
+      "target_users": [
+        "需要快速将文档或主题转化为演示文稿的商务人士、教育工作者和内容创作者",
+        "希望利用 AI 自动化生成带图表、动画和旁白的专业 PPT 的开发者或企业用户"
+      ],
+      "core_capabilities": [
+        "将文档或主题转化为原生 PPT，支持形状、过渡和动画，确保演示文稿的完整性和可编辑性",
+        "按需生成数据支持的图表和表格，提升数据呈现的准确性和专业性",
+        "支持从演讲者备注生成音频旁白，并可使用自定义 .pptx 模板，满足个性化需求"
+      ],
+      "technical_analysis": [
+        "项目使用 Python 开发，表明其可能依赖 Python 生态的库进行 PPT 生成和处理",
+        "从描述看，可能支持云端 API 或本地运行，但具体集成形态和部署方式未在输入中提供，需进一步核实",
+        "最新版本 v4.6.0 于 2026-08-13 发布，显示项目持续迭代，但技术细节如是否支持 CLI、Web 服务或库集成未明确"
+      ],
+      "why_it_matters": [
+        "项目拥有 46k+ Stars 和 3.7k+ Forks，表明社区关注度高，可能具有广泛的应用场景和用户基础",
+        "活跃的发布记录（最新 v4.6.0）和较少的开放问题（8 个）暗示项目维护积极，可能提供稳定的功能",
+        "作为 AI 驱动的 PPT 生成工具，可能填补自动化办公和内容创作领域的空白，值得开发者关注其技术实现和集成潜力"
+      ],
+      "limitations": [
+        "项目描述提到由赞助商支持，但未提供具体商业模式或可持续性信息，需核实",
+        "未提供官方功能列表和快速开始文档，实际使用方式和依赖环境需进一步确认",
+        "许可证为 MIT，但需核实第三方依赖的许可证兼容性及潜在的法律风险"
+      ],
+      "opportunities": [
+        "机会假设：开发与 ppt-master 集成的插件或扩展，例如用于文档管理系统或在线协作平台，以自动化生成演示文稿",
+        "机会假设：构建测试套件或 CI/CD 流程，验证不同模板和输入下的生成质量，提升项目可靠性",
+        "机会假设：提供云服务或 API 封装，简化非技术用户的使用，并探索与办公软件生态的深度集成"
+      ],
+      "maturity": "从 Stars 和 Forks 数量看，项目具有较高关注度，但 Stars 不等于质量。最新版本 v4.6.0 于 2026-08-13 发布，且开放问题仅 8 个，表明项目维护活跃，版本迭代频繁，可能处于成熟阶段。但需结合代码质量、文档完整性和社区反馈进一步评估。"
+    }
   },
   "NanmiCoder/MediaCrawler": {
     "full_name": "NanmiCoder/MediaCrawler",
     "html_url": "https://github.com/NanmiCoder/MediaCrawler",
     "description": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫  | 知乎问答文章｜评论爬虫",
-    "stars": 62228,
-    "forks": 12158,
+    "stars": 62249,
+    "forks": 12159,
     "open_issues": 190,
     "watchers": 247,
     "language": "Python",
     "license": "NOASSERTION",
     "topics": [],
     "created_at": "2023-06-09T12:14:34Z",
-    "updated_at": "2026-08-13T08:53:48Z",
+    "updated_at": "2026-08-13T09:33:41Z",
     "pushed_at": "2026-08-12T11:22:26Z",
     "archived": false,
     "fork": false,
-    "score": 75.58,
+    "score": 75.56,
     "score_reasons": [
-      "62,228 stars over 1161 days",
+      "62,249 stars over 1161 days",
       "estimated 53.6 stars/day since creation",
-      "last push 0.9 days ago",
-      "Chinese analysis unavailable: GitHub Models returned an invalid JSON response"
+      "last push 0.9 days ago"
     ],
     "homepage": "https://nanmicoder.github.io/MediaCrawler/",
     "default_branch": "main",
@@ -254,72 +412,63 @@
     "latest_release_name": null,
     "latest_release_url": null,
     "latest_release_at": null,
-    "analysis": {}
-  },
-  "localsend/localsend": {
-    "full_name": "localsend/localsend",
-    "html_url": "https://github.com/localsend/localsend",
-    "description": "An open-source cross-platform alternative to AirDrop",
-    "stars": 88079,
-    "forks": 4886,
-    "open_issues": 1056,
-    "watchers": 330,
-    "language": "Dart",
-    "license": "Apache-2.0",
-    "topics": [
-      "dart",
-      "file-sharing",
-      "flutter",
-      "flutter-apps"
-    ],
-    "created_at": "2022-12-16T00:46:07Z",
-    "updated_at": "2026-08-13T08:51:29Z",
-    "pushed_at": "2026-08-13T01:31:25Z",
-    "archived": false,
-    "fork": false,
-    "score": 74.45,
-    "score_reasons": [
-      "88,079 stars over 1336 days",
-      "estimated 65.9 stars/day since creation",
-      "last push 0.3 days ago",
-      "detectable Apache-2.0 license",
-      "topics: dart, file-sharing, flutter, flutter-apps",
-      "Chinese analysis unavailable: GitHub Models returned an invalid JSON response"
-    ],
-    "homepage": "https://localsend.org",
-    "default_branch": "main",
-    "readme_url": "https://github.com/localsend/localsend/blob/main/README.md",
-    "readme_summary": "[ci-badge]: https://github.com/localsend/localsend/actions/workflows/ci.yml/badge.svg [ci-workflow]: https://github.com/localsend/localsend/actions/workflows/ci.yml [translate-badge]: https://hosted.weblate.org/widget/localsend/app/svg-badge.svg [translate-link]: https://hosted.weblate.org/engage/localsend/ [packaging-badge]: https://repology.org/badge/tiny-repos/localsend.svg [packaging-link]: https://repology.org/project/localsend/versions",
-    "readme_features": [],
-    "quick_start": "",
-    "latest_release_name": "v1.18.1",
-    "latest_release_url": "https://github.com/localsend/localsend/releases/tag/v1.18.1",
-    "latest_release_at": "2026-08-12T13:11:17Z",
-    "analysis": {}
+    "analysis": {
+      "positioning": "MediaCrawler 是一个基于 Python 的多平台社交媒体数据采集工具，支持小红书、抖音、快手、B站、微博、百度贴吧和知乎等主流平台的内容与评论爬取。它通过自动化浏览器技术（如 BrowserAct）实现数据提取，解决跨平台数据采集的复杂性问题，与普通爬虫相比，其特点在于支持多平台统一接口和真实浏览器模拟，降低反爬虫门槛。",
+      "target_users": [
+        "数据科学家和研究人员，用于采集社交媒体数据进行分析。",
+        "市场分析师和舆情监测人员，用于追踪品牌或话题讨论。",
+        "开发者，用于构建数据驱动的应用或进行内容聚合。"
+      ],
+      "core_capabilities": [
+        "支持多平台内容与评论爬取，覆盖主流社交媒体，提供一站式数据采集方案。",
+        "基于真实浏览器自动化，可处理动态内容和验证码，提高数据采集的可靠性。",
+        "内置隐身浏览和代理支持，降低被反爬虫机制检测的风险。"
+      ],
+      "technical_analysis": [
+        "项目使用 Python 语言开发，便于数据科学和脚本集成。",
+        "从描述看，采用浏览器自动化技术（如 BrowserAct），可能以本地运行或云端服务方式部署，但具体形态未明确。",
+        "集成形态可能为命令行工具或库，但本次输入未提供详细说明，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "项目拥有 62k+ Stars 和 12k+ Forks，社区关注度高，表明其解决的需求具有普遍性。",
+        "活跃的更新（最近推送日期为 2026-08-12）暗示项目持续维护，可能适应平台变化。",
+        "多平台支持能力使其成为数据采集领域的潜在基础设施，值得开发者关注。"
+      ],
+      "limitations": [
+        "许可证为 NOASSERTION，需核实具体开源许可，可能影响商业使用。",
+        "存在 190 个开放问题，可能包含未解决的 bug 或功能缺失。",
+        "依赖浏览器自动化，可能对运行环境有较高要求，且平台反爬策略变化可能导致维护成本。"
+      ],
+      "opportunities": [
+        "机会假设：可开发基于 MediaCrawler 的数据分析可视化工具，简化数据后处理流程。",
+        "机会假设：可集成云函数或容器化部署，提供 API 服务，方便非技术用户调用。",
+        "机会假设：可扩展更多平台或增加数据清洗、去重功能，提升数据质量。"
+      ],
+      "maturity": "从 Stars 和 Forks 数量看，项目具有较高社区认可度，但 Stars 不等于质量。开放问题较多（190），且无正式 Release，可能处于快速迭代阶段。最近推送日期为 2026-08-12，表明项目仍在维护，但成熟度需结合代码质量和文档进一步评估。"
+    }
   },
   "cathrynlavery/diagram-design": {
     "full_name": "cathrynlavery/diagram-design",
     "html_url": "https://github.com/cathrynlavery/diagram-design",
     "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
-    "stars": 12174,
-    "forks": 753,
-    "open_issues": 6,
-    "watchers": 48,
+    "stars": 12317,
+    "forks": 758,
+    "open_issues": 8,
+    "watchers": 49,
     "language": "HTML",
     "license": "MIT",
     "topics": [],
     "created_at": "2026-04-16T18:01:16Z",
-    "updated_at": "2026-08-13T08:54:20Z",
+    "updated_at": "2026-08-13T09:36:45Z",
     "pushed_at": "2026-08-13T04:50:37Z",
     "archived": false,
     "fork": false,
-    "score": 72.58,
+    "score": 72.63,
     "score_reasons": [
-      "12,174 stars over 119 days",
-      "estimated 102.6 stars/day since creation",
+      "12,317 stars over 119 days",
+      "estimated 103.8 stars/day since creation",
       "last push 0.2 days ago",
-      "detectable MIT license",
-      "Chinese analysis unavailable: GitHub Models returned an invalid JSON response"
+      "detectable MIT license"
     ],
     "homepage": null,
     "default_branch": "main",
@@ -330,52 +479,47 @@
     "latest_release_name": null,
     "latest_release_url": null,
     "latest_release_at": null,
-    "analysis": {}
-  },
-  "Lightricks/LTX-2": {
-    "full_name": "Lightricks/LTX-2",
-    "html_url": "https://github.com/Lightricks/LTX-2",
-    "description": "Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model.",
-    "stars": 8786,
-    "forks": 1399,
-    "open_issues": 118,
-    "watchers": 94,
-    "language": "Python",
-    "license": "NOASSERTION",
-    "topics": [
-      "generative-ai",
-      "ltx",
-      "ltx-2"
-    ],
-    "created_at": "2026-01-03T13:16:29Z",
-    "updated_at": "2026-08-13T08:31:30Z",
-    "pushed_at": "2026-08-12T08:29:34Z",
-    "archived": false,
-    "fork": false,
-    "score": 67.81,
-    "score_reasons": [
-      "8,786 stars over 222 days",
-      "estimated 39.6 stars/day since creation",
-      "last push 1.0 days ago",
-      "topics: generative-ai, ltx, ltx-2",
-      "Chinese analysis unavailable: GitHub Models returned an invalid JSON response"
-    ],
-    "homepage": "https://ltx.io",
-    "default_branch": "main",
-    "readme_url": "https://github.com/Lightricks/LTX-2/blob/main/README.md",
-    "readme_summary": "**LTX-2** is the first DiT-based audio-video foundation model that contains all core capabilities of modern video generation in one model: synchronized audio and video, high fidelity, multiple performance modes, production-ready outputs, API access, and open access.",
-    "readme_features": [],
-    "quick_start": "",
-    "latest_release_name": "v1.2.0",
-    "latest_release_url": "https://github.com/Lightricks/LTX-2/releases/tag/v1.2.0",
-    "latest_release_at": "2026-08-11T20:01:32Z",
-    "analysis": {}
+    "analysis": {
+      "positioning": "这是一个为 Claude Code 设计的编辑器级图表类型集合，包含 29 种自包含的 HTML+SVG 图表，旨在提供设计师认可的高质量图表，避免常见的 Mermaid 风格。它解决了 AI 生成图表视觉粗糙、难以定制的问题，与普通图表库相比，更注重编辑排版和视觉品质。",
+      "target_users": [
+        "使用 Claude Code 的开发者，希望在代码生成中直接产出高质量图表",
+        "需要快速生成可交付给设计师或客户的图表的设计师和产品经理",
+        "对 Mermaid 图表风格不满，追求更精致视觉呈现的团队"
+      ],
+      "core_capabilities": [
+        "提供 29 种编辑级图表类型，覆盖多种数据可视化场景，提升输出质量",
+        "图表为自包含 HTML+SVG，无需额外依赖，易于集成和定制",
+        "通过 Claude Code 插件市场快速安装，简化工作流"
+      ],
+      "technical_analysis": [
+        "主要使用 HTML 和 SVG，图表自包含，可能便于在浏览器或文档中直接渲染",
+        "以 Claude Code 插件形式集成，通过插件市场命令安装，属于本地开发工具链",
+        "未提供部署或运行方式细节，需进一步核实是否支持独立使用或仅限 Claude Code 环境"
+      ],
+      "why_it_matters": [
+        "高星数（12317）和活跃的推送（2026-08-13）表明社区关注度高，可能填补 AI 生成图表视觉质量的空白",
+        "MIT 许可证允许自由使用和修改，降低采用成本",
+        "从现有信息看，它可能成为 Claude Code 生态中图表生成的标准选择，提升 AI 辅助设计的专业度"
+      ],
+      "limitations": [
+        "最新版本未发布，可能处于早期阶段，功能稳定性需核实",
+        "依赖 Claude Code 插件系统，可能限制非 Claude Code 用户的使用",
+        "未提供安全或隐私相关说明，需进一步核实图表内容是否涉及外部数据",
+        "许可证为 MIT，但需确认所有图表资源是否均遵循该许可证"
+      ],
+      "opportunities": [
+        "机会假设：可开发更多图表类型或模板，扩展至其他 AI 编程助手",
+        "机会假设：提供可视化编辑器或配置工具，帮助用户定制图表样式",
+        "机会假设：集成测试框架，确保图表在不同环境下的渲染一致性"
+      ],
+      "maturity": "项目创建于 2026 年 4 月，最近推送在 2026 年 8 月，更新活跃。Stars 数量高（12317）但无正式发布版本，开放问题仅 8 个，表明项目处于快速迭代阶段，但成熟度可能不足，需关注后续版本发布和稳定性。"
+    }
   },
   "shiyu-coder/Kronos": {
     "full_name": "shiyu-coder/Kronos",
     "html_url": "https://github.com/shiyu-coder/Kronos",
     "description": "Kronos: A Foundation Model for the Language of Financial Markets",
-    "stars": 37033,
+    "stars": 37043,
     "forks": 6153,
     "open_issues": 262,
     "watchers": 318,
@@ -383,17 +527,16 @@
     "license": "MIT",
     "topics": [],
     "created_at": "2025-07-01T02:54:32Z",
-    "updated_at": "2026-08-13T08:51:52Z",
+    "updated_at": "2026-08-13T09:29:41Z",
     "pushed_at": "2026-04-13T12:38:49Z",
     "archived": false,
     "fork": false,
-    "score": 65.86,
+    "score": 65.85,
     "score_reasons": [
-      "37,033 stars over 408 days",
+      "37,043 stars over 408 days",
       "estimated 90.7 stars/day since creation",
-      "last push 121.8 days ago",
-      "detectable MIT license",
-      "Chinese analysis unavailable: GitHub Models returned an invalid JSON response"
+      "last push 121.9 days ago",
+      "detectable MIT license"
     ],
     "homepage": null,
     "default_branch": "master",
@@ -404,56 +547,49 @@
     "latest_release_name": null,
     "latest_release_url": null,
     "latest_release_at": null,
-    "analysis": {}
-  },
-  "cactus-compute/needle": {
-    "full_name": "cactus-compute/needle",
-    "html_url": "https://github.com/cactus-compute/needle",
-    "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
-    "stars": 4525,
-    "forks": 317,
-    "open_issues": 27,
-    "watchers": 32,
-    "language": "Python",
-    "license": "MIT",
-    "topics": [
-      "cactus",
-      "gemini",
-      "gemma",
-      "llm",
-      "on-device-ai"
-    ],
-    "created_at": "2026-02-24T04:50:47Z",
-    "updated_at": "2026-08-13T08:54:25Z",
-    "pushed_at": "2026-08-13T07:25:52Z",
-    "archived": false,
-    "fork": false,
-    "score": 64.39,
-    "score_reasons": [
-      "4,525 stars over 170 days",
-      "estimated 26.6 stars/day since creation",
-      "last push 0.1 days ago",
-      "detectable MIT license",
-      "topics: cactus, gemini, gemma, llm, on-device-ai"
-    ],
-    "homepage": "https://cactuscompute.com",
-    "default_branch": "main",
-    "readme_url": null,
-    "readme_summary": "",
-    "readme_features": [],
-    "quick_start": "",
-    "latest_release_name": null,
-    "latest_release_url": null,
-    "latest_release_at": null,
-    "analysis": {}
+    "analysis": {
+      "positioning": "Kronos 是一个面向金融市场的语言基础模型，旨在理解和生成金融领域的文本与数据，解决金融信息处理中的专业语言理解问题。与普通通用语言模型相比，它专注于金融市场的专业术语、语境和模式，可能提供更精准的金融文本分析和预测能力。",
+      "target_users": [
+        "金融分析师和量化研究员，用于市场情绪分析、报告生成和预测建模。",
+        "金融科技开发者，集成到交易系统或金融信息服务平台中。",
+        "学术研究人员，探索金融领域的大语言模型应用。"
+      ],
+      "core_capabilities": [
+        "理解金融市场的专业语言，包括术语、语境和隐含信息。",
+        "生成金融相关的文本，如市场评论、摘要或预测性描述。",
+        "可能支持金融时间序列数据的建模，从现有信息看，其描述强调'语言'，但具体能力需进一步核实。"
+      ],
+      "technical_analysis": [
+        "项目使用 Python 语言开发，符合机器学习生态的主流选择。",
+        "提供 pip 安装依赖的快速开始方式，表明可能支持本地部署和运行。",
+        "集成形态和云端/本地方式未在输入中明确，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "项目获得 37043 个 Star 和 6153 个 Fork，表明社区关注度较高，可能具有广泛的应用潜力。",
+        "创建于 2025 年 7 月，最近更新于 2026 年 4 月，显示项目仍在活跃维护中。",
+        "作为金融领域的基础模型，可能填补通用模型在金融专业任务上的不足，值得开发者关注。"
+      ],
+      "limitations": [
+        "项目尚未发布正式版本（latest_release 为 null），可能处于早期开发阶段，稳定性需核实。",
+        "存在 262 个未解决问题，可能影响使用体验，需关注问题解决进度。",
+        "许可证为 MIT，但依赖项和第三方组件的许可证需进一步核实。",
+        "安全性和金融合规性未在输入中提及，需进一步核实。"
+      ],
+      "opportunities": [
+        "机会假设：开发针对 Kronos 的微调工具或适配器，以支持特定金融子领域（如股票、债券）的定制化应用。",
+        "机会假设：构建基于 Kronos 的金融文本分析服务，如情绪分析 API 或自动报告生成器。",
+        "机会假设：为 Kronos 设计评估基准，用于衡量金融语言模型在真实场景中的表现。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2025 年 7 月，最近更新于 2026 年 4 月，表明处于活跃开发阶段。虽然 Star 数量较高，但未发布正式版本，且存在较多未解决问题，因此成熟度可能处于早期到中期，稳定性需进一步验证。"
+    }
   },
   "semantica-agi/semantica": {
     "full_name": "semantica-agi/semantica",
     "html_url": "https://github.com/semantica-agi/semantica",
     "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
-    "stars": 5986,
-    "forks": 642,
-    "open_issues": 64,
+    "stars": 6013,
+    "forks": 646,
+    "open_issues": 68,
     "watchers": 36,
     "language": "Python",
     "license": "MIT",
@@ -480,13 +616,13 @@
       "semantic-search"
     ],
     "created_at": "2025-06-25T10:41:00Z",
-    "updated_at": "2026-08-13T08:53:15Z",
+    "updated_at": "2026-08-13T09:36:37Z",
     "pushed_at": "2026-08-13T07:10:30Z",
     "archived": false,
     "fork": false,
-    "score": 64.38,
+    "score": 64.42,
     "score_reasons": [
-      "5,986 stars over 414 days",
+      "6,013 stars over 414 days",
       "estimated 14.5 stars/day since creation",
       "last push 0.1 days ago",
       "detectable MIT license",
@@ -494,72 +630,54 @@
     ],
     "homepage": "https://getsemantica.ai",
     "default_branch": "main",
-    "readme_url": null,
-    "readme_summary": "",
+    "readme_url": "https://github.com/semantica-agi/semantica/blob/main/README.md",
+    "readme_summary": "**Decision Intelligence &nbsp;·&nbsp; Context Management &nbsp;·&nbsp; Deterministic Reasoning &nbsp;·&nbsp; Ontology Management &nbsp;·&nbsp; Knowledge Modeling &nbsp;·&nbsp; End-to-End Traceability**",
     "readme_features": [],
-    "quick_start": "",
-    "latest_release_name": null,
-    "latest_release_url": null,
-    "latest_release_at": null,
-    "analysis": {}
-  },
-  "embabel/embabel-agent": {
-    "full_name": "embabel/embabel-agent",
-    "html_url": "https://github.com/embabel/embabel-agent",
-    "description": "Agent framework for the JVM. Pronounced Em-BAY-bel /ɛmˈbeɪbəl/",
-    "stars": 4265,
-    "forks": 413,
-    "open_issues": 69,
-    "watchers": 63,
-    "language": "Kotlin",
-    "license": "Apache-2.0",
-    "topics": [
-      "agent",
-      "agentic-ai",
-      "agents",
-      "ai",
-      "ai-agents",
-      "aiagentframework",
-      "genai",
-      "generative-ai",
-      "java",
-      "kotlin",
-      "llms",
-      "multi-agents",
-      "multi-agents-orchestration",
-      "multi-agents-system",
-      "spring"
-    ],
-    "created_at": "2025-04-10T03:06:07Z",
-    "updated_at": "2026-08-13T08:40:35Z",
-    "pushed_at": "2026-08-13T03:01:25Z",
-    "archived": false,
-    "fork": false,
-    "score": 60.69,
-    "score_reasons": [
-      "4,265 stars over 490 days",
-      "estimated 8.7 stars/day since creation",
-      "last push 0.2 days ago",
-      "detectable Apache-2.0 license",
-      "topics: agent, agentic-ai, agents, ai, ai-agents"
-    ],
-    "homepage": "https://hub.embabel.com",
-    "default_branch": "main",
-    "readme_url": null,
-    "readme_summary": "",
-    "readme_features": [],
-    "quick_start": "",
-    "latest_release_name": null,
-    "latest_release_url": null,
-    "latest_release_at": null,
-    "analysis": {}
+    "quick_start": "pip install semantica",
+    "latest_release_name": "v0.6.5",
+    "latest_release_url": "https://github.com/semantica-agi/semantica/releases/tag/v0.6.5",
+    "latest_release_at": "2026-08-11T17:19:00Z",
+    "analysis": {
+      "positioning": "Semantica 是一个面向 AI 系统的图原生基础设施，专注于上下文管理与可问责 AI，通过确定性推理、本体管理和端到端可追溯性，解决 AI 决策不透明和上下文缺失的问题。与普通工具相比，其明确特点是强调图原生架构和可解释性，而非简单的向量检索或内存管理。",
+      "target_users": [
+        "AI 工程师和机器学习开发者，需要构建可解释、可追溯的 AI 系统",
+        "数据工程团队，需要管理复杂知识图谱和上下文数据",
+        "企业 AI 治理人员，关注 AI 合规和决策审计"
+      ],
+      "core_capabilities": [
+        "提供图原生上下文管理，支持知识建模和本体管理，帮助组织复杂信息",
+        "支持确定性推理和决策智能，提升 AI 决策的可靠性和可解释性",
+        "实现端到端可追溯性，便于审计和治理 AI 系统"
+      ],
+      "technical_analysis": [
+        "项目使用 Python 语言开发，可通过 pip 安装，集成便捷",
+        "从描述看，可能支持本地或云端部署，但具体方式未提供，需进一步核实",
+        "集成形态可能包括库或框架，但未提供详细信息，资料不足"
+      ],
+      "why_it_matters": [
+        "项目活跃度高，最新发布 v0.6.5 且近期有更新，显示持续维护",
+        "主题覆盖 AI 治理、可解释 AI 和图 RAG，契合当前 AI 领域对透明度和可问责性的需求",
+        "从现有信息看，可能为开发者提供构建可信 AI 系统的关键基础设施"
+      ],
+      "limitations": [
+        "项目创建于 2025 年，相对较新，成熟度可能有限，需进一步评估",
+        "官方功能列表未提供，具体能力边界需核实",
+        "许可证为 MIT，但依赖和平台支持情况未提供，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：可开发与 Semantica 集成的可视化工具，帮助用户直观理解知识图谱和推理路径",
+        "机会假设：可构建针对特定行业（如金融、医疗）的合规审计插件，利用其可追溯性",
+        "机会假设：可开发性能测试和优化工具，评估大规模图数据下的推理效率"
+      ],
+      "maturity": "项目创建于 2025 年 6 月，至今约一年，已发布 v0.6.5，更新频繁，显示快速迭代。Stars 和 Forks 数量较高，但不应直接等同于质量，需结合代码质量和社区反馈评估。开放问题 68 个，可能表明仍在完善中，整体处于早期成长阶段。"
+    }
   },
   "macro-inc/macro": {
     "full_name": "macro-inc/macro",
     "html_url": "https://github.com/macro-inc/macro",
     "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
-    "stars": 2254,
-    "forks": 253,
+    "stars": 2301,
+    "forks": 258,
     "open_issues": 64,
     "watchers": 43,
     "language": "Rust",
@@ -587,150 +705,60 @@
       "workspace"
     ],
     "created_at": "2025-11-08T15:18:27Z",
-    "updated_at": "2026-08-13T08:54:12Z",
+    "updated_at": "2026-08-13T09:33:32Z",
     "pushed_at": "2026-08-13T00:18:47Z",
     "archived": false,
     "fork": false,
-    "score": 60.12,
+    "score": 60.22,
     "score_reasons": [
-      "2,254 stars over 278 days",
-      "estimated 8.1 stars/day since creation",
+      "2,301 stars over 278 days",
+      "estimated 8.3 stars/day since creation",
       "last push 0.4 days ago",
       "detectable AGPL-3.0 license",
       "topics: agent, ai, ai-agents, all-in-one, crm"
     ],
     "homepage": "https://macro.com",
     "default_branch": "main",
-    "readme_url": null,
-    "readme_summary": "",
+    "readme_url": "https://github.com/macro-inc/macro/blob/main/README.md",
+    "readme_summary": "Macro is the all-in-one workspace for you and your team. It unifies email + messages + docs + tasks + agents + CRM into a single fast interface with shared team-level memory. Everything in your workspace is @linked and searchable so your team (and your agents) never have to switch tools.",
     "readme_features": [],
     "quick_start": "",
-    "latest_release_name": null,
-    "latest_release_url": null,
-    "latest_release_at": null,
-    "analysis": {}
-  },
-  "NVIDIA-NeMo/Switchyard": {
-    "full_name": "NVIDIA-NeMo/Switchyard",
-    "html_url": "https://github.com/NVIDIA-NeMo/Switchyard",
-    "description": "",
-    "stars": 975,
-    "forks": 97,
-    "open_issues": 78,
-    "watchers": 2,
-    "language": "Rust",
-    "license": "Apache-2.0",
-    "topics": [],
-    "created_at": "2026-05-19T19:06:33Z",
-    "updated_at": "2026-08-13T08:47:03Z",
-    "pushed_at": "2026-08-13T00:02:54Z",
-    "archived": false,
-    "fork": false,
-    "score": 55.17,
-    "score_reasons": [
-      "975 stars over 86 days",
-      "estimated 11.4 stars/day since creation",
-      "last push 0.4 days ago",
-      "detectable Apache-2.0 license"
-    ],
-    "homepage": null,
-    "default_branch": "main",
-    "readme_url": null,
-    "readme_summary": "",
-    "readme_features": [],
-    "quick_start": "",
-    "latest_release_name": null,
-    "latest_release_url": null,
-    "latest_release_at": null,
-    "analysis": {}
-  },
-  "ZuodaoTech/everyone-can-use-english": {
-    "full_name": "ZuodaoTech/everyone-can-use-english",
-    "html_url": "https://github.com/ZuodaoTech/everyone-can-use-english",
-    "description": "人人都能用英语",
-    "stars": 36335,
-    "forks": 5040,
-    "open_issues": 125,
-    "watchers": 319,
-    "language": "TypeScript",
-    "license": "GPL-3.0",
-    "topics": [],
-    "created_at": "2019-03-15T16:33:53Z",
-    "updated_at": "2026-08-13T08:53:08Z",
-    "pushed_at": "2026-06-29T09:40:15Z",
-    "archived": false,
-    "fork": false,
-    "score": 54.72,
-    "score_reasons": [
-      "36,335 stars over 2708 days",
-      "estimated 13.4 stars/day since creation",
-      "last push 45.0 days ago",
-      "detectable GPL-3.0 license"
-    ],
-    "homepage": "https://1000h.org",
-    "default_branch": "main",
-    "readme_url": null,
-    "readme_summary": "",
-    "readme_features": [],
-    "quick_start": "",
-    "latest_release_name": null,
-    "latest_release_url": null,
-    "latest_release_at": null,
-    "analysis": {}
-  },
-  "smicallef/spiderfoot": {
-    "full_name": "smicallef/spiderfoot",
-    "html_url": "https://github.com/smicallef/spiderfoot",
-    "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.",
-    "stars": 20457,
-    "forks": 3307,
-    "open_issues": 281,
-    "watchers": 444,
-    "language": "Python",
-    "license": "MIT",
-    "topics": [
-      "attacksurface",
-      "cti",
-      "cybersecurity",
-      "footprinting",
-      "hacking",
-      "information-gathering",
-      "information-security",
-      "infosec",
-      "intelligence-gathering",
-      "osint",
-      "osint-framework",
-      "osint-reconnaissance",
-      "osint-tool",
-      "pentesting",
-      "python",
-      "recon",
-      "security-tools",
-      "threat-intelligence",
-      "threatintel"
-    ],
-    "created_at": "2012-04-28T07:10:13Z",
-    "updated_at": "2026-08-13T08:52:10Z",
-    "pushed_at": "2026-04-13T19:43:06Z",
-    "archived": false,
-    "fork": false,
-    "score": 49.61,
-    "score_reasons": [
-      "20,457 stars over 5220 days",
-      "estimated 3.9 stars/day since creation",
-      "last push 121.5 days ago",
-      "detectable MIT license",
-      "topics: attacksurface, cti, cybersecurity, footprinting, hacking"
-    ],
-    "homepage": "http://www.spiderfoot.net",
-    "default_branch": "master",
-    "readme_url": null,
-    "readme_summary": "",
-    "readme_features": [],
-    "quick_start": "",
-    "latest_release_name": null,
-    "latest_release_url": null,
-    "latest_release_at": null,
-    "analysis": {}
+    "latest_release_name": "v2026.8.12.0",
+    "latest_release_url": "https://github.com/macro-inc/macro/releases/tag/v2026.8.12.0",
+    "latest_release_at": "2026-08-12T22:59:30Z",
+    "analysis": {
+      "positioning": "Macro 是一个面向团队的统一工作空间，将邮件、聊天、文档、任务、代理和 CRM 整合到一个界面中，并通过共享的团队级 AI 记忆实现 @ 链接和全局搜索。与普通同类工具相比，其明确特点是强调 AI 代理与团队协作的深度融合，旨在消除工具切换，提升团队效率。",
+      "target_users": [
+        "需要整合多种办公工具的初创团队或中小企业",
+        "希望利用 AI 代理自动化工作流并共享团队记忆的团队",
+        "寻求 Slack、Notion、Linear 等工具替代方案的用户"
+      ],
+      "core_capabilities": [
+        "统一工作空间：集成邮件、聊天、文档、任务、代理和 CRM，减少上下文切换",
+        "共享 AI 记忆：团队级记忆支持跨工具的信息关联和智能检索",
+        "@ 链接与搜索：所有内容可 @ 引用并全局搜索，增强协作和可发现性"
+      ],
+      "technical_analysis": [
+        "主要使用 Rust 开发，可能注重性能和安全性",
+        "从仓库信息看，未明确提供本地/云端部署方式，需进一步核实",
+        "集成形态可能通过 MCP（模型上下文协议）支持 AI 代理，但具体细节未提供"
+      ],
+      "why_it_matters": [
+        "项目活跃度高，最新发布在 2026 年 8 月，且拥有 2301 个 Star，表明社区关注度较高",
+        "定位为 AI 驱动的统一工作空间，契合当前 AI 代理与协作工具融合的趋势",
+        "开源（AGPL-3.0）且包含 Rust 和 TypeScript 主题，可能吸引对性能和创新架构感兴趣的开发者"
+      ],
+      "limitations": [
+        "项目创建于 2025 年 11 月，相对较新，成熟度可能有限",
+        "许可证为 AGPL-3.0，可能对商业使用有 copyleft 要求，需评估合规性",
+        "具体功能列表、快速开始文档和部署方式未提供，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：可开发与 Macro 集成的第三方工具或插件，扩展其生态",
+        "机会假设：针对其 AI 记忆和 @ 链接功能，可构建自动化测试或性能优化工具",
+        "机会假设：提供部署和运维解决方案，帮助企业自托管或云部署"
+      ],
+      "maturity": "项目创建于 2025 年 11 月，至今约 9 个月，已发布 v2026.8.12.0 版本，更新频繁，表明开发活跃。Stars 2301 和 Forks 258 显示有一定社区基础，但 Open Issues 64 个，需关注问题解决效率。整体处于早期成长阶段，成熟度中等偏低。"
+    }
   }
 }

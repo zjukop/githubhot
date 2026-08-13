@@ -7,6 +7,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from typing import Any
 
@@ -89,7 +90,8 @@ class GitHubClient:
                 break
         if not names:
             raise GitHubError("GitHub Trending returned no repository entries")
-        return [self._request(f"/repos/{name}") for name in names]
+        with ThreadPoolExecutor(max_workers=min(5, len(names))) as executor:
+            return list(executor.map(lambda name: self._request(f"/repos/{name}"), names))
 
     def repository_readme(self, full_name: str) -> tuple[str, str] | None:
         try:
