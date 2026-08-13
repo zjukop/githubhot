@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import re
+import urllib.parse
 from datetime import date
 from pathlib import Path
 
@@ -9,6 +10,12 @@ from githubhot.models import Repository
 
 def _slug(value: str) -> str:
     return re.sub(r"[^a-z0-9-]+", "-", value.lower().replace("/", "-")).strip("-")
+
+
+def _badge(label: str, message: str | int, color: str) -> str:
+    encoded_label = urllib.parse.quote(label, safe="")
+    encoded_message = urllib.parse.quote(str(message).replace("-", "--"), safe="")
+    return f"![{label}](https://img.shields.io/badge/{encoded_label}-{encoded_message}-{color}?style=flat-square)"
 
 
 def render_draft(repo: Repository, publish_date: date | None = None) -> str:
@@ -156,54 +163,101 @@ def render_digest(
             limitations = "- 采用前需要自行核实平台限制、安全边界、维护状态和生产成熟度。"
             opportunities = "- 需要结合 Issues 和 Discussions 验证真实痛点后再形成开发机会。"
             maturity = "本次缺少模型分析，仅展示 Stars、Issues、Release 和更新时间等客观信号。"
+        anchor = _slug(repo.full_name)
+        badges = " ".join(
+            [
+                _badge("Rank", f"#{rank}", "ff6b6b"),
+                _badge("Score", f"{repo.score:.1f}", "7c3aed"),
+                _badge("Stars", f"{repo.stars:,}", "f5a623"),
+                _badge("Language", repo.language or "Unknown", "2563eb"),
+                _badge("License", repo.license or "Unknown", "16a34a"),
+            ]
+        )
+        target_preview = analysis["target_users"][0] if analysis else "需要进一步核实目标用户。"
+        value_preview = analysis["core_capabilities"][0] if analysis else official_summary
+        attention_preview = analysis["why_it_matters"][0] if analysis else "近期关注度和仓库活跃度较高。"
+        risk_preview = analysis["limitations"][0] if analysis else "采用前请核实成熟度和安全边界。"
         details.append(
-            f"### {rank}. [{repo.full_name}]({repo.html_url})\n\n"
-            f"#### 一句话定位\n\n{positioning}\n\n"
+            f"<a id=\"{anchor}\"></a>\n\n"
+            f"## {rank}. [{repo.full_name}]({repo.html_url})\n\n"
+            f"{badges}\n\n"
+            f"> **一句话定位**\n>\n> {positioning}\n\n"
+            f"### 🧭 30 秒速读\n\n"
+            f"| 维度 | 结论 |\n|---|---|\n"
+            f"| 👥 **适合谁** | {target_preview} |\n"
+            f"| ✨ **核心价值** | {value_preview} |\n"
+            f"| 🔥 **关注理由** | {attention_preview} |\n"
+            f"| ⚠️ **采用提醒** | {risk_preview} |\n\n"
+            f"<details open>\n<summary><strong>👥 使用场景与核心价值</strong></summary>\n\n"
             f"#### 适合谁、用在什么场景\n\n{target_users}\n\n"
-            f"#### 核心能力与价值\n\n{core_capabilities}\n\n"
+            f"#### 核心能力与价值\n\n{core_capabilities}\n\n</details>\n\n"
+            f"<details>\n<summary><strong>🧩 技术实现与关注价值</strong></summary>\n\n"
             f"#### 技术实现观察\n\n{technical_analysis}\n\n"
-            f"#### 为什么值得关注\n\n{why_it_matters}\n\n"
+            f"#### 为什么值得关注\n\n{why_it_matters}\n\n</details>\n\n"
+            f"<details>\n<summary><strong>🚦 成熟度、局限与采用风险</strong></summary>\n\n"
             f"#### 成熟度判断\n\n{maturity}\n\n"
-            f"#### 局限与采用风险\n\n{limitations}\n\n"
-            f"#### 可延伸的开发机会\n\n{opportunities}\n\n"
+            f"#### 局限与采用风险\n\n{limitations}\n\n</details>\n\n"
+            f"<details>\n<summary><strong>💡 可延伸的开发机会</strong></summary>\n\n"
+            f"{opportunities}\n\n</details>\n\n"
+            f"<details>\n<summary><strong>🚀 快速开始、版本与事实依据</strong></summary>\n\n"
             f"#### 快速开始\n\n{quick_start}\n\n"
             f"#### 近期版本\n\n{release}\n\n"
             f"#### 事实依据\n\n"
             f"- **官方简介**：{official_summary}\n"
-            f"- **候选分数**：{repo.score:.2f}\n"
             f"- **Stars / Forks / Open Issues**：{repo.stars:,} / {repo.forks:,} / {repo.open_issues:,}\n"
-            f"- **语言 / License**：{repo.language or 'Unknown'} / {repo.license or 'Unknown'}\n"
             f"- **Topics**：{topics}\n"
             f"- **入选信号**：{reasons}\n"
-            f"- **官方资料**：{' · '.join(official_links)}\n"
+            f"- **官方资料**：{' · '.join(official_links)}\n\n</details>\n\n"
+            f"[⬆️ 返回今日榜单](#今日榜单)\n\n---\n"
         )
 
     table = "\n".join(rows) if rows else "| - | 今日没有符合条件的候选 | - | - | - | - |"
     detail_text = "\n".join(details) if details else "今日没有符合扫描条件的候选仓库。"
-    return f"""# GitHubHot 日报 · {publish_date.isoformat()}
+    project_links = "\n".join(
+        f"{index}. [{repo.full_name}](#{_slug(repo.full_name)})" for index, repo in enumerate(repos, 1)
+    )
+    return f"""<div align="center">
 
-> 自动扫描近期快速增长的 GitHub 仓库。本页展示的是关注度候选，不代表质量、安全性或投资价值。
+# 🔥 GitHubHot 日报
 
-## 今日概览
+### {publish_date.isoformat()} · 今日值得关注的开源项目
 
-- **生成日期**：{publish_date.isoformat()}
-- **候选数量**：{len(repos)}
-- **扫描条件**：`{query}`
-- **排序依据**：Star 规模、按仓库年龄估算的增长速度、参与度、提交新鲜度、许可证与描述完整度
+{_badge('Daily', publish_date.isoformat(), 'e11d48')} {_badge('Projects', len(repos), '0ea5e9')} {_badge('Language', '中文深度分析', '8b5cf6')}
+
+</div>
+
+> [!NOTE]
+> 自动扫描近期快速增长的 GitHub 仓库，再基于官方资料生成中文分析。热度是发现信号，不代表质量、安全性或投资价值。
+
+## 📌 今日导读
+
+| 📅 日期 | 📦 项目数 | 🔎 扫描条件 |
+|---|---:|---|
+| {publish_date.isoformat()} | {len(repos)} | `{query}` |
+
+<a id="今日榜单"></a>
+
+## 🏆 今日榜单
 
 | # | Repository | Score | Stars | Language | License |
 |---:|---|---:|---:|---|---|
 {table}
 
-## 项目详情
+> 点击下方项目名称直达分析；技术、风险和机会等长内容可按需展开。
+
+{project_links}
+
+---
+
+## 📚 深度分析
 
 {detail_text}
-## 数据说明
+## ℹ️ 数据与分析说明
 
 - 数据来自 GitHub 公共 API，数值是生成当时的快照；
 - GitHub 搜索接口不提供历史 Star 数，当前增长速度按 Stars 与仓库年龄估算；
 - 后续积累的每日快照将用于计算真实的 1/7/30 日变化；
-- 中文分析由 GitHub Models 基于官方 README、Release 和仓库元数据生成；
+- 中文分析由可配置模型基于官方 README、Release 和仓库元数据生成，也可由人工编辑稿校订；
 - 模型不得补充输入中没有的事实；推断使用“可能”等限定语，仍需读者结合官方资料判断；
 - 深度介绍仍需人工阅读源码、文档、Release 和 Issues 后发布。
 
