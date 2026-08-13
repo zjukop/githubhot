@@ -1,0 +1,128 @@
+{
+  "xai-org/grok-build": {
+    "full_name": "xai-org/grok-build",
+    "html_url": "https://github.com/xai-org/grok-build",
+    "description": "SpaceXAI's coding agent harness and TUI. Fullscreen, mouse interactive, extensible.",
+    "stars": 24854,
+    "forks": 4722,
+    "open_issues": 0,
+    "watchers": 24854,
+    "language": "Rust",
+    "license": "Apache-2.0",
+    "topics": [],
+    "created_at": "2026-07-14T20:04:23Z",
+    "updated_at": "2026-08-13T02:58:13Z",
+    "pushed_at": "2026-08-12T22:42:20Z",
+    "archived": false,
+    "fork": false,
+    "score": 92.46,
+    "score_reasons": [
+      "24,854 stars over 29 days",
+      "estimated 848.6 stars/day since creation",
+      "last push 0.2 days ago",
+      "detectable Apache-2.0 license"
+    ]
+  },
+  "yc-software/qm": {
+    "full_name": "yc-software/qm",
+    "html_url": "https://github.com/yc-software/qm",
+    "description": "Multiplayer agent harness for work. https://qm.ycombinator.com",
+    "stars": 13247,
+    "forks": 1545,
+    "open_issues": 200,
+    "watchers": 13247,
+    "language": "TypeScript",
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "assistant",
+      "harness",
+      "qm"
+    ],
+    "created_at": "2026-07-29T20:03:08Z",
+    "updated_at": "2026-08-13T02:38:13Z",
+    "pushed_at": "2026-08-12T23:54:05Z",
+    "archived": false,
+    "fork": false,
+    "score": 87.48,
+    "score_reasons": [
+      "13,247 stars over 14 days",
+      "estimated 927.1 stars/day since creation",
+      "last push 0.1 days ago",
+      "detectable MIT license",
+      "topics: ai, assistant, harness, qm"
+    ]
+  },
+  "firecrawl/anydoc": {
+    "full_name": "firecrawl/anydoc",
+    "html_url": "https://github.com/firecrawl/anydoc",
+    "description": "Convert Word, PowerPoint, Excel, OpenDocument, RTF, EPUB, CSV, and PDF to clean Markdown. Built in Rust, with Node.js and Python bindings.",
+    "stars": 15144,
+    "forks": 810,
+    "open_issues": 55,
+    "watchers": 15144,
+    "language": "Rust",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2026-08-03T16:36:14Z",
+    "updated_at": "2026-08-13T02:58:08Z",
+    "pushed_at": "2026-08-10T23:33:04Z",
+    "archived": false,
+    "fork": false,
+    "score": 83.12,
+    "score_reasons": [
+      "15,144 stars over 9 days",
+      "estimated 1605.6 stars/day since creation",
+      "last push 2.1 days ago",
+      "detectable MIT license"
+    ]
+  },
+  "Fei-Away/Codex-Dream-Skin": {
+    "full_name": "Fei-Away/Codex-Dream-Skin",
+    "html_url": "https://github.com/Fei-Away/Codex-Dream-Skin",
+    "description": "Codex Dream Skin",
+    "stars": 13620,
+    "forks": 1328,
+    "open_issues": 43,
+    "watchers": 13620,
+    "language": "JavaScript",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2026-07-15T12:34:51Z",
+    "updated_at": "2026-08-13T02:42:09Z",
+    "pushed_at": "2026-08-12T03:25:20Z",
+    "archived": false,
+    "fork": false,
+    "score": 82.35,
+    "score_reasons": [
+      "13,620 stars over 29 days",
+      "estimated 476.2 stars/day since creation",
+      "last push 1.0 days ago",
+      "detectable MIT license"
+    ]
+  },
+  "andrewyng/openworker": {
+    "full_name": "andrewyng/openworker",
+    "html_url": "https://github.com/andrewyng/openworker",
+    "description": "",
+    "stars": 14332,
+    "forks": 1964,
+    "open_issues": 420,
+    "watchers": 14332,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2026-07-20T01:52:32Z",
+    "updated_at": "2026-08-13T02:57:55Z",
+    "pushed_at": "2026-08-08T03:37:02Z",
+    "archived": false,
+    "fork": false,
+    "score": 79.52,
+    "score_reasons": [
+      "14,332 stars over 24 days",
+      "estimated 596.0 stars/day since creation",
+      "last push 5.0 days ago",
+      "detectable MIT license"
+    ]
+  }
+}

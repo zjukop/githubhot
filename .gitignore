@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.coverage
+.env
+.venv/
+dist/
+build/
+*.egg-info/
+
+# Local scan output. Curated snapshots under data/snapshots remain tracked.
+data/candidates.json
+
+# Local second pipeline: opportunity selection and independently generated repos.
+.repo-factory/

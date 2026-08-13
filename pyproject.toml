@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "githubhot"
+version = "0.1.0"
+description = "Discover fast-growing GitHub repositories and turn them into reviewable daily briefs."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "githubhot contributors" }]
+keywords = ["github", "trending", "open-source", "developer-tools"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "License :: OSI Approved :: MIT License",
+]
+
+[project.scripts]
+githubhot = "githubhot.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["githubhot*"]
+
