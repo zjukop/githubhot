@@ -12,3 +12,4 @@ data/candidates.json
 
 # Local second pipeline: opportunity selection and independently generated repos.
 .repo-factory/
+.local/
