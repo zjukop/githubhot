@@ -32,6 +32,7 @@ class Repository:
     latest_release_name: str | None = None
     latest_release_url: str | None = None
     latest_release_at: str | None = None
+    analysis: dict[str, Any] = field(default_factory=dict)
 
     @classmethod
     def from_api(cls, payload: dict[str, Any]) -> "Repository":

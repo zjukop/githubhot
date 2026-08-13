@@ -1,109 +1,72 @@
 # GitHubHot
 
-> 每天精选一个正在快速增长的开源项目，解释它解决什么问题、为什么受到关注，以及它背后还有哪些开发机会。
+> 每天发现正在快速增长的 GitHub 项目，并用中文解释：它解决什么问题、适合谁、技术上有什么特点、是否值得采用，以及还能衍生出哪些开发机会。
 
-GitHubHot 不是 GitHub Trending 的搬运站。它由两部分组成：
+[English](README_EN.md) · [提交项目](CONTRIBUTING.md)
 
-1. 一个透明、可复现的候选仓库扫描工具；
-2. 一份经过人工选择、事实核验和技术判断的中文日报。
+## 今日日报
 
-[English](README_EN.md)
+👉 **[阅读 2026-08-13 GitHubHot 日报](daily/2026/08/2026-08-13.md)**
 
-## 为什么做这个项目
+今日关注：
 
-热门仓库能反映技术势能，却不能直接证明项目质量或商业需求。GitHubHot 先用公开数据发现异常活跃的候选，再由人工回答：
+- [xai-org/grok-build](https://github.com/xai-org/grok-build)：终端型 AI 编程 Agent
+- [yc-software/qm](https://github.com/yc-software/qm)：面向团队协作的多用户 Agent Harness
+- [firecrawl/anydoc](https://github.com/firecrawl/anydoc)：本地高性能文档转 Markdown 工具
+- [Fei-Away/Codex-Dream-Skin](https://github.com/Fei-Away/Codex-Dream-Skin)：Codex 桌面界面定制工具
+- [andrewyng/openworker](https://github.com/andrewyng/openworker)：在桌面完成实际交付物的开源 AI Coworker
 
-- 它服务谁、解决什么问题？
-- 为什么最近受到关注？
-- 与现有方案有什么区别？
-- 最短的可验证运行方式是什么？
-- 有哪些局限、安全风险和平台依赖？
-- Issues 中还暴露了哪些二阶开发机会？
+## 每份日报有什么
 
-## 每日精选
+GitHubHot 不只罗列 Stars。每个入选项目都会从以下角度展开：
+
+- 一句话中文定位
+- 目标用户和使用场景
+- 核心能力与实际价值
+- 技术实现观察
+- 为什么值得关注
+- 成熟度判断
+- 局限与采用风险
+- 可延伸的开发机会
+- 官方快速开始与最新 Release
+- README、主页和仓库等事实来源
+
+## 日报归档
 
 <!-- DAILY_INDEX_START -->
 - [2026-08-13 · GitHubHot 日报 · 2026-08-13](daily/2026/08/2026-08-13.md)
 <!-- DAILY_INDEX_END -->
 
-## 快速开始
+## 我们如何选择项目
 
-要求 Python 3.11+。
+每天扫描近期创建且快速增长的公开仓库，综合观察：
 
-```bash
-python -m githubhot scan --days 30 --min-stars 100 --limit 30
-```
+- Star 规模与增长速度
+- Fork、Issues 等参与度
+- 最近提交和 Release 活跃度
+- README、许可证和项目描述完整度
+- 是否具备明确的开发者价值和进一步分析空间
 
-扫描结果写入 `data/candidates.json`，每日指标快照写入 `data/snapshots/`。未配置 Token 时也能使用 GitHub 公共 API，但限额较低：
+热度只是发现信号，不代表项目质量、安全性或商业价值。日报会明确列出事实依据、推断边界和采用风险。
 
-```bash
-export GITHUB_TOKEN="your-fine-grained-token"
-python -m githubhot scan --topic ai-agent --topic developer-tools
-```
+## 内容原则
 
-从候选列表生成一篇需要人工审核的草稿：
+- 以官方仓库、README 和 Release 为主要来源；
+- 中文分析不得补充来源中不存在的事实；
+- 不把 Stars 等同于质量或成功；
+- 安装命令优先引用官方 README；
+- 区分事实、判断与机会假设；
+- 项目成熟度、安全性和生产可用性由读者最终判断。
 
-```bash
-python -m githubhot draft owner/repository
-```
+## 推荐项目或修正内容
 
-生成一份可自动发布、只包含事实数据的每日 Top 10：
+欢迎通过 Issue 推荐近期值得关注的项目，或通过 Pull Request 修正日报中的事实错误。自荐允许，但请说明你与项目的关系。
 
-```bash
-python -m githubhot digest --top 10
-```
+## 关于自动化
 
-完成事实核验并清除所有 `TODO` 后，更新首页索引：
+日报由自动流程收集 GitHub 公开数据、官方 README 和 Release；配置分析模型后会生成中文结构化分析，也支持人工编辑稿覆盖和校订。生成器和测试保留在仓库中以便审计，但这个项目的主要产物始终是 `daily/` 下的日报。
 
-```bash
-python -m githubhot index
-```
-
-也可以安装为本地 CLI：
-
-```bash
-python -m pip install -e .
-githubhot scan
-```
-
-## 评分说明
-
-当前 GitHub 公共搜索接口不提供历史 Star 数，因此第一天的评分只使用候选发现信号：
-
-- Star 规模：25%
-- 按仓库年龄估算的 Star 速度：35%
-- Fork 与 Issue 参与度：15%
-- 最近提交活跃度：15%
-- 可识别许可证：5%
-- 清晰描述：5%
-
-评分只用于缩小人工筛选范围，**不代表项目质量、安全性或投资价值**。每日快照积累后，后续版本会使用真实的 1/7/30 日 Star 增量取代估算速度。
-
-## 发布原则
-
-- 自动化每天生成并提交一份只包含公开元数据的 Top 10 日报；
-- 带有原因分析、竞品比较和开发机会判断的深度文章仍必须人工审核；
-- 安装与运行命令必须人工验证；
-- 无法证明的流行原因必须标记为推测；
-- 每篇至少包含一个 README 中没有的技术判断；
-- 明确记录成熟度、安全、隐私、成本和平台依赖；
-- 热度不等于推荐，收录不构成背书。
-
-## 路线图
-
-- [x] GitHub 仓库搜索与候选评分
-- [x] 每日数据快照
-- [x] 人工审核型日报模板
-- [x] README 历史索引
-- [ ] 真实 1/7/30 日 Star 增量
-- [ ] Release、Issue 和 Discussion 资料包
-- [ ] 重复痛点聚类与开发机会报告
-- [ ] GitHub Action 检查日报中的未完成项和失效链接
-- [ ] 静态站点和 RSS
-
-## 贡献
-
-欢迎推荐项目、修正事实、完善扫描规则或提交新的数据源。请先阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。
+维护和本地运行方式见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ## License
 

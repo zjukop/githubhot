@@ -23,7 +23,17 @@ jobs:
       - name: Scan candidate repositories
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: python -m githubhot scan --days 30 --min-stars 100 --limit 50
+          ANALYSIS_API_KEY: ${{ secrets.ANALYSIS_API_KEY }}
+          ANALYSIS_BASE_URL: ${{ vars.ANALYSIS_BASE_URL }}
+          ANALYSIS_MODEL: ${{ vars.ANALYSIS_MODEL }}
+        run: |
+          ANALYZE_ARGS=""
+          if [ -n "$ANALYSIS_API_KEY" ]; then
+            ANALYZE_ARGS="--analyze 10"
+          else
+            echo "ANALYSIS_API_KEY is not configured; publishing official-source fallback profiles"
+          fi
+          python -m githubhot scan --days 30 --min-stars 100 --limit 50 --enrich 10 $ANALYZE_ARGS
       - name: Generate daily digest and update index
         run: python -m githubhot digest --top 10
       - name: Verify generated content

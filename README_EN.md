@@ -1,32 +1,27 @@
 # GitHubHot
 
-> One fast-growing open-source repository a day, explained in Chinese with technical context and opportunity analysis.
+> A Chinese daily briefing on fast-growing GitHub repositories: what they solve, who they serve, how they work, adoption risks, and follow-on opportunities.
 
-GitHubHot is not a mirror of GitHub Trending. It combines a transparent candidate-discovery CLI with human-selected, fact-checked daily briefs.
+## Latest digest
 
-## Quick start
+👉 **[Read the latest GitHubHot digest](daily/2026/08/2026-08-13.md)**
 
-Python 3.11+ is required.
+Each repository profile covers positioning, target users, capabilities, technical observations, maturity, limitations, development opportunities, quick start instructions, releases, and official sources.
 
-```bash
-python -m githubhot scan --days 30 --min-stars 100 --limit 30
-python -m githubhot draft owner/repository
-python -m githubhot index
-```
+## Archive
 
-Set `GITHUB_TOKEN` to raise the GitHub API rate limit. Automation prepares candidates and drafts; a human must verify every article before publication.
+The full archive lives under [`daily/`](daily/). The Chinese [README](README.md) is the primary homepage.
 
-## Principles
+## Method
 
-- Popularity is a discovery signal, not a quality score.
-- Installation commands must be tested before publication.
-- Unsupported explanations must be labelled as inference.
-- Every brief should add technical judgment beyond the upstream README.
-- Limitations, security concerns and platform dependencies are part of the review.
+GitHubHot uses stars, estimated growth, engagement, repository freshness, releases, README content, and licensing as discovery signals. Popularity is not treated as proof of quality, safety, or commercial value.
 
-See the [Chinese README](README.md) for the scoring model and roadmap.
+Daily analysis is generated from official repository facts. Unsupported claims are prohibited, and inference must remain clearly qualified.
+
+## Contributing
+
+Repository recommendations and factual corrections are welcome. Please disclose any relationship to a recommended project and read [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
 [MIT](LICENSE)
-

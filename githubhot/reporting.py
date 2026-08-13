@@ -137,24 +137,45 @@ def render_digest(
             official_links.append(f"[项目主页]({repo.homepage})")
         if repo.readme_url:
             official_links.append(f"[README]({repo.readme_url})")
+        analysis = repo.analysis
+        if analysis:
+            positioning = analysis["positioning"]
+            target_users = "\n".join(f"- {item}" for item in analysis["target_users"])
+            core_capabilities = "\n".join(f"- {item}" for item in analysis["core_capabilities"])
+            technical_analysis = "\n".join(f"- {item}" for item in analysis["technical_analysis"])
+            why_it_matters = "\n".join(f"- {item}" for item in analysis["why_it_matters"])
+            limitations = "\n".join(f"- {item}" for item in analysis["limitations"])
+            opportunities = "\n".join(f"- {item}" for item in analysis["opportunities"])
+            maturity = analysis["maturity"]
+        else:
+            positioning = "中文深度分析本次未生成，以下保留官方 README 事实资料，避免以未经验证的内容补位。"
+            target_users = "- 暂无可靠的中文场景分析。"
+            core_capabilities = features
+            technical_analysis = "- 当前仅能确认主要语言、许可证和官方运行说明，更多架构信息需阅读源码。"
+            why_it_matters = "- 该项目因近期活跃度和关注度进入候选，但热度不等于质量。"
+            limitations = "- 采用前需要自行核实平台限制、安全边界、维护状态和生产成熟度。"
+            opportunities = "- 需要结合 Issues 和 Discussions 验证真实痛点后再形成开发机会。"
+            maturity = "本次缺少模型分析，仅展示 Stars、Issues、Release 和更新时间等客观信号。"
         details.append(
             f"### {rank}. [{repo.full_name}]({repo.html_url})\n\n"
-            f"#### 项目介绍\n\n{official_summary}\n\n"
-            f"> 以上简介提取自项目官方 README；若 README 使用英文，则保留原文以避免自动翻译造成事实偏差。\n\n"
-            f"#### 核心能力\n\n{features}\n\n"
+            f"#### 一句话定位\n\n{positioning}\n\n"
+            f"#### 适合谁、用在什么场景\n\n{target_users}\n\n"
+            f"#### 核心能力与价值\n\n{core_capabilities}\n\n"
+            f"#### 技术实现观察\n\n{technical_analysis}\n\n"
+            f"#### 为什么值得关注\n\n{why_it_matters}\n\n"
+            f"#### 成熟度判断\n\n{maturity}\n\n"
+            f"#### 局限与采用风险\n\n{limitations}\n\n"
+            f"#### 可延伸的开发机会\n\n{opportunities}\n\n"
             f"#### 快速开始\n\n{quick_start}\n\n"
             f"#### 近期版本\n\n{release}\n\n"
-            f"#### 项目画像\n\n"
+            f"#### 事实依据\n\n"
+            f"- **官方简介**：{official_summary}\n"
             f"- **候选分数**：{repo.score:.2f}\n"
             f"- **Stars / Forks / Open Issues**：{repo.stars:,} / {repo.forks:,} / {repo.open_issues:,}\n"
             f"- **语言 / License**：{repo.language or 'Unknown'} / {repo.license or 'Unknown'}\n"
             f"- **Topics**：{topics}\n"
             f"- **入选信号**：{reasons}\n"
-            f"- **官方资料**：{' · '.join(official_links)}\n\n"
-            f"#### 阅读建议\n\n"
-            f"- 核对 README 中的安装前提和平台限制；\n"
-            f"- 结合 Open Issues 判断成熟度，而不是只看 Stars；\n"
-            f"- 生产采用前检查许可证、最近提交和安全说明。\n"
+            f"- **官方资料**：{' · '.join(official_links)}\n"
         )
 
     table = "\n".join(rows) if rows else "| - | 今日没有符合条件的候选 | - | - | - | - |"
@@ -182,7 +203,8 @@ def render_digest(
 - 数据来自 GitHub 公共 API，数值是生成当时的快照；
 - GitHub 搜索接口不提供历史 Star 数，当前增长速度按 Stars 与仓库年龄估算；
 - 后续积累的每日快照将用于计算真实的 1/7/30 日变化；
-- 项目介绍、功能和快速开始内容提取自官方 README，不自动推断项目流行原因；
+- 中文分析由 GitHub Models 基于官方 README、Release 和仓库元数据生成；
+- 模型不得补充输入中没有的事实；推断使用“可能”等限定语，仍需读者结合官方资料判断；
 - 深度介绍仍需人工阅读源码、文档、Release 和 Issues 后发布。
 
 ---

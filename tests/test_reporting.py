@@ -32,6 +32,16 @@ def repo() -> Repository:
         latest_release_name="v1.0.0",
         latest_release_url="https://github.com/owner/useful-repo/releases/tag/v1.0.0",
         latest_release_at="2026-08-12T00:00:00Z",
+        analysis={
+            "positioning": "这是一个帮助开发者生成可复现报告的本地工具。",
+            "target_users": ["需要检查代码仓库的开发者。"],
+            "core_capabilities": ["读取项目并生成结构化报告。"],
+            "technical_analysis": ["主要使用 Python，核心流程可在本地运行。"],
+            "why_it_matters": ["从现有信息看，它减少了重复检查成本。"],
+            "limitations": ["生产采用前需要验证大型仓库性能。"],
+            "opportunities": ["机会假设：可以增加编辑器集成。"],
+            "maturity": "已有发布记录，但关注度不能直接代表生产成熟度。",
+        },
     )
 
 
@@ -59,8 +69,12 @@ class ReportingTests(unittest.TestCase):
         self.assertIn("owner/useful-repo", content)
         self.assertIn("不代表质量、安全性或投资价值", content)
         self.assertIn("../../../README.md", content)
-        self.assertIn("#### 项目介绍", content)
-        self.assertIn("#### 核心能力", content)
+        self.assertIn("#### 一句话定位", content)
+        self.assertIn("#### 核心能力与价值", content)
+        self.assertIn("#### 技术实现观察", content)
+        self.assertIn("#### 局限与采用风险", content)
+        self.assertIn("#### 可延伸的开发机会", content)
+        self.assertIn("帮助开发者生成可复现报告", content)
         self.assertIn("python -m useful_repo", content)
         self.assertIn("v1.0.0", content)
 

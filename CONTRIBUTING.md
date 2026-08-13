@@ -40,3 +40,17 @@ Star 数不是收录的唯一标准。自荐完全允许，但必须披露关系
 python -m unittest discover -s tests -v
 ```
 
+## 本地生成日报
+
+需要一个可读取公开仓库的 GitHub Token。启用中文深度分析时还需要 OpenAI-compatible API：
+
+```bash
+export GITHUB_TOKEN="your-token"
+export ANALYSIS_API_KEY="your-model-api-key"
+export ANALYSIS_MODEL="gpt-4.1-mini"
+# 可选：export ANALYSIS_BASE_URL="https://your-provider.example/v1/chat/completions"
+python -m githubhot scan --days 30 --min-stars 100 --limit 50 --enrich 10 --analyze 10
+python -m githubhot digest --top 10
+```
+
+GitHub Actions 中将模型密钥保存为 `ANALYSIS_API_KEY` Secret；可选设置 `ANALYSIS_BASE_URL` 和 `ANALYSIS_MODEL` Variables。未配置密钥时，日报会降级为官方 README 事实资料版，不会发布伪造的深度分析。

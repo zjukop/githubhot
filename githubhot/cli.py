@@ -1,12 +1,14 @@
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import sys
 from datetime import date, timedelta
 from pathlib import Path
 
 from githubhot.github import GitHubClient, GitHubError, summarize_readme
+from githubhot.analysis import AnalysisError, GitHubModelsClient, OpenAICompatibleClient
 from githubhot.models import Repository
 from githubhot.reporting import update_readme_index, write_digest, write_draft
 from githubhot.scoring import score_repository
@@ -26,6 +28,9 @@ def build_parser() -> argparse.ArgumentParser:
     scan.add_argument("--output", type=Path, default=Path("data/candidates.json"))
     scan.add_argument("--snapshot-dir", type=Path, default=Path("data/snapshots"))
     scan.add_argument("--enrich", type=int, default=10, help="Fetch README and latest release for top N candidates")
+    scan.add_argument("--analyze", type=int, default=0, help="Generate Chinese deep analysis for top N candidates")
+    scan.add_argument("--model", default=os.environ.get("ANALYSIS_MODEL") or "gpt-4.1-mini", help="Analysis model ID")
+    scan.add_argument("--analysis-provider", choices=("openai", "github"), default="openai")
 
     draft = subparsers.add_parser("draft", help="Create a human-review article draft")
     draft.add_argument("repo", help="Repository full name from the candidate list")
@@ -39,6 +44,7 @@ def build_parser() -> argparse.ArgumentParser:
     digest.add_argument("--readme", type=Path, default=Path("README.md"))
     digest.add_argument("--top", type=int, default=10)
     digest.add_argument("--date", type=date.fromisoformat, default=date.today())
+    digest.add_argument("--editorial-dir", type=Path, default=Path("data/editorial"))
 
     index = subparsers.add_parser("index", help="Regenerate README daily article index")
     index.add_argument("--readme", type=Path, default=Path("README.md"))
@@ -73,6 +79,24 @@ def _scan(args: argparse.Namespace) -> int:
                 repo.latest_release_at = release.get("published_at")
         except GitHubError as exc:
             repo.score_reasons.append(f"detail collection unavailable: {exc}")
+    if args.analyze:
+        token = os.environ.get("ANALYSIS_API_KEY") if args.analysis_provider == "openai" else os.environ.get("GITHUB_TOKEN")
+        if not token:
+            required = "ANALYSIS_API_KEY" if args.analysis_provider == "openai" else "GITHUB_TOKEN"
+            raise ValueError(f"{required} is required when --analyze is enabled")
+        if args.analysis_provider == "openai":
+            analyst = OpenAICompatibleClient(
+                token=token,
+                model=args.model,
+                endpoint=os.environ.get("ANALYSIS_BASE_URL") or "https://api.openai.com/v1/chat/completions",
+            )
+        else:
+            analyst = GitHubModelsClient(token=token, model=args.model)
+        for repo in repos[: args.analyze]:
+            try:
+                repo.analysis = analyst.analyze(repo)
+            except AnalysisError as exc:
+                repo.score_reasons.append(f"Chinese analysis unavailable: {exc}")
     write_candidates(args.output, repos, query)
     snapshot = write_snapshot(args.snapshot_dir, repos)
 
@@ -105,6 +129,12 @@ def main(argv: list[str] | None = None) -> int:
             if args.top < 1:
                 raise ValueError("top must be positive")
             query, repos = read_candidate_payload(args.input)
+            editorial_path = args.editorial_dir / f"{args.date.isoformat()}.json"
+            if editorial_path.exists():
+                editorial = json.loads(editorial_path.read_text(encoding="utf-8"))
+                for repo in repos:
+                    if repo.full_name in editorial:
+                        repo.analysis = editorial[repo.full_name]
             path = write_digest(args.daily_dir, repos[: args.top], query, args.date)
             update_readme_index(args.readme, args.daily_dir)
             print(f"Published daily digest: {path}")
