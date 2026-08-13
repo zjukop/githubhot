@@ -23,6 +23,15 @@ class Repository:
     fork: bool = False
     score: float = 0.0
     score_reasons: list[str] = field(default_factory=list)
+    homepage: str | None = None
+    default_branch: str = "main"
+    readme_url: str | None = None
+    readme_summary: str = ""
+    readme_features: list[str] = field(default_factory=list)
+    quick_start: str = ""
+    latest_release_name: str | None = None
+    latest_release_url: str | None = None
+    latest_release_at: str | None = None
 
     @classmethod
     def from_api(cls, payload: dict[str, Any]) -> "Repository":
@@ -43,8 +52,9 @@ class Repository:
             pushed_at=payload.get("pushed_at", ""),
             archived=bool(payload.get("archived", False)),
             fork=bool(payload.get("fork", False)),
+            homepage=payload.get("homepage"),
+            default_branch=payload.get("default_branch") or "main",
         )
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
-

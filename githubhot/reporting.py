@@ -110,21 +110,51 @@ def render_digest(
     rows = []
     details = []
     for rank, repo in enumerate(repos, 1):
-        description = repo.description.replace("|", "\\|") or "暂无描述"
         rows.append(
             f"| {rank} | [{repo.full_name}]({repo.html_url}) | {repo.score:.2f} | "
             f"{repo.stars:,} | {repo.language or 'Unknown'} | {repo.license or 'Unknown'} |"
         )
         reasons = "；".join(repo.score_reasons)
         topics = "、".join(repo.topics[:8]) or "未标注"
+        official_summary = repo.readme_summary or repo.description or "官方仓库暂未提供可提取的项目简介。"
+        features = (
+            "\n".join(f"- {item}" for item in repo.readme_features)
+            if repo.readme_features
+            else "- 官方 README 暂未提取到结构化功能列表。"
+        )
+        quick_start = (
+            f"```bash\n{repo.quick_start}\n```"
+            if repo.quick_start
+            else "官方 README 暂未提取到明确的快速开始命令，请进入项目文档确认。"
+        )
+        release = (
+            f"[{repo.latest_release_name}]({repo.latest_release_url})，发布于 {repo.latest_release_at[:10]}"
+            if repo.latest_release_name and repo.latest_release_url and repo.latest_release_at
+            else "尚未发现 GitHub Release，或项目使用其他方式发布版本。"
+        )
+        official_links = [f"[仓库]({repo.html_url})"]
+        if repo.homepage:
+            official_links.append(f"[项目主页]({repo.homepage})")
+        if repo.readme_url:
+            official_links.append(f"[README]({repo.readme_url})")
         details.append(
             f"### {rank}. [{repo.full_name}]({repo.html_url})\n\n"
-            f"> {description}\n\n"
+            f"#### 项目介绍\n\n{official_summary}\n\n"
+            f"> 以上简介提取自项目官方 README；若 README 使用英文，则保留原文以避免自动翻译造成事实偏差。\n\n"
+            f"#### 核心能力\n\n{features}\n\n"
+            f"#### 快速开始\n\n{quick_start}\n\n"
+            f"#### 近期版本\n\n{release}\n\n"
+            f"#### 项目画像\n\n"
             f"- **候选分数**：{repo.score:.2f}\n"
             f"- **Stars / Forks / Open Issues**：{repo.stars:,} / {repo.forks:,} / {repo.open_issues:,}\n"
             f"- **语言 / License**：{repo.language or 'Unknown'} / {repo.license or 'Unknown'}\n"
             f"- **Topics**：{topics}\n"
             f"- **入选信号**：{reasons}\n"
+            f"- **官方资料**：{' · '.join(official_links)}\n\n"
+            f"#### 阅读建议\n\n"
+            f"- 核对 README 中的安装前提和平台限制；\n"
+            f"- 结合 Open Issues 判断成熟度，而不是只看 Stars；\n"
+            f"- 生产采用前检查许可证、最近提交和安全说明。\n"
         )
 
     table = "\n".join(rows) if rows else "| - | 今日没有符合条件的候选 | - | - | - | - |"
@@ -152,7 +182,7 @@ def render_digest(
 - 数据来自 GitHub 公共 API，数值是生成当时的快照；
 - GitHub 搜索接口不提供历史 Star 数，当前增长速度按 Stars 与仓库年龄估算；
 - 后续积累的每日快照将用于计算真实的 1/7/30 日变化；
-- 自动日报只陈述可直接获取的仓库元数据，不自动推断项目流行原因；
+- 项目介绍、功能和快速开始内容提取自官方 README，不自动推断项目流行原因；
 - 深度介绍仍需人工阅读源码、文档、Release 和 Issues 后发布。
 
 ---

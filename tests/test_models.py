@@ -26,8 +26,8 @@ class RepositoryTests(unittest.TestCase):
         self.assertEqual(repo.description, "")
         self.assertEqual(repo.license, None)
         self.assertEqual(repo.topics, [])
+        self.assertEqual(repo.readme_features, [])
 
 
 if __name__ == "__main__":
     unittest.main()
-

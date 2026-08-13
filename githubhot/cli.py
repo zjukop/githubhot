@@ -6,7 +6,7 @@ import sys
 from datetime import date, timedelta
 from pathlib import Path
 
-from githubhot.github import GitHubClient, GitHubError
+from githubhot.github import GitHubClient, GitHubError, summarize_readme
 from githubhot.models import Repository
 from githubhot.reporting import update_readme_index, write_digest, write_draft
 from githubhot.scoring import score_repository
@@ -25,6 +25,7 @@ def build_parser() -> argparse.ArgumentParser:
     scan.add_argument("--limit", type=int, default=30)
     scan.add_argument("--output", type=Path, default=Path("data/candidates.json"))
     scan.add_argument("--snapshot-dir", type=Path, default=Path("data/snapshots"))
+    scan.add_argument("--enrich", type=int, default=10, help="Fetch README and latest release for top N candidates")
 
     draft = subparsers.add_parser("draft", help="Create a human-review article draft")
     draft.add_argument("repo", help="Repository full name from the candidate list")
@@ -59,6 +60,19 @@ def _scan(args: argparse.Namespace) -> int:
     payloads = client.search_repositories(query, limit=args.limit)
     repos = [score_repository(Repository.from_api(payload)) for payload in payloads]
     repos.sort(key=lambda repo: repo.score, reverse=True)
+    for repo in repos[: args.enrich]:
+        try:
+            readme = client.repository_readme(repo.full_name)
+            if readme:
+                markdown, repo.readme_url = readme
+                repo.readme_summary, repo.readme_features, repo.quick_start = summarize_readme(markdown)
+            release = client.latest_release(repo.full_name)
+            if release:
+                repo.latest_release_name = release.get("name") or release.get("tag_name")
+                repo.latest_release_url = release.get("html_url")
+                repo.latest_release_at = release.get("published_at")
+        except GitHubError as exc:
+            repo.score_reasons.append(f"detail collection unavailable: {exc}")
     write_candidates(args.output, repos, query)
     snapshot = write_snapshot(args.snapshot_dir, repos)
 

@@ -24,6 +24,14 @@ def repo() -> Repository:
         pushed_at="2026-08-12T00:00:00Z",
         score=80,
         score_reasons=["fast growth"],
+        homepage="https://example.com",
+        readme_url="https://github.com/owner/useful-repo#readme",
+        readme_summary="A detailed official introduction for a useful developer tool.",
+        readme_features=["Runs locally without uploading source code", "Exports a reproducible report"],
+        quick_start="python -m useful_repo",
+        latest_release_name="v1.0.0",
+        latest_release_url="https://github.com/owner/useful-repo/releases/tag/v1.0.0",
+        latest_release_at="2026-08-12T00:00:00Z",
     )
 
 
@@ -51,6 +59,10 @@ class ReportingTests(unittest.TestCase):
         self.assertIn("owner/useful-repo", content)
         self.assertIn("不代表质量、安全性或投资价值", content)
         self.assertIn("../../../README.md", content)
+        self.assertIn("#### 项目介绍", content)
+        self.assertIn("#### 核心能力", content)
+        self.assertIn("python -m useful_repo", content)
+        self.assertIn("v1.0.0", content)
 
 
 if __name__ == "__main__":
