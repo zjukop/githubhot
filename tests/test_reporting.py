@@ -4,7 +4,7 @@ from datetime import date
 from pathlib import Path
 
 from githubhot.models import Repository
-from githubhot.reporting import render_draft, update_readme_index, write_draft
+from githubhot.reporting import render_digest, render_draft, update_readme_index, write_draft
 
 
 def repo() -> Repository:
@@ -44,7 +44,14 @@ class ReportingTests(unittest.TestCase):
             self.assertIn(path.relative_to(root).as_posix(), content)
             self.assertIn("owner/useful-repo", content)
 
+    def test_digest_is_publishable_and_evidence_only(self) -> None:
+        content = render_digest([repo()], "created:>=2026-07-01", date(2026, 8, 13))
+        self.assertNotIn("TODO", content)
+        self.assertIn("GitHubHot 日报 · 2026-08-13", content)
+        self.assertIn("owner/useful-repo", content)
+        self.assertIn("不代表质量、安全性或投资价值", content)
+        self.assertIn("../../../README.md", content)
+
 
 if __name__ == "__main__":
     unittest.main()
-

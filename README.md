@@ -23,7 +23,7 @@ GitHubHot 不是 GitHub Trending 的搬运站。它由两部分组成：
 ## 每日精选
 
 <!-- DAILY_INDEX_START -->
-- 暂无已发布内容
+- [2026-08-13 · GitHubHot 日报 · 2026-08-13](daily/2026/08/2026-08-13.md)
 <!-- DAILY_INDEX_END -->
 
 ## 快速开始
@@ -45,6 +45,12 @@ python -m githubhot scan --topic ai-agent --topic developer-tools
 
 ```bash
 python -m githubhot draft owner/repository
+```
+
+生成一份可自动发布、只包含事实数据的每日 Top 10：
+
+```bash
+python -m githubhot digest --top 10
 ```
 
 完成事实核验并清除所有 `TODO` 后，更新首页索引：
@@ -75,7 +81,8 @@ githubhot scan
 
 ## 发布原则
 
-- 自动化只生成候选和资料草稿，不自动发布文章；
+- 自动化每天生成并提交一份只包含公开元数据的 Top 10 日报；
+- 带有原因分析、竞品比较和开发机会判断的深度文章仍必须人工审核；
 - 安装与运行命令必须人工验证；
 - 无法证明的流行原因必须标记为推测；
 - 每篇至少包含一个 README 中没有的技术判断；
@@ -101,4 +108,3 @@ githubhot scan
 ## License
 
 [MIT](LICENSE)
-

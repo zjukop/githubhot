@@ -100,6 +100,81 @@ def write_draft(root: Path, repo: Repository, publish_date: date | None = None) 
     return path
 
 
+def render_digest(
+    repos: list[Repository],
+    query: str,
+    publish_date: date | None = None,
+) -> str:
+    """Render an evidence-only daily ranking that is safe to publish automatically."""
+    publish_date = publish_date or date.today()
+    rows = []
+    details = []
+    for rank, repo in enumerate(repos, 1):
+        description = repo.description.replace("|", "\\|") or "暂无描述"
+        rows.append(
+            f"| {rank} | [{repo.full_name}]({repo.html_url}) | {repo.score:.2f} | "
+            f"{repo.stars:,} | {repo.language or 'Unknown'} | {repo.license or 'Unknown'} |"
+        )
+        reasons = "；".join(repo.score_reasons)
+        topics = "、".join(repo.topics[:8]) or "未标注"
+        details.append(
+            f"### {rank}. [{repo.full_name}]({repo.html_url})\n\n"
+            f"> {description}\n\n"
+            f"- **候选分数**：{repo.score:.2f}\n"
+            f"- **Stars / Forks / Open Issues**：{repo.stars:,} / {repo.forks:,} / {repo.open_issues:,}\n"
+            f"- **语言 / License**：{repo.language or 'Unknown'} / {repo.license or 'Unknown'}\n"
+            f"- **Topics**：{topics}\n"
+            f"- **入选信号**：{reasons}\n"
+        )
+
+    table = "\n".join(rows) if rows else "| - | 今日没有符合条件的候选 | - | - | - | - |"
+    detail_text = "\n".join(details) if details else "今日没有符合扫描条件的候选仓库。"
+    return f"""# GitHubHot 日报 · {publish_date.isoformat()}
+
+> 自动扫描近期快速增长的 GitHub 仓库。本页展示的是关注度候选，不代表质量、安全性或投资价值。
+
+## 今日概览
+
+- **生成日期**：{publish_date.isoformat()}
+- **候选数量**：{len(repos)}
+- **扫描条件**：`{query}`
+- **排序依据**：Star 规模、按仓库年龄估算的增长速度、参与度、提交新鲜度、许可证与描述完整度
+
+| # | Repository | Score | Stars | Language | License |
+|---:|---|---:|---:|---|---|
+{table}
+
+## 项目详情
+
+{detail_text}
+## 数据说明
+
+- 数据来自 GitHub 公共 API，数值是生成当时的快照；
+- GitHub 搜索接口不提供历史 Star 数，当前增长速度按 Stars 与仓库年龄估算；
+- 后续积累的每日快照将用于计算真实的 1/7/30 日变化；
+- 自动日报只陈述可直接获取的仓库元数据，不自动推断项目流行原因；
+- 深度介绍仍需人工阅读源码、文档、Release 和 Issues 后发布。
+
+---
+
+由 [GitHubHot](../../../README.md) 自动生成。
+"""
+
+
+def write_digest(
+    root: Path,
+    repos: list[Repository],
+    query: str,
+    publish_date: date | None = None,
+) -> Path:
+    publish_date = publish_date or date.today()
+    directory = root / str(publish_date.year) / f"{publish_date.month:02d}"
+    directory.mkdir(parents=True, exist_ok=True)
+    path = directory / f"{publish_date.isoformat()}.md"
+    path.write_text(render_digest(repos, query, publish_date), encoding="utf-8")
+    return path
+
+
 def update_readme_index(readme: Path, daily_root: Path) -> None:
     start = "<!-- DAILY_INDEX_START -->"
     end = "<!-- DAILY_INDEX_END -->"
@@ -120,4 +195,3 @@ def update_readme_index(readme: Path, daily_root: Path) -> None:
     before, remainder = content.split(start, 1)
     _, after = remainder.split(end, 1)
     readme.write_text(f"{before}{start}\n{index}\n{end}{after}", encoding="utf-8")
-

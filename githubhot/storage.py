@@ -22,6 +22,11 @@ def read_candidates(path: Path) -> list[Repository]:
     return [Repository(**item) for item in payload["repositories"]]
 
 
+def read_candidate_payload(path: Path) -> tuple[str, list[Repository]]:
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    return payload.get("query", "unknown"), [Repository(**item) for item in payload["repositories"]]
+
+
 def write_snapshot(root: Path, repos: list[Repository], snapshot_date: date | None = None) -> Path:
     snapshot_date = snapshot_date or date.today()
     path = root / f"{snapshot_date.isoformat()}.json"
@@ -29,4 +34,3 @@ def write_snapshot(root: Path, repos: list[Repository], snapshot_date: date | No
     data = {repo.full_name: repo.to_dict() for repo in repos}
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return path
-

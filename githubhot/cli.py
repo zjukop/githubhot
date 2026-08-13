@@ -8,9 +8,9 @@ from pathlib import Path
 
 from githubhot.github import GitHubClient, GitHubError
 from githubhot.models import Repository
-from githubhot.reporting import update_readme_index, write_draft
+from githubhot.reporting import update_readme_index, write_digest, write_draft
 from githubhot.scoring import score_repository
-from githubhot.storage import read_candidates, write_candidates, write_snapshot
+from githubhot.storage import read_candidate_payload, read_candidates, write_candidates, write_snapshot
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -31,6 +31,13 @@ def build_parser() -> argparse.ArgumentParser:
     draft.add_argument("--input", type=Path, default=Path("data/candidates.json"))
     draft.add_argument("--daily-dir", type=Path, default=Path("daily"))
     draft.add_argument("--date", type=date.fromisoformat, default=date.today())
+
+    digest = subparsers.add_parser("digest", help="Publish an evidence-only daily ranking")
+    digest.add_argument("--input", type=Path, default=Path("data/candidates.json"))
+    digest.add_argument("--daily-dir", type=Path, default=Path("daily"))
+    digest.add_argument("--readme", type=Path, default=Path("README.md"))
+    digest.add_argument("--top", type=int, default=10)
+    digest.add_argument("--date", type=date.fromisoformat, default=date.today())
 
     index = subparsers.add_parser("index", help="Regenerate README daily article index")
     index.add_argument("--readme", type=Path, default=Path("README.md"))
@@ -80,6 +87,14 @@ def main(argv: list[str] | None = None) -> int:
             return _scan(args)
         if args.command == "draft":
             return _draft(args)
+        if args.command == "digest":
+            if args.top < 1:
+                raise ValueError("top must be positive")
+            query, repos = read_candidate_payload(args.input)
+            path = write_digest(args.daily_dir, repos[: args.top], query, args.date)
+            update_readme_index(args.readme, args.daily_dir)
+            print(f"Published daily digest: {path}")
+            return 0
         if args.command == "index":
             update_readme_index(args.readme, args.daily_dir)
             print(f"Updated index in {args.readme}")
@@ -92,4 +107,3 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
