@@ -29,7 +29,7 @@ def build_parser() -> argparse.ArgumentParser:
     scan.add_argument("--snapshot-dir", type=Path, default=Path("data/snapshots"))
     scan.add_argument("--enrich", type=int, default=10, help="Fetch README and latest release for top N candidates")
     scan.add_argument("--analyze", type=int, default=0, help="Generate Chinese deep analysis for top N candidates")
-    scan.add_argument("--model", default=os.environ.get("ANALYSIS_MODEL") or "gpt-4.1-mini", help="Analysis model ID")
+    scan.add_argument("--model", default=os.environ.get("ANALYSIS_MODEL") or "deepseek-v4-flash", help="Analysis model ID")
     scan.add_argument("--analysis-provider", choices=("openai", "github"), default="openai")
 
     draft = subparsers.add_parser("draft", help="Create a human-review article draft")
@@ -80,15 +80,15 @@ def _scan(args: argparse.Namespace) -> int:
         except GitHubError as exc:
             repo.score_reasons.append(f"detail collection unavailable: {exc}")
     if args.analyze:
-        token = os.environ.get("ANALYSIS_API_KEY") if args.analysis_provider == "openai" else os.environ.get("GITHUB_TOKEN")
+        token = (os.environ.get("DEEPSEEK_API_KEY") or os.environ.get("ANALYSIS_API_KEY")) if args.analysis_provider == "openai" else os.environ.get("GITHUB_TOKEN")
         if not token:
-            required = "ANALYSIS_API_KEY" if args.analysis_provider == "openai" else "GITHUB_TOKEN"
+            required = "DEEPSEEK_API_KEY" if args.analysis_provider == "openai" else "GITHUB_TOKEN"
             raise ValueError(f"{required} is required when --analyze is enabled")
         if args.analysis_provider == "openai":
             analyst = OpenAICompatibleClient(
                 token=token,
                 model=args.model,
-                endpoint=os.environ.get("ANALYSIS_BASE_URL") or "https://api.openai.com/v1/chat/completions",
+                endpoint=os.environ.get("ANALYSIS_BASE_URL") or "https://api.deepseek.com/chat/completions",
             )
         else:
             analyst = GitHubModelsClient(token=token, model=args.model)

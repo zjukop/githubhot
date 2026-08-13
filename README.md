@@ -78,7 +78,7 @@ GitHubHot 不只罗列 Stars。每个入选项目都会从以下角度展开：
 <details>
 <summary><strong>⚙️ 关于自动化</strong></summary>
 
-日报由自动流程收集 GitHub 公开数据、官方 README 和 Release；配置分析模型后会生成中文结构化分析，也支持人工编辑稿覆盖和校订。生成器和测试保留在仓库中以便审计，但这个项目的主要产物始终是 `daily/` 下的日报。
+日报由自动流程收集 GitHub 公开数据、官方 README 和 Release；配置 DeepSeek API 后会生成中文结构化分析，也支持人工编辑稿覆盖和校订。生成器和测试保留在仓库中以便审计，但这个项目的主要产物始终是 `daily/` 下的日报。
 
 维护和本地运行方式见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 

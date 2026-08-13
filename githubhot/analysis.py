@@ -105,7 +105,7 @@ class GitHubModelsClient:
 
 @dataclass(slots=True)
 class OpenAICompatibleClient(GitHubModelsClient):
-    endpoint: str = "https://api.openai.com/v1/chat/completions"
+    endpoint: str = "https://api.deepseek.com/chat/completions"
 
     def analyze(self, repo: Repository) -> dict[str, Any]:
         # The payload and response shape are intentionally shared with GitHub Models.

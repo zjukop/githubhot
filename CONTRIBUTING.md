@@ -46,11 +46,11 @@ python -m unittest discover -s tests -v
 
 ```bash
 export GITHUB_TOKEN="your-token"
-export ANALYSIS_API_KEY="your-model-api-key"
-export ANALYSIS_MODEL="gpt-4.1-mini"
-# 可选：export ANALYSIS_BASE_URL="https://your-provider.example/v1/chat/completions"
+export DEEPSEEK_API_KEY="your-deepseek-api-key"
+export ANALYSIS_MODEL="deepseek-v4-flash"
+# 可选：export ANALYSIS_BASE_URL="https://api.deepseek.com/chat/completions"
 python -m githubhot scan --days 30 --min-stars 100 --limit 50 --enrich 10 --analyze 10
 python -m githubhot digest --top 10
 ```
 
-GitHub Actions 中将模型密钥保存为 `ANALYSIS_API_KEY` Secret；可选设置 `ANALYSIS_BASE_URL` 和 `ANALYSIS_MODEL` Variables。未配置密钥时，日报会降级为官方 README 事实资料版，不会发布伪造的深度分析。
+GitHub Actions 中将密钥保存为 `DEEPSEEK_API_KEY` Secret。默认使用 `deepseek-v4-flash` 和 `https://api.deepseek.com/chat/completions`；可选设置 `ANALYSIS_BASE_URL` 和 `ANALYSIS_MODEL` Variables。未配置密钥时，日报会降级为官方 README 事实资料版，不会发布伪造的深度分析。
