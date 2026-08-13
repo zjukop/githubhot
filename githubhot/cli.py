@@ -63,7 +63,14 @@ def _scan(args: argparse.Namespace) -> int:
     query = " ".join(parts)
 
     client = GitHubClient(token=os.environ.get("GITHUB_TOKEN"))
-    payloads = client.search_repositories(query, limit=args.limit)
+    try:
+        payloads = client.search_repositories(query, limit=args.limit)
+    except GitHubError as exc:
+        if "flagged as spammy" not in str(exc):
+            raise
+        print("GitHub Search is account-restricted; falling back to GitHub Trending.", file=sys.stderr)
+        payloads = client.trending_repositories(limit=args.limit)
+        query = "GitHub Trending · daily（Search API 账号限制时的自动降级数据源）"
     repos = [score_repository(Repository.from_api(payload)) for payload in payloads]
     repos.sort(key=lambda repo: repo.score, reverse=True)
     for repo in repos[: args.enrich]:

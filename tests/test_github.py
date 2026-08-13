@@ -1,6 +1,7 @@
 import unittest
+from unittest.mock import patch
 
-from githubhot.github import summarize_readme
+from githubhot.github import GitHubClient, summarize_readme
 
 
 class ReadmeSummaryTests(unittest.TestCase):
@@ -63,6 +64,21 @@ Tool converts many document formats to clean Markdown locally without external s
 """
         summary, _, _ = summarize_readme(markdown)
         self.assertIn("converts many document formats", summary)
+
+
+class TrendingFallbackTests(unittest.TestCase):
+    @patch.object(GitHubClient, "_request")
+    @patch("urllib.request.urlopen")
+    def test_resolves_trending_repository_entries(self, urlopen, api_request) -> None:
+        response = urlopen.return_value.__enter__.return_value
+        response.read.return_value = b'''<article><h2><a href="/owner/tool">tool</a></h2>
+        <a href="/owner/tool/stargazers">stars</a></article>'''
+        api_request.return_value = {"full_name": "owner/tool"}
+
+        repos = GitHubClient().trending_repositories(limit=10)
+
+        self.assertEqual(repos, [{"full_name": "owner/tool"}])
+        api_request.assert_called_once_with("/repos/owner/tool")
 
 
 if __name__ == "__main__":

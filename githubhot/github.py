@@ -66,6 +66,31 @@ class GitHubClient:
             time.sleep(0.1)
         return results
 
+    def trending_repositories(self, *, limit: int = 30) -> list[dict[str, Any]]:
+        """Resolve GitHub Trending entries through regular repository endpoints."""
+        request = urllib.request.Request(
+            "https://github.com/trending?since=daily",
+            headers={"User-Agent": "githubhot/0.1"},
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=self.timeout) as response:
+                html = response.read().decode("utf-8", errors="replace")
+        except urllib.error.HTTPError as exc:
+            raise GitHubError(f"GitHub Trending returned {exc.code}") from exc
+        except urllib.error.URLError as exc:
+            raise GitHubError(f"Unable to reach GitHub Trending: {exc.reason}") from exc
+
+        names: list[str] = []
+        for owner, repo in re.findall(r'href="/([^/"\s]+)/([^/"\s]+)"', html):
+            full_name = f"{owner}/{repo}"
+            if full_name not in names and f'href="/{full_name}/stargazers"' in html:
+                names.append(full_name)
+            if len(names) == limit:
+                break
+        if not names:
+            raise GitHubError("GitHub Trending returned no repository entries")
+        return [self._request(f"/repos/{name}") for name in names]
+
     def repository_readme(self, full_name: str) -> tuple[str, str] | None:
         try:
             payload = self._request(f"/repos/{full_name}/readme")
