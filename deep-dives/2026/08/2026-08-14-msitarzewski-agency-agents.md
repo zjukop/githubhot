@@ -8,32 +8,33 @@
 
 ## 🎯 先说结论
 
-A collection of specialized AI agent personalities designed to form a complete 'agency' for diverse tasks, from frontend development to community management. It solves the problem of needing multiple specialized AI tools by offering a single, personality-driven agent suite, distinguishing itself through its focus on crafted personalities and proven deliverables rather than generic automation.
+Agency-Agents 是一个基于 Shell 的 AI 代理集合，旨在提供完整的 AI 代理团队，每个代理具有独特个性和专长，解决用户需要多样化 AI 助手的需求。与普通工具相比，其特点在于强调代理的个性化和流程化，而非单一功能。
 
 ## 😣 它在解决什么问题
 
-- Developers and teams seeking ready-made AI agents for specific roles like frontend coding or social media engagement.
-- Individuals or startups wanting to deploy a multi-agent system without building from scratch, leveraging pre-defined agent behaviors.
+- 希望快速部署多个专业 AI 代理的开发者或团队
+- 需要自动化处理前端开发、社区管理、创意注入等任务的用户
+- 对 AI 代理个性化和定制化有需求的爱好者或研究者
 
 这些场景共同指向的核心问题是：用户需要更低成本、更可复用的方式完成官方描述中的任务。以上判断来自仓库定位与功能资料，不代表所有场景都已经过生产验证。
 
 ## ⚙️ 它如何提供价值
 
-- Provides a growing library of specialized AI agents, each with defined personality, processes, and deliverables, enabling users to quickly deploy role-specific assistants.
-- Agents cover diverse functions such as frontend development, Reddit community management, and creative 'whimsy injection', offering broad utility across development and marketing tasks.
-- The modular design allows users to select and combine agents as needed, potentially creating custom workflows for complex projects.
+- 提供多种专业 AI 代理，覆盖前端开发、社区管理、创意生成等场景，用户可根据需求选择
+- 每个代理具有明确个性和流程，可能提升任务执行的针对性和效率
+- 基于 Shell 实现，可能便于命令行集成和自动化脚本调用
 
 ## 🧩 技术机制与集成方式
 
-- The project is written in Shell, suggesting a focus on command-line or script-based deployment, possibly for easy integration into existing development environments.
-- No information is provided on local vs. cloud execution, integration forms, or deployment methods; these aspects require further verification from official documentation.
-- The absence of release tags and limited technical details in the input indicate that the technical architecture is not fully documented in the provided facts.
+- 项目使用 Shell 语言，可能以脚本形式运行，适合 Unix 环境
+- 从现有信息看，未提供云端或本地部署的具体方式，需进一步核实
+- 集成形态可能为命令行工具，但未提供详细说明，资料不足
 
 ## 🔥 为什么现在值得关注
 
-- With over 145k stars and 23k forks, the project has attracted significant community interest, indicating a strong demand for specialized AI agent collections.
-- The active development (last push in August 2026) and the concept of 'personality-driven' agents may offer a unique approach to AI tooling, potentially inspiring new workflows.
-- The MIT license permits free use and modification, lowering barriers for adoption and customization in commercial projects.
+- 项目拥有高星标和分叉数，表明社区关注度较高，可能具有活跃的生态
+- 从创建和更新时间看，项目仍在持续维护，可能提供新功能和改进
+- 基于 Reddit 讨论迭代而来，可能贴近实际用户需求
 
 ## 👨‍💻 快速体验
 
@@ -45,19 +46,19 @@ A collection of specialized AI agent personalities designed to form a complete '
 
 ### 适合
 
-- Developers and teams seeking ready-made AI agents for specific roles like frontend coding or social media engagement.
-- Individuals or startups wanting to deploy a multi-agent system without building from scratch, leveraging pre-defined agent behaviors.
+- 希望快速部署多个专业 AI 代理的开发者或团队
+- 需要自动化处理前端开发、社区管理、创意注入等任务的用户
+- 对 AI 代理个性化和定制化有需求的爱好者或研究者
 
 ### 采用前需要确认
 
-- The project has no official releases, suggesting it may be in early or pre-release stage, with stability and API changes possible.
-- Open issues (134) indicate ongoing bugs or feature requests that may affect reliability.
-- The technical stack (Shell) may limit cross-platform compatibility or require specific environments; this needs verification.
-- Security, dependency management, and deployment details are not provided in the input, so these aspects require further investigation.
+- 项目未发布正式版本，可能处于早期阶段，稳定性需验证
+- 许可证为 MIT，但依赖和平台兼容性未提供，需进一步核实
+- 安全性和采用成本未提及，需评估潜在风险
 
 ## 📈 成熟度判断
 
-The project shows high community engagement (145k stars) and recent activity (pushed in 2026), but the lack of releases and presence of open issues suggest it is still evolving. Stars indicate popularity, not necessarily production readiness; the project may be in a beta or experimental phase, requiring careful evaluation before critical use.
+项目创建于 2025 年 10 月，最近更新于 2026 年 8 月，显示活跃维护。星标数高但无正式发布，可能处于快速迭代阶段。开放问题数相对较少，但成熟度仍需通过版本发布和文档完善来确认。
 
 - **Stars / Forks / Open Issues**：145,239 / 23,491 / 134
 - **近期版本**：尚未发现 GitHub Release，或项目使用其他方式发布版本。
@@ -65,9 +66,9 @@ The project shows high community engagement (145k stars) and recent activity (pu
 
 ## 💡 独立开发者可以继续做什么
 
-- 机会假设：开发一个图形化界面或Web控制台，用于管理和编排这些AI代理，降低非技术用户的使用门槛。
-- 机会假设：创建集成测试套件，验证各代理在不同场景下的输出质量，提升项目可靠性。
-- 机会假设：构建插件系统或API，允许第三方扩展新代理，增强生态的多样性和可扩展性。
+- 机会假设：可开发图形化界面或 Web 前端，降低非技术用户使用门槛
+- 机会假设：可集成到 CI/CD 流程中，实现自动化代理调度
+- 机会假设：可扩展代理类型，覆盖更多行业场景，并建立插件机制
 
 这些是机会假设，不是已验证需求。动手前应继续查看 Issues、Discussions、竞品和用户反馈。
 

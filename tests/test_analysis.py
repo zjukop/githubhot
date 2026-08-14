@@ -39,6 +39,15 @@ class AnalysisValidationTests(unittest.TestCase):
         with self.assertRaisesRegex(AnalysisError, "unsupported claim"):
             validate_analysis(value)
 
+    def test_rejects_english_analysis(self) -> None:
+        value = valid_analysis()
+        for field in ("positioning", "maturity"):
+            value[field] = "This is an English analysis without the required Chinese explanation."
+        for field in ("target_users", "core_capabilities", "technical_analysis", "why_it_matters", "limitations", "opportunities"):
+            value[field] = ["English output should not pass validation for a Chinese daily briefing."]
+        with self.assertRaisesRegex(AnalysisError, "predominantly Chinese"):
+            validate_analysis(value)
+
     def test_normalizes_string_list_fields(self) -> None:
         value = valid_analysis()
         value["target_users"] = "需要审查仓库的开发者。"

@@ -61,6 +61,7 @@ class GitHubModelsClient:
             "你是严谨的开源项目分析师。只根据用户提供的官方仓库事实写中文分析，禁止补充未提供的事实，"
             "禁止声称项目因某事件爆火。区分事实与推断：推断必须用‘从现有信息看’或‘可能’限定。"
             "不得因为输入未包含某项资料，就断言官方没有该资料；只能写‘本次输入未提供，需进一步核实’。"
+            "除 JSON 英文字段名、仓库名和必要的技术专有名词外，所有字段值必须使用简体中文，禁止输出英文句子。"
             "输出必须是紧凑 JSON 对象，不要 Markdown，不要代码围栏。每个列表包含 1-3 个简短完整中文句子。"
         )
         user = f"""分析以下 GitHub 仓库事实：
@@ -96,6 +97,16 @@ JSON 格式示例（字段和类型必须完全一致）：
             except AnalysisError as exc:
                 last_error = exc
                 if attempt < self.max_attempts:
+                    payload["messages"] = [
+                        *payload["messages"],
+                        {
+                            "role": "user",
+                            "content": (
+                                f"上一次输出未通过质量校验：{exc}。请重新生成完整 JSON；"
+                                "所有解释、判断和建议必须使用简体中文，只保留必要的英文专有名词。"
+                            ),
+                        },
+                    ]
                     time.sleep(1)
         raise AnalysisError(f"{self.provider_name} analysis failed after {self.max_attempts} attempts: {last_error}")
 
@@ -176,6 +187,11 @@ def validate_analysis(value: Any) -> None:
     text_values.extend(item for field, field_type in REQUIRED_FIELDS.items() if field_type is list for item in value[field])
     if any(phrase in text for text in text_values for phrase in unsupported_absence):
         raise AnalysisError("analysis contains an unsupported claim that official material is absent")
+    combined = " ".join(text_values)
+    chinese_count = len(re.findall(r"[\u4e00-\u9fff]", combined))
+    latin_count = len(re.findall(r"[A-Za-z]", combined))
+    if chinese_count < 80 or chinese_count / max(chinese_count + latin_count, 1) < 0.35:
+        raise AnalysisError("analysis is not predominantly Chinese")
 
 
 def normalize_analysis(value: Any) -> Any:

@@ -55,12 +55,14 @@ class ReportingTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             readme = root / "README.md"
-            readme.write_text("before\n<!-- DAILY_INDEX_START -->\nold\n<!-- DAILY_INDEX_END -->\nafter\n", encoding="utf-8")
+            readme.write_text("before\n<!-- DAILY_LATEST_START -->\nold latest\n<!-- DAILY_LATEST_END -->\n<!-- DAILY_INDEX_START -->\nold\n<!-- DAILY_INDEX_END -->\nafter\n", encoding="utf-8")
             path = write_draft(root / "daily", repo(), date(2026, 8, 13))
             update_readme_index(readme, root / "daily")
             content = readme.read_text(encoding="utf-8")
             self.assertIn(path.relative_to(root).as_posix(), content)
             self.assertIn("owner/useful-repo", content)
+            self.assertIn("📖 阅读今日日报", content)
+            self.assertIn("2026-08-13 · 今日值得关注的开源项目", content)
 
     def test_digest_is_publishable_and_evidence_only(self) -> None:
         content = render_digest([repo()], "created:>=2026-07-01", date(2026, 8, 13))

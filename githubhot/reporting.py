@@ -441,4 +441,30 @@ def update_readme_index(readme: Path, daily_root: Path) -> None:
     index = "\n".join(lines) if lines else "- 暂无已发布内容"
     before, remainder = content.split(start, 1)
     _, after = remainder.split(end, 1)
-    readme.write_text(f"{before}{start}\n{index}\n{end}{after}", encoding="utf-8")
+    content = f"{before}{start}\n{index}\n{end}{after}"
+
+    latest_start = "<!-- DAILY_LATEST_START -->"
+    latest_end = "<!-- DAILY_LATEST_END -->"
+    if articles and latest_start in content and latest_end in content:
+        latest = articles[0]
+        latest_text = latest.read_text(encoding="utf-8")
+        relative = latest.relative_to(readme.parent).as_posix()
+        publish_date = latest.stem[:10]
+        projects = re.findall(r"^## \d+\. \[([^]]+)]\((https://github\.com/[^)]+)\)", latest_text, flags=re.MULTILINE)[:3]
+        project_rows = "\n".join(f"| {index} | [{name}]({url}) |" for index, (name, url) in enumerate(projects, 1))
+        if not project_rows:
+            project_rows = "| - | 请进入今日日报查看完整榜单 |"
+        latest_block = (
+            f"{latest_start}\n"
+            f"**[📖 阅读今日日报]({relative})** · **[🗓️ 浏览历史](#-日报归档)** · "
+            f"**[💬 推荐项目](CONTRIBUTING.md)** · [English](README_EN.md)\n\n"
+            f"</div>\n\n> [!TIP]\n> 不只看 Stars。每天先读趋势，再看 3 个重点项目、7 个快速判断，以及 1 篇重点项目深挖。\n\n"
+            f"## 📖 今日日报\n\n### [{publish_date} · 今日值得关注的开源项目 →]({relative})\n\n"
+            f"| # | 项目 |\n|---:|---|\n{project_rows}\n\n"
+            f"> **推荐阅读方式：** 先看“今日趋势”和 TOP 10 榜单；前三名提供完整分析，其余七项快速浏览，第一名另有独立深挖长文。\n"
+            f"{latest_end}"
+        )
+        latest_before, latest_remainder = content.split(latest_start, 1)
+        _, latest_after = latest_remainder.split(latest_end, 1)
+        content = f"{latest_before}{latest_block}{latest_after}"
+    readme.write_text(content, encoding="utf-8")

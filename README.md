@@ -8,7 +8,8 @@
 [![Language](https://img.shields.io/badge/内容-中文深度分析-8b5cf6?style=for-the-badge)](daily/)
 [![License](https://img.shields.io/badge/License-MIT-16a34a?style=for-the-badge)](LICENSE)
 
-**[📖 阅读今日日报](daily/2026/08/2026-08-13.md)** · **[🗓️ 浏览历史](#-日报归档)** · **[💬 推荐项目](CONTRIBUTING.md)** · [English](README_EN.md)
+<!-- DAILY_LATEST_START -->
+**[📖 阅读今日日报](daily/2026/08/2026-08-14.md)** · **[🗓️ 浏览历史](#-日报归档)** · **[💬 推荐项目](CONTRIBUTING.md)** · [English](README_EN.md)
 
 </div>
 
@@ -17,17 +18,16 @@
 
 ## 📖 今日日报
 
-### [2026-08-13 · 今日 5 个值得关注的开源项目 →](daily/2026/08/2026-08-13.md)
+### [2026-08-14 · 今日值得关注的开源项目 →](daily/2026/08/2026-08-14.md)
 
-| # | 项目 | 一句话看点 |
-|---:|---|---|
-| 1 | [xai-org/grok-build](https://github.com/xai-org/grok-build) | 🧑‍💻 终端型 AI 编程 Agent |
-| 2 | [yc-software/qm](https://github.com/yc-software/qm) | 👥 面向组织协作的多用户 Agent Harness |
-| 3 | [firecrawl/anydoc](https://github.com/firecrawl/anydoc) | 📄 本地高性能文档转 Markdown |
-| 4 | [Fei-Away/Codex-Dream-Skin](https://github.com/Fei-Away/Codex-Dream-Skin) | 🎨 非侵入式 Codex 桌面界面定制 |
-| 5 | [andrewyng/openworker](https://github.com/andrewyng/openworker) | 🤖 能产出实际交付物的桌面 AI Coworker |
+| # | 项目 |
+|---:|---|
+| 1 | [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) |
+| 2 | [anthropics/skills](https://github.com/anthropics/skills) |
+| 3 | [infiniflow/ragflow](https://github.com/infiniflow/ragflow) |
 
 > **推荐阅读方式：** 先看“今日趋势”和 TOP 10 榜单；前三名提供完整分析，其余七项快速浏览，第一名另有独立深挖长文。
+<!-- DAILY_LATEST_END -->
 
 ## 🧭 每份日报有什么
 
