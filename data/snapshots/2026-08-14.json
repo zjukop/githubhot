@@ -1,0 +1,1123 @@
+{
+  "msitarzewski/agency-agents": {
+    "full_name": "msitarzewski/agency-agents",
+    "html_url": "https://github.com/msitarzewski/agency-agents",
+    "description": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
+    "stars": 145239,
+    "forks": 23491,
+    "open_issues": 134,
+    "watchers": 1077,
+    "language": "Shell",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2025-10-13T12:12:29Z",
+    "updated_at": "2026-08-14T03:07:36Z",
+    "pushed_at": "2026-08-06T13:29:47Z",
+    "archived": false,
+    "fork": false,
+    "score": 87.19,
+    "score_reasons": [
+      "145,239 stars over 305 days",
+      "estimated 476.8 stars/day since creation",
+      "last push 7.6 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": "https://github.com/msitarzewski/agency-agents/blob/main/README.md",
+    "readme_summary": "Born from a Reddit thread and months of iteration, **The Agency** is a growing collection of meticulously crafted AI agent personalities. Each agent is:",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {
+      "positioning": "A collection of specialized AI agent personalities designed to form a complete 'agency' for diverse tasks, from frontend development to community management. It solves the problem of needing multiple specialized AI tools by offering a single, personality-driven agent suite, distinguishing itself through its focus on crafted personalities and proven deliverables rather than generic automation.",
+      "target_users": [
+        "Developers and teams seeking ready-made AI agents for specific roles like frontend coding or social media engagement.",
+        "Individuals or startups wanting to deploy a multi-agent system without building from scratch, leveraging pre-defined agent behaviors."
+      ],
+      "core_capabilities": [
+        "Provides a growing library of specialized AI agents, each with defined personality, processes, and deliverables, enabling users to quickly deploy role-specific assistants.",
+        "Agents cover diverse functions such as frontend development, Reddit community management, and creative 'whimsy injection', offering broad utility across development and marketing tasks.",
+        "The modular design allows users to select and combine agents as needed, potentially creating custom workflows for complex projects."
+      ],
+      "technical_analysis": [
+        "The project is written in Shell, suggesting a focus on command-line or script-based deployment, possibly for easy integration into existing development environments.",
+        "No information is provided on local vs. cloud execution, integration forms, or deployment methods; these aspects require further verification from official documentation.",
+        "The absence of release tags and limited technical details in the input indicate that the technical architecture is not fully documented in the provided facts."
+      ],
+      "why_it_matters": [
+        "With over 145k stars and 23k forks, the project has attracted significant community interest, indicating a strong demand for specialized AI agent collections.",
+        "The active development (last push in August 2026) and the concept of 'personality-driven' agents may offer a unique approach to AI tooling, potentially inspiring new workflows.",
+        "The MIT license permits free use and modification, lowering barriers for adoption and customization in commercial projects."
+      ],
+      "limitations": [
+        "The project has no official releases, suggesting it may be in early or pre-release stage, with stability and API changes possible.",
+        "Open issues (134) indicate ongoing bugs or feature requests that may affect reliability.",
+        "The technical stack (Shell) may limit cross-platform compatibility or require specific environments; this needs verification.",
+        "Security, dependency management, and deployment details are not provided in the input, so these aspects require further investigation."
+      ],
+      "opportunities": [
+        "机会假设：开发一个图形化界面或Web控制台，用于管理和编排这些AI代理，降低非技术用户的使用门槛。",
+        "机会假设：创建集成测试套件，验证各代理在不同场景下的输出质量，提升项目可靠性。",
+        "机会假设：构建插件系统或API，允许第三方扩展新代理，增强生态的多样性和可扩展性。"
+      ],
+      "maturity": "The project shows high community engagement (145k stars) and recent activity (pushed in 2026), but the lack of releases and presence of open issues suggest it is still evolving. Stars indicate popularity, not necessarily production readiness; the project may be in a beta or experimental phase, requiring careful evaluation before critical use."
+    }
+  },
+  "anthropics/skills": {
+    "full_name": "anthropics/skills",
+    "html_url": "https://github.com/anthropics/skills",
+    "description": "Public repository for Agent Skills",
+    "stars": 169101,
+    "forks": 20136,
+    "open_issues": 1086,
+    "watchers": 1110,
+    "language": "Python",
+    "license": null,
+    "topics": [
+      "agent-skills"
+    ],
+    "created_at": "2025-09-22T15:53:31Z",
+    "updated_at": "2026-08-14T03:13:24Z",
+    "pushed_at": "2026-08-13T18:09:56Z",
+    "archived": false,
+    "fork": false,
+    "score": 83.78,
+    "score_reasons": [
+      "169,101 stars over 325 days",
+      "estimated 519.6 stars/day since creation",
+      "last push 0.4 days ago",
+      "topics: agent-skills"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": "https://github.com/anthropics/skills/blob/main/README.md",
+    "readme_summary": "Skills are folders of instructions, scripts, and resources that Claude loads dynamically to improve performance on specialized tasks. Skills teach Claude how to complete specific tasks in a repeatable way, whether that's creating documents with your company's brand guidelines, analyzing data using your organization's specific workflows, or automating personal tasks.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {
+      "positioning": "Anthropics/skills 是 Anthropic 官方发布的公共仓库，用于存放 Agent Skills——即一组包含指令、脚本和资源的文件夹，Claude 可动态加载这些内容以提升在特定任务上的表现。它解决的是如何让 AI 代理在重复性专业任务中保持一致性和高质量的问题，与普通工具库相比，其核心特点是技能以文件夹形式组织，由 Claude 按需动态加载，而非静态集成。",
+      "target_users": [
+        "希望为 Claude 定制专业工作流的开发者，如生成符合公司品牌指南的文档或执行特定数据分析流程。",
+        "需要自动化个人任务或组织内部重复性工作的团队，通过共享技能文件夹实现标准化。",
+        "对 Agent Skills 机制感兴趣的研究者或 AI 应用开发者，用于探索动态技能加载的最佳实践。"
+      ],
+      "core_capabilities": [
+        "提供结构化的技能定义方式，使 Claude 能按需加载指令、脚本和资源，从而在特定任务上表现更专业。",
+        "支持可重复的任务执行，例如按品牌规范创建文档或按组织工作流分析数据，提升输出的一致性和效率。",
+        "作为公共仓库，允许社区共享和复用技能，促进技能生态的积累。"
+      ],
+      "technical_analysis": [
+        "仓库主要语言为 Python，表明技能可能以 Python 脚本为主要实现方式。",
+        "从描述看，技能以文件夹形式存在，Claude 动态加载，暗示技能是本地或云端可访问的资源集合，但具体加载机制和运行环境未在输入中说明。",
+        "集成形态为仓库形式，但未提供快速开始或部署指南，因此本地/云端部署细节、与 Claude API 的集成方式等需进一步核实。"
+      ],
+      "why_it_matters": [
+        "该项目由 Anthropic 官方维护，且拥有极高的 Stars（169k）和 Forks（20k），表明社区关注度极高，可能成为 Agent 技能领域的标准实践。",
+        "动态技能加载机制可能显著提升 Claude 在垂直任务上的实用性，为开发者提供了一种模块化扩展 AI 能力的新思路。",
+        "活跃的更新（pushed_at 为 2026-08-13）和大量开放问题（1086）显示项目仍在快速迭代，值得跟踪其演进。"
+      ],
+      "limitations": [
+        "许可证信息未提供，需核实其开源许可类型及商用限制。",
+        "没有发布版本（latest_release 为 null），可能处于早期阶段，API 或格式可能不稳定。",
+        "未提供快速开始文档，上手门槛和依赖环境（如是否需要特定 Claude 版本）需进一步核实。",
+        "开放问题较多（1086），可能影响稳定性，需关注问题解决情况。"
+      ],
+      "opportunities": [
+        "机会假设：可开发技能模板生成器，帮助用户快速创建符合规范的技能文件夹。",
+        "机会假设：可构建技能测试框架，验证技能在不同场景下的效果和稳定性。",
+        "机会假设：可创建技能市场或索引站点，方便发现和分享社区技能。",
+        "机会假设：可开发与 CI/CD 集成的工具，自动测试技能更新对 Claude 性能的影响。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2025-09-22，更新频繁（2026-08-13），但无正式发布版本，Stars 和 Forks 数量极高（169k/20k），表明社区关注度大，但开放问题较多（1086），可能仍处于快速迭代的早期阶段。Stars 高不代表质量成熟，需结合代码质量和文档完善度进一步评估。"
+    }
+  },
+  "infiniflow/ragflow": {
+    "full_name": "infiniflow/ragflow",
+    "html_url": "https://github.com/infiniflow/ragflow",
+    "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+    "stars": 88088,
+    "forks": 10359,
+    "open_issues": 1852,
+    "watchers": 369,
+    "language": "Go",
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-harness",
+      "agentic-ai",
+      "agentic-retrieval",
+      "agentic-search",
+      "ai",
+      "ai-agents",
+      "context-engine",
+      "context-engineering",
+      "context-management",
+      "harness-engineering",
+      "knowledge-compilation",
+      "llm-apps",
+      "rag",
+      "retrieval-augmented-generation"
+    ],
+    "created_at": "2023-12-12T06:13:13Z",
+    "updated_at": "2026-08-14T03:15:27Z",
+    "pushed_at": "2026-08-14T02:38:39Z",
+    "archived": false,
+    "fork": false,
+    "score": 80.08,
+    "score_reasons": [
+      "88,088 stars over 976 days",
+      "estimated 90.3 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable Apache-2.0 license",
+      "topics: agent-harness, agentic-ai, agentic-retrieval, agentic-search, ai"
+    ],
+    "homepage": "https://ragflow.io",
+    "default_branch": "main",
+    "readme_url": "https://github.com/infiniflow/ragflow/blob/main/README.md",
+    "readme_summary": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs. It offers a streamlined RAG workflow adaptable to enterprises of any scale. Powered by a converged context engine and pre-built agent templates, RAGFlow enables developers to transform complex data into high-fidelity, production-ready AI systems with exceptional efficiency and precision.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v0.26.4",
+    "latest_release_url": "https://github.com/infiniflow/ragflow/releases/tag/v0.26.4",
+    "latest_release_at": "2026-07-07T13:26:03Z",
+    "analysis": {
+      "positioning": "RAGFlow 是一个开源的企业级检索增强生成（RAG）引擎，融合了前沿 RAG 技术与 Agent 能力，为大型语言模型构建高质量上下文层。它通过统一的上下文引擎和预构建的 Agent 模板，将复杂数据转化为高保真、可投入生产的 AI 系统，区别于普通 RAG 工具，它强调 Agent 集成和上下文工程，以提升效率和精度。",
+      "target_users": [
+        "需要构建生产级 RAG 应用的企业开发者，尤其关注高保真数据转换和 Agent 集成。",
+        "AI 工程师和架构师，用于快速搭建基于复杂数据源的智能问答、知识管理等系统。",
+        "对上下文工程和 Agent 化检索感兴趣的研究者或团队，用于探索前沿 RAG 技术。"
+      ],
+      "core_capabilities": [
+        "提供端到端的 RAG 工作流，支持从数据接入到 AI 系统部署的完整流程，简化企业级应用开发。",
+        "融合 Agent 能力，通过预构建模板实现智能检索和上下文管理，提升 LLM 输出的准确性和相关性。",
+        "基于上下文引擎，能够处理复杂数据并生成高保真结果，适合对精度要求高的生产环境。"
+      ],
+      "technical_analysis": [
+        "项目使用 Go 语言开发，可能带来高性能和并发优势，但具体架构细节未提供。",
+        "从描述看，支持本地或云端部署，但未明确具体方式，需进一步核实。",
+        "集成形态上，强调 Agent 和上下文引擎，可能提供 API 或 SDK，但未提供具体集成文档。",
+        "部署和运行方式未在输入中说明，需查阅官方文档确认。"
+      ],
+      "why_it_matters": [
+        "项目拥有 88k+ Stars 和 10k+ Forks，社区关注度高，表明其解决的实际问题受到广泛认可。",
+        "活跃的发布节奏（最新 v0.26.4 于 2026-07-07）和持续更新（pushed_at 2026-08-14）显示项目维护活跃，技术演进快。",
+        "结合 Agent 和 RAG 的定位，可能代表 RAG 技术向智能体化发展的趋势，对开发者有前瞻价值。"
+      ],
+      "limitations": [
+        "项目仍处于快速迭代期，存在 1852 个开放问题，可能影响稳定性，需评估生产环境风险。",
+        "许可证为 Apache-2.0，但依赖组件和第三方服务的使用条款需进一步核实。",
+        "具体功能列表、快速开始文档和部署要求未在输入中提供，需查阅官方仓库确认。",
+        "安全性和平台兼容性信息缺失，需额外评估。"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对 RAGFlow 的监控和运维工具，帮助用户管理生产环境中的 RAG 系统。",
+        "机会假设：可构建与主流 LLM 框架（如 LangChain）的集成插件，扩大其生态兼容性。",
+        "机会假设：可提供性能测试和优化服务，针对高并发场景进行调优，满足企业级需求。"
+      ],
+      "maturity": "从 Stars 和 Forks 看，项目具有高关注度，但 Stars 不等于质量。开放问题数量较多（1852），且版本迭代频繁（最新 v0.26.4），表明项目处于快速成长阶段，功能可能尚未完全稳定。更新时间（2026-08-14）显示维护活跃，但成熟度需结合代码质量和社区反馈综合判断。"
+    }
+  },
+  "unslothai/unsloth": {
+    "full_name": "unslothai/unsloth",
+    "html_url": "https://github.com/unslothai/unsloth",
+    "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
+    "stars": 71116,
+    "forks": 6408,
+    "open_issues": 1140,
+    "watchers": 369,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "chatgpt",
+      "deepseek",
+      "fine-tuning",
+      "gemma",
+      "gemma3",
+      "gpt-oss",
+      "image-generation",
+      "llama",
+      "llm",
+      "llms",
+      "openai",
+      "qwen",
+      "reinforcement-learning",
+      "self-hosted",
+      "stable-diffusion",
+      "text-to-speech",
+      "tts",
+      "ui",
+      "unsloth"
+    ],
+    "created_at": "2023-11-29T16:50:09Z",
+    "updated_at": "2026-08-14T03:16:34Z",
+    "pushed_at": "2026-08-14T03:14:37Z",
+    "archived": false,
+    "fork": false,
+    "score": 76.74,
+    "score_reasons": [
+      "71,116 stars over 988 days",
+      "estimated 71.9 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable Apache-2.0 license",
+      "topics: agent, chatgpt, deepseek, fine-tuning, gemma"
+    ],
+    "homepage": "https://unsloth.ai/docs",
+    "default_branch": "main",
+    "readme_url": "https://github.com/unslothai/unsloth/blob/main/README.md",
+    "readme_summary": "Unsloth is the first desktop app to run and train models.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "Introducing Unsloth Desktop 🦥",
+    "latest_release_url": "https://github.com/unslothai/unsloth/releases/tag/v0.1.701-beta",
+    "latest_release_at": "2026-08-11T19:24:35Z",
+    "analysis": {
+      "positioning": "Unsloth 是一个本地运行的桌面应用，用于运行和训练大型语言模型及扩散模型，支持 Qwen、Kimi、MiniMax、Gemma、DeepSeek、FLUX 等。它定位为“首个运行和训练模型的桌面应用”，解决用户在本地便捷管理、微调和推理模型的需求，与普通同类工具相比，其明确特点是提供本地 UI 并集成多种模型生态。",
+      "target_users": [
+        "需要本地运行和微调 LLM 或扩散模型的开发者与研究人员",
+        "希望使用图形界面而非命令行操作模型的 AI 爱好者",
+        "关注模型训练与推理一体化的个人或小团队"
+      ],
+      "core_capabilities": [
+        "本地运行多种主流 LLM 和扩散模型，支持 Qwen、DeepSeek、FLUX 等，降低云端依赖",
+        "提供模型训练功能，包括微调和强化学习，满足定制化需求",
+        "集成 UI 界面，简化模型管理和操作流程，提升易用性"
+      ],
+      "technical_analysis": [
+        "项目使用 Python 语言开发，符合 AI 工具链主流技术栈",
+        "从描述看为本地桌面应用，支持自托管，可能采用本地推理和训练方式",
+        "集成形态为桌面 UI，涵盖文本生成、图像生成、语音合成等，但具体架构和部署细节本次输入未提供，需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目拥有 71k+ Stars 和 6.4k Forks，社区关注度高，活跃度信号明显",
+        "近期发布“Unsloth Desktop”版本，表明项目持续迭代，可能引领本地 AI 工具趋势",
+        "覆盖多种模型和任务（文本、图像、语音），为开发者提供一体化本地解决方案"
+      ],
+      "limitations": [
+        "开源问题数达 1140，可能影响稳定性和维护效率，需关注 issue 解决情况",
+        "许可证为 Apache-2.0，但具体依赖和分发限制需核实",
+        "本地运行对硬件资源要求可能较高，平台兼容性（如 Windows/macOS/Linux）未明确，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对 Unsloth 的模型管理插件或自动化训练流水线，提升用户体验",
+        "机会假设：可构建基于 Unsloth 的模型评估和基准测试工具，帮助用户选择模型",
+        "机会假设：可提供云部署或远程访问方案，扩展其使用场景"
+      ],
+      "maturity": "从 Stars 和 Forks 看项目具有较高关注度，但 Stars 不等于质量；最新发布在 2026 年 8 月，更新时间接近，表明项目仍在活跃维护。然而，1140 个开放 issue 可能暗示成熟度有待提升，需结合代码质量和社区反馈综合判断。"
+    }
+  },
+  "cathrynlavery/diagram-design": {
+    "full_name": "cathrynlavery/diagram-design",
+    "html_url": "https://github.com/cathrynlavery/diagram-design",
+    "description": "29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop.",
+    "stars": 14979,
+    "forks": 902,
+    "open_issues": 5,
+    "watchers": 62,
+    "language": "HTML",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2026-04-16T18:01:16Z",
+    "updated_at": "2026-08-14T03:16:29Z",
+    "pushed_at": "2026-08-14T02:34:14Z",
+    "archived": false,
+    "fork": false,
+    "score": 74.01,
+    "score_reasons": [
+      "14,979 stars over 119 days",
+      "estimated 125.5 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": null,
+    "default_branch": "main",
+    "readme_url": "https://github.com/cathrynlavery/diagram-design/blob/main/README.md",
+    "readme_summary": "**Editorial diagrams your designer won't hate.**",
+    "readme_features": [],
+    "quick_start": "/plugin marketplace add cathrynlavery/diagram-design\n/plugin install diagram-design@diagram-design",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {
+      "positioning": "这是一个为 Claude Code 设计的编辑器级图表类型集合，包含 29 种自包含的 HTML+SVG 图表，旨在提供设计师认可的高质量图表，避免常见的 Mermaid 风格输出。它解决了 AI 生成图表时视觉质量低、样式单一的问题，与普通图表库相比，更注重编辑设计感和无阴影的简洁风格。",
+      "target_users": [
+        "使用 Claude Code 进行开发并需要高质量图表的开发者",
+        "需要将图表嵌入文档或界面的设计师与前端工程师",
+        "追求视觉一致性和专业感的 AI 辅助编程用户"
+      ],
+      "core_capabilities": [
+        "提供 29 种预定义的编辑级图表类型，覆盖多种数据可视化需求",
+        "图表为自包含的 HTML+SVG，无需外部依赖，易于集成和定制",
+        "通过 Claude Code 插件市场快速安装，简化工作流程"
+      ],
+      "technical_analysis": [
+        "项目主要使用 HTML 和 SVG，图表为自包含文件，便于直接嵌入或渲染",
+        "通过 Claude Code 插件机制分发，集成方式为命令行插件安装",
+        "运行方式依赖 Claude Code 环境，具体部署细节需进一步核实"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目获得近 1.5 万 Stars，表明社区关注度较高",
+        "活跃的推送（2026年8月）和较少的开放问题（5个）可能暗示项目维护良好",
+        "专注于提升 AI 生成图表的视觉质量，可能填补了 AI 编程工具在图表设计上的空白"
+      ],
+      "limitations": [
+        "最新版本未发布，可能影响功能迭代和稳定性预期",
+        "依赖 Claude Code 插件系统，非独立工具，使用范围受限",
+        "许可证为 MIT，但商业使用需注意遵守 Claude Code 相关条款",
+        "图表类型的具体适用场景和浏览器兼容性需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：可开发更多图表类型或支持自定义模板，扩展适用场景",
+        "机会假设：可集成到其他 AI 编程工具或 CI/CD 流程，提升自动化文档生成能力",
+        "机会假设：可提供可视化编辑器或预览工具，降低非技术用户的使用门槛"
+      ],
+      "maturity": "项目创建于2026年4月，最近更新于2026年8月，活跃度较高。Stars 数量可观，但无正式 Release，可能处于早期阶段。开放问题较少，但需注意 Stars 不代表质量，实际功能成熟度需通过代码审查和用户反馈进一步验证。"
+    }
+  },
+  "3b1b/manim": {
+    "full_name": "3b1b/manim",
+    "html_url": "https://github.com/3b1b/manim",
+    "description": "Animation engine for explanatory math videos",
+    "stars": 90921,
+    "forks": 7535,
+    "open_issues": 492,
+    "watchers": 950,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "3b1b-videos",
+      "animation",
+      "explanatory-math-videos",
+      "python"
+    ],
+    "created_at": "2015-03-22T18:50:58Z",
+    "updated_at": "2026-08-14T03:16:24Z",
+    "pushed_at": "2026-08-11T14:41:19Z",
+    "archived": false,
+    "fork": false,
+    "score": 69.47,
+    "score_reasons": [
+      "90,921 stars over 4162 days",
+      "estimated 21.8 stars/day since creation",
+      "last push 2.5 days ago",
+      "detectable MIT license",
+      "topics: 3b1b-videos, animation, explanatory-math-videos, python"
+    ],
+    "homepage": null,
+    "default_branch": "master",
+    "readme_url": "https://github.com/3b1b/manim/blob/master/README.md",
+    "readme_summary": "Manim is an engine for precise programmatic animations, designed for creating explanatory math videos.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v1.7.2",
+    "latest_release_url": "https://github.com/3b1b/manim/releases/tag/v1.7.2",
+    "latest_release_at": "2024-12-13T02:58:56Z",
+    "analysis": {
+      "positioning": "Manim 是一个用于创建精确程序化动画的引擎，专为制作解释性数学视频而设计。它通过 Python 代码定义动画，解决了传统视频制作中难以精确控制数学概念可视化的问题。与普通动画工具相比，其明确特点是面向数学表达，提供高精度和可复现的动画生成能力。",
+      "target_users": [
+        "数学教育者和内容创作者，用于制作教学视频",
+        "对数学可视化和动画编程感兴趣的开发者"
+      ],
+      "core_capabilities": [
+        "通过 Python 代码精确控制动画元素，实现数学概念的动态可视化",
+        "支持创建复杂场景和过渡，适合制作高质量解释性视频",
+        "提供可复现的动画生成流程，便于版本控制和协作"
+      ],
+      "technical_analysis": [
+        "基于 Python 语言，易于学习和扩展",
+        "从现有信息看，可能以本地运行方式为主，需进一步核实云端或集成形态",
+        "作为开源库，可集成到现有 Python 工作流中，但部署和运行方式的具体细节未提供"
+      ],
+      "why_it_matters": [
+        "拥有高星标和活跃的更新记录，表明社区关注度和持续维护",
+        "作为数学动画领域的知名工具，可能成为教育技术生态中的关键组件",
+        "其精确动画能力可能吸引开发者探索新的教学和演示应用"
+      ],
+      "limitations": [
+        "本次输入未提供官方功能列表和快速开始指南，需进一步核实具体特性",
+        "依赖 Python 环境，可能对非编程用户有学习成本",
+        "许可证为 MIT，但采用成本需考虑文档和社区支持情况"
+      ],
+      "opportunities": [
+        "机会假设：可开发基于 Manim 的可视化编辑器，降低非编程用户的使用门槛",
+        "机会假设：可集成到在线教育平台，提供云端动画生成服务",
+        "机会假设：可开发测试框架，确保动画生成的稳定性和一致性"
+      ],
+      "maturity": "从现有信息看，项目创建于 2015 年，最新发布为 v1.7.2（2024 年），且最近有推送活动，表明项目持续维护。高星标和活跃的 issue 讨论可能反映社区活跃度，但星标数量不等于质量，需结合代码质量和文档评估。整体上，项目可能处于成熟稳定阶段。"
+    }
+  },
+  "Lightricks/LTX-2": {
+    "full_name": "Lightricks/LTX-2",
+    "html_url": "https://github.com/Lightricks/LTX-2",
+    "description": "Official Python inference and LoRA trainer package for the LTX-2 audio–video generative model.",
+    "stars": 8943,
+    "forks": 1410,
+    "open_issues": 119,
+    "watchers": 95,
+    "language": "Python",
+    "license": "NOASSERTION",
+    "topics": [
+      "generative-ai",
+      "ltx",
+      "ltx-2"
+    ],
+    "created_at": "2026-01-03T13:16:29Z",
+    "updated_at": "2026-08-14T03:11:38Z",
+    "pushed_at": "2026-08-12T08:29:34Z",
+    "archived": false,
+    "fork": false,
+    "score": 67.44,
+    "score_reasons": [
+      "8,943 stars over 223 days",
+      "estimated 40.2 stars/day since creation",
+      "last push 1.8 days ago",
+      "topics: generative-ai, ltx, ltx-2"
+    ],
+    "homepage": "https://ltx.io",
+    "default_branch": "main",
+    "readme_url": "https://github.com/Lightricks/LTX-2/blob/main/README.md",
+    "readme_summary": "**LTX-2** is the first DiT-based audio-video foundation model that contains all core capabilities of modern video generation in one model: synchronized audio and video, high fidelity, multiple performance modes, production-ready outputs, API access, and open access.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v1.2.0",
+    "latest_release_url": "https://github.com/Lightricks/LTX-2/releases/tag/v1.2.0",
+    "latest_release_at": "2026-08-11T20:01:32Z",
+    "analysis": {
+      "positioning": "LTX-2 是 Lightricks 官方发布的基于 DiT 架构的音频-视频生成模型推理与 LoRA 训练包，旨在通过单一模型同时生成同步音频与视频，提供高保真、多性能模式和生产级输出，并支持 API 访问与开放获取，解决传统视频生成工具音画不同步、集成复杂的问题。",
+      "target_users": [
+        "AI 视频生成研究人员，用于实验和模型微调",
+        "内容创作者和影视制作团队，用于快速生成带音频的视频素材",
+        "开发者，用于集成到现有应用或构建新工具"
+      ],
+      "core_capabilities": [
+        "支持同步音频与视频生成，提升内容真实感",
+        "提供多种性能模式，适应不同硬件和速度需求",
+        "提供 LoRA 训练器，支持用户自定义风格或内容"
+      ],
+      "technical_analysis": [
+        "使用 Python 语言开发，便于 AI 社区使用和扩展",
+        "作为官方 Python 包，支持本地推理和训练，可能支持 GPU 加速",
+        "集成形态为库，可嵌入现有 Python 工作流，但具体部署方式（如 Docker、云服务）需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目活跃度高，近期有更新和发布，表明维护积极",
+        "作为官方包，可能获得持续支持和文档更新",
+        "高星标和分叉数表明社区关注度较高，可能吸引更多生态贡献"
+      ],
+      "limitations": [
+        "许可证为 NOASSERTION，需核实具体使用条款和商用限制",
+        "开源问题较多（119），可能影响稳定性",
+        "依赖和硬件要求未提供，需核实是否支持 CPU 或特定 GPU"
+      ],
+      "opportunities": [
+        "机会假设：开发针对 LTX-2 的 Web UI 或 API 封装，降低使用门槛",
+        "机会假设：构建 LoRA 模型分享平台，促进社区模型复用",
+        "机会假设：开发性能基准测试工具，帮助用户选择最佳配置"
+      ],
+      "maturity": "项目创建于 2026 年 1 月，至今约 7 个月，已发布 v1.2.0 版本，更新频繁，但开源问题较多，整体处于早期快速迭代阶段，成熟度中等偏低。"
+    }
+  },
+  "altic-dev/FluidVoice": {
+    "full_name": "altic-dev/FluidVoice",
+    "html_url": "https://github.com/altic-dev/FluidVoice",
+    "description": "Fastest and only macOS Dictation app with on-device STT and custom trained AI enhancement model. A local Wispr Flow alternative. ⭐ helps a ton :) Windows & iOS waitlist open. Linux soon.",
+    "stars": 9905,
+    "forks": 664,
+    "open_issues": 103,
+    "watchers": 44,
+    "language": "Swift",
+    "license": "GPL-3.0",
+    "topics": [
+      "ai",
+      "dictation",
+      "ios",
+      "llama-cpp",
+      "macos",
+      "swift"
+    ],
+    "created_at": "2025-09-21T17:35:02Z",
+    "updated_at": "2026-08-14T03:16:00Z",
+    "pushed_at": "2026-08-13T22:39:49Z",
+    "archived": false,
+    "fork": false,
+    "score": 66.58,
+    "score_reasons": [
+      "9,905 stars over 326 days",
+      "estimated 30.3 stars/day since creation",
+      "last push 0.2 days ago",
+      "detectable GPL-3.0 license",
+      "topics: ai, dictation, ios, llama-cpp, macos"
+    ],
+    "homepage": "https://altic.dev/fluid",
+    "default_branch": "main",
+    "readme_url": "https://github.com/altic-dev/FluidVoice/blob/main/README.md",
+    "readme_summary": "Open source voice-to-text dictation app for macOS with on-device AI enhancement.",
+    "readme_features": [
+      "Fluid Intelligence — on-device AI enhancement for smart formatting, context-aware capitalization, and post-processing, all running locally on your Mac with zero data leaving your machine",
+      "Command Mode — control your Mac by voice: launch apps, run shortcuts, trigger system actions, and automate workflows without touching the keyboard",
+      "Write Mode — write or rewrite text directly in any text field across any app. Select text and rewrite it, or dictate new content inline",
+      "Live Preview — real-time transcription overlay with notch support, so you see words appear as you speak",
+      "Multiple Speech Models — Nemotron Speech 3.5, Parakeet Flash, Parakeet TDT v3 & v2, Cohere Transcribe, Apple Speech, and Whisper. Pick the model that fits your language and latency needs"
+    ],
+    "quick_start": "brew install --cask fluidvoice",
+    "latest_release_name": "FluidVoice v1.6.8",
+    "latest_release_url": "https://github.com/altic-dev/FluidVoice/releases/tag/v1.6.8",
+    "latest_release_at": "2026-08-11T04:14:38Z",
+    "analysis": {
+      "positioning": "FluidVoice 是一款开源的 macOS 语音听写应用，主打设备端 AI 增强，提供快速、本地化的语音转文字体验，并作为 Wispr Flow 的本地替代方案。它解决用户对隐私和速度的需求，与普通听写工具相比，其明确特点是支持多种本地语音模型、命令模式和 AI 后处理，且数据不出设备。",
+      "target_users": [
+        "需要高效语音输入且注重隐私的 macOS 用户",
+        "希望用语音控制 Mac 和自动化工作流的效率爱好者",
+        "对 Wispr Flow 等云端服务有隐私顾虑，寻求本地替代方案的开发者或普通用户"
+      ],
+      "core_capabilities": [
+        "设备端 AI 增强：智能格式化、上下文感知大写和后处理，全部本地运行，确保数据零泄露",
+        "命令模式：通过语音启动应用、运行快捷指令、触发系统操作，实现免键盘工作流",
+        "写入模式：在任何应用的文本字段中直接听写或改写文本，支持选中文本重写",
+        "实时预览：转录内容实时显示，支持刘海屏适配，提升输入反馈体验",
+        "多模型支持：集成 Nemotron、Parakeet、Cohere、Apple Speech 和 Whisper 等多种语音模型，用户可按需选择"
+      ],
+      "technical_analysis": [
+        "项目使用 Swift 语言开发，表明其深度集成 macOS 生态，可能利用原生 API 实现系统级功能",
+        "从描述看，核心功能完全在设备端运行，采用本地 STT 和 AI 模型，强调数据不出机器，符合隐私优先设计",
+        "通过 Homebrew 提供安装（brew install --cask fluidvoice），简化部署，适合 macOS 用户快速上手",
+        "集成形态为桌面应用，支持实时转录和系统级命令，但具体架构细节（如模型推理框架）本次输入未提供，需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目活跃度高：创建于 2025 年 9 月，近期持续更新，最新版本 v1.6.8 于 2026 年 8 月发布，显示维护积极",
+        "社区关注度强：Stars 接近 1 万，Forks 664，表明开发者社区对其兴趣浓厚，可能形成生态",
+        "定位独特：作为 Wispr Flow 的本地替代，填补了开源领域对隐私友好型语音听写工具的需求，值得关注"
+      ],
+      "limitations": [
+        "平台限制：目前仅支持 macOS，Windows 和 iOS 处于等待名单，Linux 即将支持，跨平台能力有限",
+        "许可证为 GPL-3.0，可能对商业集成或闭源使用有约束，需评估合规性",
+        "开源问题 103 个，可能包含未解决的 bug 或功能请求，成熟度需进一步验证",
+        "依赖多种语音模型，模型大小和性能可能影响用户体验，具体硬件要求未提供，需核实"
+      ],
+      "opportunities": [
+        "机会假设：可开发跨平台版本（如 Windows/Linux）或移动端适配，扩大用户群",
+        "机会假设：可构建插件系统或 API，允许开发者扩展命令模式，集成更多自动化工具",
+        "机会假设：可提供模型管理工具，帮助用户优化模型选择或训练自定义增强模型",
+        "机会假设：可开发企业级部署方案，支持集中管理和隐私合规审计"
+      ],
+      "maturity": "从 Stars 近万、Forks 664 和持续发布（最新 v1.6.8）看，项目处于快速迭代阶段，社区活跃度高。但创建时间较短（2025 年 9 月），且存在 103 个开放问题，表明仍处于早期成熟度，需关注稳定性。Stars 反映关注度而非质量，实际可靠性需通过测试验证。"
+    }
+  },
+  "semantica-agi/semantica": {
+    "full_name": "semantica-agi/semantica",
+    "html_url": "https://github.com/semantica-agi/semantica",
+    "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
+    "stars": 6813,
+    "forks": 712,
+    "open_issues": 68,
+    "watchers": 43,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "agent-memory",
+      "ai",
+      "ai-governance",
+      "ai-infrastructure",
+      "artificial-intelligence",
+      "context-engineering",
+      "context-graphs",
+      "data-engineering",
+      "decision-intelligence",
+      "developer-tools",
+      "explainable-ai",
+      "generative-ai",
+      "graph-rag",
+      "knowledge-graph",
+      "llm",
+      "ontology",
+      "provenance",
+      "python",
+      "reasoning",
+      "semantic-search"
+    ],
+    "created_at": "2025-06-25T10:41:00Z",
+    "updated_at": "2026-08-14T03:15:59Z",
+    "pushed_at": "2026-08-13T17:37:36Z",
+    "archived": false,
+    "fork": false,
+    "score": 64.93,
+    "score_reasons": [
+      "6,813 stars over 415 days",
+      "estimated 16.4 stars/day since creation",
+      "last push 0.4 days ago",
+      "detectable MIT license",
+      "topics: agent-memory, ai, ai-governance, ai-infrastructure, artificial-intelligence"
+    ],
+    "homepage": "https://getsemantica.ai",
+    "default_branch": "main",
+    "readme_url": "https://github.com/semantica-agi/semantica/blob/main/README.md",
+    "readme_summary": "**Decision Intelligence &nbsp;·&nbsp; Context Management &nbsp;·&nbsp; Deterministic Reasoning &nbsp;·&nbsp; Ontology Management &nbsp;·&nbsp; Knowledge Modeling &nbsp;·&nbsp; End-to-End Traceability**",
+    "readme_features": [],
+    "quick_start": "pip install semantica",
+    "latest_release_name": "v0.6.5",
+    "latest_release_url": "https://github.com/semantica-agi/semantica/releases/tag/v0.6.5",
+    "latest_release_at": "2026-08-11T17:19:00Z",
+    "analysis": {
+      "positioning": "Semantica 是一个面向上下文管理与可问责 AI 系统的图原生基础设施，旨在通过确定性推理、本体管理和端到端可追溯性，解决 AI 系统中上下文缺失与决策不可解释的问题。与普通同类工具相比，其明确特点是强调图原生架构和可问责性，而非仅提供检索增强生成或向量数据库功能。",
+      "target_users": [
+        "需要构建可解释、可审计 AI 系统的企业开发者与架构师",
+        "从事知识图谱、图 RAG 和语义搜索的 AI 工程师",
+        "关注 AI 治理与合规的团队，需要端到端追踪决策来源"
+      ],
+      "core_capabilities": [
+        "提供图原生基础设施，支持上下文管理、知识建模和本体管理，帮助组织复杂语义关系",
+        "支持确定性推理与决策智能，提升 AI 输出的可预测性和可靠性",
+        "实现端到端可追溯性，便于审计和解释 AI 决策过程"
+      ],
+      "technical_analysis": [
+        "项目使用 Python 语言开发，通过 pip 安装，便于集成到现有 Python 生态",
+        "从描述看，可能支持本地或云端部署，但本次输入未提供具体部署方式，需进一步核实",
+        "集成形态可能包括库或服务，但未提供详细信息，需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目创建于 2025 年 6 月，但已获得 6813 星和 712 分叉，且最近更新频繁（2026 年 8 月），表明社区关注度和活跃度较高",
+        "主题覆盖 AI 治理、可解释 AI、图 RAG 等前沿方向，可能填补 AI 基础设施中可问责性的空白",
+        "最新发布 v0.6.5 于 2026 年 8 月，显示项目仍在快速迭代，值得开发者关注其演进"
+      ],
+      "limitations": [
+        "项目创建时间较短（约一年），成熟度可能有限，需核实生产环境稳定性",
+        "本次输入未提供官方功能列表，具体能力边界需进一步核实",
+        "依赖和平台支持情况未提供，需核实是否支持主流云平台或特定硬件",
+        "许可证为 MIT，但采用成本（如商业支持）未提供，需核实"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对特定行业（如金融、医疗）的合规审计工具，利用其端到端可追溯性",
+        "机会假设：可构建与主流 LLM 框架（如 LangChain）的集成插件，增强图 RAG 能力",
+        "机会假设：可开发可视化工具，帮助用户直观理解知识图谱和决策路径"
+      ],
+      "maturity": "从现有信息看，项目创建于 2025 年 6 月，至今约一年，已发布 v0.6.5，更新频繁，但版本号仍低于 1.0，且存在 68 个开放问题，表明项目处于快速迭代的早期阶段。Stars 数量较高，但不应直接等同于质量，需结合代码质量和社区反馈进一步评估。"
+    }
+  },
+  "cactus-compute/needle": {
+    "full_name": "cactus-compute/needle",
+    "html_url": "https://github.com/cactus-compute/needle",
+    "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
+    "stars": 5025,
+    "forks": 334,
+    "open_issues": 23,
+    "watchers": 34,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "cactus",
+      "gemini",
+      "gemma",
+      "llm",
+      "on-device-ai"
+    ],
+    "created_at": "2026-02-24T04:50:47Z",
+    "updated_at": "2026-08-14T03:16:35Z",
+    "pushed_at": "2026-08-13T23:26:11Z",
+    "archived": false,
+    "fork": false,
+    "score": 64.81,
+    "score_reasons": [
+      "5,025 stars over 171 days",
+      "estimated 29.4 stars/day since creation",
+      "last push 0.2 days ago",
+      "detectable MIT license",
+      "topics: cactus, gemini, gemma, llm, on-device-ai"
+    ],
+    "homepage": "https://cactuscompute.com",
+    "default_branch": "main",
+    "readme_url": "https://github.com/cactus-compute/needle/blob/main/README.md",
+    "readme_summary": "Needle 2 is an open 45M-parameter model for tool calling, device use and structured extraction. The whole model is a single 14MB binary that runs a full session in about 28MB of RAM. It is built on our Simple Attention Network findings, compressed to CQ2-bit with Cactus Quants, and baked into its own engine. On the benchmarks below, Needle 2 trades wins with other small models like FunctionGemma 270M, LFM2.5 230M and Apple FM, at 5x to 70x smaller, and 2 bits against their f16.",
+    "readme_features": [],
+    "quick_start": "pip install cactus-needle",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {
+      "positioning": "Needle 是一个面向微型设备（如手机、可穿戴设备、智能家居和机器人）的14MB基础模型，其第二代模型为45M参数，专注于工具调用、设备使用和结构化提取。它通过将整个模型压缩为单个14MB二进制文件，在约28MB RAM中运行完整会话，解决了在资源受限设备上部署大语言模型的难题。与FunctionGemma 270M、LFM2.5 230M和Apple FM等小模型相比，Needle 2在基准测试中互有胜负，但体积小5到70倍，且仅用2比特量化，而对手使用f16。",
+      "target_users": [
+        "嵌入式开发者：需要在手机、可穿戴设备、智能家居和机器人上部署本地AI能力的开发者。",
+        "边缘计算场景：对隐私敏感、要求低延迟或离线运行的设备端应用。",
+        "工具调用与自动化：需要模型在设备上直接执行工具调用、设备控制或结构化数据提取的开发者。"
+      ],
+      "core_capabilities": [
+        "工具调用与设备使用：模型能理解并执行工具调用，控制设备操作，适用于自动化任务。",
+        "结构化提取：从文本或传感器数据中提取结构化信息，便于集成到应用中。",
+        "超低资源占用：14MB二进制和28MB RAM运行，适合内存和存储受限的微型设备。"
+      ],
+      "technical_analysis": [
+        "语言与生态：项目使用Python，提供pip安装包（cactus-needle），便于集成到Python开发流程。",
+        "本地运行：模型完全在设备端运行，无需云端依赖，保障隐私和离线可用性。",
+        "集成形态：模型被压缩为单一二进制文件，并内置推理引擎，可能简化部署，但具体API和集成方式需进一步核实。",
+        "部署方式：通过pip安装，但具体硬件要求、操作系统支持及与现有框架的兼容性未在输入中提供，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目在短时间内获得5025星和334分叉，表明社区关注度较高，可能具有活跃的开发者生态。",
+        "其独特的压缩技术（Cactus Quants）和Simple Attention Network架构可能为小模型部署提供新思路，值得关注。",
+        "MIT许可证允许自由使用和修改，降低了采用门槛，适合商业和学术项目。"
+      ],
+      "limitations": [
+        "成熟度：最新版本信息未提供，且无release记录，可能处于早期阶段，稳定性需验证。",
+        "依赖与平台：具体支持的硬件平台、操作系统和Python版本未在输入中说明，需进一步核实。",
+        "安全与隐私：设备端运行虽有利隐私，但模型可能产生错误输出，需评估在关键任务中的风险。",
+        "采用成本：虽然模型小，但训练和定制可能需要特定技术，且文档和社区支持程度未明确。"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对特定设备（如智能手表）的预编译二进制和示例应用，降低集成门槛。",
+        "机会假设：构建工具调用和结构化提取的测试套件，验证模型在不同场景下的准确性和鲁棒性。",
+        "机会假设：开发与主流框架（如TensorFlow Lite、PyTorch Mobile）的转换工具，扩大兼容性。",
+        "机会假设：提供模型微调指南和云端训练服务，帮助开发者定制模型以适应特定领域。"
+      ],
+      "maturity": "从现有信息看，项目创建于2026年2月，最近更新在2026年8月，更新频繁，但无正式release，Stars和Forks较高表明社区兴趣浓厚，但Issues数量（23）相对较少，可能处于早期开发阶段。综合判断，项目活跃但尚未成熟，需关注后续版本发布和稳定性。"
+    }
+  },
+  "kepano/obsidian-skills": {
+    "full_name": "kepano/obsidian-skills",
+    "html_url": "https://github.com/kepano/obsidian-skills",
+    "description": "Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.",
+    "stars": 45872,
+    "forks": 3301,
+    "open_issues": 62,
+    "watchers": 239,
+    "language": null,
+    "license": "MIT",
+    "topics": [
+      "agents",
+      "agentskills",
+      "bases",
+      "claude",
+      "clawdbot",
+      "cli",
+      "codex",
+      "defuddle",
+      "hermes",
+      "jsoncanvas",
+      "markdown",
+      "md",
+      "obsidian",
+      "openclaw",
+      "opencode",
+      "skills"
+    ],
+    "created_at": "2026-01-02T21:45:11Z",
+    "updated_at": "2026-08-14T03:13:57Z",
+    "pushed_at": "2026-06-08T16:12:01Z",
+    "archived": false,
+    "fork": false,
+    "score": 64.66,
+    "score_reasons": [
+      "45,872 stars over 223 days",
+      "estimated 205.5 stars/day since creation",
+      "last push 66.5 days ago",
+      "detectable MIT license",
+      "topics: agents, agentskills, bases, claude, clawdbot"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "holaboss-ai/holaOS": {
+    "full_name": "holaboss-ai/holaOS",
+    "html_url": "https://github.com/holaboss-ai/holaOS",
+    "description": "Open-source All in One AI agent workspace. Run any agent — Claude Code, Codex — across your tools (100+ integrations + MCP), apps, browser, and files, with shared memory. Built-in models or BYOK.",
+    "stars": 6683,
+    "forks": 602,
+    "open_issues": 8,
+    "watchers": 171,
+    "language": "TypeScript",
+    "license": "NOASSERTION",
+    "topics": [
+      "agent",
+      "agent-harness",
+      "agent-os",
+      "agentic",
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "artificial-intelligence",
+      "claude-code",
+      "codex",
+      "electron",
+      "holaboss",
+      "holaos",
+      "llm",
+      "mcp",
+      "memory",
+      "model-context-protocol",
+      "runtime",
+      "typescript",
+      "workspace"
+    ],
+    "created_at": "2026-03-22T07:36:16Z",
+    "updated_at": "2026-08-14T03:10:03Z",
+    "pushed_at": "2026-08-14T02:57:16Z",
+    "archived": false,
+    "fork": false,
+    "score": 64.07,
+    "score_reasons": [
+      "6,683 stars over 145 days",
+      "estimated 46.1 stars/day since creation",
+      "last push 0.0 days ago",
+      "topics: agent, agent-harness, agent-os, agentic, ai"
+    ],
+    "homepage": "https://holaos.ai",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "lightningpixel/modly": {
+    "full_name": "lightningpixel/modly",
+    "html_url": "https://github.com/lightningpixel/modly",
+    "description": "Desktop app to generate 3D models from images using local AI — runs entirely on your GPU",
+    "stars": 5488,
+    "forks": 581,
+    "open_issues": 52,
+    "watchers": 47,
+    "language": "TypeScript",
+    "license": "NOASSERTION",
+    "topics": [
+      "3d",
+      "ai-local",
+      "ai-tools",
+      "desktop-app",
+      "modly",
+      "open-source",
+      "self-hosted"
+    ],
+    "created_at": "2026-03-17T18:02:35Z",
+    "updated_at": "2026-08-14T03:15:48Z",
+    "pushed_at": "2026-08-13T14:38:25Z",
+    "archived": false,
+    "fork": false,
+    "score": 63.38,
+    "score_reasons": [
+      "5,488 stars over 149 days",
+      "estimated 36.7 stars/day since creation",
+      "last push 0.5 days ago",
+      "topics: 3d, ai-local, ai-tools, desktop-app, modly"
+    ],
+    "homepage": "https://modly3d.app",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "NVIDIA-NeMo/Switchyard": {
+    "full_name": "NVIDIA-NeMo/Switchyard",
+    "html_url": "https://github.com/NVIDIA-NeMo/Switchyard",
+    "description": "Switchyard lets LLM applications route traffic across models and providers while preserving native OpenAI and Anthropic API compatibility - enabling flexible model selection, benchmarking, and cost/performance optimization.",
+    "stars": 1259,
+    "forks": 111,
+    "open_issues": 87,
+    "watchers": 3,
+    "language": "Rust",
+    "license": "Apache-2.0",
+    "topics": [],
+    "created_at": "2026-05-19T19:06:33Z",
+    "updated_at": "2026-08-14T03:10:16Z",
+    "pushed_at": "2026-08-13T22:13:50Z",
+    "archived": false,
+    "fork": false,
+    "score": 61.05,
+    "score_reasons": [
+      "1,259 stars over 86 days",
+      "estimated 14.6 stars/day since creation",
+      "last push 0.2 days ago",
+      "detectable Apache-2.0 license"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "macro-inc/macro": {
+    "full_name": "macro-inc/macro",
+    "html_url": "https://github.com/macro-inc/macro",
+    "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+    "stars": 2659,
+    "forks": 281,
+    "open_issues": 51,
+    "watchers": 43,
+    "language": "Rust",
+    "license": "AGPL-3.0",
+    "topics": [
+      "agent",
+      "ai",
+      "ai-agents",
+      "all-in-one",
+      "crm",
+      "crm-system",
+      "email",
+      "linear",
+      "mcp",
+      "messaging",
+      "notes",
+      "notion",
+      "office",
+      "rust",
+      "slack",
+      "slack-alternative",
+      "startup",
+      "startup-tools",
+      "typescript",
+      "workspace"
+    ],
+    "created_at": "2025-11-08T15:18:27Z",
+    "updated_at": "2026-08-14T03:15:59Z",
+    "pushed_at": "2026-08-13T23:17:44Z",
+    "archived": false,
+    "fork": false,
+    "score": 60.72,
+    "score_reasons": [
+      "2,659 stars over 278 days",
+      "estimated 9.5 stars/day since creation",
+      "last push 0.2 days ago",
+      "detectable AGPL-3.0 license",
+      "topics: agent, ai, ai-agents, all-in-one, crm"
+    ],
+    "homepage": "https://macro.com",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "smicallef/spiderfoot": {
+    "full_name": "smicallef/spiderfoot",
+    "html_url": "https://github.com/smicallef/spiderfoot",
+    "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.",
+    "stars": 20698,
+    "forks": 3317,
+    "open_issues": 283,
+    "watchers": 447,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "attacksurface",
+      "cti",
+      "cybersecurity",
+      "footprinting",
+      "hacking",
+      "information-gathering",
+      "information-security",
+      "infosec",
+      "intelligence-gathering",
+      "osint",
+      "osint-framework",
+      "osint-reconnaissance",
+      "osint-tool",
+      "pentesting",
+      "python",
+      "recon",
+      "security-tools",
+      "threat-intelligence",
+      "threatintel"
+    ],
+    "created_at": "2012-04-28T07:10:13Z",
+    "updated_at": "2026-08-14T03:11:32Z",
+    "pushed_at": "2026-04-13T19:43:06Z",
+    "archived": false,
+    "fork": false,
+    "score": 49.6,
+    "score_reasons": [
+      "20,698 stars over 5221 days",
+      "estimated 4.0 stars/day since creation",
+      "last push 122.3 days ago",
+      "detectable MIT license",
+      "topics: attacksurface, cti, cybersecurity, footprinting, hacking"
+    ],
+    "homepage": "http://www.spiderfoot.net",
+    "default_branch": "master",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "megadose/holehe": {
+    "full_name": "megadose/holehe",
+    "html_url": "https://github.com/megadose/holehe",
+    "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
+    "stars": 12470,
+    "forks": 1672,
+    "open_issues": 96,
+    "watchers": 259,
+    "language": "Python",
+    "license": "GPL-3.0",
+    "topics": [
+      "ebay",
+      "email",
+      "emails",
+      "information-gathering",
+      "instagram",
+      "open-source-intelligence",
+      "osint",
+      "osint-python",
+      "osint-tools",
+      "pypi",
+      "python",
+      "social-network",
+      "tellonym",
+      "trio",
+      "twitter"
+    ],
+    "created_at": "2020-06-25T23:03:02Z",
+    "updated_at": "2026-08-14T03:14:08Z",
+    "pushed_at": "2024-09-10T20:24:32Z",
+    "archived": false,
+    "fork": false,
+    "score": 48.22,
+    "score_reasons": [
+      "12,470 stars over 2240 days",
+      "estimated 5.6 stars/day since creation",
+      "last push 702.3 days ago",
+      "detectable GPL-3.0 license",
+      "topics: ebay, email, emails, information-gathering, instagram"
+    ],
+    "homepage": "",
+    "default_branch": "master",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  }
+}

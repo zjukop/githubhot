@@ -41,6 +41,7 @@ GitHubHot 不只罗列 Stars。每个入选项目都会从以下角度展开：
 ## 🗓️ 日报归档
 
 <!-- DAILY_INDEX_START -->
+- [2026-08-14 · 🔥 GitHubHot 日报](daily/2026/08/2026-08-14.md)
 - [2026-08-13 · 🔥 GitHubHot 日报](daily/2026/08/2026-08-13.md)
 <!-- DAILY_INDEX_END -->
 
