@@ -13,6 +13,7 @@ from githubhot.analysis import AnalysisError, GitHubModelsClient, OpenAICompatib
 from githubhot.models import Repository
 from githubhot.reporting import update_readme_index, write_deep_dive, write_digest, write_draft
 from githubhot.scoring import score_repository
+from githubhot.social import SocialPublishError, WeChatDraftClient, record_delivery, render_wechat_draft, write_social_drafts
 from githubhot.storage import read_candidate_payload, read_candidates, write_candidates, write_snapshot
 
 
@@ -54,6 +55,35 @@ def build_parser() -> argparse.ArgumentParser:
     index = subparsers.add_parser("index", help="Regenerate README daily article index")
     index.add_argument("--readme", type=Path, default=Path("README.md"))
     index.add_argument("--daily-dir", type=Path, default=Path("daily"))
+
+    syndicate = subparsers.add_parser("syndicate", help="Adapt the daily briefing for social platform drafts")
+    syndicate.add_argument("--input", type=Path, default=Path("data/candidates.json"))
+    syndicate.add_argument("--output-dir", type=Path, default=Path(".local/social-drafts"))
+    syndicate.add_argument("--top", type=int, default=3)
+    syndicate.add_argument("--date", type=date.fromisoformat, default=date.today())
+    syndicate.add_argument(
+        "--cover",
+        type=Path,
+        default=Path("assets/cyber-carpenter-wechat-cover-v3.png"),
+        help="Reusable cover image for WeChat and Xiaohongshu drafts",
+    )
+    syndicate.add_argument(
+        "--wechat-media-cache",
+        type=Path,
+        default=Path(".local/wechat-thumb-media-id"),
+        help="Local cache for the permanent WeChat cover media_id",
+    )
+    syndicate.add_argument(
+        "--source-base-url",
+        default="https://github.com/zjukop/githubhot/blob/main",
+        help="Public base URL used for links back to the full daily briefing",
+    )
+    syndicate.add_argument("--publish-wechat", action="store_true", help="Create a WeChat Official Account draft")
+    syndicate.add_argument(
+        "--publish-wechat-if-configured",
+        action="store_true",
+        help="Create a WeChat draft when all required environment variables are available",
+    )
     return parser
 
 
@@ -194,7 +224,30 @@ def main(argv: list[str] | None = None) -> int:
             update_readme_index(args.readme, args.daily_dir)
             print(f"Updated index in {args.readme}")
             return 0
-    except (GitHubError, OSError, ValueError) as exc:
+        if args.command == "syndicate":
+            if args.top < 1:
+                raise ValueError("top must be positive")
+            repos = read_candidates(args.input)[: args.top]
+            source_url = (
+                f"{args.source_base_url.rstrip('/')}/daily/{args.date.year}/"
+                f"{args.date.month:02d}/{args.date.isoformat()}.md"
+            )
+            paths = write_social_drafts(args.output_dir, repos, args.date, source_url, args.cover)
+            for platform, path in paths.items():
+                print(f"Generated {platform} draft: {path}")
+            configured = all(os.environ.get(name) for name in ("WECHAT_APP_ID", "WECHAT_APP_SECRET"))
+            should_publish = args.publish_wechat or (args.publish_wechat_if_configured and configured)
+            if should_publish:
+                draft = render_wechat_draft(repos, args.date, source_url)
+                client = WeChatDraftClient.from_environment()
+                thumb_media_id = client.resolve_thumb_media_id(args.cover, args.wechat_media_cache)
+                media_id = client.add_draft(draft, thumb_media_id)
+                record_delivery(paths["manifest"], "wechat", "drafted", media_id=media_id)
+                print(f"Created WeChat draft: {media_id}")
+            elif args.publish_wechat_if_configured:
+                print("WeChat draft skipped: configuration is incomplete", file=sys.stderr)
+            return 0
+    except (GitHubError, OSError, SocialPublishError, ValueError) as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 1
     return 2
