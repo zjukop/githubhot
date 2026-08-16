@@ -24,6 +24,10 @@ class AnalysisValidationTests(unittest.TestCase):
         self.assertEqual(args.analysis_workers, 3)
         self.assertEqual(args.enrich_workers, 5)
 
+    def test_scan_accepts_explicit_publication_date(self) -> None:
+        args = build_parser().parse_args(["scan", "--date", "2026-08-15"])
+        self.assertEqual(args.date, __import__("datetime").date(2026, 8, 15))
+
     def test_accepts_complete_analysis(self) -> None:
         validate_analysis(valid_analysis())
 

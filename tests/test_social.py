@@ -1,6 +1,7 @@
 import json
 import tempfile
 import unittest
+from unittest.mock import patch
 from datetime import date
 from pathlib import Path
 
@@ -13,6 +14,8 @@ from githubhot.social import (
     record_delivery,
     write_social_drafts,
 )
+from githubhot.cli import main
+from githubhot.storage import write_candidates
 
 
 class SocialDraftTests(unittest.TestCase):
@@ -65,6 +68,28 @@ class SocialDraftTests(unittest.TestCase):
             cache.write_text("cached-media\n", encoding="utf-8")
             client = WeChatDraftClient("app", "secret")
             self.assertEqual(client.resolve_thumb_media_id(Path(directory) / "missing.png", cache), "cached-media")
+
+    def test_syndicate_does_not_duplicate_recorded_wechat_draft(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            candidates = root / "candidates.json"
+            cover = root / "cover.png"
+            output = root / "drafts"
+            cover.write_bytes(b"png")
+            write_candidates(candidates, self.repos, "query", self.day)
+            paths = write_social_drafts(output, self.repos, self.day, self.url, cover)
+            record_delivery(paths["manifest"], "wechat", "drafted", media_id="existing")
+            with patch.dict("os.environ", {"WECHAT_APP_ID": "app", "WECHAT_APP_SECRET": "secret"}):
+                with patch.object(WeChatDraftClient, "from_environment", side_effect=AssertionError("must skip")):
+                    result = main([
+                        "syndicate",
+                        "--input", str(candidates),
+                        "--output-dir", str(output),
+                        "--cover", str(cover),
+                        "--date", self.day.isoformat(),
+                        "--publish-wechat",
+                    ])
+            self.assertEqual(result, 0)
 
 
 if __name__ == "__main__":

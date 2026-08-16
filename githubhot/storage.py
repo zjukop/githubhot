@@ -7,10 +7,10 @@ from pathlib import Path
 from githubhot.models import Repository
 
 
-def write_candidates(path: Path, repos: list[Repository], query: str) -> None:
+def write_candidates(path: Path, repos: list[Repository], query: str, generated_date: date | None = None) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     payload = {
-        "generated_at": date.today().isoformat(),
+        "generated_at": (generated_date or date.today()).isoformat(),
         "query": query,
         "repositories": [repo.to_dict() for repo in repos],
     }

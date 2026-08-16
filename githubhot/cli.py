@@ -11,6 +11,7 @@ from pathlib import Path
 from githubhot.github import GitHubClient, GitHubError, summarize_readme
 from githubhot.analysis import AnalysisError, GitHubModelsClient, OpenAICompatibleClient
 from githubhot.models import Repository
+from githubhot.pipeline import missing_publish_dates
 from githubhot.reporting import update_readme_index, write_deep_dive, write_digest, write_draft
 from githubhot.scoring import score_repository
 from githubhot.social import SocialPublishError, WeChatDraftClient, record_delivery, render_wechat_draft, write_social_drafts
@@ -36,6 +37,7 @@ def build_parser() -> argparse.ArgumentParser:
     scan.add_argument("--analysis-provider", choices=("openai", "github"), default="openai")
     scan.add_argument("--min-analysis-rate", type=float, default=0.8, help="Fail when fewer analyzed repos than this ratio (0-1)")
     scan.add_argument("--analysis-workers", type=int, default=3, help="Concurrent analysis requests")
+    scan.add_argument("--date", type=date.fromisoformat, default=date.today(), help="Publication date for snapshots and query window")
 
     draft = subparsers.add_parser("draft", help="Create a human-review article draft")
     draft.add_argument("repo", help="Repository full name from the candidate list")
@@ -55,6 +57,11 @@ def build_parser() -> argparse.ArgumentParser:
     index = subparsers.add_parser("index", help="Regenerate README daily article index")
     index.add_argument("--readme", type=Path, default=Path("README.md"))
     index.add_argument("--daily-dir", type=Path, default=Path("daily"))
+
+    pending = subparsers.add_parser("pending", help="List missing daily publication dates")
+    pending.add_argument("--daily-dir", type=Path, default=Path("daily"))
+    pending.add_argument("--date", type=date.fromisoformat, default=date.today())
+    pending.add_argument("--limit", type=int, default=7)
 
     syndicate = subparsers.add_parser("syndicate", help="Adapt the daily briefing for social platform drafts")
     syndicate.add_argument("--input", type=Path, default=Path("data/candidates.json"))
@@ -90,7 +97,7 @@ def build_parser() -> argparse.ArgumentParser:
 def _scan(args: argparse.Namespace) -> int:
     if args.days < 1 or args.min_stars < 0 or args.limit < 1:
         raise ValueError("days and limit must be positive; min-stars cannot be negative")
-    created_after = date.today() - timedelta(days=args.days)
+    created_after = args.date - timedelta(days=args.days)
     parts = [f"created:>={created_after.isoformat()}", f"stars:>={args.min_stars}", "fork:false", "archived:false"]
     if args.language:
         parts.append(f"language:{args.language}")
@@ -175,8 +182,8 @@ def _scan(args: argparse.Namespace) -> int:
                 f"Chinese analysis success rate {completed}/{requested} ({analysis_rate:.0%}) "
                 f"is below required {args.min_analysis_rate:.0%}; refusing to publish"
             )
-    write_candidates(args.output, repos, query)
-    snapshot = write_snapshot(args.snapshot_dir, repos)
+    write_candidates(args.output, repos, query, args.date)
+    snapshot = write_snapshot(args.snapshot_dir, repos, args.date)
 
     print(f"Wrote {len(repos)} candidates to {args.output}")
     print(f"Saved snapshot to {snapshot}")
@@ -224,6 +231,10 @@ def main(argv: list[str] | None = None) -> int:
             update_readme_index(args.readme, args.daily_dir)
             print(f"Updated index in {args.readme}")
             return 0
+        if args.command == "pending":
+            for pending_date in missing_publish_dates(args.daily_dir, args.date, args.limit):
+                print(pending_date.isoformat())
+            return 0
         if args.command == "syndicate":
             if args.top < 1:
                 raise ValueError("top must be positive")
@@ -237,7 +248,11 @@ def main(argv: list[str] | None = None) -> int:
                 print(f"Generated {platform} draft: {path}")
             configured = all(os.environ.get(name) for name in ("WECHAT_APP_ID", "WECHAT_APP_SECRET"))
             should_publish = args.publish_wechat or (args.publish_wechat_if_configured and configured)
-            if should_publish:
+            manifest = json.loads(paths["manifest"].read_text(encoding="utf-8"))
+            wechat_is_drafted = manifest["platforms"]["wechat"].get("status") == "drafted"
+            if should_publish and wechat_is_drafted:
+                print("WeChat draft already recorded; skipping")
+            elif should_publish:
                 draft = render_wechat_draft(repos, args.date, source_url)
                 client = WeChatDraftClient.from_environment()
                 thumb_media_id = client.resolve_thumb_media_id(args.cover, args.wechat_media_cache)
