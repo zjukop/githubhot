@@ -9,7 +9,7 @@
 [![License](https://img.shields.io/badge/License-MIT-16a34a?style=for-the-badge)](LICENSE)
 
 <!-- DAILY_LATEST_START -->
-**[📖 阅读今日日报](daily/2026/08/2026-08-14.md)** · **[🗓️ 浏览历史](#-日报归档)** · **[💬 推荐项目](CONTRIBUTING.md)** · [English](README_EN.md)
+**[📖 阅读今日日报](daily/2026/08/2026-08-15.md)** · **[🗓️ 浏览历史](#-日报归档)** · **[💬 推荐项目](CONTRIBUTING.md)** · [English](README_EN.md)
 
 </div>
 
@@ -18,13 +18,13 @@
 
 ## 📖 今日日报
 
-### [2026-08-14 · 今日值得关注的开源项目 →](daily/2026/08/2026-08-14.md)
+### [2026-08-15 · 今日值得关注的开源项目 →](daily/2026/08/2026-08-15.md)
 
 | # | 项目 |
 |---:|---|
-| 1 | [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) |
-| 2 | [anthropics/skills](https://github.com/anthropics/skills) |
-| 3 | [infiniflow/ragflow](https://github.com/infiniflow/ragflow) |
+| 1 | [public-apis/public-apis](https://github.com/public-apis/public-apis) |
+| 2 | [OpenCut-app/OpenCut](https://github.com/OpenCut-app/OpenCut) |
+| 3 | [unslothai/unsloth](https://github.com/unslothai/unsloth) |
 
 > **推荐阅读方式：** 先看“今日趋势”和 TOP 10 榜单；前三名提供完整分析，其余七项快速浏览，第一名另有独立深挖长文。
 <!-- DAILY_LATEST_END -->
@@ -41,6 +41,7 @@ GitHubHot 不只罗列 Stars。每个入选项目都会从以下角度展开：
 ## 🗓️ 日报归档
 
 <!-- DAILY_INDEX_START -->
+- [2026-08-15 · 🔥 GitHubHot 日报](daily/2026/08/2026-08-15.md)
 - [2026-08-14 · 🔥 GitHubHot 日报](daily/2026/08/2026-08-14.md)
 - [2026-08-13 · 🔥 GitHubHot 日报](daily/2026/08/2026-08-13.md)
 <!-- DAILY_INDEX_END -->
