@@ -117,7 +117,7 @@ class PipelineTests(unittest.TestCase):
                     fi
                     if [[ "$1 $2 $3" == "-m githubhot syndicate" ]]; then
                       touch "$GITHUBHOT_TEST_ROOT/social-ran"
-                      exit 0
+                      exit 1
                     fi
                     exit 0
                     """
@@ -148,6 +148,7 @@ class PipelineTests(unittest.TestCase):
             self.assertEqual((root / "git-calls").read_text(encoding="utf-8").count("pull --ff-only"), 3)
             self.assertTrue((root / "social-ran").exists())
             self.assertTrue((root / "browser-ran").exists())
+            self.assertIn("social draft generation failed", result.stdout)
             self.assertIn("git pull unavailable; continuing", result.stdout)
             self.assertIn("run completed successfully", result.stdout)
 

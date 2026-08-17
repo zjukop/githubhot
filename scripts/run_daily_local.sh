@@ -139,7 +139,8 @@ for PUBLISH_DATE in "${PENDING_DATES[@]}"; do
   done
   if ! python3 -m githubhot syndicate --date "${PUBLISH_DATE}" --publish-wechat-if-configured; then
     log "${PUBLISH_DATE}: social draft generation failed; Git publication is isolated"
-  elif ! "${REPO_DIR}/scripts/run_social_browser_drafts.sh" "${PUBLISH_DATE}"; then
+  fi
+  if ! "${REPO_DIR}/scripts/run_social_browser_drafts.sh" "${PUBLISH_DATE}"; then
     log "${PUBLISH_DATE}: browser draft delivery failed; generated drafts remain local"
   fi
 
