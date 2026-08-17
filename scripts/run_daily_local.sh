@@ -15,7 +15,7 @@ retry() {
   local description="$1"
   shift
   local attempts="${GITHUBHOT_RETRY_ATTEMPTS:-3}"
-  local delay="${GITHUBHOT_RETRY_DELAY_SECONDS:-5}"
+  local delay="${GITHUBHOT_RETRY_DELAY_SECONDS:-60}"
   local attempt=1
   while (( attempt <= attempts )); do
     log "${description}: attempt ${attempt}/${attempts}"

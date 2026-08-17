@@ -32,5 +32,5 @@ launchctl bootout "gui/$(id -u)" "${AGENT_FILE}" >/dev/null 2>&1 || true
 launchctl bootstrap "gui/$(id -u)" "${AGENT_FILE}"
 launchctl enable "gui/$(id -u)/${AGENT_LABEL}"
 
-echo "Installed ${AGENT_LABEL}; it runs every day at 10:00 local time."
+echo "Installed ${AGENT_LABEL}; it publishes at 10:00 and retries pending dates at 12:00 and 18:00 local time."
 echo "Logs: ${LOG_DIR}/daily.stdout.log and ${LOG_DIR}/daily.stderr.log"
