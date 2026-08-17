@@ -28,7 +28,12 @@ class SocialDraftTests(unittest.TestCase):
         draft = render_wechat_draft(self.repos, self.day, self.url)
         self.assertEqual(draft.format, "html")
         self.assertIn("TOP 1", draft.content)
-        self.assertIn("适合谁", draft.content)
+        self.assertIn("谁会真正用", draft.content)
+        self.assertIn("独立开发机会", draft.content)
+        self.assertIn("采用前先看", draft.content)
+        self.assertIn("background:#102a43", draft.content)
+        self.assertIn("border-left:4px solid #e11d48", draft.content)
+        self.assertGreaterEqual(draft.content.count("box-sizing:border-box"), 7)
         self.assertIn(self.url, draft.content)
         self.assertNotIn("<script", draft.content)
 

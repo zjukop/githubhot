@@ -111,6 +111,45 @@ class CdpPage {
   }
 }
 
+async function clickVisibleText(page, expected) {
+  const point = await page.evaluate(`(() => {
+    const expected = ${JSON.stringify("__CLICK_TEXT__")};
+    const element = [...document.querySelectorAll('body *')]
+      .filter((candidate) => {
+        const rect = candidate.getBoundingClientRect();
+        const style = getComputedStyle(candidate);
+        return rect.width > 0 && rect.height > 0 && style.visibility !== 'hidden' && style.display !== 'none'
+          && candidate.textContent.trim().includes(expected);
+      })
+      .sort((left, right) => left.textContent.trim().length - right.textContent.trim().length)[0];
+    if (!element) return null;
+    const rect = element.getBoundingClientRect();
+    return { x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 };
+  })()`.replace("__CLICK_TEXT__", expected));
+  let clicked = false;
+  if (point) {
+    await page.send("Input.dispatchMouseEvent", { type: "mousePressed", x: point.x, y: point.y, button: "left", clickCount: 1 });
+    await page.send("Input.dispatchMouseEvent", { type: "mouseReleased", x: point.x, y: point.y, button: "left", clickCount: 1 });
+    clicked = true;
+  }
+  if (!clicked) {
+    const tree = await page.send("Accessibility.getFullAXTree");
+    const node = tree.nodes.find((candidate) =>
+      candidate.name?.value?.includes(expected) && candidate.backendDOMNodeId
+    );
+    if (node) {
+      const resolved = await page.send("DOM.resolveNode", { backendNodeId: node.backendDOMNodeId });
+      await page.send("Runtime.callFunctionOn", {
+        objectId: resolved.object.objectId,
+        functionDeclaration: "function () { this.click(); return true; }",
+        returnByValue: true,
+      });
+      clicked = true;
+    }
+  }
+  if (!clicked) throw new Error(`visible text not found: ${expected}`);
+}
+
 async function inspectTarget(targetId) {
   const response = await fetch(`${endpoint}/json/list`);
   if (!response.ok) throw new Error(`Chrome target listing failed: HTTP ${response.status}`);
@@ -119,6 +158,12 @@ async function inspectTarget(targetId) {
   if (!target) throw new Error(`Chrome target not found: ${targetId}`);
   const page = await CdpPage.connect(target);
   try {
+    if (process.env.INSPECT_CLICK_TEXT) {
+      for (const clickText of process.env.INSPECT_CLICK_TEXT.split("|")) {
+        await clickVisibleText(page, clickText);
+        await new Promise((resolve) => setTimeout(resolve, 2500));
+      }
+    }
     return await page.evaluate(`(() => ({
       url: location.href,
       title: document.title,
@@ -133,6 +178,7 @@ async function inspectTarget(targetId) {
         contenteditable: element.getAttribute('contenteditable')
       })),
       controls: [...document.querySelectorAll('button,[role="button"],a')].map((element) => element.textContent.trim()).filter(Boolean).slice(0, 80),
+      links: [...document.querySelectorAll('a[href]')].map((element) => ({ text: element.textContent.trim(), href: element.href })).filter((item) => item.text).slice(0, 80),
       saveTextNodes: [...document.querySelectorAll('body *')]
         .filter((element) => ["暂存离开", "保存草稿", "存草稿", "Save", "保存"].includes(element.textContent.trim()))
         .slice(0, 20)
@@ -170,24 +216,6 @@ async function inspectUrl(url) {
   } finally {
     await page.close();
   }
-}
-
-function setElementScript(selector, value, index = 0) {
-  return `(() => {
-    const elements = [...document.querySelectorAll(${JSON.stringify(selector)})];
-    const element = elements[${index}];
-    if (!element) return false;
-    element.focus();
-    if (element.isContentEditable) {
-      element.textContent = ${JSON.stringify(value)};
-    } else {
-      const prototype = element.tagName === "TEXTAREA" ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype;
-      Object.getOwnPropertyDescriptor(prototype, "value").set.call(element, ${JSON.stringify(value)});
-    }
-    element.dispatchEvent(new InputEvent("input", { bubbles: true, inputType: "insertText", data: ${JSON.stringify(value)} }));
-    element.dispatchEvent(new Event("change", { bubbles: true }));
-    return true;
-  })()`;
 }
 
 async function saveXDraft(draft) {
@@ -244,13 +272,43 @@ async function saveXiaohongshuDraft(draft, coverPath) {
       const state = await page.evaluate(`({ url: location.href, text: document.body.innerText.slice(0, 1200), files: [...document.querySelectorAll('input[type="file"]')].map((input) => input.files?.length || 0) })`);
       throw new Error(`Xiaohongshu did not enter editor after upload: ${JSON.stringify(state)}`);
     }
-    const titleSet = await page.evaluate(setElementScript('input[placeholder*="标题"], textarea[placeholder*="标题"]', draft.title));
-    if (!titleSet) throw new Error("Xiaohongshu title editor was not found");
+    const titleFocused = await page.evaluate(`(() => {
+      const element = document.querySelector('input[placeholder*="标题"], textarea[placeholder*="标题"]');
+      if (!element) return false;
+      element.focus();
+      return true;
+    })()`);
+    if (!titleFocused) throw new Error("Xiaohongshu title editor was not found");
+    await page.send("Input.insertText", { text: draft.title });
     const contentSelector = 'div[contenteditable="true"], textarea[placeholder*="正文"], textarea[placeholder*="描述"]';
     await page.waitFor(`document.querySelector(${JSON.stringify(contentSelector)}) !== null`);
-    const contentSet = await page.evaluate(setElementScript(contentSelector, draft.content));
-    if (!contentSet) throw new Error("Xiaohongshu content editor was not found");
+    const contentFocused = await page.evaluate(`(() => {
+      const element = document.querySelector(${JSON.stringify(contentSelector)});
+      if (!element) return false;
+      element.focus();
+      return true;
+    })()`);
+    if (!contentFocused) throw new Error("Xiaohongshu content editor was not found");
+    await page.send("Input.insertText", { text: draft.content });
+    await page.waitFor(`document.querySelector('input[placeholder*="标题"], textarea[placeholder*="标题"]')?.value === ${JSON.stringify(draft.title)}`);
+    await new Promise((resolve) => setTimeout(resolve, 5000));
     await page.waitFor(`document.body.innerText.includes("编辑于")`, 30000);
+  } finally {
+    await page.close();
+  }
+}
+
+async function verifyXiaohongshuDraft(draft) {
+  const page = await CdpPage.open("https://creator.xiaohongshu.com/publish/publish");
+  try {
+    await page.waitFor(`document.body.innerText.includes("草稿箱")`);
+    const draftBoxLabel = await page.evaluate(`document.body.innerText.match(/草稿箱\(\d+\)/)?.[0] || "草稿箱"`);
+    await clickVisibleText(page, draftBoxLabel);
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+    await page.waitFor(`document.body.innerText.includes("图文笔记")`);
+    const imageDraftLabel = await page.evaluate(`document.body.innerText.match(/图文笔记\(\d+\)/)?.[0] || "图文笔记"`);
+    await clickVisibleText(page, imageDraftLabel);
+    await page.waitFor(`document.body.innerText.includes(${JSON.stringify(draft.title)})`, 15000);
   } finally {
     await page.close();
   }
@@ -289,7 +347,10 @@ if (!manifest.cover) throw new Error("cover image is missing from social draft m
 
 const failures = [];
 for (const [platform, action] of [
-  ["xiaohongshu", () => saveXiaohongshuDraft(xiaohongshuDraft, manifest.cover)],
+  ["xiaohongshu", async () => {
+    await saveXiaohongshuDraft(xiaohongshuDraft, manifest.cover);
+    await verifyXiaohongshuDraft(xiaohongshuDraft);
+  }],
   ["x", () => saveXDraft(xDraft)],
 ]) {
   try {

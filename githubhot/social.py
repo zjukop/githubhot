@@ -55,30 +55,55 @@ def render_wechat_draft(repos: list[Repository], publish_date: date, source_url:
     featured = repos[:3]
     title = f"木匠逛 GitHub｜{publish_date:%m月%d日}值得拆看的 3 个项目"
     sections = []
+    rank_colors = ("#06b6d4", "#f59e0b", "#10b981")
     for rank, repo in enumerate(featured, 1):
         analysis = _analysis(repo)
+        accent = rank_colors[rank - 1]
         sections.append(
-            f'<section style="margin:24px 0;padding:18px;border:1px solid #e5e7eb;border-radius:12px;">'
-            f'<p style="margin:0 0 8px;color:#7c3aed;font-size:14px;font-weight:700;">TOP {rank}</p>'
-            f'<h2 style="margin:0 0 12px;font-size:21px;line-height:1.4;">{html.escape(repo.full_name)}</h2>'
-            f'<p style="color:#374151;line-height:1.8;">{html.escape(analysis["positioning"])}</p>'
-            f'<p style="line-height:1.8;"><strong>适合谁：</strong>{html.escape(analysis["target_users"][0])}</p>'
-            f'<p style="line-height:1.8;"><strong>核心价值：</strong>{html.escape(analysis["core_capabilities"][0])}</p>'
-            f'<p style="line-height:1.8;"><strong>为什么值得看：</strong>{html.escape(analysis["why_it_matters"][0])}</p>'
-            f'<p style="line-height:1.8;"><strong>采用提醒：</strong>{html.escape(analysis["limitations"][0])}</p>'
-            f'<p style="line-height:1.8;"><strong>还能做什么：</strong>{html.escape(analysis["opportunities"][0])}</p>'
-            f'<p style="color:#6b7280;font-size:13px;">Stars {repo.stars:,} · {html.escape(repo.language or "Unknown")} · {html.escape(repo.license or "Unknown")}</p>'
-            f'<p><a href="{html.escape(repo.html_url)}" style="color:#2563eb;">打开官方仓库 →</a></p>'
+            f'<section style="box-sizing:border-box;max-width:100%;margin:30px 0;padding:0 18px 22px;background:#ffffff;border:1px solid #dbe5ef;border-top:5px solid {accent};border-radius:10px;box-shadow:0 6px 20px rgba(15,42,67,0.07);">'
+            f'<p style="display:inline-block;margin:-1px 0 12px;padding:5px 11px;background:{accent};color:#ffffff;font-size:12px;font-weight:700;letter-spacing:1px;border-radius:0 0 7px 7px;">TOP {rank} · 今日拆解</p>'
+            f'<h2 style="margin:2px 0 10px;color:#102a43;font-size:21px;line-height:1.45;font-weight:800;word-break:break-all;">{html.escape(repo.full_name)}</h2>'
+            f'<p style="margin:0 0 16px;color:#334e68;font-size:15px;line-height:1.9;">{html.escape(analysis["positioning"])}</p>'
+            f'<p style="margin:0 0 18px;color:#627d98;font-size:12px;line-height:1.8;">'
+            f'<span style="display:inline-block;margin:0 6px 6px 0;padding:3px 8px;background:#e6f8fb;color:#087f8c;border-radius:4px;">★ {repo.stars:,}</span>'
+            f'<span style="display:inline-block;margin:0 6px 6px 0;padding:3px 8px;background:#fff7e6;color:#b45309;border-radius:4px;">{html.escape(repo.language or "Unknown")}</span>'
+            f'<span style="display:inline-block;margin:0 0 6px;padding:3px 8px;background:#ecfdf5;color:#047857;border-radius:4px;">{html.escape(repo.license or "Unknown")}</span></p>'
+            f'<section style="margin:12px 0;padding:12px 14px;background:#f0f9ff;border-left:4px solid #0ea5e9;border-radius:5px;">'
+            f'<p style="margin:0 0 4px;color:#0369a1;font-size:13px;font-weight:700;">👤 谁会真正用</p>'
+            f'<p style="margin:0;color:#334155;font-size:14px;line-height:1.8;">{html.escape(analysis["target_users"][0])}</p></section>'
+            f'<section style="margin:12px 0;padding:12px 14px;background:#f0fdfa;border-left:4px solid #14b8a6;border-radius:5px;">'
+            f'<p style="margin:0 0 4px;color:#0f766e;font-size:13px;font-weight:700;">⚙️ 核心价值</p>'
+            f'<p style="margin:0;color:#334155;font-size:14px;line-height:1.8;">{html.escape(analysis["core_capabilities"][0])}</p></section>'
+            f'<section style="margin:12px 0;padding:12px 14px;background:#fffbeb;border-left:4px solid #f59e0b;border-radius:5px;">'
+            f'<p style="margin:0 0 4px;color:#b45309;font-size:13px;font-weight:700;">🔥 为什么现在值得看</p>'
+            f'<p style="margin:0;color:#334155;font-size:14px;line-height:1.8;">{html.escape(analysis["why_it_matters"][0])}</p></section>'
+            f'<section style="margin:12px 0;padding:12px 14px;background:#fff1f2;border-left:4px solid #e11d48;border-radius:5px;">'
+            f'<p style="margin:0 0 4px;color:#be123c;font-size:13px;font-weight:700;">⚠️ 采用前先看</p>'
+            f'<p style="margin:0;color:#334155;font-size:14px;line-height:1.8;">{html.escape(analysis["limitations"][0])}</p></section>'
+            f'<section style="margin:12px 0 18px;padding:12px 14px;background:#ecfdf5;border-left:4px solid #10b981;border-radius:5px;">'
+            f'<p style="margin:0 0 4px;color:#047857;font-size:13px;font-weight:700;">💡 独立开发机会</p>'
+            f'<p style="margin:0;color:#334155;font-size:14px;line-height:1.8;">{html.escape(analysis["opportunities"][0])}</p></section>'
+            f'<p style="margin:18px 0 0;text-align:right;"><a href="{html.escape(repo.html_url)}" style="display:inline-block;padding:8px 14px;background:#102a43;color:#ffffff;font-size:13px;font-weight:700;text-decoration:none;border-radius:5px;">去 GitHub 看原项目 →</a></p>'
             f'</section>'
         )
     content = (
-        '<section style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;color:#111827;">'
-        '<p style="margin:0 0 8px;color:#0891b2;font-size:14px;font-weight:700;">赛博木匠 · 今日工作台</p>'
-        f'<p style="font-size:16px;line-height:1.9;">今天从 GitHub 热点里挑出 3 块值得拆看的“木料”。'
-        '不只看 Stars，也看它解决什么问题、谁会真正使用、有哪些风险，以及还能延伸出什么产品机会。</p>'
+        '<section style="box-sizing:border-box;margin:0 10px;max-width:657px;font-family:-apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,sans-serif;color:#243b53;overflow-wrap:anywhere;">'
+        '<section style="box-sizing:border-box;max-width:100%;padding:26px 20px 24px;background:#102a43;border-radius:10px;">'
+        '<p style="margin:0 0 8px;color:#67e8f9;font-size:12px;font-weight:700;letter-spacing:2px;">CYBER CARPENTER · DAILY 03</p>'
+        '<h1 style="margin:0 0 12px;color:#ffffff;font-size:25px;line-height:1.4;font-weight:800;">今天 GitHub 上<br>值得拆开的 3 个项目</h1>'
+        f'<p style="margin:0;color:#bfd7ea;font-size:14px;line-height:1.8;">{publish_date:%Y 年 %m 月 %d 日} · 热度是线索，拆解才有价值</p>'
+        '</section>'
+        '<section style="box-sizing:border-box;max-width:100%;margin:18px 0 8px;padding:16px 17px;background:#edf8fb;border:1px solid #c7eef4;border-radius:8px;">'
+        '<p style="margin:0 0 7px;color:#087f8c;font-size:13px;font-weight:700;">🪚 木匠的阅读说明</p>'
+        '<p style="margin:0;color:#334e68;font-size:15px;line-height:1.9;">今天从 GitHub 热点里挑出 3 块值得拆看的“木料”。不只看 Stars，更看真实用户、核心价值、采用风险，以及独立开发者还能做什么。</p>'
+        '</section>'
+        '<p style="margin:22px 0 4px;color:#829ab1;font-size:12px;text-align:center;letter-spacing:1px;">向下滑动 · 每个项目约 60 秒</p>'
         + "".join(sections)
-        + f'<p style="margin-top:28px;line-height:1.8;"><a href="{html.escape(source_url)}" style="color:#2563eb;">阅读完整 GitHubHot 日报 →</a></p>'
-        + '<blockquote style="margin:20px 0;padding:12px 16px;background:#f8fafc;color:#64748b;">AI 当工具，代码做木料。热度只是发现信号，不代表质量、安全性或投资价值。</blockquote>'
+        + '<section style="box-sizing:border-box;max-width:100%;margin:30px 0 18px;padding:20px;background:#102a43;text-align:center;border-radius:10px;">'
+        + '<p style="margin:0 0 5px;color:#67e8f9;font-size:12px;font-weight:700;letter-spacing:1px;">想看完整榜单和深度长文？</p>'
+        + f'<p style="margin:0 0 14px;color:#ffffff;font-size:18px;font-weight:800;">去 GitHubHot 继续拆解</p><a href="{html.escape(source_url)}" style="display:inline-block;padding:9px 18px;background:#f59e0b;color:#102a43;font-size:14px;font-weight:800;text-decoration:none;border-radius:5px;">阅读完整日报 →</a></section>'
+        + '<blockquote style="box-sizing:border-box;max-width:100%;margin:18px 0;padding:13px 16px;background:#f8fafc;border-left:4px solid #94a3b8;color:#64748b;font-size:12px;line-height:1.8;">AI 当工具，代码做木料。热度只是发现信号，不代表质量、安全性或投资价值。采用任何项目之前，请独立核对源码、许可证与安全边界。</blockquote>'
+        + '<p style="margin:22px 0 8px;color:#9fb3c8;font-size:11px;text-align:center;letter-spacing:1px;">赛博木匠 · 每天拆一点，灵感就能开工</p>'
         + '</section>'
     )
     return PlatformDraft("wechat", title, content, source_url, "html")
