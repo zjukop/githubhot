@@ -33,6 +33,22 @@ retry() {
   return 1
 }
 
+git_network() {
+  local timeout_seconds="$1"
+  shift
+  if python3 "${REPO_DIR}/scripts/run_with_timeout.py" "${timeout_seconds}" git "$@"; then
+    return 0
+  fi
+
+  local fallback_ip="${GITHUBHOT_GITHUB_FALLBACK_IP-140.82.112.4}"
+  if [[ -z "${fallback_ip}" ]]; then
+    return 1
+  fi
+  log "git $1: default GitHub route failed; trying verified HTTPS fallback ${fallback_ip}"
+  python3 "${REPO_DIR}/scripts/run_with_timeout.py" "${timeout_seconds}" \
+    git -c "http.curloptResolve=github.com:443:${fallback_ip}" "$@"
+}
+
 mkdir -p "${REPO_DIR}/.local"
 if ! mkdir "${LOCK_DIR}" 2>/dev/null; then
   echo "Another GitHubHot daily run is already active."
@@ -64,7 +80,7 @@ git config user.name "githubhot-local[bot]"
 git config user.email "zjukop@users.noreply.github.com"
 
 GIT_TIMEOUT_SECONDS="${GITHUBHOT_GIT_TIMEOUT_SECONDS:-90}"
-if ! retry "git pull" python3 "${REPO_DIR}/scripts/run_with_timeout.py" "${GIT_TIMEOUT_SECONDS}" git pull --ff-only origin main; then
+if ! retry "git pull" git_network "${GIT_TIMEOUT_SECONDS}" pull --ff-only origin main; then
   log "git pull unavailable; continuing with the clean local checkout"
 fi
 
@@ -127,12 +143,12 @@ for PUBLISH_DATE in "${PENDING_DATES[@]}"; do
     log "${PUBLISH_DATE}: browser draft delivery failed; generated drafts remain local"
   fi
 
-  if ! retry "${PUBLISH_DATE}: git push" python3 "${REPO_DIR}/scripts/run_with_timeout.py" "${GIT_TIMEOUT_SECONDS}" git push origin main; then
+  if ! retry "${PUBLISH_DATE}: git push" git_network "${GIT_TIMEOUT_SECONDS}" push origin main; then
     log "${PUBLISH_DATE}: push remains pending; later dates and social drafts will continue"
   fi
 done
 
-if ! retry "final git push" python3 "${REPO_DIR}/scripts/run_with_timeout.py" "${GIT_TIMEOUT_SECONDS}" git push origin main; then
+if ! retry "final git push" git_network "${GIT_TIMEOUT_SECONDS}" push origin main; then
   log "run completed with Git commits still pending"
   exit 1
 fi

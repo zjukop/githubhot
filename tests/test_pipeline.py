@@ -133,6 +133,7 @@ class PipelineTests(unittest.TestCase):
                     "GITHUBHOT_TEST_ROOT": str(root),
                     "GITHUBHOT_RETRY_ATTEMPTS": "3",
                     "GITHUBHOT_RETRY_DELAY_SECONDS": "0",
+                    "GITHUBHOT_GITHUB_FALLBACK_IP": "",
                 }
             )
             result = subprocess.run(
