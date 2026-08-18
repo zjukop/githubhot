@@ -1,0 +1,878 @@
+{
+  "santifer/career-ops": {
+    "full_name": "santifer/career-ops",
+    "html_url": "https://github.com/santifer/career-ops",
+    "description": "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)",
+    "stars": 64865,
+    "forks": 12663,
+    "open_issues": 336,
+    "watchers": 253,
+    "language": "JavaScript",
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "anthropic",
+      "ats",
+      "automation",
+      "beginner-friendly",
+      "career",
+      "careerops",
+      "claude",
+      "claude-code",
+      "cli",
+      "first-timers-only",
+      "golang",
+      "good-first-issue",
+      "interview-prep",
+      "job-application",
+      "job-hunting",
+      "job-search",
+      "open-source",
+      "resume"
+    ],
+    "created_at": "2026-04-04T18:21:18Z",
+    "updated_at": "2026-08-18T03:59:52Z",
+    "pushed_at": "2026-08-18T02:29:26Z",
+    "archived": false,
+    "fork": false,
+    "score": 92.13,
+    "score_reasons": [
+      "64,865 stars over 135 days",
+      "estimated 479.1 stars/day since creation",
+      "last push 0.1 days ago",
+      "detectable MIT license",
+      "topics: ai, ai-agent, anthropic, ats, automation"
+    ],
+    "homepage": "https://career-ops.org",
+    "default_branch": "main",
+    "readme_url": "https://github.com/santifer/career-ops/blob/main/README.md",
+    "readme_summary": "English | Español | Deutsch | Français | Português (Brasil) | 한국어 | 日本語 | 简体中文 | 繁體中文 | Українська | Русский | Polski | Dansk | தமிழ் | العربية | हिन्दी | Türkçe",
+    "readme_features": [],
+    "quick_start": "npx @santifer/career-ops init",
+    "latest_release_name": "career-ops: v1.26.0",
+    "latest_release_url": "https://github.com/santifer/career-ops/releases/tag/career-ops-v1.26.0",
+    "latest_release_at": "2026-08-10T22:06:56Z",
+    "analysis": {
+      "positioning": "career-ops 是一个开源的 AI 求职助手，运行在本地 AI 编码 CLI 中，用于扫描招聘门户、按 A-F 评分标准评估职位并给出 1.0-5.0 的分数，同时定制简历并跟踪申请进度。与普通求职工具相比，其明确特点是深度集成 AI 编码环境，提供结构化评分和本地化运行，强调透明和可控。",
+      "target_users": [
+        "使用 Claude Code、Codex、OpenCode 等 AI 编码工具的开发者，希望在编码工作流中直接管理求职流程。",
+        "求职者需要系统化评估职位匹配度，并希望自动化简历定制和申请跟踪。",
+        "对数据隐私敏感，倾向于本地运行工具而非云端服务的用户。"
+      ],
+      "core_capabilities": [
+        "扫描多个招聘门户，自动收集职位信息，节省手动搜索时间。",
+        "使用结构化的 A-F 评分标准将职位评估为 1.0-5.0 分数，帮助用户快速筛选高匹配机会。",
+        "根据职位要求定制简历，并跟踪申请状态，提升求职效率。"
+      ],
+      "technical_analysis": [
+        "项目主要使用 JavaScript 开发，通过 npx 命令快速初始化，便于在 Node.js 环境中运行。",
+        "从描述看，工具在本地 AI 编码 CLI 中运行，可能依赖 AI 模型进行职位分析和简历定制，但具体实现细节未提供。",
+        "集成形态为 CLI 工具，支持多种 AI 编码环境，但部署和运行方式的具体细节需进一步核实。"
+      ],
+      "why_it_matters": [
+        "项目拥有 64,865 个 Star 和 12,663 个 Fork，表明社区关注度极高，可能成为 AI 求职领域的标杆工具。",
+        "活跃的发布节奏（最新 v1.26.0）和持续的代码推送（pushed_at 为 2026-08-18）显示项目维护积极，功能迭代迅速。",
+        "多语言 README 支持（16 种语言）表明项目面向全球用户，具有广泛的国际影响力。"
+      ],
+      "limitations": [
+        "项目创建于 2026 年 4 月，相对较新，成熟度可能有限，需关注长期稳定性。",
+        "依赖 AI 编码 CLI 环境，可能要求用户具备一定的技术背景，非技术用户上手门槛较高。",
+        "本地运行可能受限于计算资源，且对招聘门户的扫描可能受网站反爬策略影响。",
+        "许可证为 MIT，但具体依赖项和第三方服务的使用情况需进一步核实。"
+      ],
+      "opportunities": [
+        "机会假设：开发可视化仪表板，将职位评分和申请进度以图表形式呈现，提升用户体验。",
+        "机会假设：集成更多招聘平台和 ATS 系统，扩大职位来源，增强兼容性。",
+        "机会假设：提供云端同步选项，方便用户在多设备间同步求职数据，同时保持本地优先。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 4 月，至今约 4 个月，但已发布 v1.26.0，更新频繁，Stars 和 Forks 数量极高，表明社区活跃且采用广泛。然而，Stars 数量不能直接等同于质量，需关注实际功能和用户反馈。整体处于快速成长阶段，但成熟度仍需时间验证。"
+    }
+  },
+  "harry0703/MoneyPrinterTurbo": {
+    "full_name": "harry0703/MoneyPrinterTurbo",
+    "html_url": "https://github.com/harry0703/MoneyPrinterTurbo",
+    "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+    "stars": 106493,
+    "forks": 16162,
+    "open_issues": 24,
+    "watchers": 674,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "ai-video-generator",
+      "content-creation",
+      "ffmpeg",
+      "instagram-reels",
+      "llm",
+      "python",
+      "short-video",
+      "subtitles",
+      "text-to-speech",
+      "tiktok",
+      "video-automation",
+      "video-workflow",
+      "workflow-automation",
+      "youtube-shorts"
+    ],
+    "created_at": "2024-03-11T02:57:34Z",
+    "updated_at": "2026-08-18T03:59:36Z",
+    "pushed_at": "2026-08-18T03:46:29Z",
+    "archived": false,
+    "fork": false,
+    "score": 83.39,
+    "score_reasons": [
+      "106,493 stars over 890 days",
+      "estimated 119.6 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable MIT license",
+      "topics: ai-video-generator, content-creation, ffmpeg, instagram-reels, llm"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": "https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README.md",
+    "readme_summary": "只需提供视频 主题 或 关键词 ，即可自动生成视频脚本、匹配素材、生成字幕和背景音乐，并合成高清短视频。",
+    "readme_features": [
+      "[x] 提供 AI Agent、WebUI、API 和 CLI 四种使用方式，代码按控制器、服务和模型等职责分层",
+      "[x] 支持 AI 自动生成视频脚本，也可以使用自定义脚本",
+      "[x] 支持多种 高清视频 尺寸",
+      "[x] 竖屏 9:16，1080x1920",
+      "[x] 横屏 16:9，1920x1080"
+    ],
+    "quick_start": "",
+    "latest_release_name": "v1.3.4",
+    "latest_release_url": "https://github.com/harry0703/MoneyPrinterTurbo/releases/tag/v1.3.4",
+    "latest_release_at": "2026-08-12T02:51:41Z",
+    "analysis": {
+      "positioning": "MoneyPrinterTurbo 是一个基于 AI 大模型与自动化工作流的开源工具，用户只需提供主题或关键词，即可自动生成视频脚本、匹配素材、生成字幕和背景音乐，并合成高清短视频。与普通视频编辑工具相比，它实现了从创意到成片的端到端自动化，支持多种使用方式（AI Agent、WebUI、API、CLI），并针对短视频平台（如抖音、YouTube Shorts）优化了竖屏和横屏格式。",
+      "target_users": [
+        "内容创作者、自媒体运营者，需要快速批量生成短视频素材。",
+        "开发者或企业，希望通过 API 或 CLI 集成视频生成能力到自身产品中。",
+        "对 AI 视频生成感兴趣的研究者或爱好者，用于学习或二次开发。"
+      ],
+      "core_capabilities": [
+        "一键生成完整短视频：从脚本、素材、字幕到背景音乐全自动合成，大幅降低视频制作门槛。",
+        "支持 AI 自动生成脚本或使用自定义脚本，灵活适配不同创作需求。",
+        "提供多种高清视频尺寸（如竖屏 9:16 和横屏 16:9），满足主流短视频平台要求。"
+      ],
+      "technical_analysis": [
+        "项目使用 Python 语言开发，代码按控制器、服务、模型等职责分层，结构清晰，便于维护和扩展。",
+        "提供四种使用方式（AI Agent、WebUI、API、CLI），覆盖从交互式操作到程序化调用的多种集成形态。",
+        "从仓库信息看，项目依赖 FFmpeg 进行视频处理，并集成了 LLM 和 TTS 技术，但具体部署方式（如本地运行或云端服务）未在本次输入中明确，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "项目拥有超过 10 万 Stars 和 1.6 万 Forks，社区关注度极高，表明其解决了短视频创作的普遍痛点。",
+        "从活跃的 Release（v1.3.4，2026-08-12）和持续更新（pushed_at 2026-08-18）看，项目维护活跃，功能迭代频繁。",
+        "作为开源项目，它提供了完整的自动化工作流，为开发者提供了可定制、可扩展的 AI 视频生成基础，值得关注和学习。"
+      ],
+      "limitations": [
+        "项目依赖外部 AI 大模型和 TTS 服务，可能涉及 API 费用或服务可用性问题，需核实具体依赖和成本。",
+        "视频素材匹配和生成质量可能受限于素材库和模型能力，实际效果需测试验证。",
+        "许可证为 MIT，但使用第三方服务时需遵守相应服务条款，且项目成熟度（如稳定性、安全性）需进一步评估。"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对特定垂直领域（如教育、营销）的定制化模板，提升视频生成的专业性。",
+        "机会假设：可构建基于该项目的云服务或 SaaS 平台，提供按需付费的视频生成 API。",
+        "机会假设：可开发插件或扩展，集成更多素材源、音效库或视频特效，丰富输出效果。"
+      ],
+      "maturity": "从 Stars 数量看，项目获得了极高的社区认可，但 Stars 不等同于质量。项目拥有 24 个开放 Issues，且 Release 和代码更新频繁（最新 v1.3.4 于 2026-08-12 发布），表明项目处于活跃迭代阶段，功能不断完善，但可能仍存在一些待解决的问题，整体成熟度较高但需关注具体使用中的稳定性。"
+    }
+  },
+  "usestrix/strix": {
+    "full_name": "usestrix/strix",
+    "html_url": "https://github.com/usestrix/strix",
+    "description": "Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+    "stars": 54378,
+    "forks": 5812,
+    "open_issues": 301,
+    "watchers": 248,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [
+      "agents",
+      "ai-hacking",
+      "ai-penetration-testing",
+      "ai-pentesting",
+      "ai-security",
+      "artificial-intelligence",
+      "bug-bounty",
+      "code-quality",
+      "ctf-tools",
+      "cybersecurity",
+      "cybersecurity-tools",
+      "ethical-hacking",
+      "hacking",
+      "llm-security",
+      "offensive-security",
+      "penetration-testing",
+      "pentesting-tools",
+      "red-teaming",
+      "security",
+      "security-automation"
+    ],
+    "created_at": "2025-08-05T21:28:30Z",
+    "updated_at": "2026-08-18T03:57:01Z",
+    "pushed_at": "2026-08-17T20:55:28Z",
+    "archived": false,
+    "fork": false,
+    "score": 80.28,
+    "score_reasons": [
+      "54,378 stars over 377 days",
+      "estimated 144.1 stars/day since creation",
+      "last push 0.3 days ago",
+      "detectable Apache-2.0 license",
+      "topics: agents, ai-hacking, ai-penetration-testing, ai-pentesting, ai-security"
+    ],
+    "homepage": "https://strix.ai",
+    "default_branch": "main",
+    "readme_url": "https://github.com/usestrix/strix/blob/main/README.md",
+    "readme_summary": "Strix are autonomous AI penetration testing agents that act just like real hackers - they run your code dynamically, find vulnerabilities, and validate them through actual proofs-of-concept. Built for developers and security teams who need fast, accurate security testing without the overhead of manual pentesting or the false positives of static analysis tools.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v1.5.3",
+    "latest_release_url": "https://github.com/usestrix/strix/releases/tag/v1.5.3",
+    "latest_release_at": "2026-08-10T18:35:38Z",
+    "analysis": {
+      "positioning": "Strix 是一款开源的人工智能渗透测试工具，旨在自动发现并修复应用程序中的安全漏洞。它通过自主 AI 代理动态运行代码，模拟真实黑客行为，并利用实际概念验证来验证漏洞，从而减少误报，为开发者和安全团队提供快速、准确的安全测试。",
+      "target_users": [
+        "开发者和安全团队，需要快速准确的安全测试，避免手动渗透测试的开销。",
+        "参与漏洞赏金计划或 CTF 竞赛的安全研究人员。",
+        "希望将 AI 驱动的安全测试集成到开发流程中的组织。"
+      ],
+      "core_capabilities": [
+        "自主 AI 代理动态运行代码，模拟真实黑客攻击行为。",
+        "自动发现漏洞，并通过实际概念验证（PoC）进行验证，减少误报。",
+        "提供快速、准确的安全测试，无需手动渗透测试或静态分析工具。"
+      ],
+      "technical_analysis": [
+        "项目使用 Python 编写，便于安全工具生态集成。",
+        "从现有信息看，可能以本地或云端方式运行，但具体部署方式未提供，需进一步核实。",
+        "集成形态可能包括 CLI 或 API，但本次输入未提供，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "项目拥有超过 5 万颗星和 5800 多个 fork，显示出社区的高度关注和活跃度。",
+        "频繁的更新（最新发布 v1.5.3）表明项目处于积极开发状态。",
+        "AI 驱动的渗透测试是安全领域的前沿方向，Strix 可能为自动化安全测试带来新的可能性。"
+      ],
+      "limitations": [
+        "项目创建于 2025 年，相对较新，成熟度可能有限，需进一步评估。",
+        "依赖 AI 模型，可能对计算资源有较高要求，需核实。",
+        "开源许可证为 Apache-2.0，但商业使用或修改需遵守相关条款。",
+        "存在 301 个未解决的问题，可能影响稳定性或功能完整性。"
+      ],
+      "opportunities": [
+        "机会假设：开发与 CI/CD 流水线的集成插件，实现持续安全测试。",
+        "机会假设：提供可视化报告和漏洞管理面板，提升用户体验。",
+        "机会假设：扩展对更多编程语言和框架的支持，扩大适用范围。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2025 年，但已获得大量关注（5 万+ Stars），且发布频率较高（最新 v1.5.3），表明项目处于快速迭代阶段。然而，Stars 数量并不直接等同于质量，仍需关注其功能完整性和稳定性。"
+    }
+  },
+  "AlexsJones/llmfit": {
+    "full_name": "AlexsJones/llmfit",
+    "html_url": "https://github.com/AlexsJones/llmfit",
+    "description": "Hundreds of models & providers. One command to find what runs on your hardware.",
+    "stars": 32399,
+    "forks": 2005,
+    "open_issues": 63,
+    "watchers": 97,
+    "language": "Rust",
+    "license": "MIT",
+    "topics": [
+      "gguf",
+      "llm",
+      "localai",
+      "mlx",
+      "skill",
+      "unsloth"
+    ],
+    "created_at": "2026-02-15T16:11:31Z",
+    "updated_at": "2026-08-18T03:55:48Z",
+    "pushed_at": "2026-08-17T07:35:58Z",
+    "archived": false,
+    "fork": false,
+    "score": 77.12,
+    "score_reasons": [
+      "32,399 stars over 183 days",
+      "estimated 176.6 stars/day since creation",
+      "last push 0.9 days ago",
+      "detectable MIT license",
+      "topics: gguf, llm, localai, mlx, skill"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": "https://github.com/AlexsJones/llmfit/blob/main/README.md",
+    "readme_summary": "**Hundreds of models & providers. One command to find what runs on your hardware.**",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v1.1.10",
+    "latest_release_url": "https://github.com/AlexsJones/llmfit/releases/tag/v1.1.10",
+    "latest_release_at": "2026-08-17T07:12:24Z",
+    "analysis": {
+      "positioning": "llmfit 是一个用 Rust 编写的命令行工具，旨在帮助用户从数百个模型和提供商中，通过一条命令找到能在自己硬件上运行的模型。它解决了本地运行大语言模型时硬件兼容性难以判断的问题，与普通同类工具相比，其明确特点是覆盖模型和提供商范围广，且操作极简。",
+      "target_users": [
+        "希望本地运行大语言模型但不确定硬件兼容性的开发者",
+        "需要快速筛选可用模型的研究人员或爱好者",
+        "在多种硬件环境中部署模型的运维人员"
+      ],
+      "core_capabilities": [
+        "提供一条命令即可搜索并匹配适合当前硬件的模型，节省手动比对时间",
+        "支持数百种模型和提供商，覆盖范围广，便于用户找到合适的选项",
+        "以 Rust 实现，可能具备较高的性能和资源效率"
+      ],
+      "technical_analysis": [
+        "使用 Rust 语言开发，可能注重性能和内存安全",
+        "从描述看，工具以命令行方式运行，属于本地工具，不依赖云端服务",
+        "集成形态为单一命令，部署简单，但具体安装方式未提供，需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目获得 32399 个 Star 和 2005 个 Fork，表明社区关注度高，可能具有实际需求",
+        "最新发布 v1.1.10 且更新频繁（pushed_at 为 2026-08-17），显示项目活跃维护",
+        "主题涉及 gguf、mlx、unsloth 等，可能紧跟本地模型生态，对开发者有吸引力"
+      ],
+      "limitations": [
+        "官方 README 仅提供简短描述，功能列表和快速开始为空，需进一步核实具体功能和使用方法",
+        "项目创建于 2026-02-15，至今约半年，成熟度可能有限，需关注稳定性",
+        "许可证为 MIT，但依赖项和分发方式未提供，需核实商业使用限制"
+      ],
+      "opportunities": [
+        "机会假设：可开发图形界面或 Web 前端，降低非命令行用户的使用门槛",
+        "机会假设：可集成更多硬件检测逻辑，支持更多设备类型，扩大适用场景",
+        "机会假设：可提供模型性能基准测试功能，帮助用户更精准选择"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 2 月，至今约半年，但已发布 v1.1.10 版本，且最近更新在 2026 年 8 月，显示迭代活跃。Star 数较高，但 Stars 不等于质量，仍需关注功能完整性和稳定性。"
+    }
+  },
+  "jundot/omlx": {
+    "full_name": "jundot/omlx",
+    "html_url": "https://github.com/jundot/omlx",
+    "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar",
+    "stars": 19054,
+    "forks": 1645,
+    "open_issues": 914,
+    "watchers": 97,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [
+      "apple-silicon",
+      "inference-server",
+      "llm",
+      "macos",
+      "mlx",
+      "openai-api"
+    ],
+    "created_at": "2026-02-13T14:13:27Z",
+    "updated_at": "2026-08-18T03:59:54Z",
+    "pushed_at": "2026-08-18T02:22:55Z",
+    "archived": false,
+    "fork": false,
+    "score": 76.07,
+    "score_reasons": [
+      "19,054 stars over 186 days",
+      "estimated 102.7 stars/day since creation",
+      "last push 0.1 days ago",
+      "detectable Apache-2.0 license",
+      "topics: apple-silicon, inference-server, llm, macos, mlx"
+    ],
+    "homepage": "https://omlx.ai",
+    "default_branch": "main",
+    "readme_url": "https://github.com/jundot/omlx/blob/main/README.md",
+    "readme_summary": "LLM inference, optimized for your Mac  Continuous batching and tiered KV caching, managed directly from your menu bar.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "0.6.1",
+    "latest_release_url": "https://github.com/jundot/omlx/releases/tag/v0.6.1",
+    "latest_release_at": "2026-08-17T18:22:04Z",
+    "analysis": {
+      "positioning": "omlx 是一个面向 Apple Silicon Mac 的 LLM 推理服务器，通过 macOS 菜单栏进行管理，支持连续批处理和 SSD 缓存（分层 KV 缓存），旨在优化本地大模型推理性能，解决 Mac 上运行 LLM 时的资源利用和缓存效率问题，与普通同类工具相比，其特点是深度集成 macOS 菜单栏，提供便捷的本地管理体验。",
+      "target_users": [
+        "在 Apple Silicon Mac 上进行本地 LLM 推理的开发者或研究人员",
+        "需要快速部署 OpenAI 兼容 API 服务的 macOS 用户",
+        "希望利用菜单栏便捷管理推理服务的个人或团队"
+      ],
+      "core_capabilities": [
+        "连续批处理：提高推理吞吐量，充分利用 GPU 资源",
+        "分层 KV 缓存（SSD 缓存）：减少内存占用，加速长上下文推理",
+        "菜单栏管理：无需命令行，直观控制服务状态和配置"
+      ],
+      "technical_analysis": [
+        "使用 Python 开发，基于 MLX 框架，针对 Apple Silicon 优化",
+        "提供 OpenAI 兼容 API，便于集成现有工具",
+        "以本地服务形式运行，通过菜单栏集成，部署简单"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目在短时间内获得较高关注（Stars 1.9 万），可能反映了 Mac 用户对本地 LLM 推理优化的强烈需求",
+        "活跃的发布节奏（最新版本 0.6.1）和持续的代码更新表明项目处于积极开发状态",
+        "结合 MLX 和 SSD 缓存，可能为 Apple Silicon 上的 LLM 推理提供新的性能优化思路"
+      ],
+      "limitations": [
+        "仅支持 Apple Silicon 和 macOS，平台限制明显",
+        "项目创建时间较短（2026 年 2 月），成熟度可能不足，需进一步核实稳定性",
+        "开源问题数较多（914），可能影响使用体验，需关注解决情况",
+        "许可证为 Apache-2.0，但依赖项和商业使用需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：开发针对不同模型大小的配置模板，简化用户部署",
+        "机会假设：集成更多监控和日志功能，帮助用户优化推理性能",
+        "机会假设：提供 Docker 或虚拟化支持，扩大非 macOS 用户的使用场景"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 2 月，至今约 6 个月，已发布 0.6.1 版本，更新频繁，但 Stars 数量高（1.9 万）可能反映社区关注度，而非质量保证。开源问题较多，可能处于快速迭代期，整体成熟度中等，需进一步观察稳定性。"
+    }
+  },
+  "mukul975/Anthropic-Cybersecurity-Skills": {
+    "full_name": "mukul975/Anthropic-Cybersecurity-Skills",
+    "html_url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+    "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
+    "stars": 28545,
+    "forks": 3454,
+    "open_issues": 47,
+    "watchers": 227,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agents",
+      "claude-code",
+      "cloud-security",
+      "cybersecurity",
+      "devsecops",
+      "ethical-hacking",
+      "incident-response",
+      "infosec",
+      "llm",
+      "malware-analysis",
+      "mcp",
+      "mitre-attack",
+      "nist-csf",
+      "osint",
+      "penetration-testing",
+      "red-team",
+      "security",
+      "security-automation",
+      "threat-hunting",
+      "threat-intelligence"
+    ],
+    "created_at": "2026-02-25T09:47:50Z",
+    "updated_at": "2026-08-18T03:56:51Z",
+    "pushed_at": "2026-08-08T14:55:19Z",
+    "archived": false,
+    "fork": false,
+    "score": 75.68,
+    "score_reasons": [
+      "28,545 stars over 174 days",
+      "estimated 164.3 stars/day since creation",
+      "last push 9.5 days ago",
+      "detectable Apache-2.0 license",
+      "topics: ai-agents, claude-code, cloud-security, cybersecurity, devsecops"
+    ],
+    "homepage": "https://mahipal.engineer/Anthropic-Cybersecurity-Skills/",
+    "default_branch": "main",
+    "readme_url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/README.md",
+    "readme_summary": "**817 production-grade cybersecurity skills · 29 security domains · 6 framework mappings · 26+ AI platforms**",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v1.3.0",
+    "latest_release_url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/releases/tag/v1.3.0",
+    "latest_release_at": "2026-06-22T17:11:11Z",
+    "analysis": {
+      "positioning": "Anthropic-Cybersecurity-Skills 是一个面向 AI 代理的结构化网络安全技能库，提供 817 项生产级技能，覆盖 29 个安全领域，并映射到 MITRE ATT&CK、NIST CSF 2.0 等 6 个主流框架。它解决 AI 代理在安全任务中缺乏标准化、可复用技能的问题，与普通工具相比，其明确特点是遵循 agentskills.io 标准，兼容 20 多种 AI 平台，并采用 Apache 2.0 许可。",
+      "target_users": [
+        "安全工程师和红队成员，用于自动化渗透测试、威胁狩猎和事件响应。",
+        "AI 应用开发者，希望将网络安全能力集成到 Claude Code、GitHub Copilot 等 AI 代理中。",
+        "安全运营团队，用于标准化安全流程并提升 AI 代理的安全任务执行效率。"
+      ],
+      "core_capabilities": [
+        "提供 817 个结构化技能，覆盖 29 个安全领域，使 AI 代理能执行多样化的网络安全任务。",
+        "映射到 6 个权威框架，确保技能与行业标准对齐，便于合规和审计。",
+        "兼容 20 多种 AI 平台，包括主流编码助手和 CLI 工具，实现跨平台复用。"
+      ],
+      "technical_analysis": [
+        "项目语言为 Python，可能用于技能定义或工具脚本，但具体实现细节未提供。",
+        "从描述看，技能以结构化格式（agentskills.io 标准）提供，可能以 JSON 或 YAML 定义，便于 AI 代理解析。",
+        "集成形态为技能库，通过平台兼容层适配不同 AI 代理，部署方式可能为本地克隆或包管理，但本次输入未提供具体安装或运行方式，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "项目在短时间内获得 28.5k Stars 和 3.4k Forks，表明社区关注度高，可能成为 AI 安全技能的标准参考。",
+        "与多个主流 AI 平台兼容，降低了集成门槛，有助于推动 AI 在网络安全领域的实际应用。",
+        "基于权威框架映射，为 AI 代理的安全行为提供可验证的基准，可能提升安全自动化的可信度。"
+      ],
+      "limitations": [
+        "项目创建于 2026 年 2 月，最新发布 v1.3.0，但成熟度需进一步评估，例如技能质量验证和社区贡献情况。",
+        "依赖外部框架和平台，可能受限于各平台对技能标准的支持程度，需核实兼容性细节。",
+        "Apache 2.0 许可允许商用，但需注意技能内容可能涉及安全敏感信息，使用时需遵守法律和道德规范。"
+      ],
+      "opportunities": [
+        "机会假设：开发一个技能管理 CLI 工具，用于浏览、搜索和自定义技能，提升用户体验。",
+        "机会假设：为常见安全工具（如 Metasploit、Burp Suite）编写适配器，扩展技能库的实用性。",
+        "机会假设：建立技能质量评估框架，通过测试集验证技能在真实场景中的有效性，增强可信度。"
+      ],
+      "maturity": "从 Stars 和 Forks 看，项目获得了显著关注，但 Stars 不等于质量。项目创建于 2026 年 2 月，最新发布 v1.3.0（2026 年 6 月），更新活跃，开放问题 47 个，表明处于积极迭代阶段。综合判断，项目处于早期但快速成长阶段，成熟度中等，需关注后续稳定性和社区治理。"
+    }
+  },
+  "immich-app/immich": {
+    "full_name": "immich-app/immich",
+    "html_url": "https://github.com/immich-app/immich",
+    "description": "High performance self-hosted photo and video management solution.",
+    "stars": 111264,
+    "forks": 6580,
+    "open_issues": 745,
+    "watchers": 346,
+    "language": "TypeScript",
+    "license": "AGPL-3.0",
+    "topics": [
+      "backup-tool",
+      "flutter",
+      "google-photos",
+      "google-photos-alternative",
+      "javascript",
+      "mobile-app",
+      "nestjs",
+      "nodejs",
+      "photo-gallery",
+      "photos",
+      "photos-management",
+      "self-hosted",
+      "svelte",
+      "sveltekit",
+      "typescript",
+      "videos"
+    ],
+    "created_at": "2022-02-03T15:56:27Z",
+    "updated_at": "2026-08-18T03:57:18Z",
+    "pushed_at": "2026-08-18T03:44:17Z",
+    "archived": false,
+    "fork": false,
+    "score": 75.08,
+    "score_reasons": [
+      "111,264 stars over 1657 days",
+      "estimated 67.2 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable AGPL-3.0 license",
+      "topics: backup-tool, flutter, google-photos, google-photos-alternative, javascript"
+    ],
+    "homepage": "https://immich.app",
+    "default_branch": "main",
+    "readme_url": "https://github.com/immich-app/immich/blob/main/README.md",
+    "readme_summary": "High performance self-hosted photo and video management solution",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v3.1.0",
+    "latest_release_url": "https://github.com/immich-app/immich/releases/tag/v3.1.0",
+    "latest_release_at": "2026-07-29T14:20:10Z",
+    "analysis": {
+      "positioning": "Immich 是一个高性能的自托管照片和视频管理解决方案，旨在替代 Google Photos 等云服务，让用户完全掌控自己的媒体数据。它提供备份、组织和浏览功能，强调性能与隐私，适合希望摆脱云依赖的用户。",
+      "target_users": [
+        "注重隐私、希望自托管媒体库的个人用户",
+        "家庭或小团队需要集中备份和共享照片视频",
+        "技术爱好者或开发者，愿意部署和维护自托管服务"
+      ],
+      "core_capabilities": [
+        "提供照片和视频的备份、组织和浏览功能，支持移动端应用",
+        "高性能的媒体管理，可能包括快速索引和检索",
+        "自托管部署，数据完全由用户控制，避免云服务锁定"
+      ],
+      "technical_analysis": [
+        "使用 TypeScript 开发，涉及 Node.js、NestJS、Svelte/SvelteKit 和 Flutter，表明前后端分离且跨平台",
+        "支持移动应用（Flutter）和 Web 界面（Svelte），集成形态多样",
+        "自托管部署，用户需自行管理服务器和存储，具体部署方式未提供，需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目活跃度高，Stars 超过 11 万，Forks 超过 6 千，显示社区关注度极高",
+        "持续发布新版本（v3.1.0），更新频繁，表明项目维护活跃",
+        "作为 Google Photos 替代品，满足自托管趋势，对开发者有生态价值"
+      ],
+      "limitations": [
+        "开源许可证为 AGPL-3.0，可能对商用或修改有严格限制，需核实",
+        "自托管需要用户具备服务器运维能力，部署和维护成本较高",
+        "存在 745 个开放问题，可能影响稳定性，需关注",
+        "具体功能细节和文档未提供，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：开发插件或集成，如与 NAS 设备、对象存储或备份工具集成",
+        "机会假设：提供一键部署脚本或容器化方案，降低自托管门槛",
+        "机会假设：开发自动化测试工具或监控方案，提升项目可靠性"
+      ],
+      "maturity": "从 Stars 和 Forks 看，项目极受欢迎，但 Stars 不等于质量。开放问题较多，但版本迭代频繁（最新 v3.1.0），更新时间近，表明项目处于活跃开发阶段，成熟度可能较高，但需实际验证。"
+    }
+  },
+  "nautechsystems/nautilus_trader": {
+    "full_name": "nautechsystems/nautilus_trader",
+    "html_url": "https://github.com/nautechsystems/nautilus_trader",
+    "description": "Production-grade Rust-native trading engine with deterministic event-driven architecture",
+    "stars": 26017,
+    "forks": 3382,
+    "open_issues": 104,
+    "watchers": 202,
+    "language": "Rust",
+    "license": "LGPL-3.0",
+    "topics": [
+      "algorithmic-trading-engine",
+      "artificial-intelligence",
+      "crypto-trading",
+      "equity-trading",
+      "forex",
+      "futures-trading",
+      "machine-learning",
+      "options-trading",
+      "python",
+      "rust",
+      "sports-betting",
+      "trading",
+      "trading-platform"
+    ],
+    "created_at": "2018-06-25T06:26:16Z",
+    "updated_at": "2026-08-18T03:59:56Z",
+    "pushed_at": "2026-08-18T03:36:57Z",
+    "archived": false,
+    "fork": false,
+    "score": 66.49,
+    "score_reasons": [
+      "26,017 stars over 2976 days",
+      "estimated 8.7 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable LGPL-3.0 license",
+      "topics: algorithmic-trading-engine, artificial-intelligence, crypto-trading, equity-trading, forex"
+    ],
+    "homepage": "https://nautilustrader.io",
+    "default_branch": "develop",
+    "readme_url": "https://github.com/nautechsystems/nautilus_trader/blob/develop/README.md",
+    "readme_summary": "| `Linux (x86_64)`   | 1.97.1 | 3.12-3.14 | | `Linux (ARM64)`    | 1.97.1 | 3.12-3.14 | | `macOS (ARM64)`    | 1.97.1 | 3.12-3.14 | | `Windows (x86_64)` | 1.97.1 | 3.12-3.14 |",
+    "readme_features": [
+      "Fast: Rust core with the mimalloc allocator and asynchronous networking using tokio.",
+      "Reliable: Type- and thread-safety backed by Rust, with optional Redis-backed state persistence.",
+      "Portable: Runs on Linux, macOS, and Windows. Deploy using Docker.",
+      "Flexible: Modular adapters integrate any REST API or WebSocket feed.",
+      "Advanced: Time in force IOC, FOK, GTC, GTD, DAY, ATTHEOPEN, ATTHECLOSE, advanced order types and conditional triggers. Execution instructions post-only, reduce-only, and icebergs. Contingency orders including OCO, OUO, OTO."
+    ],
+    "quick_start": "",
+    "latest_release_name": "NautilusTrader 1.231.0 Beta",
+    "latest_release_url": "https://github.com/nautechsystems/nautilus_trader/releases/tag/v1.231.0",
+    "latest_release_at": "2026-08-02T18:53:49Z",
+    "analysis": {
+      "positioning": "Nautilus Trader 是一个生产级的 Rust 原生交易引擎，采用确定性事件驱动架构，旨在解决高频算法交易中对低延迟、高可靠性和跨资产支持的需求。与普通同类工具相比，其明确特点是 Rust 核心带来的类型与线程安全、mimalloc 分配器和 tokio 异步网络，以及支持多种高级订单类型和条件触发，同时提供 Python API 以兼顾易用性。",
+      "target_users": [
+        "量化交易开发者，需要高性能、低延迟的交易执行引擎。",
+        "算法交易团队，需要跨资产（加密货币、外汇、股票、期货、期权）的统一交易平台。",
+        "研究机构或个人，希望利用 Rust 的安全性和 Python 的灵活性进行策略开发与回测。"
+      ],
+      "core_capabilities": [
+        "高性能执行：Rust 核心配合 mimalloc 和 tokio，实现低延迟异步网络通信，适合高频交易场景。",
+        "高可靠性：类型和线程安全由 Rust 保证，可选 Redis 支持状态持久化，增强系统稳定性。",
+        "灵活集成：模块化适配器可集成任意 REST API 或 WebSocket 数据源，支持 Docker 部署，跨平台运行。",
+        "高级订单功能：支持 IOC、FOK、GTC、GTD、DAY、ATTHEOPEN、ATTHECLOSE 等时间生效指令，以及 post-only、reduce-only、iceberg 执行指令和 OCO、OUO、OTO 等条件订单。"
+      ],
+      "technical_analysis": [
+        "语言：核心使用 Rust，提供 Python API，兼顾性能与开发效率。",
+        "运行方式：支持本地运行，也可通过 Docker 部署，跨平台（Linux、macOS、Windows）。",
+        "集成形态：模块化适配器设计，可连接任意 REST API 或 WebSocket 数据源，集成灵活。",
+        "部署方式：支持 Docker 容器化部署，便于云原生环境使用。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目拥有 26k+ Stars 和 3.3k+ Forks，社区关注度高，且持续更新（最新版本 1.231.0 Beta 于 2026-08-02 发布），表明项目活跃且迭代迅速。",
+        "其 Rust 原生核心和高级订单功能可能为高频交易提供独特优势，值得关注性能和安全性的开发者关注。",
+        "主题覆盖多种资产类别和机器学习，可能成为跨领域量化研究的基础平台。"
+      ],
+      "limitations": [
+        "许可证为 LGPL-3.0，可能对商业闭源使用有影响，需评估合规性。",
+        "最新版本仍为 Beta，可能意味着 API 或功能尚未完全稳定，需进一步核实。",
+        "本次输入未提供文档、社区支持、贡献指南等资料，需进一步核实。",
+        "平台支持列表显示 Rust 1.97.1 和 Python 3.12-3.14，但未提及具体硬件要求或性能基准，需进一步核实。"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对特定交易所的适配器插件，扩展其集成生态。",
+        "机会假设：可构建基于该引擎的策略回测和可视化工具，提升用户体验。",
+        "机会假设：可提供云托管服务或一键部署模板，降低使用门槛。",
+        "机会假设：可开发监控和运维工具，利用 Redis 持久化实现状态恢复和审计。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2018 年，持续更新至 2026 年，最新版本为 Beta，Stars 和 Forks 数量较高，但 Stars 不等于质量。Open Issues 104 个，相对活跃，但 Beta 状态表明可能仍在功能完善阶段。综合来看，项目处于成熟度较高的活跃开发期，但正式稳定版尚未发布，需关注后续版本。"
+    }
+  },
+  "agalwood/Motrix": {
+    "full_name": "agalwood/Motrix",
+    "html_url": "https://github.com/agalwood/Motrix",
+    "description": "A full-featured download manager.",
+    "stars": 53189,
+    "forks": 4931,
+    "open_issues": 775,
+    "watchers": 488,
+    "language": "TypeScript",
+    "license": "NOASSERTION",
+    "topics": [
+      "aria2",
+      "bittorrent",
+      "bt",
+      "download",
+      "download-manager",
+      "electron",
+      "linux",
+      "mac",
+      "macos",
+      "magnet",
+      "motrix",
+      "torrent",
+      "windows"
+    ],
+    "created_at": "2018-12-18T11:45:05Z",
+    "updated_at": "2026-08-18T03:59:56Z",
+    "pushed_at": "2026-08-18T03:06:56Z",
+    "archived": false,
+    "fork": false,
+    "score": 64.66,
+    "score_reasons": [
+      "53,189 stars over 2800 days",
+      "estimated 19.0 stars/day since creation",
+      "last push 0.0 days ago",
+      "topics: aria2, bittorrent, bt, download, download-manager"
+    ],
+    "homepage": "https://motrix.app",
+    "default_branch": "main",
+    "readme_url": "https://github.com/agalwood/Motrix/blob/main/README.md",
+    "readme_summary": "A modern, full-featured download manager that stays simple to use",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "Motrix v1.8.19",
+    "latest_release_url": "https://github.com/agalwood/Motrix/releases/tag/v1.8.19",
+    "latest_release_at": "2023-05-03T07:13:13Z",
+    "analysis": {
+      "positioning": "Motrix 是一款功能全面的下载管理器，旨在提供简洁易用的现代下载体验。它解决了用户在不同协议（如 HTTP、BT、磁力链接）下载时需切换多个工具的问题，与普通下载工具相比，其明确特点是基于 Electron 构建跨平台桌面应用，并集成 aria2 作为下载引擎。",
+      "target_users": [
+        "需要跨平台（Windows、macOS、Linux）下载管理的个人用户",
+        "经常下载大文件、使用 BT/磁力链接的下载爱好者",
+        "希望在一个界面中统一管理多种下载协议的用户"
+      ],
+      "core_capabilities": [
+        "支持多协议下载（HTTP、FTP、BT、磁力链接），满足多样化下载需求",
+        "提供简洁的图形界面，降低使用门槛，同时保留高级配置选项",
+        "基于 aria2 引擎，可能具备高效下载和断点续传能力"
+      ],
+      "technical_analysis": [
+        "使用 TypeScript 开发，基于 Electron 框架，实现跨平台桌面应用",
+        "集成 aria2 作为下载后端，可能通过本地 RPC 进行通信",
+        "从仓库信息看，未明确云端同步或部署方式，需进一步核实"
+      ],
+      "why_it_matters": [
+        "拥有超过 5 万 Stars 和近 5 千 Forks，表明社区关注度高，活跃度信号强",
+        "作为开源下载管理器，为开发者提供了研究 Electron 与 aria2 集成的参考案例",
+        "持续更新至 2026 年（pushed_at），显示项目仍在维护，生态可能活跃"
+      ],
+      "limitations": [
+        "许可证为 NOASSERTION，需核实具体开源协议，可能影响商业使用",
+        "最新发布为 2023 年，距今较久，可能缺少新功能或安全更新",
+        "存在 775 个开放问题，需关注问题解决效率和项目维护活跃度"
+      ],
+      "opportunities": [
+        "机会假设：可开发浏览器扩展或命令行工具，与 Motrix 集成，提升下载自动化",
+        "机会假设：针对不同平台打包优化，或提供便携版，降低安装成本",
+        "机会假设：开发插件系统或主题定制，增强用户体验和扩展性"
+      ],
+      "maturity": "从 Stars 和 Forks 数量看，项目具有较高知名度和社区基础，但 Stars 不等于质量。开放问题较多，最新发布停留在 2023 年，而仓库最近推送在 2026 年，表明可能有开发活动但未发布新版本，整体成熟度需结合问题解决速度和发布频率进一步评估。"
+    }
+  },
+  "akitaonrails/ai-memory": {
+    "full_name": "akitaonrails/ai-memory",
+    "html_url": "https://github.com/akitaonrails/ai-memory",
+    "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+    "stars": 2226,
+    "forks": 201,
+    "open_issues": 6,
+    "watchers": 27,
+    "language": "Rust",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2026-05-21T23:23:51Z",
+    "updated_at": "2026-08-18T03:59:51Z",
+    "pushed_at": "2026-08-18T01:24:51Z",
+    "archived": false,
+    "fork": false,
+    "score": 63.71,
+    "score_reasons": [
+      "2,226 stars over 88 days",
+      "estimated 25.2 stars/day since creation",
+      "last push 0.1 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": "https://github.com/akitaonrails/ai-memory/blob/main/README.md",
+    "readme_summary": "LLM coding agents lose context when a session ends. ai-memory gives them a shared, persistent wiki compiled from sanitized lifecycle observations. When a session ends, relevant observations become a coherent summary; the next agent receives a bounded handoff. Optional `ai-memory run` launches add a portable visible-event ledger and native per-harness resume for higher-fidelity",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v1.28.0",
+    "latest_release_url": "https://github.com/akitaonrails/ai-memory/releases/tag/v1.28.0",
+    "latest_release_at": "2026-08-17T02:52:48Z",
+    "analysis": {
+      "positioning": "ai-memory 是一个为 LLM 编码代理提供长期记忆的解决方案，解决代理在会话结束后丢失上下文的问题。它通过将清理后的生命周期观察编译成共享的持久化 wiki，在会话结束时生成连贯摘要，并为下一个代理提供有界交接，确保上下文连续。与普通工具相比，其明确特点是提供跨代理供应商的交接支持，并可选启动便携式事件账本和原生恢复功能。",
+      "target_users": [
+        "使用 LLM 编码代理的开发者，需要跨会话保持上下文",
+        "在多个代理供应商之间切换的团队，需要统一记忆和交接机制",
+        "构建复杂编码工作流的组织，希望减少重复上下文输入"
+      ],
+      "core_capabilities": [
+        "持久化共享记忆：将代理的生命周期观察编译为 wiki，跨会话保留知识",
+        "有界交接：生成连贯摘要，确保下一个代理获得必要上下文，避免信息过载",
+        "可选事件账本：通过 `ai-memory run` 启动便携式事件记录，提高交接保真度"
+      ],
+      "technical_analysis": [
+        "使用 Rust 语言开发，可能带来高性能和内存安全优势",
+        "采用本地/云端方式未明确，需进一步核实",
+        "集成形态为 CLI 工具，可嵌入代理编码流程",
+        "部署方式可能为本地运行，但具体细节未提供"
+      ],
+      "why_it_matters": [
+        "解决 LLM 代理的长期记忆痛点，提升编码自动化效率",
+        "活跃开发中，最新发布 v1.28.0 且近期有更新，显示项目持续演进",
+        "获得 2226 Stars 和 201 Forks，表明社区关注度较高"
+      ],
+      "limitations": [
+        "项目创建于 2026 年，相对较新，成熟度需进一步观察",
+        "许可证为 MIT，但依赖和平台兼容性未提供，需核实",
+        "安全性和隐私方面未提供信息，需进一步评估"
+      ],
+      "opportunities": [
+        "机会假设：开发 IDE 插件或编辑器集成，使代理记忆更易访问",
+        "机会假设：提供云同步服务，支持跨设备记忆共享",
+        "机会假设：构建测试框架，验证交接质量，提升可靠性"
+      ],
+      "maturity": "从现有信息看，项目处于早期但活跃开发阶段，Stars 和 Forks 数量可观，但不应直接等同于质量。最新发布 v1.28.0 且近期有推送，表明维护活跃。开放问题仅 6 个，可能说明项目相对稳定，但创建时间短，长期稳定性需进一步观察。"
+    }
+  },
+  "cordiverse/cordis": {
+    "full_name": "cordiverse/cordis",
+    "html_url": "https://github.com/cordiverse/cordis",
+    "description": "Meta-Framework of Spatiotemporal Composability",
+    "stars": 5735,
+    "forks": 309,
+    "open_issues": 42,
+    "watchers": 23,
+    "language": "TypeScript",
+    "license": "MIT",
+    "topics": [
+      "effect",
+      "framework",
+      "nodejs",
+      "plugin"
+    ],
+    "created_at": "2022-05-17T18:52:57Z",
+    "updated_at": "2026-08-18T03:58:45Z",
+    "pushed_at": "2026-08-13T13:48:22Z",
+    "archived": false,
+    "fork": false,
+    "score": 52.72,
+    "score_reasons": [
+      "5,735 stars over 1553 days",
+      "estimated 3.7 stars/day since creation",
+      "last push 4.6 days ago",
+      "detectable MIT license",
+      "topics: effect, framework, nodejs, plugin"
+    ],
+    "homepage": "https://deepseek-harness.github.io/deepseek-harness/reference/cordis-primer",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  }
+}
