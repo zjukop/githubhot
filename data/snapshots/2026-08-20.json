@@ -1,0 +1,945 @@
+{
+  "santifer/career-ops": {
+    "full_name": "santifer/career-ops",
+    "html_url": "https://github.com/santifer/career-ops",
+    "description": "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)",
+    "stars": 65833,
+    "forks": 12745,
+    "open_issues": 352,
+    "watchers": 255,
+    "language": "JavaScript",
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "anthropic",
+      "ats",
+      "automation",
+      "beginner-friendly",
+      "career",
+      "careerops",
+      "claude",
+      "claude-code",
+      "cli",
+      "first-timers-only",
+      "golang",
+      "good-first-issue",
+      "interview-prep",
+      "job-application",
+      "job-hunting",
+      "job-search",
+      "open-source",
+      "resume"
+    ],
+    "created_at": "2026-04-04T18:21:18Z",
+    "updated_at": "2026-08-20T02:06:38Z",
+    "pushed_at": "2026-08-19T19:08:01Z",
+    "archived": false,
+    "fork": false,
+    "score": 91.96,
+    "score_reasons": [
+      "65,833 stars over 137 days",
+      "estimated 479.4 stars/day since creation",
+      "last push 0.3 days ago",
+      "detectable MIT license",
+      "topics: ai, ai-agent, anthropic, ats, automation"
+    ],
+    "homepage": "https://career-ops.org",
+    "default_branch": "main",
+    "readme_url": "https://github.com/santifer/career-ops/blob/main/README.md",
+    "readme_summary": "English | Español | Deutsch | Français | Português (Brasil) | 한국어 | 日本語 | 简体中文 | 繁體中文 | Українська | Русский | Polski | Dansk | தமிழ் | العربية | हिन्दी | Türkçe",
+    "readme_features": [],
+    "quick_start": "npx @santifer/career-ops init",
+    "latest_release_name": "career-ops: v1.27.0",
+    "latest_release_url": "https://github.com/santifer/career-ops/releases/tag/career-ops-v1.27.0",
+    "latest_release_at": "2026-08-18T05:58:07Z",
+    "analysis": {
+      "positioning": "career-ops 是一个开源 AI 求职助手，通过扫描招聘门户、用结构化 A-F 评分标准评估职位并给出 1.0-5.0 分数，帮助用户定制简历并跟踪申请进度。与普通求职工具相比，它完全本地运行在 AI 编码 CLI 中，强调透明、可定制的评分流程，而非黑盒算法。",
+      "target_users": [
+        "使用 Claude Code、Codex、OpenCode 等 AI 编码工具的开发者，希望在编码环境中无缝处理求职事务。",
+        "求职者需要系统化评估职位匹配度，并希望自动化简历定制和申请跟踪。",
+        "开源爱好者或初学者，可通过 good-first-issue 参与贡献。"
+      ],
+      "core_capabilities": [
+        "扫描多个招聘门户，聚合职位信息，节省手动搜索时间。",
+        "使用 A-F 评分标准将职位评估为 1.0-5.0 分数，帮助用户快速筛选高匹配机会。",
+        "根据职位要求定制简历，并跟踪申请状态，提升求职效率。"
+      ],
+      "technical_analysis": [
+        "项目主要使用 JavaScript，并涉及 Go 语言（见 topics），可能用于性能敏感组件。",
+        "通过 npx 命令快速初始化，运行在本地 AI 编码 CLI 中，强调本地执行，数据可能保留在用户机器上。",
+        "集成形态为 CLI 工具，支持多种 AI 编码环境，但具体集成方式需进一步核实。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目拥有 65k+ Stars 和 12k+ Forks，表明社区关注度高，可能成为 AI 求职领域的标准工具。",
+        "活跃的发布节奏（v1.27.0 于 2026-08-18）和持续的推送（2026-08-19）显示项目维护积极。",
+        "多语言 README 和 beginner-friendly 标签表明项目注重国际化与新手友好，可能吸引广泛贡献者。"
+      ],
+      "limitations": [
+        "项目创建于 2026-04-04，相对较新，成熟度可能有限，需核实生产环境稳定性。",
+        "依赖 AI 编码 CLI 环境，可能限制非 CLI 用户的采用。",
+        "本地运行可能涉及敏感求职数据，需核实数据安全与隐私保护措施。",
+        "MIT 许可证允许自由使用，但需注意第三方依赖的许可证兼容性。"
+      ],
+      "opportunities": [
+        "机会假设：开发 Web 或桌面 GUI 前端，为非 CLI 用户提供更友好的界面。",
+        "机会假设：集成更多招聘平台或 ATS 系统，扩大职位源覆盖。",
+        "机会假设：提供数据分析仪表板，帮助用户优化求职策略。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 4 月，至今约 4 个月，但已发布 v1.27.0，更新频繁，Stars 和 Forks 数量高，表明社区活跃。然而，Stars 不等同于质量，需关注 open_issues 352 个，可能反映功能迭代快但问题处理需跟进。整体处于快速成长阶段。"
+    }
+  },
+  "mattpocock/skills": {
+    "full_name": "mattpocock/skills",
+    "html_url": "https://github.com/mattpocock/skills",
+    "description": "Skills for Real Engineers. Straight from my .agents directory.",
+    "stars": 223910,
+    "forks": 19258,
+    "open_issues": 371,
+    "watchers": 1276,
+    "language": "Shell",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2026-02-03T11:15:53Z",
+    "updated_at": "2026-08-20T02:07:02Z",
+    "pushed_at": "2026-08-19T13:09:36Z",
+    "archived": false,
+    "fork": false,
+    "score": 89.92,
+    "score_reasons": [
+      "223,910 stars over 198 days",
+      "estimated 1133.0 stars/day since creation",
+      "last push 0.5 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": "https://aihero.dev/skills",
+    "default_branch": "main",
+    "readme_url": "https://github.com/mattpocock/skills/blob/main/README.md",
+    "readme_summary": "My agent skills that I use every day to do real engineering - not vibe coding.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v1.2.3",
+    "latest_release_url": "https://github.com/mattpocock/skills/releases/tag/v1.2.3",
+    "latest_release_at": "2026-08-06T14:05:28Z",
+    "analysis": {
+      "positioning": "Skills 是一个面向真实工程师的 AI 代理技能集合，直接来自作者日常使用的 .agents 目录，旨在解决 AI 编程中“空谈”与“实际工程”脱节的问题，提供可复用的实战技能，而非简单的提示词或玩具示例。",
+      "target_users": [
+        "使用 AI 辅助编程的软件工程师，希望提升代码质量与工程效率。",
+        "对 AI 代理工作流感兴趣，希望借鉴成熟技能配置的开发者。"
+      ],
+      "core_capabilities": [
+        "提供作者日常使用的真实技能，覆盖代码审查、测试、重构等工程场景，帮助用户直接应用。",
+        "以 Shell 脚本形式封装技能，便于集成到现有开发流程中。",
+        "通过 MIT 许可证开放，允许自由使用和修改，降低采用门槛。"
+      ],
+      "technical_analysis": [
+        "项目主要语言为 Shell，表明技能以命令行脚本或配置形式存在，可能依赖本地环境。",
+        "从描述看，技能来自 .agents 目录，可能用于配置 AI 代理（如 Claude Code 或类似工具），但具体集成方式未提供。",
+        "本次输入未提供部署或运行方式的详细信息，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "项目由知名开发者维护，且获得极高关注度（Stars 超 22 万），表明社区对“真实工程技能”的需求强烈。",
+        "从现有信息看，项目强调“非 vibe coding”，可能填补 AI 编程中缺乏实战指导的空白，值得关注。",
+        "活跃的更新和发布（最新发布 v1.2.3）暗示项目持续演进，可能成为 AI 代理技能的标准参考。"
+      ],
+      "limitations": [
+        "项目创建时间较短（2026 年 2 月），成熟度可能有限，需评估技能稳定性。",
+        "依赖 Shell 环境，可能不适用于所有平台或非命令行工作流。",
+        "许可证为 MIT，但需核实技能中是否包含第三方依赖或潜在安全风险。",
+        "本次输入未提供官方文档或使用说明，需进一步核实快速上手方式。"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对不同 IDE 或 CI/CD 的集成插件，将技能无缝嵌入现有开发环境。",
+        "机会假设：可创建技能测试框架，验证技能在不同项目中的有效性，提升可靠性。",
+        "机会假设：可构建技能市场或推荐系统，帮助用户根据项目类型选择合适技能。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 2 月，至今约 6 个月，已发布 v1.2.3，更新频繁，Stars 和 Forks 数量极高，表明社区参与度强。但项目仍处于早期阶段，开放问题较多（371 个），需关注问题解决速度和稳定性。Stars 高不代表质量，但活跃的发布和社区反馈可能促进项目快速成熟。"
+    }
+  },
+  "obra/superpowers": {
+    "full_name": "obra/superpowers",
+    "html_url": "https://github.com/obra/superpowers",
+    "description": "An agentic skills framework & software development methodology that works.",
+    "stars": 274317,
+    "forks": 24559,
+    "open_issues": 291,
+    "watchers": 1035,
+    "language": "Shell",
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "brainstorming",
+      "coding",
+      "obra",
+      "sdlc",
+      "skills",
+      "subagent-driven-development",
+      "superpowers"
+    ],
+    "created_at": "2025-10-09T19:45:18Z",
+    "updated_at": "2026-08-20T02:08:24Z",
+    "pushed_at": "2026-08-19T17:33:23Z",
+    "archived": false,
+    "fork": false,
+    "score": 89.53,
+    "score_reasons": [
+      "274,317 stars over 314 days",
+      "estimated 872.9 stars/day since creation",
+      "last push 0.4 days ago",
+      "detectable MIT license",
+      "topics: ai, brainstorming, coding, obra, sdlc"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": "https://github.com/obra/superpowers/blob/main/README.md",
+    "readme_summary": "Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that make sure your agent uses them.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v6.3.0",
+    "latest_release_url": "https://github.com/obra/superpowers/releases/tag/v6.3.0",
+    "latest_release_at": "2026-08-12T16:58:30Z",
+    "analysis": {
+      "positioning": "Superpowers 是一套面向编码代理的智能体技能框架与软件开发方法论，通过可组合的技能和初始指令，让代理遵循完整的软件开发生命周期。它解决的是代理在复杂开发任务中缺乏结构化流程和可复用技能的问题，与普通工具相比，其明确特点是强调技能的可组合性和方法论驱动。",
+      "target_users": [
+        "使用 AI 编码代理的开发者，希望提升代理在软件开发中的自主性和规范性。",
+        "团队或组织，希望将标准化的开发流程嵌入到 AI 辅助开发中。"
+      ],
+      "core_capabilities": [
+        "提供一套可组合的技能库，使代理能够执行头脑风暴、编码、测试等开发任务，提升开发效率。",
+        "内置初始指令，确保代理遵循方法论，减少随意性，提高结果一致性。",
+        "支持子代理驱动开发，可能有助于分解复杂任务并并行处理。"
+      ],
+      "technical_analysis": [
+        "仓库主要语言为 Shell，表明其可能以脚本形式提供技能或指令，便于集成到命令行环境。",
+        "从描述看，它作为框架运行在编码代理之上，可能以本地或云端方式集成，但具体运行方式需进一步核实。",
+        "集成形态可能包括技能文件、配置或 CLI 工具，但本次输入未提供详细技术文档，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "该项目拥有极高的关注度（Stars 超过 27 万），表明社区对其方法论和框架有强烈兴趣。",
+        "活跃的发布节奏（最新版本 v6.3.0 于 2026 年 8 月发布）和持续的更新（最近推送于 2026 年 8 月）显示项目处于积极维护状态。",
+        "从现有信息看，它可能为 AI 辅助开发提供了一种系统化方法，有助于推动开发流程的标准化和自动化。"
+      ],
+      "limitations": [
+        "项目创建于 2025 年 10 月，相对较新，成熟度可能有限，需进一步评估其稳定性。",
+        "依赖特定的编码代理环境，可能不适用于所有 AI 工具，需核实兼容性。",
+        "许可证为 MIT，但采用成本（如学习曲线、集成复杂度）未在输入中说明，需进一步核实。",
+        "安全方面，技能执行可能涉及代码操作，需评估潜在风险。"
+      ],
+      "opportunities": [
+        "机会假设：可以开发针对不同编程语言或框架的技能包，扩展其适用场景。",
+        "机会假设：可以构建可视化工具，帮助用户编排和调试技能组合，降低使用门槛。",
+        "机会假设：可以集成到主流 CI/CD 流程，实现自动化开发流水线。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2025 年 10 月，至今不到一年，但已发布 v6.3.0 版本，且更新频繁，显示迭代速度较快。Stars 数量极高，但不应直接等同于质量，需结合社区反馈和实际使用评估。总体而言，项目处于快速演进阶段，成熟度可能仍在提升中。"
+    }
+  },
+  "harry0703/MoneyPrinterTurbo": {
+    "full_name": "harry0703/MoneyPrinterTurbo",
+    "html_url": "https://github.com/harry0703/MoneyPrinterTurbo",
+    "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+    "stars": 110875,
+    "forks": 16803,
+    "open_issues": 31,
+    "watchers": 703,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "ai-video-generator",
+      "content-creation",
+      "ffmpeg",
+      "instagram-reels",
+      "llm",
+      "python",
+      "short-video",
+      "subtitles",
+      "text-to-speech",
+      "tiktok",
+      "video-automation",
+      "video-workflow",
+      "workflow-automation",
+      "youtube-shorts"
+    ],
+    "created_at": "2024-03-11T02:57:34Z",
+    "updated_at": "2026-08-20T02:08:10Z",
+    "pushed_at": "2026-08-19T08:30:15Z",
+    "archived": false,
+    "fork": false,
+    "score": 83.21,
+    "score_reasons": [
+      "110,875 stars over 892 days",
+      "estimated 124.3 stars/day since creation",
+      "last push 0.7 days ago",
+      "detectable MIT license",
+      "topics: ai-video-generator, content-creation, ffmpeg, instagram-reels, llm"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": "https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README.md",
+    "readme_summary": "只需提供视频 主题 或 关键词 ，即可自动生成视频脚本、匹配素材、生成字幕和背景音乐，并合成高清短视频。",
+    "readme_features": [
+      "[x] 提供 AI Agent、WebUI、API 和 CLI 四种使用方式，代码按控制器、服务和模型等职责分层",
+      "[x] 支持 AI 自动生成视频脚本，也可以使用自定义脚本",
+      "[x] 支持多种 高清视频 尺寸",
+      "[x] 竖屏 9:16，1080x1920",
+      "[x] 横屏 16:9，1920x1080"
+    ],
+    "quick_start": "",
+    "latest_release_name": "v1.3.4",
+    "latest_release_url": "https://github.com/harry0703/MoneyPrinterTurbo/releases/tag/v1.3.4",
+    "latest_release_at": "2026-08-12T02:51:41Z",
+    "analysis": {
+      "positioning": "MoneyPrinterTurbo 是一个基于 AI 大模型和自动化工作流的开源工具，能够根据用户提供的主题或关键词，自动生成视频脚本、匹配素材、生成字幕和背景音乐，并合成高清短视频。它解决了短视频制作中内容创作和剪辑耗时的问题，与普通工具相比，其明确特点是提供 AI Agent、WebUI、API 和 CLI 四种使用方式，并支持多种高清视频尺寸，适合自动化批量生产短视频。",
+      "target_users": [
+        "内容创作者，需要快速生成短视频素材",
+        "开发者，希望集成短视频生成功能到自己的应用",
+        "企业营销团队，用于自动化生成宣传视频"
+      ],
+      "core_capabilities": [
+        "一键生成完整短视频：从脚本到成片全自动，节省人工剪辑时间",
+        "支持自定义脚本，灵活控制视频内容",
+        "提供多种高清视频尺寸，适配不同平台（如抖音、YouTube Shorts）"
+      ],
+      "technical_analysis": [
+        "项目使用 Python 语言开发，代码按控制器、服务和模型分层，结构清晰",
+        "支持本地和云端部署，提供 WebUI、API 和 CLI 多种集成形态，便于不同场景使用",
+        "依赖 FFmpeg 进行视频处理，集成 AI 大模型生成脚本，具体部署方式需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目活跃度高，最新发布 v1.3.4，更新频繁，社区关注度大",
+        "提供多种使用方式，降低了使用门槛，适合开发者二次开发",
+        "从现有信息看，该项目可能成为短视频自动化领域的重要工具，值得关注"
+      ],
+      "limitations": [
+        "依赖外部 AI 服务和 FFmpeg，可能需要配置 API 密钥或本地模型，具体依赖需核实",
+        "生成视频的素材来源和版权问题需进一步确认",
+        "项目成熟度可能受限于 AI 模型的质量和稳定性，需实际测试"
+      ],
+      "opportunities": [
+        "机会假设：可以开发插件或扩展，集成更多视频素材库或音乐库",
+        "机会假设：提供更细粒度的视频风格控制，如镜头切换、滤镜等",
+        "机会假设：优化 API 接口，方便企业级集成和自动化流水线"
+      ],
+      "maturity": "从现有信息看，项目创建于 2024 年 3 月，持续更新至 2026 年 8 月，发布多个版本，Stars 数量高，但 Stars 不代表质量。Open Issues 数量较少，说明维护活跃，整体成熟度较高，但需进一步验证功能稳定性。"
+    }
+  },
+  "volcengine/OpenViking": {
+    "full_name": "volcengine/OpenViking",
+    "html_url": "https://github.com/volcengine/OpenViking",
+    "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
+    "stars": 30263,
+    "forks": 2339,
+    "open_issues": 459,
+    "watchers": 82,
+    "language": "Python",
+    "license": "AGPL-3.0",
+    "topics": [
+      "agent-memory",
+      "agent-plugins",
+      "agentic-rag",
+      "context-database",
+      "dsh-plugin",
+      "self-evolving"
+    ],
+    "created_at": "2026-01-05T07:11:17Z",
+    "updated_at": "2026-08-20T02:07:01Z",
+    "pushed_at": "2026-08-19T15:59:33Z",
+    "archived": false,
+    "fork": false,
+    "score": 76.98,
+    "score_reasons": [
+      "30,263 stars over 227 days",
+      "estimated 133.4 stars/day since creation",
+      "last push 0.4 days ago",
+      "detectable AGPL-3.0 license",
+      "topics: agent-memory, agent-plugins, agentic-rag, context-database, dsh-plugin"
+    ],
+    "homepage": "https://openviking.ai/",
+    "default_branch": "main",
+    "readme_url": "https://github.com/volcengine/OpenViking/blob/main/README.md",
+    "readme_summary": "Website  ·  Live Demo  ·  GitHub  ·  Issues  ·  Docs",
+    "readme_features": [
+      "One filesystem for all context. Memories, resources, and skills each get a viking:// URI. Agents locate and manipulate context deterministically, like a developer working with files. → Viking URI · Context types",
+      "Tiered loading cuts token spend. Every entry is processed into L0 (abstract), L1 (overview), and L2 (details) on write, then loaded only as deep as the task requires. → Context layers",
+      "Directory recursive retrieval. Vector search first locates the highest-scoring directory, then drills down layer by layer, so results arrive with their surrounding context intact. → Retrieval",
+      "Observable retrieval. Each query preserves its directory-browsing trajectory. When a result looks wrong, you can see exactly which path produced it. → Retrieval",
+      "Sessions become memory. After a session commits, OpenViking asynchronously extracts user preferences and agent experience into long-term memory. → Session"
+    ],
+    "quick_start": "pip install openviking --upgrade\nopenviking-server init      # interactive wizard: providers, models, ov.conf\nopenviking-server doctor    # validate setup\nopenviking-server           # start (background: nohup openviking-server > openviking.log 2>&1 &)",
+    "latest_release_name": "v0.4.15",
+    "latest_release_url": "https://github.com/volcengine/OpenViking/releases/tag/v0.4.15",
+    "latest_release_at": "2026-08-18T09:49:54Z",
+    "analysis": {
+      "positioning": "OpenViking 是一个面向 AI 代理的自进化上下文数据库，统一管理代理记忆、知识检索（RAG）和技能。它通过文件系统式的 URI 和分层加载机制，解决代理上下文管理碎片化、token 消耗高和检索结果缺乏上下文的问题，与普通向量数据库或 RAG 工具相比，其特点在于提供确定性的上下文操作和可观测的检索路径。",
+      "target_users": [
+        "AI 代理开发者，需要持久化和管理代理的长期记忆与经验。",
+        "构建复杂 RAG 应用的团队，希望降低 token 成本并提升检索上下文完整性。",
+        "需要将技能、资源和记忆统一管理的智能体平台开发者。"
+      ],
+      "core_capabilities": [
+        "统一上下文文件系统：通过 viking:// URI 将记忆、资源和技能作为文件系统对象，代理可像操作文件一样确定性地定位和操作上下文。",
+        "分层加载降低 token 消耗：写入时生成 L0/L1/L2 三层摘要，按任务需求加载对应深度，减少不必要的 token 开销。",
+        "目录递归检索：先定位高相关目录，再逐层深入，返回结果保留完整上下文。",
+        "可观测检索：保留查询的目录浏览轨迹，便于调试和验证检索结果。",
+        "会话转记忆：会话提交后异步提取用户偏好和代理经验，存入长期记忆，实现自我进化。"
+      ],
+      "technical_analysis": [
+        "基于 Python 实现，提供 pip 安装和命令行工具，部署简单。",
+        "采用本地/云端混合方式，通过 openviking-server 启动服务，支持后台运行。",
+        "集成形态为独立服务，提供初始化向导和诊断命令，便于配置和验证。",
+        "从现有信息看，可能支持插件机制（如 dsh-plugin），但具体集成方式需进一步核实。"
+      ],
+      "why_it_matters": [
+        "高关注度：Stars 超过 3 万，说明社区兴趣浓厚，可能成为代理上下文管理的标准方案。",
+        "活跃开发：最近发布 v0.4.15，更新频繁，功能迭代快。",
+        "解决真实痛点：统一记忆、RAG 和技能，降低 token 成本，提升检索可解释性，对 AI 代理工程有实际价值。"
+      ],
+      "limitations": [
+        "许可证为 AGPL-3.0，对商业闭源集成可能有限制，需评估合规性。",
+        "项目创建于 2026 年，相对年轻，成熟度可能不足，需关注稳定性。",
+        "依赖外部模型提供商（如 LLM），配置复杂，且可能产生额外成本。",
+        "安全方面：上下文数据可能包含敏感信息，需核实数据加密和访问控制机制。"
+      ],
+      "opportunities": [
+        "机会假设：开发针对 OpenViking 的监控和可视化工具，帮助用户理解检索轨迹和上下文使用情况。",
+        "机会假设：构建与主流代理框架（如 LangChain、AutoGen）的集成插件，降低采用门槛。",
+        "机会假设：提供性能基准测试和优化指南，帮助用户评估不同场景下的 token 节省效果。"
+      ],
+      "maturity": "项目创建于 2026 年 1 月，至今约 7 个月，已发布 v0.4.15，更新频繁，但 Stars 数量高可能受早期宣传影响，不能直接等同于质量。开放问题 459 个，需关注解决效率。整体处于快速迭代的早期阶段，适合尝鲜但生产环境需谨慎评估。"
+    }
+  },
+  "jundot/omlx": {
+    "full_name": "jundot/omlx",
+    "html_url": "https://github.com/jundot/omlx",
+    "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar",
+    "stars": 19855,
+    "forks": 1693,
+    "open_issues": 963,
+    "watchers": 101,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [
+      "apple-silicon",
+      "inference-server",
+      "llm",
+      "macos",
+      "mlx",
+      "openai-api"
+    ],
+    "created_at": "2026-02-13T14:13:27Z",
+    "updated_at": "2026-08-20T02:06:57Z",
+    "pushed_at": "2026-08-19T17:51:32Z",
+    "archived": false,
+    "fork": false,
+    "score": 76.12,
+    "score_reasons": [
+      "19,855 stars over 187 days",
+      "estimated 105.9 stars/day since creation",
+      "last push 0.3 days ago",
+      "detectable Apache-2.0 license",
+      "topics: apple-silicon, inference-server, llm, macos, mlx"
+    ],
+    "homepage": "https://omlx.ai",
+    "default_branch": "main",
+    "readme_url": "https://github.com/jundot/omlx/blob/main/README.md",
+    "readme_summary": "LLM inference, optimized for your Mac  Continuous batching and tiered KV caching, managed directly from your menu bar.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "0.6.3rc1",
+    "latest_release_url": "https://github.com/jundot/omlx/releases/tag/v0.6.3rc1",
+    "latest_release_at": "2026-08-19T17:51:13Z",
+    "analysis": {
+      "positioning": "omlx 是一个面向 Apple Silicon 的 LLM 推理服务器，通过 macOS 菜单栏管理，支持连续批处理和 SSD 分层 KV 缓存，旨在优化 Mac 上的本地大模型推理体验，与普通同类工具相比，其明确特点是深度集成 macOS 菜单栏并针对 Apple Silicon 优化。",
+      "target_users": [
+        "在 Mac 上本地运行 LLM 的开发者，需要便捷的推理服务管理",
+        "依赖 OpenAI API 兼容接口的 AI 应用开发者，寻求本地替代方案",
+        "对隐私敏感或需要离线推理的用户，利用 Apple Silicon 性能"
+      ],
+      "core_capabilities": [
+        "提供 LLM 推理服务，支持连续批处理，提升吞吐量和资源利用率",
+        "实现分层 KV 缓存，利用 SSD 扩展缓存容量，可能降低内存压力",
+        "通过 macOS 菜单栏进行管理，简化启动、监控和配置流程"
+      ],
+      "technical_analysis": [
+        "使用 Python 开发，便于扩展和集成",
+        "本地推理服务，针对 Apple Silicon 优化，可能利用 MLX 框架",
+        "提供 OpenAI API 兼容接口，便于现有应用迁移",
+        "集成形态为 macOS 菜单栏应用，部署方式为本地运行"
+      ],
+      "why_it_matters": [
+        "从现有信息看，项目活跃度较高，近期有发布和更新，可能持续演进",
+        "针对 Apple Silicon 的优化和菜单栏管理，可能填补 Mac 本地 LLM 服务的易用性空白",
+        "OpenAI API 兼容性可能降低开发者接入成本，促进生态发展"
+      ],
+      "limitations": [
+        "项目创建时间较短，可能处于早期阶段，稳定性需进一步验证",
+        "依赖 Apple Silicon 硬件，限制非 Mac 平台使用",
+        "开源问题较多，可能影响成熟度，需关注 issue 解决情况",
+        "许可证为 Apache-2.0，但需核实依赖项许可证兼容性"
+      ],
+      "opportunities": [
+        "机会假设：开发插件或扩展，增强菜单栏管理功能，如模型切换、性能监控",
+        "机会假设：提供 Docker 或云部署方案，扩大使用场景",
+        "机会假设：编写集成测试和基准测试，帮助用户评估性能",
+        "机会假设：开发 Web 界面或 CLI 工具，补充非菜单栏管理方式"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 2 月，最新发布为 0.6.3rc1，更新频繁，但 Stars 和 Forks 较高，可能反映社区关注度，但 Stars 不等于质量，需结合 issue 数量和发布状态判断，整体可能处于早期成长阶段。"
+    }
+  },
+  "immich-app/immich": {
+    "full_name": "immich-app/immich",
+    "html_url": "https://github.com/immich-app/immich",
+    "description": "High performance self-hosted photo and video management solution.",
+    "stars": 111896,
+    "forks": 6632,
+    "open_issues": 720,
+    "watchers": 351,
+    "language": "TypeScript",
+    "license": "AGPL-3.0",
+    "topics": [
+      "backup-tool",
+      "flutter",
+      "google-photos",
+      "google-photos-alternative",
+      "javascript",
+      "mobile-app",
+      "nestjs",
+      "nodejs",
+      "photo-gallery",
+      "photos",
+      "photos-management",
+      "self-hosted",
+      "svelte",
+      "sveltekit",
+      "typescript",
+      "videos"
+    ],
+    "created_at": "2022-02-03T15:56:27Z",
+    "updated_at": "2026-08-20T02:06:23Z",
+    "pushed_at": "2026-08-19T21:49:45Z",
+    "archived": false,
+    "fork": false,
+    "score": 75.02,
+    "score_reasons": [
+      "111,896 stars over 1658 days",
+      "estimated 67.5 stars/day since creation",
+      "last push 0.2 days ago",
+      "detectable AGPL-3.0 license",
+      "topics: backup-tool, flutter, google-photos, google-photos-alternative, javascript"
+    ],
+    "homepage": "https://immich.app",
+    "default_branch": "main",
+    "readme_url": "https://github.com/immich-app/immich/blob/main/README.md",
+    "readme_summary": "High performance self-hosted photo and video management solution",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v3.1.0",
+    "latest_release_url": "https://github.com/immich-app/immich/releases/tag/v3.1.0",
+    "latest_release_at": "2026-07-29T14:20:10Z",
+    "analysis": {
+      "positioning": "Immich 是一个高性能的自托管照片和视频管理解决方案，旨在替代 Google Photos 等云服务，让用户完全掌控自己的媒体数据。它提供备份、管理和浏览功能，强调性能与隐私，适合希望摆脱云依赖的用户。",
+      "target_users": [
+        "注重隐私、希望自托管媒体库的个人用户",
+        "家庭或小团队需要集中备份和共享照片视频",
+        "技术爱好者或开发者，愿意自行部署和维护服务"
+      ],
+      "core_capabilities": [
+        "提供照片和视频的备份、组织与浏览功能，支持移动端和 Web 端",
+        "自托管部署，数据完全由用户控制，避免云服务隐私风险",
+        "高性能设计，可能支持快速检索和流畅的媒体体验"
+      ],
+      "technical_analysis": [
+        "主要使用 TypeScript，结合 NestJS（后端）、Svelte/SvelteKit（前端）和 Flutter（移动端），技术栈现代且统一",
+        "作为自托管解决方案，用户需自行部署服务器，可能支持 Docker 等方式，但具体部署方式未提供",
+        "集成形态包括移动应用和 Web 界面，支持多端访问"
+      ],
+      "why_it_matters": [
+        "项目活跃度高，Stars 超过 11 万，Forks 超过 6600，表明社区关注度极高",
+        "频繁发布版本（最新 v3.1.0），且最近有更新，显示持续维护和迭代",
+        "作为 Google Photos 的替代品，填补了自托管媒体管理领域的空白，具有生态潜力"
+      ],
+      "limitations": [
+        "许可证为 AGPL-3.0，可能对商用或修改有严格限制，需核实",
+        "自托管需要一定的技术能力和服务器资源，可能不适合非技术用户",
+        "Open Issues 数量较多（720），可能存在未解决的问题，需进一步评估稳定性"
+      ],
+      "opportunities": [
+        "机会假设：开发插件或集成，如与 NAS 设备、云存储（如 S3）的深度集成",
+        "机会假设：提供更完善的移动端应用，如自动备份、智能相册分类等功能",
+        "机会假设：构建监控和运维工具，帮助用户管理自托管实例的健康状态"
+      ],
+      "maturity": "从 Stars 和 Forks 看，项目极受欢迎，但 Stars 不等于质量。Open Issues 较多，但版本发布频繁且最近有更新，表明项目处于活跃开发阶段，可能已具备基本可用性，但成熟度需通过实际使用和社区反馈进一步验证。"
+    }
+  },
+  "mukul975/Anthropic-Cybersecurity-Skills": {
+    "full_name": "mukul975/Anthropic-Cybersecurity-Skills",
+    "html_url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+    "description": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
+    "stars": 29875,
+    "forks": 3541,
+    "open_issues": 48,
+    "watchers": 234,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agents",
+      "claude-code",
+      "cloud-security",
+      "cybersecurity",
+      "devsecops",
+      "ethical-hacking",
+      "incident-response",
+      "infosec",
+      "llm",
+      "malware-analysis",
+      "mcp",
+      "mitre-attack",
+      "nist-csf",
+      "osint",
+      "penetration-testing",
+      "red-team",
+      "security",
+      "security-automation",
+      "threat-hunting",
+      "threat-intelligence"
+    ],
+    "created_at": "2026-02-25T09:47:50Z",
+    "updated_at": "2026-08-20T02:07:11Z",
+    "pushed_at": "2026-08-08T14:55:19Z",
+    "archived": false,
+    "fork": false,
+    "score": 74.84,
+    "score_reasons": [
+      "29,875 stars over 176 days",
+      "estimated 170.1 stars/day since creation",
+      "last push 11.5 days ago",
+      "detectable Apache-2.0 license",
+      "topics: ai-agents, claude-code, cloud-security, cybersecurity, devsecops"
+    ],
+    "homepage": "https://mahipal.engineer/Anthropic-Cybersecurity-Skills/",
+    "default_branch": "main",
+    "readme_url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/blob/main/README.md",
+    "readme_summary": "**817 production-grade cybersecurity skills · 29 security domains · 6 framework mappings · 26+ AI platforms**",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v1.3.0",
+    "latest_release_url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills/releases/tag/v1.3.0",
+    "latest_release_at": "2026-06-22T17:11:11Z",
+    "analysis": {
+      "positioning": "Anthropic-Cybersecurity-Skills 是一个面向 AI 代理的结构化网络安全技能库，提供 817 个生产级技能，覆盖 29 个安全领域，并映射到 MITRE ATT&CK、NIST CSF 2.0 等 6 个主流框架。它解决 AI 代理在安全任务中缺乏标准化、可复用技能的问题，与普通工具相比，其明确特点是遵循 agentskills.io 标准，并兼容 Claude Code、GitHub Copilot 等 20 多个 AI 平台。",
+      "target_users": [
+        "安全工程师和红队成员，用于将 AI 代理集成到渗透测试、威胁狩猎等安全流程中。",
+        "AI 应用开发者，需要为代理提供结构化安全技能以增强自动化能力。",
+        "安全运营团队，用于事件响应和威胁情报分析，提升效率。"
+      ],
+      "core_capabilities": [
+        "提供 817 个结构化技能，覆盖 29 个安全领域，使 AI 代理能执行多样化的安全任务。",
+        "映射到 6 个权威安全框架，确保技能与行业标准对齐，便于合规和审计。",
+        "兼容 20 多个 AI 平台，包括主流编码助手和 CLI 工具，降低集成门槛。"
+      ],
+      "technical_analysis": [
+        "项目主要语言为 Python，可能用于技能定义或工具脚本。",
+        "采用 agentskills.io 标准，技能以结构化格式定义，便于跨平台复用。",
+        "集成形态为技能包，通过平台兼容层适配不同 AI 代理，运行方式可能涉及本地或云端执行，但具体细节本次输入未提供，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "项目拥有近 3 万 Stars 和 3500 多 Forks，显示社区关注度高，活跃度强。",
+        "从现有信息看，其框架映射和平台兼容性可能填补 AI 安全代理标准化空白，对安全自动化和 AI 应用开发有重要价值。",
+        "持续更新（最新发布 v1.3.0）表明项目维护活跃，可能持续演进。"
+      ],
+      "limitations": [
+        "项目创建于 2026 年 2 月，相对较新，成熟度可能有限，需进一步核实实际使用案例。",
+        "依赖特定技能标准（agentskills.io），可能限制非标准平台的采用。",
+        "安全技能涉及敏感操作，使用时需谨慎评估风险，许可证为 Apache-2.0，但具体安全审查流程未提供。"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对特定框架（如 MITRE ATT&CK）的深度集成工具，增强技能映射的自动化验证。",
+        "机会假设：可构建技能测试套件，验证技能在不同 AI 平台上的兼容性和效果。",
+        "机会假设：可开发可视化仪表盘，帮助用户浏览和选择技能，提升体验。"
+      ],
+      "maturity": "项目创建于 2026 年 2 月，最新发布 v1.3.0（2026 年 6 月），更新频繁，Stars 和 Forks 数量高，但创建时间短，成熟度可能处于早期阶段。从现有信息看，项目活跃度强，但需进一步观察长期稳定性。"
+    }
+  },
+  "nautechsystems/nautilus_trader": {
+    "full_name": "nautechsystems/nautilus_trader",
+    "html_url": "https://github.com/nautechsystems/nautilus_trader",
+    "description": "Production-grade Rust-native trading engine with deterministic event-driven architecture",
+    "stars": 26461,
+    "forks": 3422,
+    "open_issues": 105,
+    "watchers": 209,
+    "language": "Rust",
+    "license": "LGPL-3.0",
+    "topics": [
+      "algorithmic-trading-engine",
+      "artificial-intelligence",
+      "crypto-trading",
+      "equity-trading",
+      "forex",
+      "futures-trading",
+      "machine-learning",
+      "options-trading",
+      "python",
+      "rust",
+      "sports-betting",
+      "trading",
+      "trading-platform"
+    ],
+    "created_at": "2018-06-25T06:26:16Z",
+    "updated_at": "2026-08-20T02:07:19Z",
+    "pushed_at": "2026-08-20T00:36:56Z",
+    "archived": false,
+    "fork": false,
+    "score": 66.53,
+    "score_reasons": [
+      "26,461 stars over 2978 days",
+      "estimated 8.9 stars/day since creation",
+      "last push 0.1 days ago",
+      "detectable LGPL-3.0 license",
+      "topics: algorithmic-trading-engine, artificial-intelligence, crypto-trading, equity-trading, forex"
+    ],
+    "homepage": "https://nautilustrader.io",
+    "default_branch": "develop",
+    "readme_url": "https://github.com/nautechsystems/nautilus_trader/blob/develop/README.md",
+    "readme_summary": "| `Linux (x86_64)`   | 1.97.1 | 3.12-3.14 | | `Linux (ARM64)`    | 1.97.1 | 3.12-3.14 | | `macOS (ARM64)`    | 1.97.1 | 3.12-3.14 | | `Windows (x86_64)` | 1.97.1 | 3.12-3.14 |",
+    "readme_features": [
+      "Fast: Rust core with the mimalloc allocator and asynchronous networking using tokio.",
+      "Reliable: Type- and thread-safety backed by Rust, with optional Redis-backed state persistence.",
+      "Portable: Runs on Linux, macOS, and Windows. Deploy using Docker.",
+      "Flexible: Modular adapters integrate any REST API or WebSocket feed.",
+      "Advanced: Time in force IOC, FOK, GTC, GTD, DAY, ATTHEOPEN, ATTHECLOSE, advanced order types and conditional triggers. Execution instructions post-only, reduce-only, and icebergs. Contingency orders including OCO, OUO, OTO."
+    ],
+    "quick_start": "",
+    "latest_release_name": "NautilusTrader 1.231.0 Beta",
+    "latest_release_url": "https://github.com/nautechsystems/nautilus_trader/releases/tag/v1.231.0",
+    "latest_release_at": "2026-08-02T18:53:49Z",
+    "analysis": {
+      "positioning": "Nautilus Trader 是一个生产级的 Rust 原生交易引擎，采用确定性事件驱动架构，旨在解决高频算法交易中对低延迟、高可靠性和跨资产支持的需求。与普通同类工具相比，其明确特点是 Rust 核心带来的类型与线程安全、异步网络性能，以及支持从加密货币到期权、体育博彩的广泛资产类别。",
+      "target_users": [
+        "量化交易员和算法交易开发者，需要低延迟、高可靠性的交易执行环境。",
+        "金融科技公司或自营交易团队，希望构建跨资产（加密货币、外汇、期货、期权）的自动化交易系统。",
+        "对 Rust 性能感兴趣的研究人员，用于回测和实盘交易策略开发。"
+      ],
+      "core_capabilities": [
+        "提供高性能的订单执行和风险管理，支持 IOC、FOK、GTC 等高级订单类型和条件触发，以及 OCO、OUO、OTO 等组合订单，帮助用户实现复杂交易策略。",
+        "通过模块化适配器集成任意 REST API 或 WebSocket 数据源，使用户能够灵活接入不同市场。",
+        "支持 Redis 可选的状态持久化，增强系统可靠性，并可在 Linux、macOS、Windows 上运行，便于部署。"
+      ],
+      "technical_analysis": [
+        "语言：核心使用 Rust，并支持 Python 接口，结合了 Rust 的性能与 Python 的易用性。",
+        "本地/云端：支持本地运行，也可通过 Docker 部署，适应云环境。",
+        "集成形态：提供模块化适配器，可集成 REST API 和 WebSocket 数据源，但具体集成方式需进一步核实。",
+        "部署方式：支持多平台（Linux、macOS、Windows），并推荐 Docker 部署，但本次输入未提供详细部署文档，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目拥有 26k+ Stars 和 3.4k Forks，且持续更新（最新发布为 2026 年 8 月），表明社区活跃且项目处于积极维护状态。",
+        "其 Rust 原生架构在交易领域具有性能优势，可能吸引追求低延迟的开发者。",
+        "支持多种资产类别和高级订单类型，可能成为构建跨市场交易系统的有力工具。"
+      ],
+      "limitations": [
+        "许可证为 LGPL-3.0，可能对商业闭源使用有传染性，需评估法律风险。",
+        "最新版本标记为 Beta，可能意味着 API 或功能尚未完全稳定，需谨慎用于生产环境。",
+        "本次输入未提供快速入门指南，新用户上手可能有一定难度，需进一步核实文档完整性。",
+        "依赖 Rust 和 Python 环境，部署和编译可能对非技术用户有门槛。"
+      ],
+      "opportunities": [
+        "机会假设：开发基于 Nautilus Trader 的策略回测可视化工具，帮助用户分析历史表现。",
+        "机会假设：构建针对特定交易所（如 Binance）的预配置适配器包，降低集成成本。",
+        "机会假设：提供 Docker 镜像和 Kubernetes 部署模板，简化云原生部署。"
+      ],
+      "maturity": "该项目自 2018 年创建，持续更新至 2026 年，最新版本为 1.231.0 Beta，Stars 和 Forks 数量较高，但 Beta 状态表明仍在迭代中。从现有信息看，项目活跃且社区关注度高，但需注意 Beta 版本可能存在的稳定性问题。"
+    }
+  },
+  "chaitanyagiri/munder-difflin": {
+    "full_name": "chaitanyagiri/munder-difflin",
+    "html_url": "https://github.com/chaitanyagiri/munder-difflin",
+    "description": "local multi-agent harness",
+    "stars": 2723,
+    "forks": 322,
+    "open_issues": 56,
+    "watchers": 17,
+    "language": "TypeScript",
+    "license": "NOASSERTION",
+    "topics": [
+      "agents",
+      "claude-code",
+      "free",
+      "harness",
+      "harness-engineering",
+      "memory"
+    ],
+    "created_at": "2026-05-31T15:25:05Z",
+    "updated_at": "2026-08-20T02:06:39Z",
+    "pushed_at": "2026-08-19T20:54:46Z",
+    "archived": false,
+    "fork": false,
+    "score": 62.59,
+    "score_reasons": [
+      "2,723 stars over 80 days",
+      "estimated 33.8 stars/day since creation",
+      "last push 0.2 days ago",
+      "topics: agents, claude-code, free, harness, harness-engineering"
+    ],
+    "homepage": "https://munderdiffl.in",
+    "default_branch": "main",
+    "readme_url": "https://github.com/chaitanyagiri/munder-difflin/blob/main/README.md",
+    "readme_summary": "**Free, open source and performant** — a multi-agent harness that works with the subscriptions you already pay for, on their hourly limits. It turns the terminal coding CLI you already run into a clone of you, one that keeps working while you're away and coordinates a whole office of agents on your own machine.",
+    "readme_features": [
+      "Every terminal is a real agent. Claude Code, Antigravity (Gemini), OpenAI Codex, xAI Grok, Kimi Code, Qwen, OpenCode, Crush, pi.dev, GitHub Copilot CLI, or a custom command — each in its own node-pty PTY, rendered with xterm.js.",
+      "Every agent is an avatar. A Pixi.js office floor where agents walk to stations, envelopes fly desk to desk, and avatar state reflects real work.",
+      "A GOD orchestrator you talk to. It routes tasks, adjudicates traffic, and escalates only what needs a human. Or press Talk and run the floor by voice.",
+      "Per-agent git worktrees. Optional isolation so parallel agents never collide on branches.",
+      "The hive — per-agent memory, atomic-file mailboxes, a shared blackboard, an append-only event log, single-committer git."
+    ],
+    "quick_start": "",
+    "latest_release_name": "v0.4.4",
+    "latest_release_url": "https://github.com/chaitanyagiri/munder-difflin/releases/tag/v0.4.4",
+    "latest_release_at": "2026-08-18T02:38:24Z",
+    "analysis": {
+      "positioning": "Munder Difflin 是一个本地多智能体协调框架，旨在将用户已有的终端编码 CLI（如 Claude Code、Gemini、OpenAI Codex 等）转化为可自主协作的智能体集群，解决多智能体并行工作时的任务路由、资源隔离和状态可视化问题。与普通同类工具相比，其明确特点是强调免费、开源，并利用用户已订阅服务的按小时限额，同时提供可视化办公室界面和语音控制。",
+      "target_users": [
+        "使用多种 AI 编码 CLI 的开发者，希望让这些工具在本地并行工作并自主协作。",
+        "需要长时间无人值守运行编码任务的个人开发者或小团队。",
+        "对多智能体协调、可视化监控和语音交互感兴趣的 AI 工具爱好者。"
+      ],
+      "core_capabilities": [
+        "支持多种主流编码 CLI 作为智能体，每个终端在独立的 PTY 中运行，并通过 xterm.js 渲染，实现真实终端交互。",
+        "提供 Pixi.js 可视化办公室，智能体以虚拟形象移动、传递文件，状态实时反映实际工作，增强监控直观性。",
+        "内置 GOD 编排器，可自动路由任务、协调冲突，并在必要时升级给人类，支持语音控制。",
+        "通过 per-agent git worktrees 实现并行隔离，避免分支冲突；提供记忆、邮箱、黑板、事件日志等协作基础设施。"
+      ],
+      "technical_analysis": [
+        "项目使用 TypeScript 开发，表明代码类型安全，适合复杂系统。",
+        "从描述看，所有智能体均在本地运行，通过 node-pty 创建伪终端，属于本地部署模式，不依赖云端服务。",
+        "集成形态为命令行工具，可调用多种外部 CLI，并可能通过 API 或进程间通信与这些 CLI 交互。",
+        "部署方式为本地安装，具体安装步骤和系统要求未在本次输入中提供，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目在短时间内获得 2723 星和 322 个 fork，且发布频率较高（最新版本 v0.4.4 于 2026-08-18 发布），表明社区关注度和迭代速度较快。",
+        "它解决了多智能体协作中的实际痛点，如并行冲突和任务协调，且强调免费和利用现有订阅，可能降低采用门槛。",
+        "其可视化办公室和语音控制等创新交互方式，可能为多智能体系统的人机交互提供新范式。"
+      ],
+      "limitations": [
+        "许可证为 NOASSERTION，需核实具体开源条款，可能影响商业使用。",
+        "项目创建于 2026-05-31，至今仅约 3 个月，成熟度可能较低，存在 API 不稳定或文档不全的风险。",
+        "依赖多种外部 CLI 和 node-pty、xterm.js、Pixi.js 等库，可能对系统环境有特定要求，需核实平台兼容性。",
+        "安全方面，多智能体在本地运行并可能执行代码，需关注权限控制和沙箱隔离机制是否完善。"
+      ],
+      "opportunities": [
+        "机会假设：可开发插件或扩展，支持更多编码 CLI 或自定义命令，扩大智能体生态。",
+        "机会假设：可构建监控和告警工具，利用事件日志和黑板上报智能体状态，便于运维。",
+        "机会假设：可优化 GOD 编排器的路由算法，或提供可视化配置界面，降低使用门槛。"
+      ],
+      "maturity": "从现有信息看，项目处于早期快速迭代阶段：创建于 2026-05-31，最新版本 v0.4.4 于 2026-08-18 发布，更新频繁；Stars 和 Forks 数量较高，但 Open Issues 有 56 个，表明社区活跃但可能存在未解决问题。综合判断，项目功能初步成型，但稳定性和文档完善度可能仍需时间验证。"
+    }
+  },
+  "marceloprates/prettymaps": {
+    "full_name": "marceloprates/prettymaps",
+    "html_url": "https://github.com/marceloprates/prettymaps",
+    "description": "Draw pretty maps from OpenStreetMap data! Built with osmnx +matplotlib + shapely",
+    "stars": 13168,
+    "forks": 659,
+    "open_issues": 14,
+    "watchers": 87,
+    "language": "Python",
+    "license": "AGPL-3.0",
+    "topics": [
+      "cartography",
+      "generative-art",
+      "jupyter-notebook",
+      "maps",
+      "matplotlib",
+      "openstreetmap",
+      "python"
+    ],
+    "created_at": "2021-03-05T12:22:05Z",
+    "updated_at": "2026-08-20T02:08:18Z",
+    "pushed_at": "2026-07-30T16:29:42Z",
+    "archived": false,
+    "fork": false,
+    "score": 48.7,
+    "score_reasons": [
+      "13,168 stars over 1994 days",
+      "estimated 6.6 stars/day since creation",
+      "last push 20.4 days ago",
+      "detectable AGPL-3.0 license",
+      "topics: cartography, generative-art, jupyter-notebook, maps, matplotlib"
+    ],
+    "homepage": "https://prettymaps.streamlit.app/",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "genlayerlabs/genlayer-project-boilerplate": {
+    "full_name": "genlayerlabs/genlayer-project-boilerplate",
+    "html_url": "https://github.com/genlayerlabs/genlayer-project-boilerplate",
+    "description": "",
+    "stars": 16227,
+    "forks": 810,
+    "open_issues": 25,
+    "watchers": 110,
+    "language": "TypeScript",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2024-06-28T06:59:47Z",
+    "updated_at": "2026-08-20T02:00:53Z",
+    "pushed_at": "2026-07-26T17:56:20Z",
+    "archived": false,
+    "fork": false,
+    "score": 47.51,
+    "score_reasons": [
+      "16,227 stars over 783 days",
+      "estimated 20.7 stars/day since creation",
+      "last push 24.3 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": null,
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "amadeusprotocol/node": {
+    "full_name": "amadeusprotocol/node",
+    "html_url": "https://github.com/amadeusprotocol/node",
+    "description": "",
+    "stars": 4579,
+    "forks": 85,
+    "open_issues": 9,
+    "watchers": 15,
+    "language": "Rust",
+    "license": null,
+    "topics": [],
+    "created_at": "2024-03-07T13:31:57Z",
+    "updated_at": "2026-08-20T02:06:26Z",
+    "pushed_at": "2026-08-18T12:34:39Z",
+    "archived": false,
+    "fork": false,
+    "score": 42.85,
+    "score_reasons": [
+      "4,579 stars over 896 days",
+      "estimated 5.1 stars/day since creation",
+      "last push 1.6 days ago"
+    ],
+    "homepage": null,
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  }
+}
