@@ -114,14 +114,17 @@ class CdpPage {
 async function clickVisibleText(page, expected) {
   const point = await page.evaluate(`(() => {
     const expected = ${JSON.stringify("__CLICK_TEXT__")};
-    const element = [...document.querySelectorAll('body *')]
+    const matches = [...document.querySelectorAll('body *')]
       .filter((candidate) => {
         const rect = candidate.getBoundingClientRect();
         const style = getComputedStyle(candidate);
         return rect.width > 0 && rect.height > 0 && style.visibility !== 'hidden' && style.display !== 'none'
           && candidate.textContent.trim().includes(expected);
-      })
-      .sort((left, right) => left.textContent.trim().length - right.textContent.trim().length)[0];
+      });
+    const interactive = matches
+      .map((candidate) => candidate.closest('button,[role="button"],a') || candidate)
+      .filter((candidate, index, items) => items.indexOf(candidate) === index);
+    const element = interactive.sort((left, right) => left.textContent.trim().length - right.textContent.trim().length)[0];
     if (!element) return null;
     const rect = element.getBoundingClientRect();
     return { x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 };
@@ -208,9 +211,25 @@ async function inspectUrl(url) {
   const page = await CdpPage.open(url);
   try {
     await new Promise((resolve) => setTimeout(resolve, 3000));
+    if (process.env.INSPECT_CLICK_TEXT) {
+      for (const clickText of process.env.INSPECT_CLICK_TEXT.split("|")) {
+        await clickVisibleText(page, clickText);
+        await new Promise((resolve) => setTimeout(resolve, 2500));
+      }
+    }
     return await page.evaluate(`({
       url: location.href,
       title: document.title,
+      draftNodes: [...document.querySelectorAll('body *')]
+        .filter((element) => ["草稿", "Drafts"].includes(element.textContent.trim()))
+        .slice(0, 12)
+        .map((element) => ({
+          tag: element.tagName,
+          role: element.getAttribute('role'),
+          testid: element.getAttribute('data-testid'),
+          html: element.outerHTML.slice(0, 500),
+          parent: element.parentElement?.outerHTML.slice(0, 700)
+        })),
       bodyText: document.body.innerText.slice(0, 4000)
     })`);
   } finally {
@@ -245,6 +264,25 @@ async function saveXDraft(draft) {
     await page.waitFor(`[...document.querySelectorAll('button,[role="button"]')].some((element) => ["Save", "保存"].includes(element.textContent.trim()))`);
     const saved = await page.evaluate(`(() => { const button = [...document.querySelectorAll('button,[role="button"]')].find((element) => ["Save", "保存"].includes(element.textContent.trim())); if (!button) return false; button.click(); return true; })()`);
     if (!saved) throw new Error("X Save button was not found");
+  } finally {
+    await page.close();
+  }
+}
+
+async function verifyXDraft(draft) {
+  const page = await CdpPage.open("https://x.com/compose/post");
+  try {
+    await page.waitFor(`document.querySelector('[role="dialog"] div[data-testid^="tweetTextarea_"]') !== null`);
+    const opened = await page.evaluate(`(() => {
+      const button = document.querySelector('button[data-testid="unsentButton"]');
+      if (!button) return false;
+      button.click();
+      return true;
+    })()`);
+    if (!opened) throw new Error("X drafts button was not found");
+    // X only exposes the first post of a saved thread in the drafts list.
+    const marker = draft.content.split("\n", 1)[0].trim();
+    await page.waitFor(`document.body.innerText.includes(${JSON.stringify(marker)})`, 15000);
   } finally {
     await page.close();
   }
@@ -316,7 +354,8 @@ async function verifyXiaohongshuDraft(draft) {
 
 async function deliver(platform, action) {
   const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
-  if (manifest.platforms[platform].status === "drafted") {
+  const forcedPlatform = process.env.FORCE_DRAFT_PLATFORM || "";
+  if (manifest.platforms[platform].status === "drafted" && forcedPlatform !== platform) {
     process.stdout.write(`${platform} draft already recorded; skipping\n`);
     return;
   }
@@ -345,13 +384,22 @@ const xiaohongshuDraft = loadJson("xiaohongshu.json");
 const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
 if (!manifest.cover) throw new Error("cover image is missing from social draft manifest");
 
+if (process.env.VERIFY_X_DRAFT === "1") {
+  await verifyXDraft(xDraft);
+  process.stdout.write("x draft verified in browser\n");
+  process.exit(0);
+}
+
 const failures = [];
 for (const [platform, action] of [
   ["xiaohongshu", async () => {
     await saveXiaohongshuDraft(xiaohongshuDraft, manifest.cover);
     await verifyXiaohongshuDraft(xiaohongshuDraft);
   }],
-  ["x", () => saveXDraft(xDraft)],
+  ["x", async () => {
+    await saveXDraft(xDraft);
+    await verifyXDraft(xDraft);
+  }],
 ]) {
   try {
     await deliver(platform, action);

@@ -99,7 +99,8 @@ if (( ${#PENDING_DATES[@]} == 0 )); then
   log "no missing daily publications"
 fi
 
-for PUBLISH_DATE in "${PENDING_DATES[@]}"; do
+for PUBLISH_DATE in "${PENDING_DATES[@]-}"; do
+  [[ -n "${PUBLISH_DATE}" ]] || continue
   log "${PUBLISH_DATE}: generation started"
   if ! retry "${PUBLISH_DATE}: scan" python3 -m githubhot scan \
     --date "${PUBLISH_DATE}" --days 30 --min-stars 100 --limit 50 --enrich 10 --analyze 10; then

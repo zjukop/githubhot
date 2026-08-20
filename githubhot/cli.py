@@ -255,8 +255,12 @@ def main(argv: list[str] | None = None) -> int:
             elif should_publish:
                 draft = render_wechat_draft(repos, args.date, source_url)
                 client = WeChatDraftClient.from_environment()
-                thumb_media_id = client.resolve_thumb_media_id(args.cover, args.wechat_media_cache)
-                media_id = client.add_draft(draft, thumb_media_id)
+                try:
+                    thumb_media_id = client.resolve_thumb_media_id(args.cover, args.wechat_media_cache)
+                    media_id = client.add_draft(draft, thumb_media_id)
+                except SocialPublishError as exc:
+                    record_delivery(paths["manifest"], "wechat", "failed", error=str(exc))
+                    raise
                 record_delivery(paths["manifest"], "wechat", "drafted", media_id=media_id)
                 print(f"Created WeChat draft: {media_id}")
             elif args.publish_wechat_if_configured:

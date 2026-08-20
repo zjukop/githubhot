@@ -150,13 +150,20 @@ def render_xiaohongshu_draft(repos: list[Repository], publish_date: date, source
 
 def render_x_thread(repos: list[Repository], publish_date: date, source_url: str) -> PlatformDraft:
     featured = repos[:3]
-    names = "\n".join(f"{rank}. {repo.full_name}" for rank, repo in enumerate(featured, 1))
-    content = _truncate_post(
-        f"赛博木匠 · {publish_date.isoformat()}\n\n"
-        f"今天值得拆看的 3 个 GitHub 项目：\n{names}\n\n"
-        f"完整中文分析：{source_url}\n"
-        "#GitHub #OpenSource"
-    )
+    posts = []
+    for rank, repo in enumerate(featured, 1):
+        analysis = _analysis(repo)
+        date_label = f"｜{publish_date.strftime('%m月%d日')}" if rank == 1 else ""
+        posts.append(
+            _truncate_post(
+                f"{rank}/3｜{repo.full_name}{date_label}\n"
+                f"定位：{_truncate(analysis['positioning'], 25)}\n"
+                f"价值：{_truncate(analysis['core_capabilities'][0], 24)}\n"
+                f"风险：{_truncate(analysis['limitations'][0], 22)}\n"
+                f"可做：{_truncate(analysis['opportunities'][0], 24)}"
+            )
+        )
+    content = "\n\n---\n\n".join(posts)
     return PlatformDraft("x", f"GitHubHot {publish_date.isoformat()}", content, source_url, "post")
 
 

@@ -7,6 +7,7 @@ from pathlib import Path
 
 from test_reporting import repo
 from githubhot.social import (
+    SocialPublishError,
     WeChatDraftClient,
     render_wechat_draft,
     render_x_thread,
@@ -48,11 +49,13 @@ class SocialDraftTests(unittest.TestCase):
     def test_x_thread_posts_stay_bounded(self) -> None:
         draft = render_x_thread(self.repos, self.day, self.url)
         posts = draft.content.split("\n\n---\n\n")
-        self.assertEqual(len(posts), 1)
-        self.assertTrue(all(len(post) <= 270 for post in posts))
-        self.assertIn(self.url, posts[0])
-        self.assertIn("\n\n", posts[0])
-        self.assertTrue(all(repo_item.full_name in posts[0] for repo_item in self.repos))
+        self.assertEqual(len(posts), 3)
+        self.assertTrue(all(len(post) <= 145 for post in posts))
+        self.assertNotIn(self.url, draft.content)
+        self.assertTrue(all(repo_item.full_name in draft.content for repo_item in self.repos))
+        self.assertEqual(draft.content.count("定位："), 3)
+        self.assertEqual(draft.content.count("风险："), 3)
+        self.assertEqual(draft.content.count("可做："), 3)
 
     def test_write_social_drafts_creates_manifest(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
@@ -95,6 +98,31 @@ class SocialDraftTests(unittest.TestCase):
                         "--publish-wechat",
                     ])
             self.assertEqual(result, 0)
+
+    def test_syndicate_records_wechat_api_failure(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            candidates = root / "candidates.json"
+            cover = root / "cover.png"
+            output = root / "drafts"
+            cover.write_bytes(b"png")
+            write_candidates(candidates, self.repos, "query", self.day)
+            client = WeChatDraftClient("app", "secret")
+            with patch.dict("os.environ", {"WECHAT_APP_ID": "app", "WECHAT_APP_SECRET": "secret"}):
+                with patch.object(WeChatDraftClient, "from_environment", return_value=client):
+                    with patch.object(WeChatDraftClient, "resolve_thumb_media_id", side_effect=SocialPublishError("invalid ip")):
+                        result = main([
+                            "syndicate",
+                            "--input", str(candidates),
+                            "--output-dir", str(output),
+                            "--cover", str(cover),
+                            "--date", self.day.isoformat(),
+                            "--publish-wechat",
+                        ])
+            self.assertEqual(result, 1)
+            manifest = json.loads((output / self.day.isoformat() / "manifest.json").read_text(encoding="utf-8"))
+            self.assertEqual(manifest["platforms"]["wechat"]["status"], "failed")
+            self.assertEqual(manifest["platforms"]["wechat"]["error"], "invalid ip")
 
 
 if __name__ == "__main__":

@@ -15,6 +15,11 @@ from test_reporting import repo
 
 
 class PipelineTests(unittest.TestCase):
+    def test_daily_script_handles_empty_pending_date_list_with_nounset(self) -> None:
+        script = (Path(__file__).parents[1] / "scripts" / "run_daily_local.sh").read_text(encoding="utf-8")
+        self.assertIn('"${PENDING_DATES[@]-}"', script)
+        self.assertIn('[[ -n "${PUBLISH_DATE}" ]] || continue', script)
+
     def test_empty_history_schedules_target_date(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             self.assertEqual(
