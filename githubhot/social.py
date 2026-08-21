@@ -51,6 +51,19 @@ def _truncate_post(text: str, limit: int = 270) -> str:
     return cleaned if len(cleaned) <= limit else cleaned[: limit - 1].rstrip() + "…"
 
 
+def _compact_sentence(text: str, limit: int) -> str:
+    cleaned = " ".join(text.split()).removeprefix("机会假设：").strip(" ，。；;：:")
+    if len(cleaned) <= limit:
+        return cleaned.rstrip("，；;：:") + ("" if cleaned.endswith(("。", "！", "？")) else "。")
+    candidate = cleaned[:limit]
+    cut = max(candidate.rfind(mark) for mark in ("。", "！", "？", "；", "，", ","))
+    if cut >= max(12, limit // 2):
+        candidate = candidate[:cut]
+    else:
+        candidate = candidate.rsplit(" ", 1)[0] if " " in candidate else candidate
+    return candidate.rstrip("，,；;：:。！？") + "。"
+
+
 def render_wechat_draft(repos: list[Repository], publish_date: date, source_url: str) -> PlatformDraft:
     featured = repos[:3]
     title = f"木匠逛 GitHub｜{publish_date:%m月%d日}值得拆看的 3 个项目"
@@ -153,16 +166,21 @@ def render_x_thread(repos: list[Repository], publish_date: date, source_url: str
     posts = []
     for rank, repo in enumerate(featured, 1):
         analysis = _analysis(repo)
-        date_label = f"｜{publish_date.strftime('%m月%d日')}" if rank == 1 else ""
-        posts.append(
-            _truncate_post(
-                f"{rank}/3｜{repo.full_name}{date_label}\n"
-                f"定位：{_truncate(analysis['positioning'], 25)}\n"
-                f"价值：{_truncate(analysis['core_capabilities'][0], 24)}\n"
-                f"风险：{_truncate(analysis['limitations'][0], 22)}\n"
-                f"可做：{_truncate(analysis['opportunities'][0], 24)}"
-            )
+        heading = (
+            f"🔥 {publish_date:%m月%d日} GitHub 今日热榜｜{rank}/3"
+            if rank == 1
+            else f"GitHub 今日热榜｜{rank}/3"
         )
+        post = (
+            f"{heading}\n{repo.full_name}\n\n"
+            f"定位：{_compact_sentence(analysis['positioning'], 52)}\n"
+            f"价值：{_compact_sentence(analysis['core_capabilities'][0], 48)}\n"
+            f"风险：{_compact_sentence(analysis['limitations'][0], 42)}\n"
+            f"可做：{_compact_sentence(analysis['opportunities'][0], 44)}"
+        )
+        if len(post) > 280:
+            raise SocialPublishError(f"X post exceeds 280 characters for {repo.full_name}: {len(post)}")
+        posts.append(post)
     content = "\n\n---\n\n".join(posts)
     return PlatformDraft("x", f"GitHubHot {publish_date.isoformat()}", content, source_url, "post")
 
