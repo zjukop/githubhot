@@ -241,37 +241,35 @@ async function inspectUrl(url) {
   }
 }
 
-async function saveXDraft(draft) {
-  const posts = draft.content.split("\n\n---\n\n");
-  if (posts.length > 4) throw new Error(`X draft has ${posts.length} posts; browser flow supports at most 4`);
+async function saveSingleXDraft(post) {
   const page = await CdpPage.open("https://x.com/compose/post");
   try {
     const editorSelector = '[role="dialog"] div[data-testid^="tweetTextarea_"]';
     await page.waitFor(`document.querySelector(${JSON.stringify(editorSelector)}) !== null`);
-    for (let index = 0; index < posts.length; index += 1) {
-      if (index > 0) {
-        const added = await page.evaluate(`(() => { const button = document.querySelector('button[data-testid="addButton"]'); if (!button) return false; button.click(); return true; })()`);
-        if (!added) throw new Error("X add-to-thread button was not found");
-        await page.waitFor(`document.querySelectorAll(${JSON.stringify(editorSelector)}).length > ${index}`);
-      }
-      const focused = await page.evaluate(`(() => {
-        const editor = document.querySelectorAll(${JSON.stringify(editorSelector)})[${index}];
+    const focused = await page.evaluate(`(() => {
+        const editor = document.querySelector(${JSON.stringify(editorSelector)});
         if (!editor) return false;
         editor.focus();
         return true;
       })()`);
-      if (!focused) throw new Error(`X thread editor ${index + 1} was not found`);
-      await page.send("Input.insertText", { text: posts[index] });
-    }
+    if (!focused) throw new Error("X draft editor was not found");
+    await page.send("Input.insertText", { text: post });
     const closed = await page.evaluate(`(() => { const button = document.querySelector('button[data-testid="app-bar-close"], button[aria-label="Close"]'); if (!button) return false; button.click(); return true; })()`);
     if (!closed) throw new Error("X close-draft button was not found");
     await page.waitFor(`[...document.querySelectorAll('button,[role="button"]')].some((element) => ["Save", "保存"].includes(element.textContent.trim()))`);
     const saved = await page.evaluate(`(() => { const button = [...document.querySelectorAll('button,[role="button"]')].find((element) => ["Save", "保存"].includes(element.textContent.trim())); if (!button) return false; button.click(); return true; })()`);
     if (!saved) throw new Error("X Save button was not found");
-    await new Promise((resolve) => setTimeout(resolve, 3000));
+    await page.waitFor(`document.querySelector(${JSON.stringify(editorSelector)}) === null`, 15000);
+    await new Promise((resolve) => setTimeout(resolve, 1000));
   } finally {
     await page.close();
   }
+}
+
+async function saveXDraft(draft) {
+  const posts = draft.content.split("\n\n---\n\n");
+  if (posts.length > 4) throw new Error(`X draft has ${posts.length} posts; browser flow supports at most 4`);
+  for (const post of posts) await saveSingleXDraft(post);
 }
 
 async function verifyXDraft(draft) {
@@ -299,9 +297,12 @@ async function verifyXDraft(draft) {
       if (!draftsSelected) throw new Error("X Drafts tab was not found");
       await page.waitFor(`location.pathname.endsWith('/drafts')`);
     }
-    // X can expose any post from a saved thread in the drafts list.
-    const markers = draft.content.split("\n\n---\n\n").map((post) => post.split("\n", 1)[0].trim());
-    await page.waitFor(`${JSON.stringify(markers)}.some((marker) => document.body.innerText.includes(marker))`, 15000);
+    const posts = draft.content.split("\n\n---\n\n");
+    // X may omit a leading decorative emoji in the drafts list preview.
+    const markers = posts.map((post) =>
+      post.split("\n", 1)[0].trim().replace(/^🔥\s*/, ""),
+    );
+    await page.waitFor(`${JSON.stringify(markers)}.every((marker) => document.body.innerText.includes(marker))`, 15000);
   } finally {
     await page.close();
   }

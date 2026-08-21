@@ -51,7 +51,7 @@ class SocialDraftTests(unittest.TestCase):
         posts = draft.content.split("\n\n---\n\n")
         self.assertEqual(len(posts), 3)
         self.assertTrue(all(len(post) <= 280 for post in posts))
-        self.assertIn("08月15日 GitHub 今日热榜", posts[0])
+        self.assertTrue(all("08月15日 GitHub 今日热榜" in post for post in posts))
         self.assertNotIn("…", draft.content)
         self.assertNotIn(self.url, draft.content)
         self.assertTrue(all(repo_item.full_name in draft.content for repo_item in self.repos))

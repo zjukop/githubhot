@@ -166,13 +166,9 @@ def render_x_thread(repos: list[Repository], publish_date: date, source_url: str
     posts = []
     for rank, repo in enumerate(featured, 1):
         analysis = _analysis(repo)
-        heading = (
-            f"🔥 {publish_date:%m月%d日} GitHub 今日热榜｜{rank}/3"
-            if rank == 1
-            else f"GitHub 今日热榜｜{rank}/3"
-        )
         post = (
-            f"{heading}\n{repo.full_name}\n\n"
+            f"🔥 {publish_date:%m月%d日} GitHub 今日热榜｜{rank}/3\n"
+            f"{repo.full_name}\n\n"
             f"定位：{_compact_sentence(analysis['positioning'], 52)}\n"
             f"价值：{_compact_sentence(analysis['core_capabilities'][0], 48)}\n"
             f"风险：{_compact_sentence(analysis['limitations'][0], 42)}\n"
