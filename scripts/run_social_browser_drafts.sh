@@ -4,7 +4,8 @@ set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 SOCIAL_DATE="${1:-$(date +%F)}"
-DEBUG_ENDPOINT="${CHROME_DEBUG_ENDPOINT:-http://[::1]:9222}"
+DEBUG_PORT="${GITHUBHOT_SOCIAL_DEBUG_PORT:-9333}"
+DEBUG_ENDPOINT="${CHROME_DEBUG_ENDPOINT:-http://127.0.0.1:${DEBUG_PORT}}"
 PROFILE_DIR="${GITHUBHOT_SOCIAL_PROFILE:-${HOME}/.local/share/githubhot-social-browser}"
 CHROME_APP="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
@@ -15,7 +16,7 @@ if ! curl --noproxy '*' -g -fsS "${DEBUG_ENDPOINT}/json/version" >/dev/null 2>&1
   fi
   mkdir -p "${PROFILE_DIR}"
   "${CHROME_APP}" \
-    --remote-debugging-port=9222 \
+    --remote-debugging-port="${DEBUG_PORT}" \
     --user-data-dir="${PROFILE_DIR}" \
     --no-first-run \
     --no-default-browser-check \

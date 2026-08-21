@@ -25,6 +25,10 @@ class CdpPage {
     this.pending = new Map();
     socket.addEventListener("message", (event) => {
       const message = JSON.parse(event.data);
+      if (message.method === "Page.javascriptDialogOpening") {
+        void this.send("Page.handleJavaScriptDialog", { accept: true }).catch(() => {});
+        return;
+      }
       if (!message.id || !this.pending.has(message.id)) return;
       const { resolve, reject } = this.pending.get(message.id);
       this.pending.delete(message.id);
@@ -264,6 +268,7 @@ async function saveXDraft(draft) {
     await page.waitFor(`[...document.querySelectorAll('button,[role="button"]')].some((element) => ["Save", "保存"].includes(element.textContent.trim()))`);
     const saved = await page.evaluate(`(() => { const button = [...document.querySelectorAll('button,[role="button"]')].find((element) => ["Save", "保存"].includes(element.textContent.trim())); if (!button) return false; button.click(); return true; })()`);
     if (!saved) throw new Error("X Save button was not found");
+    await new Promise((resolve) => setTimeout(resolve, 3000));
   } finally {
     await page.close();
   }
@@ -280,9 +285,23 @@ async function verifyXDraft(draft) {
       return true;
     })()`);
     if (!opened) throw new Error("X drafts button was not found");
-    // X only exposes the first post of a saved thread in the drafts list.
-    const marker = draft.content.split("\n", 1)[0].trim();
-    await page.waitFor(`document.body.innerText.includes(${JSON.stringify(marker)})`, 15000);
+    await page.waitFor(`location.pathname.includes('/unsent/')`);
+    const onDraftsPage = await page.evaluate(`location.pathname.endsWith('/drafts')`);
+    if (!onDraftsPage) {
+      const draftsSelected = await page.evaluate(`(() => {
+        const labels = ["Drafts", "草稿", "Unsent posts", "未发送的帖子"];
+        const tab = [...document.querySelectorAll('[role="tab"],a,button')]
+          .find((element) => labels.includes(element.textContent.trim()));
+        if (!tab) return false;
+        tab.click();
+        return true;
+      })()`);
+      if (!draftsSelected) throw new Error("X Drafts tab was not found");
+      await page.waitFor(`location.pathname.endsWith('/drafts')`);
+    }
+    // X can expose any post from a saved thread in the drafts list.
+    const markers = draft.content.split("\n\n---\n\n").map((post) => post.split("\n", 1)[0].trim());
+    await page.waitFor(`${JSON.stringify(markers)}.some((marker) => document.body.innerText.includes(marker))`, 15000);
   } finally {
     await page.close();
   }
