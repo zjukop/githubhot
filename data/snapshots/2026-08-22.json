@@ -1,0 +1,1107 @@
+{
+  "affaan-m/ECC": {
+    "full_name": "affaan-m/ECC",
+    "html_url": "https://github.com/affaan-m/ECC",
+    "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "stars": 241983,
+    "forks": 36677,
+    "open_issues": 148,
+    "watchers": 1243,
+    "language": "JavaScript",
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "anthropic",
+      "claude",
+      "claude-code",
+      "developer-tools",
+      "llm",
+      "mcp",
+      "productivity"
+    ],
+    "created_at": "2026-01-18T00:51:51Z",
+    "updated_at": "2026-08-22T12:51:28Z",
+    "pushed_at": "2026-08-21T03:02:03Z",
+    "archived": false,
+    "fork": false,
+    "score": 93.4,
+    "score_reasons": [
+      "241,983 stars over 217 days",
+      "estimated 1117.7 stars/day since creation",
+      "last push 1.4 days ago",
+      "detectable MIT license",
+      "topics: ai-agents, anthropic, claude, claude-code, developer-tools"
+    ],
+    "homepage": "https://ecc.tools",
+    "default_branch": "main",
+    "readme_url": "https://github.com/affaan-m/ECC/blob/main/README.md",
+    "readme_summary": "/plugin marketplace add https://github.com/affaan-m/ECC",
+    "readme_features": [],
+    "quick_start": "/plugin marketplace add https://github.com/affaan-m/ECC\n/plugin install ecc@ecc",
+    "latest_release_name": "ECC 2.1.0: Plan Canvas, Kimi Harness, and Self-Hosted Compute",
+    "latest_release_url": "https://github.com/affaan-m/ECC/releases/tag/v2.1.0",
+    "latest_release_at": "2026-07-27T18:10:46Z",
+    "analysis": {
+      "positioning": "ECC 是一个面向 AI 代理（如 Claude Code、Codex、Opencode、Cursor）的性能优化系统，通过技能、本能、记忆、安全与研究优先的开发方式，提升代理的效率和可靠性。与普通同类工具相比，它强调跨平台集成和插件化安装，提供统一的性能调优框架。",
+      "target_users": [
+        "使用 Claude Code、Codex、Opencode、Cursor 等 AI 编程代理的开发者",
+        "需要优化代理性能、增强记忆与安全性的团队",
+        "对 AI 代理开发流程有研究需求的开发者"
+      ],
+      "core_capabilities": [
+        "提供技能与本能机制，增强代理的决策和执行能力",
+        "集成记忆功能，提升代理对上下文的持续理解",
+        "内置安全特性，降低代理操作风险",
+        "支持研究优先的开发模式，便于迭代优化"
+      ],
+      "technical_analysis": [
+        "项目使用 JavaScript 编写，可能基于 Node.js 生态",
+        "通过插件市场命令安装，支持多种代理平台，集成形态为插件",
+        "最新版本提及自托管计算，可能支持本地或云端部署，但具体方式需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目获得 24 万星标和 3.6 万 fork，表明社区关注度极高，可能成为 AI 代理优化领域的重要工具",
+        "频繁更新（最新发布 2026-07-27），显示活跃维护，功能迭代迅速",
+        "覆盖多个主流 AI 代理，具有跨平台通用性，可能降低开发者适配成本"
+      ],
+      "limitations": [
+        "项目创建于 2026-01-18，距今约 7 个月，成熟度可能有限，需核实稳定性",
+        "依赖特定代理平台，可能受平台 API 变化影响",
+        "安全特性具体实现和审计情况未提供，需进一步核实",
+        "MIT 许可证允许商用，但需注意依赖组件的许可证兼容性"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对 ECC 的配置管理工具，简化插件安装和更新流程",
+        "机会假设：可编写 ECC 与 CI/CD 集成的测试框架，验证代理性能优化效果",
+        "机会假设：可提供 ECC 在自托管环境下的部署文档和运维脚本，降低采用门槛"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 1 月，最新发布在 2026 年 7 月，更新频繁，但存在 148 个未解决问题，可能处于快速迭代期。星标数高但不等同于质量，需关注实际使用反馈和问题解决效率。"
+    }
+  },
+  "santifer/career-ops": {
+    "full_name": "santifer/career-ops",
+    "html_url": "https://github.com/santifer/career-ops",
+    "description": "Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1.0-5.0 score, tailor your CV, track applications — runs locally in your AI coding CLI (Claude Code, Codex, OpenCode, Antigravity…)",
+    "stars": 67725,
+    "forks": 12888,
+    "open_issues": 268,
+    "watchers": 260,
+    "language": "JavaScript",
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "anthropic",
+      "ats",
+      "automation",
+      "beginner-friendly",
+      "career",
+      "careerops",
+      "claude",
+      "claude-code",
+      "cli",
+      "first-timers-only",
+      "golang",
+      "good-first-issue",
+      "interview-prep",
+      "job-application",
+      "job-hunting",
+      "job-search",
+      "open-source",
+      "resume"
+    ],
+    "created_at": "2026-04-04T18:21:18Z",
+    "updated_at": "2026-08-22T12:59:11Z",
+    "pushed_at": "2026-08-22T12:48:00Z",
+    "archived": false,
+    "fork": false,
+    "score": 91.99,
+    "score_reasons": [
+      "67,725 stars over 140 days",
+      "estimated 484.5 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable MIT license",
+      "topics: ai, ai-agent, anthropic, ats, automation"
+    ],
+    "homepage": "https://career-ops.org",
+    "default_branch": "main",
+    "readme_url": "https://github.com/santifer/career-ops/blob/main/README.md",
+    "readme_summary": "English | Español | Deutsch | Français | Português (Brasil) | 한국어 | 日本語 | 简体中文 | 繁體中文 | Українська | Русский | Polski | Dansk | தமிழ் | العربية | हिन्दी | Türkçe",
+    "readme_features": [],
+    "quick_start": "npx @santifer/career-ops init",
+    "latest_release_name": "career-ops: v1.28.0",
+    "latest_release_url": "https://github.com/santifer/career-ops/releases/tag/career-ops-v1.28.0",
+    "latest_release_at": "2026-08-20T16:52:50Z",
+    "analysis": {
+      "positioning": "career-ops 是一个开源的 AI 求职助手，运行在本地 AI 编码 CLI 中，用于扫描招聘门户、按 A-F 评分标准评估职位并给出 1.0-5.0 的分数，同时定制简历和跟踪申请。与普通求职工具相比，它深度集成开发工作流，强调本地运行和结构化评估。",
+      "target_users": [
+        "使用 Claude Code、Codex、OpenCode 等 AI 编码工具的开发者，希望在开发环境中直接管理求职流程。",
+        "求职者需要自动化筛选职位、评估匹配度并优化简历，尤其适合技术岗位求职。"
+      ],
+      "core_capabilities": [
+        "扫描多个招聘门户，自动收集职位信息。",
+        "使用结构化的 A-F 评分标准对职位进行打分，帮助用户快速判断匹配度。",
+        "根据职位要求定制简历，提升申请成功率。",
+        "跟踪申请进度，集中管理求职活动。"
+      ],
+      "technical_analysis": [
+        "项目主要使用 JavaScript，通过 npx 命令快速初始化，运行在本地 CLI 环境中。",
+        "集成形态为 AI 编码 CLI 插件，支持多种 CLI 工具，强调本地运行，可能涉及本地文件处理和 API 调用。",
+        "部署方式简单，通过 npm 包分发，用户可快速开始。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目拥有 67k+ Stars 和 12k+ Forks，社区关注度高，可能具有广泛影响力。",
+        "活跃的发布节奏（v1.28.0）和持续的代码推送表明项目维护积极，功能迭代快。",
+        "多语言 README 和丰富的主题标签（如 AI、自动化、ATS）显示其面向国际用户，生态潜力大。"
+      ],
+      "limitations": [
+        "项目创建于 2026 年，相对较新，成熟度需进一步观察。",
+        "依赖 AI 编码 CLI 环境，可能限制非开发者用户的使用。",
+        "本地运行可能涉及敏感求职数据，安全性和隐私保护需核实。",
+        "许可证为 MIT，但依赖的第三方服务或 API 可能另有条款。"
+      ],
+      "opportunities": [
+        "机会假设：可开发浏览器扩展或 Web 界面，方便非 CLI 用户使用。",
+        "机会假设：集成更多招聘平台和 ATS 系统，扩大职位来源。",
+        "机会假设：提供数据分析功能，帮助用户优化求职策略。",
+        "机会假设：增加多用户协作或团队求职功能。"
+      ],
+      "maturity": "项目创建于 2026 年 4 月，至 2026 年 8 月已发布 v1.28.0，更新频繁，显示快速迭代。Stars 和 Forks 数量较高，但 Stars 不等同于质量，需结合 Issues（268 个）和社区反馈评估。整体处于早期但活跃的发展阶段。"
+    }
+  },
+  "mattpocock/skills": {
+    "full_name": "mattpocock/skills",
+    "html_url": "https://github.com/mattpocock/skills",
+    "description": "Skills for Real Engineers. Straight from my .agents directory.",
+    "stars": 230857,
+    "forks": 19723,
+    "open_issues": 377,
+    "watchers": 1303,
+    "language": "Shell",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2026-02-03T11:15:53Z",
+    "updated_at": "2026-08-22T12:58:50Z",
+    "pushed_at": "2026-08-21T10:56:48Z",
+    "archived": false,
+    "fork": false,
+    "score": 89.62,
+    "score_reasons": [
+      "230,857 stars over 200 days",
+      "estimated 1153.9 stars/day since creation",
+      "last push 1.1 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": "https://aihero.dev/skills",
+    "default_branch": "main",
+    "readme_url": "https://github.com/mattpocock/skills/blob/main/README.md",
+    "readme_summary": "My agent skills that I use every day to do real engineering - not vibe coding.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v1.2.3",
+    "latest_release_url": "https://github.com/mattpocock/skills/releases/tag/v1.2.3",
+    "latest_release_at": "2026-08-06T14:05:28Z",
+    "analysis": {
+      "positioning": "这是一个面向真实工程师的代理技能集合，直接来自维护者的 .agents 目录，旨在提供日常工程实践所需的技能，而非用于‘氛围编码’。它解决的是如何将工程经验沉淀为可复用的代理技能的问题，与普通工具相比，其特点在于源自真实工作流，强调实用性。",
+      "target_users": [
+        "希望将日常工程实践自动化的软件工程师",
+        "需要可复用代理技能来提升开发效率的开发者",
+        "关注 AI 辅助编码但追求真实工程质量的团队"
+      ],
+      "core_capabilities": [
+        "提供可直接使用的代理技能，帮助工程师在真实项目中应用，而非仅用于演示或娱乐",
+        "技能来源于维护者的个人目录，可能包含经过实战检验的配置和流程，用户可借鉴其工程经验",
+        "以 Shell 语言实现，可能便于在命令行环境中集成和自动化"
+      ],
+      "technical_analysis": [
+        "项目使用 Shell 语言，可能以脚本形式提供技能，便于在 Unix 环境中直接运行",
+        "从描述看，技能来自 .agents 目录，可能涉及代理配置或脚本，但具体集成形态（如是否依赖特定代理框架）未在输入中提供，需进一步核实",
+        "部署或运行方式未明确，可能需要在本地环境配置，但云端支持情况未知"
+      ],
+      "why_it_matters": [
+        "项目拥有极高的关注度（Stars 超过 23 万），表明其可能引发了广泛讨论，但需注意 Stars 不等于质量",
+        "有活跃的发布记录（最新版本 v1.2.3 于 2026 年 8 月发布），且仓库持续更新，显示维护者积极迭代",
+        "对于希望将 AI 代理应用于真实工程场景的开发者，该项目可能提供了有价值的参考实践"
+      ],
+      "limitations": [
+        "项目创建于 2026 年 2 月，相对较新，成熟度可能有限，需进一步核实其稳定性",
+        "许可证为 MIT，但依赖项和第三方组件未在输入中提供，需核实许可证兼容性",
+        "平台兼容性未知，可能仅支持特定操作系统或环境",
+        "安全方面，技能可能涉及执行命令，需评估潜在风险"
+      ],
+      "opportunities": [
+        "机会假设：可以开发一个技能管理工具，帮助用户轻松安装、更新和配置这些技能",
+        "机会假设：可以创建与主流 CI/CD 工具的集成，使技能在自动化流水线中发挥作用",
+        "机会假设：可以编写测试框架来验证技能在不同环境下的行为，提高可靠性"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 2 月，至今约 6 个月，已有 23 万 Stars 和 1.9 万 Forks，但 Stars 高不代表成熟。最新版本 v1.2.3 于 2026 年 8 月发布，且仓库在 8 月仍有推送，表明维护活跃。然而，开放问题 377 个，可能暗示存在一些待解决事项。综合来看，项目处于早期但快速迭代阶段，成熟度需进一步观察。"
+    }
+  },
+  "obra/superpowers": {
+    "full_name": "obra/superpowers",
+    "html_url": "https://github.com/obra/superpowers",
+    "description": "An agentic skills framework & software development methodology that works.",
+    "stars": 275907,
+    "forks": 24667,
+    "open_issues": 300,
+    "watchers": 1046,
+    "language": "Shell",
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "brainstorming",
+      "coding",
+      "obra",
+      "sdlc",
+      "skills",
+      "subagent-driven-development",
+      "superpowers"
+    ],
+    "created_at": "2025-10-09T19:45:18Z",
+    "updated_at": "2026-08-22T12:58:15Z",
+    "pushed_at": "2026-08-19T17:33:23Z",
+    "archived": false,
+    "fork": false,
+    "score": 88.29,
+    "score_reasons": [
+      "275,907 stars over 317 days",
+      "estimated 871.1 stars/day since creation",
+      "last push 2.8 days ago",
+      "detectable MIT license",
+      "topics: ai, brainstorming, coding, obra, sdlc"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": "https://github.com/obra/superpowers/blob/main/README.md",
+    "readme_summary": "Superpowers is a complete software development methodology for your coding agents, built on top of a set of composable skills and some initial instructions that make sure your agent uses them.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v6.3.0",
+    "latest_release_url": "https://github.com/obra/superpowers/releases/tag/v6.3.0",
+    "latest_release_at": "2026-08-12T16:58:30Z",
+    "analysis": {
+      "positioning": "Superpowers 是一个面向编码代理的智能体技能框架与软件开发方法论，通过可组合的技能和初始指令，让代理遵循一套完整的软件开发流程。它解决的是代理在复杂软件开发中缺乏结构化指导的问题，与普通工具相比，其明确特点是提供了一套完整的方法论和可组合的技能体系。",
+      "target_users": [
+        "使用 AI 编码代理的开发者或团队，希望提升代理在软件开发中的自主性和规范性。",
+        "对 AI 辅助软件开发方法论感兴趣的研究者或实践者，用于探索代理驱动的开发流程。"
+      ],
+      "core_capabilities": [
+        "提供可组合的技能集，使代理能够执行头脑风暴、编码、测试等开发任务，提升开发效率。",
+        "内置初始指令，确保代理遵循方法论，减少人为干预，提高开发流程的一致性。",
+        "支持子代理驱动开发，可能实现任务分解与并行处理，增强复杂项目的管理能力。"
+      ],
+      "technical_analysis": [
+        "项目主要使用 Shell 语言，可能包含脚本或命令行工具，便于集成到现有开发环境。",
+        "从描述看，它可能以本地或云端方式运行，但具体部署方式未明确，需进一步核实。",
+        "集成形态可能为代理技能包或 CLI 工具，但未提供详细信息，资料不足。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目拥有极高的 Stars 和 Forks，表明社区关注度很高，可能成为 AI 代理开发方法论的重要参考。",
+        "活跃的发布记录（最新 v6.3.0）和持续的更新（pushed_at 较新）显示项目维护积极，生态可能正在快速演进。",
+        "其主题涵盖 AI、SDLC 等热门领域，可能为开发者提供新的开发范式，值得关注。"
+      ],
+      "limitations": [
+        "项目创建于 2025 年，相对较新，成熟度可能有限，需进一步核实其稳定性。",
+        "开放问题数量较多（300），可能影响使用体验，需关注问题解决速度。",
+        "许可证为 MIT，但采用成本（如学习曲线、依赖）未明确，需进一步核实。"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对特定开发场景（如代码审查、测试生成）的定制技能包，扩展其应用范围。",
+        "机会假设：可构建与主流 CI/CD 工具的集成，实现代理驱动开发的自动化流水线。",
+        "机会假设：可开发可视化工具或仪表盘，帮助用户监控代理执行流程，提升可观测性。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2025 年 10 月，但已发布 v6.3.0，且最近更新频繁，表明迭代速度较快。Stars 和 Forks 数量极高，但开放问题也较多，可能处于快速成长阶段。综合判断，项目活跃度高，但成熟度仍需通过实际使用和社区反馈进一步验证。"
+    }
+  },
+  "harry0703/MoneyPrinterTurbo": {
+    "full_name": "harry0703/MoneyPrinterTurbo",
+    "html_url": "https://github.com/harry0703/MoneyPrinterTurbo",
+    "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+    "stars": 114414,
+    "forks": 17366,
+    "open_issues": 47,
+    "watchers": 711,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "ai-video-generator",
+      "content-creation",
+      "ffmpeg",
+      "instagram-reels",
+      "llm",
+      "python",
+      "short-video",
+      "subtitles",
+      "text-to-speech",
+      "tiktok",
+      "video-automation",
+      "video-workflow",
+      "workflow-automation",
+      "youtube-shorts"
+    ],
+    "created_at": "2024-03-11T02:57:34Z",
+    "updated_at": "2026-08-22T12:59:07Z",
+    "pushed_at": "2026-08-22T11:44:04Z",
+    "archived": false,
+    "fork": false,
+    "score": 83.71,
+    "score_reasons": [
+      "114,414 stars over 894 days",
+      "estimated 127.9 stars/day since creation",
+      "last push 0.1 days ago",
+      "detectable MIT license",
+      "topics: ai-video-generator, content-creation, ffmpeg, instagram-reels, llm"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": "https://github.com/harry0703/MoneyPrinterTurbo/blob/main/README.md",
+    "readme_summary": "只需提供视频 主题 或 关键词 ，即可自动生成视频脚本、匹配素材、生成字幕和背景音乐，并合成高清短视频。",
+    "readme_features": [
+      "[x] 提供 AI Agent、WebUI、API 和 CLI 四种使用方式，代码按控制器、服务和模型等职责分层",
+      "[x] 支持 AI 自动生成视频脚本，也可以使用自定义脚本",
+      "[x] 支持多种 高清视频 尺寸",
+      "[x] 竖屏 9:16，1080x1920",
+      "[x] 横屏 16:9，1920x1080"
+    ],
+    "quick_start": "",
+    "latest_release_name": "v1.3.4",
+    "latest_release_url": "https://github.com/harry0703/MoneyPrinterTurbo/releases/tag/v1.3.4",
+    "latest_release_at": "2026-08-12T02:51:41Z",
+    "analysis": {
+      "positioning": "MoneyPrinterTurbo 是一个基于 AI 大模型和自动化工作流的开源工具，能够根据用户提供的主题或关键词，自动生成视频脚本、匹配素材、生成字幕和背景音乐，并合成高清短视频。它解决了短视频创作中内容生成和制作流程繁琐的问题，与普通工具相比，其明确特点是提供 AI Agent、WebUI、API 和 CLI 四种使用方式，并支持多种高清视频尺寸，实现了从创意到成片的自动化。",
+      "target_users": [
+        "内容创作者、自媒体运营者，需要快速生成短视频素材。",
+        "开发者或企业，希望将短视频生成能力集成到自有系统或服务中。",
+        "对 AI 视频生成感兴趣的研究者或爱好者，用于学习和实验。"
+      ],
+      "core_capabilities": [
+        "一键生成完整短视频：从主题或关键词自动生成脚本、匹配素材、生成字幕和背景音乐，并合成高清视频，大幅降低创作门槛。",
+        "多形态使用方式：提供 AI Agent、WebUI、API 和 CLI 四种接口，满足不同用户和场景的需求，便于集成和自动化。",
+        "灵活的视频规格：支持竖屏 9:16（1080x1920）和横屏 16:9（1920x1080）等多种高清尺寸，适配不同平台。"
+      ],
+      "technical_analysis": [
+        "项目使用 Python 语言开发，代码按控制器、服务和模型等职责分层，结构清晰。",
+        "支持本地和云端运行方式，具体部署细节本次输入未提供，需进一步核实。",
+        "集成形态多样，包括 WebUI、API 和 CLI，便于用户交互和程序化调用。"
+      ],
+      "why_it_matters": [
+        "项目拥有超过 11 万 Stars 和 1.7 万 Forks，社区关注度高，活跃度强，表明其解决的需求具有普遍性。",
+        "从最新发布 v1.3.4 和持续更新来看，项目维护活跃，功能迭代较快，值得开发者关注其技术演进。",
+        "作为 AI 视频生成领域的开源项目，它展示了 AI 大模型与自动化工作流结合的实际应用，对开发者有启发和参考价值。"
+      ],
+      "limitations": [
+        "项目依赖 AI 大模型和 FFmpeg 等外部服务，可能需要配置 API 密钥或本地模型，具体依赖和配置要求需进一步核实。",
+        "生成视频的质量和速度可能受限于所选 AI 模型和硬件资源，实际效果需测试验证。",
+        "许可证为 MIT，但使用第三方素材和生成内容可能涉及版权问题，需用户自行注意。",
+        "项目成熟度尚需评估，虽然 Stars 高，但 open_issues 有 47 个，可能存在未解决的 bug 或功能限制。"
+      ],
+      "opportunities": [
+        "机会假设：可以开发针对特定平台（如 TikTok、YouTube Shorts）的优化模板或预设，提升生成内容的适配性。",
+        "机会假设：可以构建基于该项目的 API 封装服务，提供更友好的接口或增加计费、监控等功能。",
+        "机会假设：可以开发自动化测试工具，验证不同输入下生成视频的稳定性和质量，帮助项目提升可靠性。"
+      ],
+      "maturity": "项目创建于 2024 年 3 月，最新发布 v1.3.4（2026 年 8 月），更新频繁，Stars 和 Forks 数量极高，社区活跃。但 open_issues 有 47 个，表明仍存在待解决问题。综合来看，项目处于快速迭代的成长期，功能不断完善，但成熟度仍需通过实际使用和社区反馈进一步验证。"
+    }
+  },
+  "ruvnet/ruflo": {
+    "full_name": "ruvnet/ruflo",
+    "html_url": "https://github.com/ruvnet/ruflo",
+    "description": "🌊 The original agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+    "stars": 68809,
+    "forks": 8258,
+    "open_issues": 830,
+    "watchers": 442,
+    "language": "TypeScript",
+    "license": "MIT",
+    "topics": [
+      "agentic-ai",
+      "agentic-framework",
+      "agentic-workflow",
+      "agents",
+      "ai-agents",
+      "ai-assistant",
+      "ai-skills",
+      "autonomous-agents",
+      "claude-code",
+      "codex",
+      "dsh-plugin",
+      "harness",
+      "mcp-server",
+      "multi-agent",
+      "multi-agent-systems",
+      "npm",
+      "skills",
+      "swarm",
+      "swarm-intelligence",
+      "typescript"
+    ],
+    "created_at": "2025-06-02T21:24:20Z",
+    "updated_at": "2026-08-22T12:57:02Z",
+    "pushed_at": "2026-08-21T15:23:37Z",
+    "archived": false,
+    "fork": false,
+    "score": 81.76,
+    "score_reasons": [
+      "68,809 stars over 446 days",
+      "estimated 154.4 stars/day since creation",
+      "last push 0.9 days ago",
+      "detectable MIT license",
+      "topics: agentic-ai, agentic-framework, agentic-workflow, agents, ai-agents"
+    ],
+    "homepage": "https://Cognitum.One",
+    "default_branch": "main",
+    "readme_url": "https://github.com/ruvnet/ruflo/blob/main/README.md",
+    "readme_summary": "**An agent meta-harness for Claude Code and Codex.**",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v3.38.16 — 3 dream cycles: MessageBus retry bound, hybridSearch opt-in, discounted Thompson bandit",
+    "latest_release_url": "https://github.com/ruvnet/ruflo/releases/tag/v3.38.16",
+    "latest_release_at": "2026-08-21T15:23:38Z",
+    "analysis": {
+      "positioning": "ruflo 是一个面向多智能体系统的 TypeScript 元框架（meta-harness），用于部署智能多玩家群体、协调自主工作流并构建对话式 AI 系统。它通过自适应记忆、自学习智能和 RAG 集成，为 Claude Code、Codex 等工具提供统一的智能体编排层，解决复杂多智能体协作与工具集成问题。与普通同类工具相比，其明确特点是作为‘元框架’原生集成多种主流 AI 编码工具，并强调群体智能与自适应学习能力。",
+      "target_users": [
+        "使用 Claude Code、Codex 等 AI 编码工具的开发者，希望扩展其能力为多智能体协作系统",
+        "构建复杂自主工作流或对话式 AI 应用的团队，需要协调多个智能体并集成 RAG 与记忆机制",
+        "对群体智能（swarm intelligence）和自适应学习感兴趣的 AI 研究者与实验者"
+      ],
+      "core_capabilities": [
+        "多智能体编排：支持部署多玩家群体，协调自主工作流，提升任务处理效率与复杂度",
+        "自适应记忆与自学习：系统能根据交互动态调整记忆与行为，增强长期任务中的上下文保持与决策能力",
+        "RAG 集成：提供检索增强生成能力，使智能体能够利用外部知识库，提高回答准确性与信息丰富度",
+        "原生工具集成：内置对 Claude Code、Codex、Hermes 等工具的支持，降低集成成本，加速开发"
+      ],
+      "technical_analysis": [
+        "语言与生态：使用 TypeScript 开发，适合 Node.js 环境，与 npm 生态兼容，便于前端与后端开发者使用",
+        "集成形态：作为 MCP 服务器和 npm 包提供，支持插件化（如 dsh-plugin），可灵活嵌入现有开发流程",
+        "部署方式：从描述看可能支持本地或云端运行，但具体部署细节本次输入未提供，需进一步核实",
+        "运行方式：作为元框架，可能通过 CLI 或 API 调用，但具体运行方式未在输入中明确，需进一步核实"
+      ],
+      "why_it_matters": [
+        "高关注度：仓库获得 68.8k Stars 和 8.2k Forks，表明社区活跃且广泛采用，可能成为多智能体开发的重要基础设施",
+        "持续迭代：最新版本 v3.38.16 于 2026-08-21 发布，且仓库持续更新，显示项目维护活跃，功能演进迅速",
+        "生态定位：作为‘原始 agent meta-harness’，可能定义了多智能体框架的某种标准，值得开发者关注其设计模式"
+      ],
+      "limitations": [
+        "成熟度：虽然 Stars 高，但创建于 2025-06-02，至今仅一年多，长期稳定性需进一步观察",
+        "依赖与兼容性：依赖多种外部工具（Claude Code、Codex 等），这些工具的 API 变化可能影响项目稳定性",
+        "安全与隐私：多智能体系统涉及数据交换与记忆存储，安全性和隐私保护措施需核实",
+        "采用成本：学习曲线可能较陡，需要理解元框架概念及多种集成方式，可能增加初期使用成本"
+      ],
+      "opportunities": [
+        "机会假设：开发针对特定行业（如金融、医疗）的预配置智能体模板，降低行业用户的使用门槛",
+        "机会假设：构建可视化编排工具，帮助用户直观设计多智能体工作流，提升易用性",
+        "机会假设：提供性能监控与调试工具，帮助开发者优化智能体协作效率与资源消耗",
+        "机会假设：扩展更多 AI 工具集成（如 OpenAI、Gemini），增强框架的通用性"
+      ],
+      "maturity": "从现有信息看，项目处于快速迭代阶段：创建于 2025 年，Stars 高达 68.8k，Forks 8.2k，Open Issues 830，最新版本 v3.38.16 于 2026-08-21 发布，显示社区活跃且维护频繁。但高 Stars 可能受早期宣传影响，不能直接等同于代码质量。整体上，项目已具备一定成熟度，但需关注 Issue 数量与长期稳定性。"
+    }
+  },
+  "elder-plinius/OBLITERATUS": {
+    "full_name": "elder-plinius/OBLITERATUS",
+    "html_url": "https://github.com/elder-plinius/OBLITERATUS",
+    "description": "OBLITERATE THE CHAINS THAT BIND YOU",
+    "stars": 7936,
+    "forks": 1439,
+    "open_issues": 7,
+    "watchers": 76,
+    "language": "Python",
+    "license": "AGPL-3.0",
+    "topics": [],
+    "created_at": "2026-03-03T19:37:51Z",
+    "updated_at": "2026-08-22T12:57:34Z",
+    "pushed_at": "2026-08-22T00:15:51Z",
+    "archived": false,
+    "fork": false,
+    "score": 74.66,
+    "score_reasons": [
+      "7,936 stars over 172 days",
+      "estimated 46.2 stars/day since creation",
+      "last push 0.5 days ago",
+      "detectable AGPL-3.0 license"
+    ],
+    "homepage": "https://huggingface.co/spaces/pliny-the-prompter/",
+    "default_branch": "main",
+    "readme_url": "https://github.com/elder-plinius/OBLITERATUS/blob/main/README.md",
+    "readme_summary": "Break the chains. Free the mind. Keep the brain.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {
+      "positioning": "OBLITERATUS 是一个以“打破束缚、解放思维”为口号的 Python 项目，旨在帮助用户摆脱限制，实现思想自由。与普通工具相比，其独特之处在于强调精神层面的解放，而非具体技术功能。",
+      "target_users": [
+        "追求思想自由和突破限制的开发者",
+        "对反权威、反约束理念感兴趣的技术爱好者",
+        "希望探索非常规工具的实验性用户"
+      ],
+      "core_capabilities": [
+        "提供一种象征性的“打破链条”的体验，可能涉及代码或脚本，但具体功能未在输入中明确",
+        "通过口号和描述传递一种反叛精神，可能激励用户重新思考技术边界"
+      ],
+      "technical_analysis": [
+        "项目使用 Python 语言，但未提供具体实现细节",
+        "未提供快速开始指南，运行方式不明",
+        "未提及本地或云端部署方式，集成形态未知，需进一步核实"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目在短时间内获得较高关注（7936 stars），可能反映了社区对反传统理念的兴趣",
+        "活跃的推送（2026-08-22）表明项目仍在维护，可能持续演进"
+      ],
+      "limitations": [
+        "项目描述和 README 摘要过于抽象，缺乏具体功能说明，实际用途不明",
+        "未提供许可证以外的法律信息，AGPL-3.0 可能影响商业使用",
+        "无发布版本，成熟度存疑，需核实代码质量和稳定性"
+      ],
+      "opportunities": [
+        "机会假设：可以开发配套的文档或教程，帮助用户理解项目理念和实际用法",
+        "机会假设：可以创建可视化界面或 CLI 工具，使“打破束缚”的概念更易操作",
+        "机会假设：可以集成到 CI/CD 流程中，作为精神激励工具，但需先明确核心功能"
+      ],
+      "maturity": "项目创建于2026年3月，至今约5个月，获得7936 stars和1439 forks，但无正式发布版本，开放7个issue，更新频繁。从现有信息看，项目处于早期但活跃阶段，成熟度较低，需进一步观察代码质量和社区反馈。"
+    }
+  },
+  "microsoft/TypeScript": {
+    "full_name": "microsoft/TypeScript",
+    "html_url": "https://github.com/microsoft/TypeScript",
+    "description": "TypeScript is a superset of JavaScript that compiles to clean JavaScript output.",
+    "stars": 110451,
+    "forks": 13746,
+    "open_issues": 5203,
+    "watchers": 2231,
+    "language": "Go",
+    "license": "Apache-2.0",
+    "topics": [
+      "javascript",
+      "language",
+      "typechecker",
+      "typescript"
+    ],
+    "created_at": "2014-06-17T15:28:39Z",
+    "updated_at": "2026-08-22T12:44:38Z",
+    "pushed_at": "2026-08-21T21:39:39Z",
+    "archived": false,
+    "fork": false,
+    "score": 74.61,
+    "score_reasons": [
+      "110,451 stars over 4449 days",
+      "estimated 24.8 stars/day since creation",
+      "last push 0.6 days ago",
+      "detectable Apache-2.0 license",
+      "topics: javascript, language, typechecker, typescript"
+    ],
+    "homepage": "https://www.typescriptlang.org",
+    "default_branch": "main",
+    "readme_url": "https://github.com/microsoft/TypeScript/blob/main/README.md",
+    "readme_summary": "TypeScript is a language for application-scale JavaScript. TypeScript adds optional types to JavaScript that support tools for large-scale JavaScript applications for any browser, for any host, on any OS. TypeScript compiles to readable, standards-based JavaScript. Try it out at the playground, and stay up to date via our blog and Twitter account.",
+    "readme_features": [],
+    "quick_start": "npm install -D typescript",
+    "latest_release_name": "TypeScript 7.0.2",
+    "latest_release_url": "https://github.com/microsoft/TypeScript/releases/tag/v7.0.2",
+    "latest_release_at": "2026-08-20T18:09:49Z",
+    "analysis": {
+      "positioning": "TypeScript 是 JavaScript 的超集，通过添加可选静态类型，为大型应用开发提供类型检查与工具支持，编译为可读的标准 JavaScript。与普通 JavaScript 相比，其明确特点是类型系统能在开发阶段捕获错误，提升代码可维护性和可扩展性。",
+      "target_users": [
+        "大型 JavaScript 应用开发者，需要类型安全与代码重构支持",
+        "前端或全栈团队，希望在不改变运行时行为的前提下引入静态类型",
+        "使用现代编辑器和构建工具，追求开发体验提升的开发者"
+      ],
+      "core_capabilities": [
+        "提供可选类型注解，支持类型推断与检查，减少运行时错误",
+        "编译为可读、标准的 JavaScript，兼容任何浏览器、主机和操作系统",
+        "支持现代 JavaScript 特性，并可通过配置调整编译目标"
+      ],
+      "technical_analysis": [
+        "语言层面：TypeScript 是 JavaScript 的超集，编译后输出标准 JavaScript，不依赖特定运行时",
+        "集成形态：通过 npm 安装编译器，可集成到主流构建工具和编辑器",
+        "运行方式：编译为 JavaScript 后运行，支持任何 JavaScript 运行环境"
+      ],
+      "why_it_matters": [
+        "从现有信息看，TypeScript 拥有超过 11 万 Stars 和 1.3 万 Forks，社区活跃，生态成熟",
+        "最新版本 7.0.2 于 2026 年 8 月发布，且仓库持续更新，表明项目维护活跃",
+        "作为 JavaScript 类型检查的事实标准，其类型系统能显著提升大型项目的可维护性"
+      ],
+      "limitations": [
+        "需要额外编译步骤，可能增加构建复杂度",
+        "类型定义可能增加学习成本，尤其对小型项目或原型开发",
+        "许可证为 Apache-2.0，需确认是否符合项目合规要求",
+        "本次输入未提供安全审计或依赖风险信息，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：开发针对 TypeScript 的自动化类型测试工具，帮助团队验证类型定义的正确性",
+        "机会假设：构建 TypeScript 到其他语言的转译器，扩展其应用场景",
+        "机会假设：开发 IDE 插件或编辑器扩展，增强类型提示和重构功能"
+      ],
+      "maturity": "从现有信息看，TypeScript 创建于 2014 年，持续更新至 2026 年，最新版本 7.0.2，Stars 超过 11 万，Forks 1.3 万，开放问题 5203 个，表明项目成熟且维护活跃，但开放问题数量较多，需关注问题解决效率。"
+    }
+  },
+  "TryGhost/Ghost": {
+    "full_name": "TryGhost/Ghost",
+    "html_url": "https://github.com/TryGhost/Ghost",
+    "description": "Independent technology for modern publishing, memberships, subscriptions and newsletters.",
+    "stars": 55033,
+    "forks": 11909,
+    "open_issues": 130,
+    "watchers": 1009,
+    "language": "JavaScript",
+    "license": "MIT",
+    "topics": [
+      "blogging",
+      "cms",
+      "ghost",
+      "javascript",
+      "journalism",
+      "nodejs",
+      "publishing",
+      "web-application"
+    ],
+    "created_at": "2013-05-04T11:09:13Z",
+    "updated_at": "2026-08-22T12:57:42Z",
+    "pushed_at": "2026-08-22T12:31:29Z",
+    "archived": false,
+    "fork": false,
+    "score": 74.45,
+    "score_reasons": [
+      "55,033 stars over 4858 days",
+      "estimated 11.3 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable MIT license",
+      "topics: blogging, cms, ghost, javascript, journalism"
+    ],
+    "homepage": "https://ghost.org",
+    "default_branch": "main",
+    "readme_url": "https://github.com/TryGhost/Ghost/blob/main/README.md",
+    "readme_summary": "The easiest way to get a production instance deployed is with our official **Ghost(Pro)** managed service. It takes about 2 minutes to launch a new site with worldwide CDN, backups, security and maintenance all done for you.",
+    "readme_features": [],
+    "quick_start": "npm install ghost-cli -g",
+    "latest_release_name": "v6.59.0",
+    "latest_release_url": "https://github.com/TryGhost/Ghost/releases/tag/v6.59.0",
+    "latest_release_at": "2026-08-19T20:27:39Z",
+    "analysis": {
+      "positioning": "Ghost 是一个面向现代出版、会员、订阅和新闻通讯的独立技术平台，旨在为内容创作者提供简单、高效的发布解决方案。与普通 CMS 相比，它强调开箱即用的托管服务（Ghost(Pro)），并集成了会员和订阅功能，而不仅仅是内容管理。",
+      "target_users": [
+        "独立博主和内容创作者，希望快速搭建专业发布平台",
+        "媒体和新闻机构，需要支持会员和订阅的现代出版工具",
+        "企业或团队，寻求自托管或托管的内容管理解决方案"
+      ],
+      "core_capabilities": [
+        "提供快速部署的生产实例，通过官方托管服务简化运维",
+        "支持会员管理、订阅和新闻通讯，帮助创作者实现内容变现",
+        "基于 Node.js 构建，具备高性能和可扩展性，适合现代 Web 应用"
+      ],
+      "technical_analysis": [
+        "使用 JavaScript 开发，基于 Node.js 平台，适合构建高并发 Web 应用",
+        "支持本地安装（通过 ghost-cli）和官方托管服务（Ghost(Pro)），提供灵活部署方式",
+        "集成形态为完整 CMS 应用，可独立运行，但本次输入未提供插件或 API 集成细节，需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目活跃度高，拥有 55k+ Stars 和 11k+ Forks，且持续更新（最新版本 v6.59.0）",
+        "作为开源 CMS，Ghost 在出版和订阅领域具有独特定位，可能吸引开发者参与生态建设",
+        "从现有信息看，其官方托管服务简化了部署，可能降低采用门槛，值得关注"
+      ],
+      "limitations": [
+        "本次输入未提供官方功能列表，具体功能细节需进一步核实",
+        "开源许可证为 MIT，但商业托管服务可能涉及费用，需评估成本",
+        "依赖 Node.js 环境，可能对非技术用户有一定门槛，但官方托管可缓解"
+      ],
+      "opportunities": [
+        "机会假设：开发 Ghost 的插件或主题，扩展其会员和订阅功能",
+        "机会假设：构建自动化部署或监控工具，优化自托管体验",
+        "机会假设：针对 Ghost 的 API 开发集成服务，如数据分析或营销自动化"
+      ],
+      "maturity": "项目自 2013 年创建，持续更新至 2026 年，最新版本 v6.59.0，显示长期维护。Stars 和 Forks 数量较高，但 Stars 不等于质量，需结合社区反馈和代码质量评估。开放问题 130 个，相对较少，可能表明项目稳定。"
+    }
+  },
+  "AprilNEA/OpenLogi": {
+    "full_name": "AprilNEA/OpenLogi",
+    "html_url": "https://github.com/AprilNEA/OpenLogi",
+    "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
+    "stars": 13433,
+    "forks": 362,
+    "open_issues": 244,
+    "watchers": 51,
+    "language": "Rust",
+    "license": "Apache-2.0",
+    "topics": [
+      "dpi",
+      "gpui",
+      "hid",
+      "hidpp",
+      "local-first",
+      "logitech",
+      "logitech-mouse",
+      "logitech-options",
+      "mouse-remapping",
+      "mx-master",
+      "privacy",
+      "rust",
+      "smartshift"
+    ],
+    "created_at": "2026-05-24T10:10:36Z",
+    "updated_at": "2026-08-22T12:57:45Z",
+    "pushed_at": "2026-08-21T20:42:44Z",
+    "archived": false,
+    "fork": false,
+    "score": 72.69,
+    "score_reasons": [
+      "13,433 stars over 90 days",
+      "estimated 149.1 stars/day since creation",
+      "last push 0.7 days ago",
+      "detectable Apache-2.0 license",
+      "topics: dpi, gpui, hid, hidpp, local-first"
+    ],
+    "homepage": "https://openlogi.org",
+    "default_branch": "master",
+    "readme_url": "https://github.com/AprilNEA/OpenLogi/blob/master/README.md",
+    "readme_summary": "English  |  简体中文  |  日本語  |  Deutsch  |  Français  |  한국어",
+    "readme_features": [
+      "Devices connected over Logi Bolt receivers, Unifying receivers, Bluetooth, or a wired connection, with battery percentage and charge state",
+      "Button remapping via the OS input hook: a built-in action catalog plus custom keyboard shortcuts authored in the TOML config¹",
+      "Per-application profile overlays that auto-switch on app focus (macOS + Windows; Linux on X11 / XWayland only)",
+      "Litra lights: power, brightness, and color temperature, with optional auto power that follows camera activity",
+      "Capture and remap the middle, mode-shift, and thumbwheel buttons (middle everywhere, the rest where the device exposes them)"
+    ],
+    "quick_start": "",
+    "latest_release_name": "v0.7.4",
+    "latest_release_url": "https://github.com/AprilNEA/OpenLogi/releases/tag/v0.7.4",
+    "latest_release_at": "2026-08-21T06:49:31Z",
+    "analysis": {
+      "positioning": "OpenLogi 是一个用 Rust 编写的原生、本地优先的 Logitech Options+ 替代品，通过 HID++ 协议重映射按钮、DPI 和 SmartShift，无需账户、无遥测，解决 Logitech 官方软件臃肿、隐私受限的问题。与普通同类工具相比，它强调本地优先、跨平台（macOS、Windows、Linux）和开源透明。",
+      "target_users": [
+        "追求隐私、不愿使用官方 Logitech Options+ 的 Logitech 设备用户",
+        "需要高级按钮重映射和按应用配置的开发者或效率爱好者",
+        "使用 Logi Bolt、Unifying、蓝牙或有线连接的 Logitech 鼠标、键盘和 Litra 灯用户"
+      ],
+      "core_capabilities": [
+        "支持多种连接方式（Bolt、Unifying、蓝牙、有线）并显示电池电量和充电状态",
+        "通过 OS 输入钩子实现按钮重映射，内置动作目录和 TOML 配置自定义快捷键",
+        "按应用自动切换配置文件的叠加层，提升多应用工作流效率",
+        "控制 Litra 灯（电源、亮度、色温），并可选跟随摄像头活动自动开关",
+        "捕获并重映射中键、模式切换和拇指滚轮按钮"
+      ],
+      "technical_analysis": [
+        "使用 Rust 语言开发，强调性能和内存安全",
+        "采用本地优先架构，无账户、无遥测，数据留在本地",
+        "通过 HID++ 协议与设备通信，支持多种连接方式",
+        "集成形态为桌面应用，可能使用 GPUI（从主题词推断），但具体 UI 框架未在输入中明确",
+        "运行方式为本地安装，跨平台支持 macOS、Windows 和 Linux（X11/XWayland）"
+      ],
+      "why_it_matters": [
+        "从现有信息看，项目活跃度较高（最新发布 v0.7.4，推送频繁），Stars 数量可观，表明社区关注度较高",
+        "作为 Logitech 官方软件的替代品，填补了开源、隐私友好的设备配置工具空白",
+        "使用 Rust 和 HID++ 协议，技术栈现代，可能吸引系统编程和硬件爱好者"
+      ],
+      "limitations": [
+        "平台支持有限：Linux 仅支持 X11/XWayland，Wayland 可能不支持，需进一步核实",
+        "部分按钮重映射依赖设备暴露，可能不适用于所有 Logitech 设备",
+        "项目创建时间较新（2026年5月），成熟度可能不足，需关注稳定性",
+        "开源许可证为 Apache-2.0，但依赖项和专利风险需核实",
+        "快速开始文档未提供，可能影响新用户上手"
+      ],
+      "opportunities": [
+        "机会假设：可开发 Wayland 支持或改进 Linux 兼容性，扩大用户群",
+        "机会假设：可提供图形化配置界面（当前可能依赖 TOML 配置），降低使用门槛",
+        "机会假设：可集成更多 Logitech 设备类型（如键盘、演示器），或支持自定义宏和脚本",
+        "机会假设：可提供命令行工具或自动化接口，便于脚本化配置"
+      ],
+      "maturity": "从现有信息看，项目创建于2026年5月，至今约3个月，已发布 v0.7.4，更新频繁，Stars 达 13433，但 open issues 244 个，表明社区活跃但可能仍处于快速迭代期，成熟度中等，需关注稳定性。"
+    }
+  },
+  "protocolbuffers/protobuf": {
+    "full_name": "protocolbuffers/protobuf",
+    "html_url": "https://github.com/protocolbuffers/protobuf",
+    "description": "Protocol Buffers - Google's data interchange format",
+    "stars": 71805,
+    "forks": 16238,
+    "open_issues": 319,
+    "watchers": 2009,
+    "language": "C++",
+    "license": "NOASSERTION",
+    "topics": [
+      "marshalling",
+      "protobuf",
+      "protobuf-runtime",
+      "protoc",
+      "protocol-buffers",
+      "protocol-compiler",
+      "rpc",
+      "serialization"
+    ],
+    "created_at": "2014-08-26T15:52:15Z",
+    "updated_at": "2026-08-22T12:01:01Z",
+    "pushed_at": "2026-08-22T12:30:45Z",
+    "archived": false,
+    "fork": false,
+    "score": 72.41,
+    "score_reasons": [
+      "71,805 stars over 4379 days",
+      "estimated 16.4 stars/day since creation",
+      "last push 0.0 days ago",
+      "topics: marshalling, protobuf, protobuf-runtime, protoc, protocol-buffers"
+    ],
+    "homepage": "http://protobuf.dev",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "microsoft/onnxruntime": {
+    "full_name": "microsoft/onnxruntime",
+    "html_url": "https://github.com/microsoft/onnxruntime",
+    "description": "ONNX Runtime: cross-platform, high performance ML inferencing and training accelerator",
+    "stars": 21590,
+    "forks": 4153,
+    "open_issues": 1602,
+    "watchers": 263,
+    "language": "C++",
+    "license": "MIT",
+    "topics": [
+      "ai-framework",
+      "deep-learning",
+      "hardware-acceleration",
+      "machine-learning",
+      "neural-networks",
+      "onnx",
+      "pytorch",
+      "scikit-learn",
+      "tensorflow"
+    ],
+    "created_at": "2018-11-10T02:22:53Z",
+    "updated_at": "2026-08-22T12:48:49Z",
+    "pushed_at": "2026-08-22T12:38:03Z",
+    "archived": false,
+    "fork": false,
+    "score": 70.66,
+    "score_reasons": [
+      "21,590 stars over 2842 days",
+      "estimated 7.6 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable MIT license",
+      "topics: ai-framework, deep-learning, hardware-acceleration, machine-learning, neural-networks"
+    ],
+    "homepage": "https://onnxruntime.ai",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "apache/maka": {
+    "full_name": "apache/maka",
+    "html_url": "https://github.com/apache/maka",
+    "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
+    "stars": 2148,
+    "forks": 249,
+    "open_issues": 269,
+    "watchers": 7,
+    "language": "TypeScript",
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-runtime",
+      "ai",
+      "ai-agent",
+      "apache",
+      "cli",
+      "desktop",
+      "electron",
+      "event-sourcing",
+      "incubator",
+      "llm",
+      "local-first",
+      "maka",
+      "tool-use",
+      "typescript"
+    ],
+    "created_at": "2026-05-27T15:46:05Z",
+    "updated_at": "2026-08-22T12:51:36Z",
+    "pushed_at": "2026-08-22T12:56:33Z",
+    "archived": false,
+    "fork": false,
+    "score": 67.7,
+    "score_reasons": [
+      "2,148 stars over 87 days",
+      "estimated 24.7 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable Apache-2.0 license",
+      "topics: agent-runtime, ai, ai-agent, apache, cli"
+    ],
+    "homepage": null,
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "PostHog/posthog": {
+    "full_name": "PostHog/posthog",
+    "html_url": "https://github.com/PostHog/posthog",
+    "description": ":hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – capture all the context agents need to diagnose problems, uncover opportunities, and ship fixes. Steer it all from Slack, web, desktop, or the MCP.",
+    "stars": 38437,
+    "forks": 3237,
+    "open_issues": 5174,
+    "watchers": 134,
+    "language": "Python",
+    "license": "NOASSERTION",
+    "topics": [
+      "ab-testing",
+      "ai-analytics",
+      "analytics",
+      "cdp",
+      "data-warehouse",
+      "experiments",
+      "feature-flags",
+      "javascript",
+      "product-analytics",
+      "python",
+      "react",
+      "session-replay",
+      "surveys",
+      "typescript",
+      "web-analytics"
+    ],
+    "created_at": "2020-01-23T22:46:58Z",
+    "updated_at": "2026-08-22T12:56:42Z",
+    "pushed_at": "2026-08-22T12:58:38Z",
+    "archived": false,
+    "fork": false,
+    "score": 65.16,
+    "score_reasons": [
+      "38,437 stars over 2403 days",
+      "estimated 16.0 stars/day since creation",
+      "last push 0.0 days ago",
+      "topics: ab-testing, ai-analytics, analytics, cdp, data-warehouse"
+    ],
+    "homepage": "https://posthog.com",
+    "default_branch": "master",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "modular/modular": {
+    "full_name": "modular/modular",
+    "html_url": "https://github.com/modular/modular",
+    "description": "The Modular Platform (includes MAX & Mojo)",
+    "stars": 28770,
+    "forks": 3060,
+    "open_issues": 1114,
+    "watchers": 273,
+    "language": "Mojo",
+    "license": "NOASSERTION",
+    "topics": [
+      "ai",
+      "language",
+      "machine-learning",
+      "max",
+      "modular",
+      "mojo",
+      "programming-language"
+    ],
+    "created_at": "2023-04-28T22:17:24Z",
+    "updated_at": "2026-08-22T12:44:53Z",
+    "pushed_at": "2026-08-21T06:34:12Z",
+    "archived": false,
+    "fork": false,
+    "score": 65.11,
+    "score_reasons": [
+      "28,770 stars over 1212 days",
+      "estimated 23.7 stars/day since creation",
+      "last push 1.3 days ago",
+      "topics: ai, language, machine-learning, max, modular"
+    ],
+    "homepage": "https://docs.modular.com/",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "mahlernim/google-timeline-visualizer": {
+    "full_name": "mahlernim/google-timeline-visualizer",
+    "html_url": "https://github.com/mahlernim/google-timeline-visualizer",
+    "description": "Visualize your year in travel using your Google Location History (Timeline) data",
+    "stars": 2452,
+    "forks": 281,
+    "open_issues": 7,
+    "watchers": 148,
+    "language": "Kotlin",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2025-12-16T06:49:16Z",
+    "updated_at": "2026-08-22T12:59:10Z",
+    "pushed_at": "2026-08-22T12:06:52Z",
+    "archived": false,
+    "fork": false,
+    "score": 60.94,
+    "score_reasons": [
+      "2,452 stars over 249 days",
+      "estimated 9.8 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": null,
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "cursor/plugins": {
+    "full_name": "cursor/plugins",
+    "html_url": "https://github.com/cursor/plugins",
+    "description": "Cursor plugin specification and official plugins",
+    "stars": 4537,
+    "forks": 373,
+    "open_issues": 52,
+    "watchers": 15,
+    "language": "TypeScript",
+    "license": null,
+    "topics": [],
+    "created_at": "2026-01-23T01:57:42Z",
+    "updated_at": "2026-08-22T12:44:40Z",
+    "pushed_at": "2026-08-21T03:10:06Z",
+    "archived": false,
+    "fork": false,
+    "score": 58.52,
+    "score_reasons": [
+      "4,537 stars over 211 days",
+      "estimated 21.5 stars/day since creation",
+      "last push 1.4 days ago"
+    ],
+    "homepage": null,
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  }
+}
