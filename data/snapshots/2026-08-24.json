@@ -1,0 +1,1110 @@
+{
+  "NousResearch/hermes-agent": {
+    "full_name": "NousResearch/hermes-agent",
+    "html_url": "https://github.com/NousResearch/hermes-agent",
+    "description": "The agent that grows with you",
+    "stars": 235124,
+    "forks": 47378,
+    "open_issues": 35063,
+    "watchers": 911,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "anthropic",
+      "chatgpt",
+      "claude",
+      "claude-code",
+      "codex",
+      "hermes",
+      "hermes-agent",
+      "llm",
+      "nous-research",
+      "openai"
+    ],
+    "created_at": "2025-07-22T22:22:28Z",
+    "updated_at": "2026-08-24T03:58:09Z",
+    "pushed_at": "2026-08-24T03:39:07Z",
+    "archived": false,
+    "fork": false,
+    "score": 97.34,
+    "score_reasons": [
+      "235,124 stars over 397 days",
+      "estimated 591.9 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable MIT license",
+      "topics: ai, ai-agent, ai-agents, anthropic, chatgpt"
+    ],
+    "homepage": "https://hermes-agent.nousresearch.com",
+    "default_branch": "main",
+    "readme_url": "https://github.com/NousResearch/hermes-agent/blob/main/README.md",
+    "readme_summary": "**The self-improving AI agent built by Nous Research.** It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing when idle. It's not tied to your laptop — talk to it from Telegram while it works on a cloud VM.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "Hermes Agent v0.20.5 (v2026.8.19)",
+    "latest_release_url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.19",
+    "latest_release_at": "2026-08-21T12:16:39Z",
+    "analysis": {
+      "positioning": "Hermes Agent 是一个由 Nous Research 构建的自我改进型 AI 代理，它通过内置的学习循环，从经验中创建技能、在使用中改进技能、主动持久化知识、搜索历史对话，并跨会话构建用户模型。它旨在解决普通 AI 代理缺乏长期记忆和自适应能力的问题，可运行在低成本 VPS、GPU 集群或无服务器基础设施上，并通过 Telegram 远程交互。",
+      "target_users": [
+        "希望部署自主 AI 代理的开发者或研究者",
+        "需要在云端或低成本硬件上运行 AI 代理的个人或团队",
+        "需要跨会话记忆和个性化交互的用户"
+      ],
+      "core_capabilities": [
+        "自我改进：从经验中创建和优化技能，提升长期任务表现",
+        "持久记忆：主动保存知识并搜索历史对话，构建用户画像",
+        "灵活部署：支持从低成本 VPS 到 GPU 集群或无服务器环境，空闲时成本极低",
+        "远程交互：通过 Telegram 等渠道与云端代理交互"
+      ],
+      "technical_analysis": [
+        "使用 Python 语言开发，便于 AI 生态集成",
+        "支持多种部署方式，包括本地、云端 VPS、GPU 集群和无服务器架构",
+        "集成形态可能包括 CLI、API 或消息平台（如 Telegram），但本次输入未提供具体细节，需进一步核实"
+      ],
+      "why_it_matters": [
+        "高关注度：Stars 超过 23 万，表明社区兴趣浓厚",
+        "活跃开发：最近发布 v0.20.5，且推送时间较新，显示持续迭代",
+        "独特定位：自我改进和持久记忆能力可能为 AI 代理领域带来新范式"
+      ],
+      "limitations": [
+        "成熟度：项目创建于 2025 年 7 月，相对较新，可能仍处于早期阶段",
+        "问题数量：开放 Issues 超过 3.5 万，可能影响稳定性或维护效率",
+        "许可证：MIT 许可证，但需核实依赖项和第三方组件的许可证兼容性",
+        "平台依赖：具体支持的平台和集成方式未在本次输入中提供，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：开发针对特定领域的技能包，利用其自我改进能力提升垂直场景效率",
+        "机会假设：构建监控和运维工具，帮助用户管理大规模部署的代理实例",
+        "机会假设：集成更多消息平台或开发 Web 界面，增强用户体验"
+      ],
+      "maturity": "从现有信息看，项目创建于 2025 年 7 月，至今约一年，已发布多个版本（最新 v0.20.5），且推送时间较新，表明开发活跃。Stars 和 Forks 数量极高，但开放 Issues 也很多，可能反映社区参与度高但项目仍处于快速迭代阶段。综合判断，项目处于早期成长阶段，功能可能尚未完全稳定。"
+    }
+  },
+  "affaan-m/ECC": {
+    "full_name": "affaan-m/ECC",
+    "html_url": "https://github.com/affaan-m/ECC",
+    "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "stars": 242630,
+    "forks": 36724,
+    "open_issues": 153,
+    "watchers": 1244,
+    "language": "JavaScript",
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "anthropic",
+      "claude",
+      "claude-code",
+      "developer-tools",
+      "llm",
+      "mcp",
+      "productivity"
+    ],
+    "created_at": "2026-01-18T00:51:51Z",
+    "updated_at": "2026-08-24T03:59:37Z",
+    "pushed_at": "2026-08-21T03:02:03Z",
+    "archived": false,
+    "fork": false,
+    "score": 92.57,
+    "score_reasons": [
+      "242,630 stars over 218 days",
+      "estimated 1112.3 stars/day since creation",
+      "last push 3.0 days ago",
+      "detectable MIT license",
+      "topics: ai-agents, anthropic, claude, claude-code, developer-tools"
+    ],
+    "homepage": "https://ecc.tools",
+    "default_branch": "main",
+    "readme_url": "https://github.com/affaan-m/ECC/blob/main/README.md",
+    "readme_summary": "/plugin marketplace add https://github.com/affaan-m/ECC",
+    "readme_features": [],
+    "quick_start": "/plugin marketplace add https://github.com/affaan-m/ECC\n/plugin install ecc@ecc",
+    "latest_release_name": "ECC 2.1.0: Plan Canvas, Kimi Harness, and Self-Hosted Compute",
+    "latest_release_url": "https://github.com/affaan-m/ECC/releases/tag/v2.1.0",
+    "latest_release_at": "2026-07-27T18:10:46Z",
+    "analysis": {
+      "positioning": "ECC 是一个面向 AI 代理（如 Claude Code、Codex、Opencode、Cursor）的性能优化系统，通过技能、本能、记忆、安全与研究优先的开发方式，提升代理的效率和可靠性。与普通同类工具相比，其明确特点是提供统一的插件市场安装方式，并支持多种代理平台，强调安全与研究导向。",
+      "target_users": [
+        "使用 Claude Code、Codex、Opencode、Cursor 等 AI 编程代理的开发者",
+        "需要优化代理性能、增强记忆与安全性的团队",
+        "对 AI 代理生态感兴趣的研究者与工具开发者"
+      ],
+      "core_capabilities": [
+        "通过插件市场快速安装和更新，简化集成流程",
+        "提供技能、本能、记忆等模块，增强代理的上下文感知和决策能力",
+        "内置安全机制，降低代理误操作风险",
+        "支持多种代理平台，提升跨工具一致性"
+      ],
+      "technical_analysis": [
+        "项目以 JavaScript 为主要语言，可能基于 Node.js 生态，便于与各类开发工具集成",
+        "通过插件市场方式分发，支持命令行安装，部署轻量",
+        "从描述看，可能采用本地或混合运行方式，但具体架构需进一步核实",
+        "集成形态为插件，适配多个代理平台，但具体接口细节未提供"
+      ],
+      "why_it_matters": [
+        "项目活跃度极高（Stars 超 24 万，Forks 超 3.6 万），表明社区关注度强，可能成为 AI 代理优化领域的重要工具",
+        "持续发布新版本（如 2.1.0 引入 Plan Canvas、Kimi Harness 等），显示迭代速度快，功能不断扩展",
+        "覆盖多个主流代理平台，具有广泛适用性，可能推动代理开发标准化"
+      ],
+      "limitations": [
+        "项目创建于 2026 年，相对较新，成熟度可能有限，需进一步验证稳定性",
+        "依赖特定代理平台，可能受平台更新影响",
+        "安全机制的具体实现和有效性需核实",
+        "MIT 许可证允许商用，但需注意第三方依赖的许可证兼容性",
+        "采用成本可能包括学习曲线和配置复杂度，需进一步评估"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对 ECC 的监控和调试工具，帮助用户优化代理性能",
+        "机会假设：可集成更多 AI 代理平台，扩大生态覆盖",
+        "机会假设：可提供可视化配置界面，降低使用门槛",
+        "机会假设：可开展安全审计和最佳实践文档，增强企业采用信心"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 1 月，最新版本于 2026 年 7 月发布，更新频繁，显示活跃开发。Stars 和 Forks 数量极高，但可能包含早期关注度，不能直接等同于质量。开放问题 153 个，需关注解决效率。整体处于快速迭代阶段，成熟度中等，需进一步观察稳定性。"
+    }
+  },
+  "openai/codex": {
+    "full_name": "openai/codex",
+    "html_url": "https://github.com/openai/codex",
+    "description": "Lightweight coding agent that runs in your terminal",
+    "stars": 115807,
+    "forks": 17665,
+    "open_issues": 13584,
+    "watchers": 592,
+    "language": "Rust",
+    "license": "Apache-2.0",
+    "topics": [],
+    "created_at": "2025-04-13T05:37:54Z",
+    "updated_at": "2026-08-24T04:00:04Z",
+    "pushed_at": "2026-08-24T03:36:38Z",
+    "archived": false,
+    "fork": false,
+    "score": 89.24,
+    "score_reasons": [
+      "115,807 stars over 498 days",
+      "estimated 232.6 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable Apache-2.0 license"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": "https://github.com/openai/codex/blob/main/README.md",
+    "readme_summary": "Codex CLI  is a coding agent from OpenAI that runs locally on your computer.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "0.149.1",
+    "latest_release_url": "https://github.com/openai/codex/releases/tag/rust-v0.149.1",
+    "latest_release_at": "2026-08-24T00:28:28Z",
+    "analysis": {
+      "positioning": "Codex CLI 是 OpenAI 推出的轻量级编码代理，直接运行在终端中，旨在帮助开发者在本地环境中通过自然语言交互完成编码任务，解决传统编码工具需要切换上下文、缺乏智能辅助的问题。与普通同类工具相比，其明确特点是来自 OpenAI 的官方支持，且以轻量化和本地执行为核心，强调在终端内的无缝集成。",
+      "target_users": [
+        "开发者：希望在终端内快速获得 AI 编码辅助，减少上下文切换。",
+        "团队：需要本地化、可集成到现有工作流的编码代理，用于代码生成、审查或重构。",
+        "技术爱好者：对 OpenAI 技术栈感兴趣，愿意尝试前沿编码工具的用户。"
+      ],
+      "core_capabilities": [
+        "自然语言驱动的编码辅助：用户可以用自然语言描述需求，代理在本地执行并生成代码。",
+        "本地运行：代理在用户计算机上运行，可能增强隐私和离线可用性。",
+        "终端集成：直接嵌入终端环境，简化开发流程，提升效率。"
+      ],
+      "technical_analysis": [
+        "语言：使用 Rust 实现，可能带来高性能和内存安全优势。",
+        "运行方式：本地运行，强调在终端内操作，可能支持与本地文件系统交互。",
+        "集成形态：作为 CLI 工具，易于集成到现有开发环境，但具体集成方式（如插件、API）需进一步核实。",
+        "部署：作为本地代理，无需云端部署，但可能依赖 OpenAI 的模型服务（未明确，需核实）。"
+      ],
+      "why_it_matters": [
+        "来自 OpenAI 的官方项目，具有品牌背书，可能吸引大量开发者关注。",
+        "高星标和活跃的发布节奏（最新版本 0.149.1，更新频繁）表明项目处于快速迭代阶段，功能可能持续增强。",
+        "轻量级终端代理的定位可能填补 AI 编码工具在本地轻量场景的空白，值得开发者尝试。"
+      ],
+      "limitations": [
+        "成熟度：项目创建于 2025 年，相对较新，可能仍存在不稳定或功能不完整的情况。",
+        "依赖：可能依赖 OpenAI 的 API 或模型，需核实是否要求网络连接或付费。",
+        "平台：未明确支持的操作系统，需进一步核实。",
+        "安全：本地运行可能涉及代码执行风险，需关注安全机制。",
+        "许可证：Apache-2.0 开源，但使用 OpenAI 服务可能受其条款约束。"
+      ],
+      "opportunities": [
+        "机会假设：可以开发插件或扩展，增强 Codex CLI 与主流 IDE 或 CI/CD 工具的集成。",
+        "机会假设：针对不同编程语言或框架的专用配置模板，提升特定场景下的效率。",
+        "机会假设：构建测试套件或基准，评估 Codex CLI 在不同任务上的表现，帮助用户选择。",
+        "机会假设：开发运维工具，用于监控和优化 Codex CLI 的本地资源消耗。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2025 年 4 月，但已获得 115807 个星标和 17665 个分叉，且最新版本为 0.149.1，更新频繁（最近推送在 2026 年 8 月），表明项目处于快速迭代和社区活跃阶段。然而，高星标不等于高质量，仍需关注其功能稳定性和实际使用体验。"
+    }
+  },
+  "mattpocock/skills": {
+    "full_name": "mattpocock/skills",
+    "html_url": "https://github.com/mattpocock/skills",
+    "description": "Skills for Real Engineers. Straight from my .agents directory.",
+    "stars": 234119,
+    "forks": 19967,
+    "open_issues": 389,
+    "watchers": 1319,
+    "language": "Shell",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2026-02-03T11:15:53Z",
+    "updated_at": "2026-08-24T03:59:07Z",
+    "pushed_at": "2026-08-21T10:56:48Z",
+    "archived": false,
+    "fork": false,
+    "score": 88.8,
+    "score_reasons": [
+      "234,119 stars over 202 days",
+      "estimated 1160.7 stars/day since creation",
+      "last push 2.7 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": "https://aihero.dev/skills",
+    "default_branch": "main",
+    "readme_url": "https://github.com/mattpocock/skills/blob/main/README.md",
+    "readme_summary": "My agent skills that I use every day to do real engineering - not vibe coding.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v1.2.3",
+    "latest_release_url": "https://github.com/mattpocock/skills/releases/tag/v1.2.3",
+    "latest_release_at": "2026-08-06T14:05:28Z",
+    "analysis": {
+      "positioning": "这是一个面向真实工程师的代理技能集合，直接来自作者日常使用的 .agents 目录，旨在提供实用工程技能而非‘氛围编码’。与普通工具相比，它强调真实工程实践，可能包含可复用的技能定义和配置。",
+      "target_users": [
+        "希望提升日常工程效率的软件工程师",
+        "需要可复用技能模板的开发者",
+        "对代理技能和自动化工作流感兴趣的技术人员"
+      ],
+      "core_capabilities": [
+        "提供作者日常使用的代理技能，可能涵盖代码审查、测试、部署等工程任务",
+        "以 Shell 脚本形式存在，可能易于集成到现有工作流",
+        "通过 MIT 许可证开放，允许自由使用和修改"
+      ],
+      "technical_analysis": [
+        "主要使用 Shell 语言，表明技能可能以命令行脚本或配置形式存在",
+        "从描述看，技能来自 .agents 目录，可能用于配置代理或自动化工具，但具体集成方式未提供",
+        "本次输入未提供部署或运行方式的详细信息，需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目拥有极高的关注度（Stars 超过 23 万），表明其可能具有广泛影响力或实用性",
+        "作者是知名开发者，其技能集合可能代表行业最佳实践",
+        "活跃的更新和发布（最新发布 v1.2.3）显示项目持续演进"
+      ],
+      "limitations": [
+        "项目创建时间较短（2026 年 2 月），成熟度可能有限",
+        "开源问题数量较多（389），可能影响稳定性",
+        "许可证为 MIT，但依赖项和安全性需进一步核实",
+        "本次输入未提供功能列表和快速开始指南，实际使用门槛未知"
+      ],
+      "opportunities": [
+        "机会假设：可以开发配套的文档站点或教程，帮助用户快速上手",
+        "机会假设：可以创建插件或扩展，与主流 IDE 或 CI/CD 工具集成",
+        "机会假设：可以建立社区贡献指南，鼓励用户提交自己的技能"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 2 月，至今约 6 个月，已发布 v1.2.3 版本，更新频繁，但开源问题较多。Stars 数量极高，但不应直接等同于质量，可能受作者影响力影响。整体处于早期但活跃的发展阶段。"
+    }
+  },
+  "Alishahryar1/free-claude-code": {
+    "full_name": "Alishahryar1/free-claude-code",
+    "html_url": "https://github.com/Alishahryar1/free-claude-code",
+    "description": "Use Claude Code, Codex, Pi, and OpenCode for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)",
+    "stars": 48096,
+    "forks": 7903,
+    "open_issues": 344,
+    "watchers": 317,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2026-01-28T19:02:30Z",
+    "updated_at": "2026-08-24T03:59:45Z",
+    "pushed_at": "2026-08-24T03:48:22Z",
+    "archived": false,
+    "fork": false,
+    "score": 86.03,
+    "score_reasons": [
+      "48,096 stars over 207 days",
+      "estimated 231.9 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": "https://github.com/Alishahryar1/free-claude-code/blob/main/README.md",
+    "readme_summary": "Quick Start · Providers · Clients · Integrations · Manage",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {
+      "positioning": "free-claude-code 是一个开源工具，旨在让用户从终端、应用、IDE 或手机免费使用 Claude Code、Codex、Pi 和 OpenCode 等 AI 编码助手，提供超过 13 亿免费令牌，并支持语音，且符合服务条款。它解决了 AI 编码助手使用成本高和访问受限的问题，与普通同类工具相比，其明确特点是免费额度巨大、多模型集成、多客户端支持以及语音交互。",
+      "target_users": [
+        "开发者：希望免费使用多种 AI 编码助手进行日常编码、代码审查和调试。",
+        "技术爱好者：喜欢在终端或移动设备上体验最新 AI 模型，并探索语音交互的编码方式。",
+        "团队：需要低成本、多模型切换的协作开发环境，尤其适合预算有限的开源项目或初创团队。"
+      ],
+      "core_capabilities": [
+        "免费访问多种 AI 编码助手，提供 1.3B+ 免费令牌，显著降低使用成本。",
+        "支持从终端、IDE、应用和手机等多种客户端接入，实现跨平台灵活使用。",
+        "集成语音交互，提升编码效率，并遵循服务条款，降低合规风险。"
+      ],
+      "technical_analysis": [
+        "项目使用 Python 编写，表明其可能易于扩展和集成，但具体架构未在输入中提供。",
+        "从描述看，它可能通过 API 或代理方式连接多个 AI 服务，但本地/云端部署方式未明确，需进一步核实。",
+        "集成形态多样，支持终端、IDE、应用和手机，暗示其可能提供 CLI、插件或 Web 服务，但具体实现细节资料不足。"
+      ],
+      "why_it_matters": [
+        "项目拥有 48k+ Stars 和 7.9k Forks，活跃度高，表明社区关注度强，可能成为免费 AI 编码工具的重要选择。",
+        "提供多模型、多客户端和语音支持，满足开发者对灵活性和低成本的迫切需求，可能推动 AI 编码工具的普及。",
+        "MIT 许可证允许自由使用和修改，有利于开发者基于其构建衍生工具，促进生态发展。"
+      ],
+      "limitations": [
+        "最新版本信息未提供，可能尚未发布正式 release，成熟度需进一步核实。",
+        "存在 344 个未关闭的 issue，可能影响稳定性和用户体验，需关注问题解决进度。",
+        "免费令牌的具体来源和可持续性未说明，可能存在依赖第三方服务或配额限制的风险。",
+        "语音支持和多客户端集成的实际效果及兼容性需进一步测试，安全性和隐私保护措施未提及。"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对特定 IDE 的深度集成插件，提升用户体验。",
+        "机会假设：构建基于该项目的自动化测试工具，验证多模型输出质量。",
+        "机会假设：提供企业级部署方案，包括私有化部署和令牌管理，满足团队需求。"
+      ],
+      "maturity": "项目创建于 2026 年 1 月，最近更新于 2026 年 8 月，更新频繁，但无正式 release，Stars 和 Forks 数量高，社区活跃，但 open issues 较多，整体处于快速迭代阶段，成熟度中等，需关注版本稳定性和问题解决效率。"
+    }
+  },
+  "block/buzz": {
+    "full_name": "block/buzz",
+    "html_url": "https://github.com/block/buzz",
+    "description": "A hive mind communication platform",
+    "stars": 30188,
+    "forks": 3835,
+    "open_issues": 3064,
+    "watchers": 139,
+    "language": "Rust",
+    "license": "Apache-2.0",
+    "topics": [],
+    "created_at": "2026-03-06T21:00:56Z",
+    "updated_at": "2026-08-24T03:55:50Z",
+    "pushed_at": "2026-08-24T03:52:11Z",
+    "archived": false,
+    "fork": false,
+    "score": 83.41,
+    "score_reasons": [
+      "30,188 stars over 170 days",
+      "estimated 177.3 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable Apache-2.0 license"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": "https://github.com/block/buzz/blob/main/README.md",
+    "readme_summary": "A workspace where humans and agents build together, on a relay you own.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "Buzz Desktop v0.5.18",
+    "latest_release_url": "https://github.com/block/buzz/releases/tag/desktop-v0.5.18",
+    "latest_release_at": "2026-08-21T17:19:30Z",
+    "analysis": {
+      "positioning": "Buzz 是一个基于 Rust 构建的蜂群思维通信平台，旨在提供一个人类与智能体共同协作的工作空间，运行在用户自有的中继服务器上。它解决的是传统通信工具缺乏自主可控性和智能体协作能力的问题，其明确特点是强调用户对通信基础设施的拥有权，并支持人类与 AI 代理的混合协作。",
+      "target_users": [
+        "需要自主可控通信基础设施的开发者或团队",
+        "希望将 AI 代理集成到日常协作流程中的技术用户",
+        "对去中心化或自托管通信平台感兴趣的个人或组织"
+      ],
+      "core_capabilities": [
+        "提供人类与智能体共同工作的协作空间，支持混合团队沟通",
+        "允许用户拥有并运行自己的中继服务器，增强数据隐私和控制力",
+        "基于 Rust 实现，可能带来高性能和内存安全优势"
+      ],
+      "technical_analysis": [
+        "使用 Rust 语言开发，可能注重性能与安全性",
+        "采用自托管中继服务器模式，用户可掌控通信基础设施",
+        "提供桌面客户端（如 Buzz Desktop），集成形态为桌面应用",
+        "具体部署方式、云原生支持或协议细节未在本次输入中提供，需进一步核实"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目获得 30188 个 Stars 和 3835 个 Forks，表明社区关注度较高",
+        "活跃的发布节奏（最新版本 v0.5.18 于 2026-08-21 发布）显示项目持续迭代",
+        "定位为蜂群思维平台，可能代表协作工具的新方向，值得开发者关注其架构和设计"
+      ],
+      "limitations": [
+        "开源问题数达 3064，可能表明项目仍处于早期阶段或存在较多待解决问题",
+        "许可证为 Apache-2.0，但需核实其依赖项和合规性",
+        "自托管模式可能增加部署和维护成本，需评估技术门槛",
+        "安全性和隐私保护的具体实现未在本次输入中提供，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对 Buzz 的插件或集成工具，扩展其协作功能",
+        "机会假设：围绕中继服务器提供运维监控或自动化部署解决方案",
+        "机会假设：为 Buzz 设计测试框架或安全审计工具，提升其成熟度"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 3 月，至 2026 年 8 月已发布多个版本，更新频繁，但开放问题数量较多，可能仍处于快速迭代阶段。Stars 数量高但不等同于质量，需结合代码质量和社区反馈综合判断。整体上，项目活跃度较高，但成熟度可能尚未达到稳定生产级别。"
+    }
+  },
+  "ruvnet/ruflo": {
+    "full_name": "ruvnet/ruflo",
+    "html_url": "https://github.com/ruvnet/ruflo",
+    "description": "🌊 The original agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+    "stars": 69125,
+    "forks": 8275,
+    "open_issues": 831,
+    "watchers": 443,
+    "language": "TypeScript",
+    "license": "MIT",
+    "topics": [
+      "agentic-ai",
+      "agentic-framework",
+      "agentic-workflow",
+      "agents",
+      "ai-agents",
+      "ai-assistant",
+      "ai-skills",
+      "autonomous-agents",
+      "claude-code",
+      "codex",
+      "dsh-plugin",
+      "harness",
+      "mcp-server",
+      "multi-agent",
+      "multi-agent-systems",
+      "npm",
+      "skills",
+      "swarm",
+      "swarm-intelligence",
+      "typescript"
+    ],
+    "created_at": "2025-06-02T21:24:20Z",
+    "updated_at": "2026-08-24T03:47:52Z",
+    "pushed_at": "2026-08-22T16:40:30Z",
+    "archived": false,
+    "fork": false,
+    "score": 81.47,
+    "score_reasons": [
+      "69,125 stars over 447 days",
+      "estimated 154.5 stars/day since creation",
+      "last push 1.5 days ago",
+      "detectable MIT license",
+      "topics: agentic-ai, agentic-framework, agentic-workflow, agents, ai-agents"
+    ],
+    "homepage": "https://Cognitum.One",
+    "default_branch": "main",
+    "readme_url": "https://github.com/ruvnet/ruflo/blob/main/README.md",
+    "readme_summary": "**An agent meta-harness for Claude Code and Codex.**",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v3.38.19 — supersedes broken v3.38.17/v3.38.18 (Windows CI, dead agentdb exports, memory driver doctor check, MCP HTTP transport)",
+    "latest_release_url": "https://github.com/ruvnet/ruflo/releases/tag/v3.38.19",
+    "latest_release_at": "2026-08-22T16:39:08Z",
+    "analysis": {
+      "positioning": "ruflo 是一个面向多智能体系统的 TypeScript 元框架（meta-harness），旨在部署智能多玩家群体、协调自主工作流并构建对话式 AI 系统。它通过自适应记忆、自学习智能和 RAG 集成，为 Claude Code、Codex 等 AI 代理提供统一的运行环境，解决多代理协作和复杂工作流编排的难题。与普通工具相比，其明确特点是原生集成多种主流 AI 代理，并强调群体智能和自适应能力。",
+      "target_users": [
+        "使用 Claude Code、Codex 等 AI 编程代理的开发者，希望扩展其能力为多代理协作系统。",
+        "构建复杂自主工作流或对话式 AI 应用的团队，需要协调多个智能体。",
+        "对群体智能、自适应记忆和 RAG 集成感兴趣的研究者或高级用户。"
+      ],
+      "core_capabilities": [
+        "多代理编排：支持部署和管理多个 AI 代理，实现群体智能和自主工作流协调。",
+        "自适应记忆与自学习：提供记忆机制，使代理能够从交互中学习并适应环境。",
+        "RAG 集成：支持检索增强生成，增强代理的知识获取和回答准确性。",
+        "原生代理集成：内置对 Claude Code、Codex、Hermes 等代理的支持，降低集成成本。"
+      ],
+      "technical_analysis": [
+        "基于 TypeScript 开发，提供类型安全，适合构建复杂系统。",
+        "从描述看，支持本地和云端部署方式，但具体细节未提供，需进一步核实。",
+        "集成形态包括 MCP 服务器、npm 包和 dsh 插件，表明其可嵌入多种开发环境。",
+        "运行方式可能涉及 CLI 或库调用，但本次输入未提供快速开始文档，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目拥有高星标和大量 fork，表明社区关注度和活跃度较高，可能成为多代理开发的重要基础设施。",
+        "频繁的版本更新（最新 v3.38.19）和活跃的推送时间显示项目维护积极，修复问题迅速。",
+        "其原生集成多种主流 AI 代理，可能简化开发者构建多代理系统的流程，降低入门门槛。"
+      ],
+      "limitations": [
+        "项目创建于 2025 年，相对较新，成熟度可能有限，需关注 API 稳定性。",
+        "存在 831 个开放问题，可能影响使用体验，需评估问题严重性。",
+        "依赖特定 AI 代理（如 Claude Code、Codex），可能限制其通用性。",
+        "许可证为 MIT，但需核实依赖项的许可证兼容性。",
+        "采用成本可能包括学习曲线和配置复杂度，但本次输入未提供详细文档，需进一步核实。"
+      ],
+      "opportunities": [
+        "机会假设：开发针对 ruflo 的插件或扩展，增强其与更多 AI 代理的集成。",
+        "机会假设：构建可视化编排工具，帮助用户更直观地管理多代理工作流。",
+        "机会假设：提供性能监控和调试工具，帮助开发者优化代理协作效率。",
+        "机会假设：编写详细的教程和最佳实践，降低新用户的上手难度。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2025 年 6 月，但已发布到 v3.38.19，版本迭代频繁，且最近更新在 2026 年 8 月，表明项目处于快速迭代阶段。高星标和 fork 数显示社区关注度高，但开放问题较多，可能反映功能扩展与稳定性之间的平衡。整体上，项目活跃且发展迅速，但成熟度仍需通过实际使用和问题解决情况进一步验证。"
+    }
+  },
+  "Comfy-Org/ComfyUI": {
+    "full_name": "Comfy-Org/ComfyUI",
+    "html_url": "https://github.com/Comfy-Org/ComfyUI",
+    "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface.",
+    "stars": 129484,
+    "forks": 15266,
+    "open_issues": 4679,
+    "watchers": 785,
+    "language": "Python",
+    "license": "GPL-3.0",
+    "topics": [
+      "ai",
+      "comfy",
+      "comfyui",
+      "python",
+      "pytorch",
+      "stable-diffusion"
+    ],
+    "created_at": "2023-01-17T03:15:56Z",
+    "updated_at": "2026-08-24T03:59:58Z",
+    "pushed_at": "2026-08-24T03:19:52Z",
+    "archived": false,
+    "fork": false,
+    "score": 81.12,
+    "score_reasons": [
+      "129,484 stars over 1315 days",
+      "estimated 98.5 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable GPL-3.0 license",
+      "topics: ai, comfy, comfyui, python, pytorch"
+    ],
+    "homepage": "https://www.comfy.org/",
+    "default_branch": "master",
+    "readme_url": "https://github.com/Comfy-Org/ComfyUI/blob/master/README.md",
+    "readme_summary": "**The most powerful and modular AI engine for content creation.**",
+    "readme_features": [
+      "A visual node graph for building and reusing image, video, audio, 3D, and text workflows without code.",
+      "Reusable subgraphs, workflow templates, App Mode, and a local API for integrating workflows into applications.",
+      "Efficient local execution with asynchronous queueing, partial graph re-execution, smart VRAM and RAM management, model offloading, and support for quantized models.",
+      "Broad native model support. This is a representative list; browse the workflow library for maintained, ready-to-run templates.",
+      "Image generation: Stable Diffusion 1.5, SDXL, SD3.5, Flux.1, Flux.2, Qwen Image, Z-Image, Hunyuan Image 2.1, HiDream, Lumina Image 2.0, Chroma, Anima, LongCat Image, Ideogram 4, Krea 2, MageFlow, Microsoft Lens, PixelDiT, Kandinsky 5, and Ernie Image."
+    ],
+    "quick_start": "",
+    "latest_release_name": "v0.33.1",
+    "latest_release_url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.33.1",
+    "latest_release_at": "2026-08-13T22:18:34Z",
+    "analysis": {
+      "positioning": "ComfyUI 是一个基于节点图的模块化 AI 引擎，用于构建和复用图像、视频、音频、3D 和文本工作流，无需编写代码。它解决了复杂 AI 工作流难以可视化、复用和集成的问题，与普通工具相比，其明确特点是提供可复用的子图、工作流模板、应用模式以及本地 API，支持高效的本地执行和广泛的模型支持。",
+      "target_users": [
+        "AI 内容创作者和艺术家，用于构建和复用图像、视频等生成工作流。",
+        "开发者，通过本地 API 将工作流集成到应用程序中。",
+        "研究人员和爱好者，用于实验和部署多种扩散模型。"
+      ],
+      "core_capabilities": [
+        "提供可视化节点图，使用户无需编码即可构建和复用复杂工作流。",
+        "支持子图复用、工作流模板和应用模式，提升工作流的模块化和可移植性。",
+        "通过异步队列、部分图重执行、智能 VRAM/RAM 管理和模型卸载，实现高效的本地执行。",
+        "原生支持多种主流图像生成模型，如 Stable Diffusion、Flux、Qwen Image 等，满足多样化生成需求。"
+      ],
+      "technical_analysis": [
+        "项目使用 Python 语言开发，基于 PyTorch，适合 AI 模型推理和计算。",
+        "从现有信息看，它强调本地执行，具备异步队列和资源管理，可能支持本地部署和运行。",
+        "提供本地 API，支持将工作流集成到应用中，但云端部署方式未在本次输入中提供，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "项目活跃度极高，拥有 12.9 万 Stars 和 1.5 万 Forks，且持续更新（最新发布 v0.33.1），表明社区活跃且迭代迅速。",
+        "其模块化节点图和广泛模型支持，可能成为 AI 内容创作领域的重要基础设施，值得开发者关注以构建上层应用。",
+        "从现有信息看，其 API 和可复用工作流特性可能降低 AI 应用开发门槛，促进生态发展。"
+      ],
+      "limitations": [
+        "许可证为 GPL-3.0，可能对商业集成有 copyleft 限制，需评估合规性。",
+        "存在 4679 个开放问题，可能表明项目复杂度高或维护压力，需关注稳定性。",
+        "本次输入未提供快速开始文档，部署和上手难度需进一步核实。"
+      ],
+      "opportunities": [
+        "机会假设：开发基于 ComfyUI 的垂直行业工作流模板库，如影视、游戏资产生成。",
+        "机会假设：构建云端托管服务，利用其本地 API 提供远程推理能力。",
+        "机会假设：开发工作流测试和性能优化工具，帮助用户调试和提升执行效率。"
+      ],
+      "maturity": "从现有信息看，项目自 2023 年创建以来持续更新，最新版本为 v0.33.1，Stars 和 Forks 数量庞大，表明社区认可度高。但开放问题较多，可能处于快速迭代阶段，成熟度较高但需关注问题解决效率。"
+    }
+  },
+  "tinyhumansai/openhuman": {
+    "full_name": "tinyhumansai/openhuman",
+    "html_url": "https://github.com/tinyhumansai/openhuman",
+    "description": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher.",
+    "stars": 36837,
+    "forks": 3674,
+    "open_issues": 269,
+    "watchers": 185,
+    "language": "Rust",
+    "license": "GPL-3.0",
+    "topics": [],
+    "created_at": "2026-02-18T20:01:27Z",
+    "updated_at": "2026-08-24T03:52:17Z",
+    "pushed_at": "2026-08-24T01:48:45Z",
+    "archived": false,
+    "fork": false,
+    "score": 80.74,
+    "score_reasons": [
+      "36,837 stars over 186 days",
+      "estimated 197.7 stars/day since creation",
+      "last push 0.1 days ago",
+      "detectable GPL-3.0 license"
+    ],
+    "homepage": "https://tinyhumans.ai/openhuman",
+    "default_branch": "main",
+    "readme_url": "https://github.com/tinyhumansai/openhuman/blob/main/README.md",
+    "readme_summary": "OpenHuman is your personal AI super intelligence: a brain that remembers everything, a fantastic orchestrator, a deep researcher. Local-first, simple, powerful.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "OpenHuman v0.63.12",
+    "latest_release_url": "https://github.com/tinyhumansai/openhuman/releases/tag/v0.63.12",
+    "latest_release_at": "2026-08-07T11:11:37Z",
+    "analysis": {
+      "positioning": "OpenHuman 是一个个人 AI 超级智能，旨在成为你的大脑，构建本地优先的生活记忆，并作为智能体舰队和工作流的编排器，同时具备深度研究能力。它解决的是个人数据管理和智能自动化问题，与普通 AI 助手相比，其明确特点是本地优先存储和强大的编排能力。",
+      "target_users": [
+        "个人开发者，希望构建本地优先的 AI 助手来管理个人数据",
+        "研究人员，需要深度研究工具来辅助信息收集和分析",
+        "自动化爱好者，希望编排多个智能体和工作流以提升效率"
+      ],
+      "core_capabilities": [
+        "构建本地优先的个人生活记忆，实现数据隐私和持久化",
+        "编排智能体舰队和工作流，实现复杂任务的自动化执行",
+        "提供深度研究能力，帮助用户快速获取和分析信息"
+      ],
+      "technical_analysis": [
+        "使用 Rust 语言开发，可能带来高性能和内存安全优势",
+        "采用本地优先方式，数据存储在本地，增强隐私和离线可用性",
+        "集成形态和部署方式未在本次输入中提供，需进一步核实"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目在短时间内获得了大量关注，可能具有创新性和市场需求",
+        "活跃的发布节奏（最新版本 v0.63.12）表明项目处于快速迭代阶段",
+        "作为个人 AI 超级智能，可能引领本地优先 AI 应用的发展趋势"
+      ],
+      "limitations": [
+        "项目创建时间较短（2026年2月），可能仍处于早期阶段，成熟度有待观察",
+        "许可证为 GPL-3.0，可能对商业使用有限制",
+        "依赖 Rust 生态，可能对非 Rust 开发者有学习成本",
+        "平台支持、安全性和部署方式等细节未在本次输入中提供，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：开发基于 OpenHuman 的插件或扩展，以增强其编排能力",
+        "机会假设：构建与 OpenHuman 集成的第三方工具，如数据可视化或备份工具",
+        "机会假设：针对特定行业（如研究、个人知识管理）定制化解决方案"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 2 月，至今约 6 个月，已发布多个版本（最新 v0.63.12），更新频繁，表明开发活跃。Stars 数量较高（36837），但不应直接等同于质量。Open Issues 269 个，可能表明社区反馈较多，但需关注问题解决效率。整体处于快速成长期，但成熟度仍需时间验证。"
+    }
+  },
+  "virgiliojr94/book-to-skill": {
+    "full_name": "virgiliojr94/book-to-skill",
+    "html_url": "https://github.com/virgiliojr94/book-to-skill",
+    "description": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
+    "stars": 24774,
+    "forks": 2590,
+    "open_issues": 18,
+    "watchers": 117,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "book-to-skill",
+      "context-engineering",
+      "document-processing",
+      "edtech",
+      "knowledge-base",
+      "knowledge-management",
+      "llm",
+      "pdf-to-markdown",
+      "rag",
+      "self-study",
+      "study-tools"
+    ],
+    "created_at": "2026-05-01T02:09:39Z",
+    "updated_at": "2026-08-24T03:57:55Z",
+    "pushed_at": "2026-08-23T23:06:28Z",
+    "archived": false,
+    "fork": false,
+    "score": 80.4,
+    "score_reasons": [
+      "24,774 stars over 115 days",
+      "estimated 215.3 stars/day since creation",
+      "last push 0.2 days ago",
+      "detectable MIT license",
+      "topics: agent-skills, ai-agents, book-to-skill, context-engineering, document-processing"
+    ],
+    "homepage": "",
+    "default_branch": "master",
+    "readme_url": "https://github.com/virgiliojr94/book-to-skill/blob/master/README.md",
+    "readme_summary": "Turn any technical book, document folder, or collection of sources into a unified agent skill — ready to study, reference, and use while you work in GitHub Copilot CLI, Amp, or Claude Code.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v1.4.0",
+    "latest_release_url": "https://github.com/virgiliojr94/book-to-skill/releases/tag/v1.4.0",
+    "latest_release_at": "2026-08-10T19:06:32Z",
+    "analysis": {
+      "positioning": "book-to-skill 是一个将技术书籍 PDF、文档文件夹或资料集合转化为统一智能体技能（agent skill）的开源工具，旨在让学习资料在 GitHub Copilot CLI、Amp 或 Claude Code 等 AI 编程环境中直接用于学习、参考和工作。与普通 PDF 转换工具相比，它专注于为 AI 智能体构建可用的知识技能，而非简单的格式转换。",
+      "target_users": [
+        "希望将技术书籍转化为可交互学习材料的开发者或学生",
+        "需要在 AI 编程助手（如 Claude Code、GitHub Copilot CLI）中快速引用书籍知识的工程师",
+        "知识管理爱好者，希望构建个人可复用的 AI 技能库"
+      ],
+      "core_capabilities": [
+        "将 PDF 或文档文件夹转换为统一的智能体技能，便于在 AI 编程环境中直接调用",
+        "支持多种 AI 编程工具（Claude Code、GitHub Copilot CLI、Amp），提升学习与工作效率",
+        "可能包含文档解析、上下文工程和知识库构建能力，帮助用户系统化整理技术资料"
+      ],
+      "technical_analysis": [
+        "项目使用 Python 开发，可能依赖 PDF 解析库和文档处理工具",
+        "从描述看，它可能以本地或云端方式运行，但具体部署方式未在输入中说明",
+        "集成形态为生成智能体技能，供 AI 编程工具加载，但具体集成机制需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目获得 24774 星和 2590 次 fork，表明社区关注度较高，可能解决了 AI 时代知识管理的痛点",
+        "从活跃的发布记录（v1.4.0）和持续更新（最近推送 2026-08-23）看，项目维护活跃，可能具有长期发展潜力",
+        "它填补了将静态书籍转化为 AI 可交互技能的空白，对 AI 辅助编程和自学者有实际价值"
+      ],
+      "limitations": [
+        "项目创建于 2026 年，相对较新，成熟度可能有限，需进一步验证稳定性",
+        "依赖特定的 AI 编程环境（如 Claude Code），可能限制其通用性",
+        "许可证为 MIT，但使用成本、文档完整性和安全特性需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：开发一个 Web 界面或 CLI 工具，简化技能生成流程，降低非技术用户使用门槛",
+        "机会假设：增加对更多 AI 编程工具（如 Cursor、Codex）的集成支持，扩大适用范围",
+        "机会假设：提供技能质量评估或测试框架，帮助用户验证生成的技能在 AI 环境中的效果"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 5 月，截至 2026 年 8 月已有 24774 星和 2590 fork，发布 v1.4.0，最近推送在 2026 年 8 月，表明项目处于快速迭代阶段。但 Stars 数量不能直接等同于质量，需结合代码质量和社区反馈进一步评估。"
+    }
+  },
+  "VoltAgent/awesome-agent-skills": {
+    "full_name": "VoltAgent/awesome-agent-skills",
+    "html_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "description": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.",
+    "stars": 31392,
+    "forks": 3369,
+    "open_issues": 11,
+    "watchers": 228,
+    "language": null,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "awesome",
+      "awesome-list",
+      "claude-code",
+      "claude-code-skills",
+      "claude-skills",
+      "codex-skills",
+      "cursor-skills",
+      "gemini-skills",
+      "opencode-skills",
+      "skills"
+    ],
+    "created_at": "2025-10-28T08:55:32Z",
+    "updated_at": "2026-08-24T03:57:08Z",
+    "pushed_at": "2026-08-23T09:33:24Z",
+    "archived": false,
+    "fork": false,
+    "score": 77.16,
+    "score_reasons": [
+      "31,392 stars over 300 days",
+      "estimated 104.7 stars/day since creation",
+      "last push 0.8 days ago",
+      "detectable MIT license",
+      "topics: agent-skills, ai-agents, awesome, awesome-list, claude-code"
+    ],
+    "homepage": "https://officialskills.sh/",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "freestylefly/awesome-gpt-image-2": {
+    "full_name": "freestylefly/awesome-gpt-image-2",
+    "html_url": "https://github.com/freestylefly/awesome-gpt-image-2",
+    "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，470+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
+    "stars": 13415,
+    "forks": 1476,
+    "open_issues": 11,
+    "watchers": 36,
+    "language": "JavaScript",
+    "license": "MIT",
+    "topics": [
+      "agents",
+      "ai-image-generation",
+      "chatgpt",
+      "dsh-plugin",
+      "gpt-image-2",
+      "image-prompts",
+      "prompt-as-code",
+      "prompt-engineering",
+      "skills",
+      "workflow-automation"
+    ],
+    "created_at": "2026-04-25T09:19:13Z",
+    "updated_at": "2026-08-24T03:59:52Z",
+    "pushed_at": "2026-08-23T07:17:20Z",
+    "archived": false,
+    "fork": false,
+    "score": 75.74,
+    "score_reasons": [
+      "13,415 stars over 121 days",
+      "estimated 111.1 stars/day since creation",
+      "last push 0.9 days ago",
+      "detectable MIT license",
+      "topics: agents, ai-image-generation, chatgpt, dsh-plugin, gpt-image-2"
+    ],
+    "homepage": "https://gpt-image2.canghe.ai",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "basecamp/omarchy": {
+    "full_name": "basecamp/omarchy",
+    "html_url": "https://github.com/basecamp/omarchy",
+    "description": "Beautiful, Modern & Opinionated Linux",
+    "stars": 29268,
+    "forks": 2969,
+    "open_issues": 1356,
+    "watchers": 151,
+    "language": "Shell",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2025-06-01T07:26:22Z",
+    "updated_at": "2026-08-24T03:58:39Z",
+    "pushed_at": "2026-08-24T00:13:21Z",
+    "archived": false,
+    "fork": false,
+    "score": 75.56,
+    "score_reasons": [
+      "29,268 stars over 449 days",
+      "estimated 65.2 stars/day since creation",
+      "last push 0.2 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": "https://omarchy.org",
+    "default_branch": "quattro",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "AprilNEA/OpenLogi": {
+    "full_name": "AprilNEA/OpenLogi",
+    "html_url": "https://github.com/AprilNEA/OpenLogi",
+    "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
+    "stars": 15099,
+    "forks": 408,
+    "open_issues": 286,
+    "watchers": 54,
+    "language": "Rust",
+    "license": "Apache-2.0",
+    "topics": [
+      "dpi",
+      "gpui",
+      "hid",
+      "hidpp",
+      "local-first",
+      "logitech",
+      "logitech-mouse",
+      "logitech-options",
+      "mouse-remapping",
+      "mx-master",
+      "privacy",
+      "rust",
+      "smartshift"
+    ],
+    "created_at": "2026-05-24T10:10:36Z",
+    "updated_at": "2026-08-24T03:59:53Z",
+    "pushed_at": "2026-08-24T02:53:03Z",
+    "archived": false,
+    "fork": false,
+    "score": 73.78,
+    "score_reasons": [
+      "15,099 stars over 92 days",
+      "estimated 164.6 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable Apache-2.0 license",
+      "topics: dpi, gpui, hid, hidpp, local-first"
+    ],
+    "homepage": "https://openlogi.org",
+    "default_branch": "master",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "ripienaar/free-for-dev": {
+    "full_name": "ripienaar/free-for-dev",
+    "html_url": "https://github.com/ripienaar/free-for-dev",
+    "description": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev",
+    "stars": 134542,
+    "forks": 14071,
+    "open_issues": 14,
+    "watchers": 1806,
+    "language": "HTML",
+    "license": null,
+    "topics": [
+      "awesome-list",
+      "free-for-developers"
+    ],
+    "created_at": "2015-03-18T21:06:26Z",
+    "updated_at": "2026-08-24T03:59:58Z",
+    "pushed_at": "2026-08-23T12:19:48Z",
+    "archived": false,
+    "fork": false,
+    "score": 68.7,
+    "score_reasons": [
+      "134,542 stars over 4176 days",
+      "estimated 32.2 stars/day since creation",
+      "last push 0.7 days ago",
+      "topics: awesome-list, free-for-developers"
+    ],
+    "homepage": "https://free-for.dev/",
+    "default_branch": "master",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "apache/maka": {
+    "full_name": "apache/maka",
+    "html_url": "https://github.com/apache/maka",
+    "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
+    "stars": 2418,
+    "forks": 273,
+    "open_issues": 242,
+    "watchers": 8,
+    "language": "TypeScript",
+    "license": "Apache-2.0",
+    "topics": [
+      "agent-runtime",
+      "ai",
+      "ai-agent",
+      "apache",
+      "cli",
+      "desktop",
+      "electron",
+      "event-sourcing",
+      "incubator",
+      "llm",
+      "local-first",
+      "maka",
+      "tool-use",
+      "typescript"
+    ],
+    "created_at": "2026-05-27T15:46:05Z",
+    "updated_at": "2026-08-24T03:59:55Z",
+    "pushed_at": "2026-08-24T03:59:37Z",
+    "archived": false,
+    "fork": false,
+    "score": 67.73,
+    "score_reasons": [
+      "2,418 stars over 89 days",
+      "estimated 27.3 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable Apache-2.0 license",
+      "topics: agent-runtime, ai, ai-agent, apache, cli"
+    ],
+    "homepage": null,
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "dani-garcia/vaultwarden": {
+    "full_name": "dani-garcia/vaultwarden",
+    "html_url": "https://github.com/dani-garcia/vaultwarden",
+    "description": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs",
+    "stars": 65980,
+    "forks": 3128,
+    "open_issues": 84,
+    "watchers": 305,
+    "language": "Rust",
+    "license": "AGPL-3.0",
+    "topics": [
+      "bitwarden",
+      "bitwarden-rs",
+      "docker",
+      "rocket",
+      "rust",
+      "vaultwarden"
+    ],
+    "created_at": "2018-02-17T22:40:20Z",
+    "updated_at": "2026-08-24T03:45:05Z",
+    "pushed_at": "2026-08-22T12:09:35Z",
+    "archived": false,
+    "fork": false,
+    "score": 66.85,
+    "score_reasons": [
+      "65,980 stars over 3109 days",
+      "estimated 21.2 stars/day since creation",
+      "last push 1.7 days ago",
+      "detectable AGPL-3.0 license",
+      "topics: bitwarden, bitwarden-rs, docker, rocket, rust"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "anthropics/claude-plugins-community": {
+    "full_name": "anthropics/claude-plugins-community",
+    "html_url": "https://github.com/anthropics/claude-plugins-community",
+    "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
+    "stars": 1031,
+    "forks": 129,
+    "open_issues": 40,
+    "watchers": 8,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [],
+    "created_at": "2026-03-20T02:20:30Z",
+    "updated_at": "2026-08-24T04:00:14Z",
+    "pushed_at": "2026-08-23T07:43:20Z",
+    "archived": false,
+    "fork": false,
+    "score": 58.22,
+    "score_reasons": [
+      "1,031 stars over 157 days",
+      "estimated 6.6 stars/day since creation",
+      "last push 0.8 days ago",
+      "detectable Apache-2.0 license"
+    ],
+    "homepage": null,
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  }
+}
