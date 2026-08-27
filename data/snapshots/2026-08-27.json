@@ -1,0 +1,1046 @@
+{
+  "MadsLorentzen/ai-job-search": {
+    "full_name": "MadsLorentzen/ai-job-search",
+    "html_url": "https://github.com/MadsLorentzen/ai-job-search",
+    "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+    "stars": 36524,
+    "forks": 12423,
+    "open_issues": 7,
+    "watchers": 141,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-agents",
+      "career",
+      "claude-code",
+      "cover-letter",
+      "cv",
+      "interview-preparation",
+      "job-application",
+      "job-hunting",
+      "job-search",
+      "latex",
+      "resume"
+    ],
+    "created_at": "2026-03-18T14:33:04Z",
+    "updated_at": "2026-08-27T01:59:31Z",
+    "pushed_at": "2026-08-26T18:07:41Z",
+    "archived": false,
+    "fork": false,
+    "score": 90.14,
+    "score_reasons": [
+      "36,524 stars over 161 days",
+      "estimated 226.2 stars/day since creation",
+      "last push 0.3 days ago",
+      "detectable MIT license",
+      "topics: ai, ai-agents, career, claude-code, cover-letter"
+    ],
+    "homepage": null,
+    "default_branch": "master",
+    "readme_url": "https://github.com/MadsLorentzen/ai-job-search/blob/master/README.md",
+    "readme_summary": "*The job search that runs on your machine.*",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v1.6.0 - Portals that fail loudly, CVs that keep their text",
+    "latest_release_url": "https://github.com/MadsLorentzen/ai-job-search/releases/tag/v1.6.0",
+    "latest_release_at": "2026-08-19T19:49:20Z",
+    "analysis": {
+      "positioning": "这是一个运行在你机器上的AI求职应用框架，基于Claude Code构建，用于评估职位信息、定制简历、撰写求职信和准备面试。与普通求职工具相比，它强调本地运行和可复刻性，用户可Fork并完全掌控自己的求职流程。",
+      "target_users": [
+        "正在积极求职的开发者，希望利用AI自动化处理职位筛选、简历定制和面试准备等重复性工作。",
+        "注重隐私和数据控制权的用户，倾向于在本地运行工具而非依赖云端服务。",
+        "熟悉Claude Code或类似AI编码助手的开发者，愿意通过Fork和定制来打造个性化求职流程。"
+      ],
+      "core_capabilities": [
+        "自动评估职位描述与个人背景的匹配度，帮助用户快速筛选合适机会。",
+        "根据目标职位定制简历和生成求职信，提升申请材料的针对性。",
+        "提供面试准备支持，可能包括模拟问答或要点整理，增强面试信心。"
+      ],
+      "technical_analysis": [
+        "项目使用Python编写，表明其核心逻辑可能涉及数据处理和文本生成。",
+        "基于Claude Code构建，意味着它深度集成Claude的AI能力，可能通过命令行或API调用。",
+        "强调本地运行，可能采用本地文件存储和本地执行环境，但具体部署方式（如Docker、脚本）未在输入中提供，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目在短时间内获得大量Stars和Forks，表明社区关注度极高，可能反映了AI求职工具的市场需求。",
+        "活跃的发布节奏（最新v1.6.0）和较少的开放问题，暗示项目维护积极，功能迭代较快。",
+        "其本地运行和可Fork的特性，为开发者提供了自主定制和二次开发的机会，符合开源精神。"
+      ],
+      "limitations": [
+        "项目依赖Claude Code，可能要求用户拥有Claude API访问权限或订阅，增加使用成本。",
+        "本地运行可能对用户的技术能力有一定要求，非开发者用户可能难以配置。",
+        "许可证为MIT，但具体依赖项的许可证和合规性需进一步核实。",
+        "项目创建时间较短（2026年3月），成熟度可能有限，需关注潜在bug和稳定性。"
+      ],
+      "opportunities": [
+        "机会假设：开发一个图形化界面或Web前端，降低非技术用户的使用门槛。",
+        "机会假设：集成更多AI模型或服务，如OpenAI或本地模型，提供模型选择灵活性。",
+        "机会假设：构建一个插件系统，允许用户扩展功能，如集成招聘平台API自动投递。"
+      ],
+      "maturity": "从现有信息看，项目创建于2026年3月，至今约5个月，已发布v1.6.0，更新频繁，开放问题仅7个，表明项目处于快速迭代阶段。Stars和Forks数量虽高，但不应直接等同于质量，可能受市场热度影响。整体上，项目活跃度高，但成熟度仍需时间验证。"
+    }
+  },
+  "rohitg00/ai-engineering-from-scratch": {
+    "full_name": "rohitg00/ai-engineering-from-scratch",
+    "html_url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+    "description": "Learn it. Build it. Ship it for others.",
+    "stars": 49605,
+    "forks": 8631,
+    "open_issues": 97,
+    "watchers": 310,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "agents",
+      "ai",
+      "ai-agents",
+      "ai-engineering",
+      "computer-vision",
+      "course",
+      "deep-learning",
+      "from-scratch",
+      "generative-ai",
+      "llm",
+      "machine-learning",
+      "mcp",
+      "nlp",
+      "python",
+      "reinforcement-learning",
+      "rust",
+      "swarm-intelligence",
+      "transformers",
+      "tutorial",
+      "typescript"
+    ],
+    "created_at": "2026-03-18T18:38:02Z",
+    "updated_at": "2026-08-27T01:58:05Z",
+    "pushed_at": "2026-08-23T20:29:51Z",
+    "archived": false,
+    "fork": false,
+    "score": 86.39,
+    "score_reasons": [
+      "49,605 stars over 161 days",
+      "estimated 307.5 stars/day since creation",
+      "last push 3.2 days ago",
+      "detectable MIT license",
+      "topics: agents, ai, ai-agents, ai-engineering, computer-vision"
+    ],
+    "homepage": "https://aiengineeringfromscratch.com",
+    "default_branch": "main",
+    "readme_url": "https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/README.md",
+    "readme_summary": "Translated landing pages, committed to the repo. English is canonical; lesson pages are machine-translated on the  translations  branch. See  docs/i18n.md .",
+    "readme_features": [
+      "Attention Is All You Need — Vaswani et al., 2017 → Phase 7",
+      "Language Models are Few-Shot Learners (GPT-3) → Phase 10",
+      "Denoising Diffusion Probabilistic Models → Phase 8",
+      "InstructGPT / RLHF → Phase 10",
+      "Direct Preference Optimization → Phase 10"
+    ],
+    "quick_start": "npx skills add rohitg00/ai-engineering-from-scratch",
+    "latest_release_name": "Edition 2026.08",
+    "latest_release_url": "https://github.com/rohitg00/ai-engineering-from-scratch/releases/tag/v2026.08",
+    "latest_release_at": "2026-08-10T07:05:52Z",
+    "analysis": {
+      "positioning": "这是一个从零开始学习AI工程的开源课程与实战项目，旨在帮助开发者通过动手构建来掌握从Transformer到RLHF等核心AI技术。与普通教程不同，它按论文里程碑分阶段组织，并提供可运行的代码示例，强调‘学习、构建、交付’的完整路径。",
+      "target_users": [
+        "希望系统学习深度学习、LLM和生成式AI的开发者",
+        "需要从理论到实践过渡的AI初学者",
+        "寻找项目式学习资源的计算机科学学生"
+      ],
+      "core_capabilities": [
+        "提供从经典论文到现代技术的分阶段学习路径，覆盖Attention、GPT-3、扩散模型、RLHF等关键主题",
+        "通过npx命令快速添加课程到本地环境，便于动手实践",
+        "支持多语言翻译（机器翻译分支），降低非英语用户的学习门槛"
+      ],
+      "technical_analysis": [
+        "主要使用Python，同时涉及Rust和TypeScript，表明可能包含多语言实现或工具链",
+        "通过npx skills add集成，暗示可能基于某种技能包或CLI工具，但具体运行方式未在输入中说明",
+        "仓库包含翻译分支，说明支持国际化，但部署或云端方式未提供，需进一步核实"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目拥有近5万Stars和8千多Forks，社区关注度极高，可能成为AI工程学习的重要资源",
+        "活跃的更新（最新版本2026.08）和持续发布表明项目维护积极，内容可能紧跟技术前沿",
+        "覆盖从基础到高级的全面主题，适合作为系统学习AI工程的路线图"
+      ],
+      "limitations": [
+        "项目创建于2026年3月，相对较新，成熟度可能有限，需核实内容完整性和社区反馈",
+        "机器翻译的课程页面可能影响非英语用户的学习体验，需确认翻译质量",
+        "许可证为MIT，但依赖的第三方库或工具可能存在额外限制，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：可以开发配套的练习平台或在线评测系统，帮助学习者验证实现",
+        "机会假设：可以集成到CI/CD流程中，自动化测试各阶段代码示例的正确性",
+        "机会假设：可以创建社区翻译协作工具，提升非英语内容的翻译质量"
+      ],
+      "maturity": "从现有信息看，项目创建于2026年3月，至今约5个月，已发布多个版本（最新2026.08），更新频繁。Stars和Forks数量很高，但创建时间短，可能处于快速迭代阶段，内容深度和稳定性需进一步观察。"
+    }
+  },
+  "Alishahryar1/free-claude-code": {
+    "full_name": "Alishahryar1/free-claude-code",
+    "html_url": "https://github.com/Alishahryar1/free-claude-code",
+    "description": "Use Claude Code, Codex, Pi, and OpenCode for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)",
+    "stars": 50418,
+    "forks": 8165,
+    "open_issues": 356,
+    "watchers": 329,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2026-01-28T19:02:30Z",
+    "updated_at": "2026-08-27T01:57:56Z",
+    "pushed_at": "2026-08-27T00:21:49Z",
+    "archived": false,
+    "fork": false,
+    "score": 86.13,
+    "score_reasons": [
+      "50,418 stars over 210 days",
+      "estimated 239.8 stars/day since creation",
+      "last push 0.1 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": "https://github.com/Alishahryar1/free-claude-code/blob/main/README.md",
+    "readme_summary": "Quick Start · Providers · Clients · Integrations · Manage",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {
+      "positioning": "这是一个旨在让用户免费使用多种AI编码助手（如Claude Code、Codex、Pi和OpenCode）的开源项目，提供超过13亿免费令牌，支持从终端、应用、IDE或手机访问，并具备语音支持且符合服务条款。与普通同类工具相比，其明确特点是聚合多种AI服务、提供免费令牌、多端访问和语音交互。",
+      "target_users": [
+        "希望免费使用多种AI编码助手的开发者",
+        "需要在不同设备（终端、IDE、手机）上灵活使用AI工具的开发人员",
+        "对语音交互和符合服务条款有要求的用户"
+      ],
+      "core_capabilities": [
+        "聚合多种AI编码服务，用户可在一个界面使用不同模型",
+        "提供大量免费令牌，降低使用成本",
+        "支持多种客户端和集成方式，包括终端、IDE和手机，并支持语音交互"
+      ],
+      "technical_analysis": [
+        "项目使用Python语言开发，可能便于跨平台部署和扩展",
+        "从描述看，项目可能采用本地或云端方式运行，但具体架构未在输入中提供，需进一步核实",
+        "集成形态多样，支持终端、IDE和手机，可能通过API或插件实现"
+      ],
+      "why_it_matters": [
+        "项目获得超过5万星标和8千分叉，表明社区关注度高，活跃度强",
+        "提供免费令牌和多种AI服务聚合，可能降低开发者使用AI编码工具的门槛",
+        "支持语音和多种客户端，可能提升开发效率和便利性"
+      ],
+      "limitations": [
+        "项目创建于2026年1月，最新推送在2026年8月，但无正式发布版本，可能处于早期阶段",
+        "存在356个未解决问题，可能影响稳定性和用户体验",
+        "许可证为MIT，但免费令牌的可持续性和服务条款合规性需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：可开发更多客户端集成，如浏览器扩展或桌面应用，扩大使用场景",
+        "机会假设：可提供更详细的文档和教程，帮助新用户快速上手",
+        "机会假设：可建立社区贡献机制，完善功能并修复问题，提升项目成熟度"
+      ],
+      "maturity": "从现有信息看，项目创建时间较短，但星标和分叉数量较高，表明社区关注度强。然而，没有正式发布版本，且存在较多未解决问题，可能仍处于快速迭代阶段。更新频率较高，但成熟度可能尚未达到稳定生产级别。"
+    }
+  },
+  "browser-use/browser-use": {
+    "full_name": "browser-use/browser-use",
+    "html_url": "https://github.com/browser-use/browser-use",
+    "description": "🌐 Make websites accessible for AI agents. Automate tasks online with ease.",
+    "stars": 111019,
+    "forks": 12186,
+    "open_issues": 383,
+    "watchers": 461,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "ai-tools",
+      "browser-automation",
+      "browser-use",
+      "llm",
+      "playwright",
+      "python"
+    ],
+    "created_at": "2024-10-31T16:00:56Z",
+    "updated_at": "2026-08-27T01:56:56Z",
+    "pushed_at": "2026-08-26T18:41:37Z",
+    "archived": false,
+    "fork": false,
+    "score": 82.47,
+    "score_reasons": [
+      "111,019 stars over 664 days",
+      "estimated 167.1 stars/day since creation",
+      "last push 0.3 days ago",
+      "detectable MIT license",
+      "topics: ai-agents, ai-tools, browser-automation, browser-use, llm"
+    ],
+    "homepage": "https://browser-use.com",
+    "default_branch": "main",
+    "readme_url": "https://github.com/browser-use/browser-use/blob/main/README.md",
+    "readme_summary": "Browser Use lets an AI agent use a web browser the same way humans do — it opens pages, clicks buttons, types, and fills in forms. You describe the task, and it completes it. For example, you can have it:",
+    "readme_features": [],
+    "quick_start": "Install or upgrade browser-use to the latest stable version with uv using Python 3.12, run `browser-use skill install` to register the skill, and connect it to my browser. If setup or connection fails, follow https://github.com/browser-use/browser-harness/blob/main/install.md.",
+    "latest_release_name": "0.13.8",
+    "latest_release_url": "https://github.com/browser-use/browser-use/releases/tag/0.13.8",
+    "latest_release_at": "2026-08-16T18:48:54Z",
+    "analysis": {
+      "positioning": "Browser Use 是一个让 AI 代理像人类一样操作浏览器的开源工具，通过自然语言描述任务即可自动完成网页交互，如打开页面、点击按钮、填写表单等。与普通浏览器自动化工具相比，它专为 AI 代理设计，强调任务级自动化而非脚本编写，降低了使用门槛。",
+      "target_users": [
+        "希望将网页操作集成到 AI 工作流中的开发者",
+        "需要自动化重复性网页任务的业务人员或研究人员",
+        "构建智能代理或 RPA 解决方案的团队"
+      ],
+      "core_capabilities": [
+        "自然语言驱动：用户描述任务，AI 代理自动执行浏览器操作，无需编写复杂脚本",
+        "模拟人类交互：支持点击、输入、表单填写等操作，适配动态网页",
+        "快速集成：提供简单的安装和技能注册流程，便于接入现有系统"
+      ],
+      "technical_analysis": [
+        "基于 Python 开发，使用 Playwright 作为浏览器自动化底层，兼容主流浏览器",
+        "采用本地运行方式，通过 uv 管理依赖，支持 Python 3.12",
+        "集成形态为命令行工具和技能注册机制，可连接用户浏览器",
+        "部署方式简单，但具体云端支持或 API 服务信息未在输入中提供，需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目活跃度极高，Stars 超过 11 万，Forks 超 1.2 万，表明社区关注度强",
+        "持续更新，最新版本 0.13.8 于 2026 年 8 月发布，显示维护活跃",
+        "从现有信息看，它可能成为 AI 代理与网页交互的标准工具，推动自动化领域发展"
+      ],
+      "limitations": [
+        "项目创建于 2024 年 10 月，相对年轻，成熟度需进一步观察",
+        "依赖 Playwright 和 Python 环境，可能限制非技术用户使用",
+        "浏览器连接和技能安装可能受网络或浏览器版本影响，需核实兼容性",
+        "MIT 许可证允许商用，但安全性和隐私方面需自行评估"
+      ],
+      "opportunities": [
+        "机会假设：开发可视化任务编排界面，降低非技术用户使用门槛",
+        "机会假设：提供云端执行服务，支持大规模并行自动化任务",
+        "机会假设：集成更多 AI 模型或框架，增强任务理解能力"
+      ],
+      "maturity": "项目创建于 2024 年 10 月，但 Stars 超 11 万，Forks 超 1.2 万，开放问题 383 个，最新版本 0.13.8 于 2026 年 8 月发布，更新频繁。从现有信息看，项目处于快速迭代阶段，社区活跃，但需注意 Stars 高不代表质量，实际稳定性需通过使用验证。"
+    }
+  },
+  "tinyhumansai/openhuman": {
+    "full_name": "tinyhumansai/openhuman",
+    "html_url": "https://github.com/tinyhumansai/openhuman",
+    "description": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher.",
+    "stars": 38240,
+    "forks": 3762,
+    "open_issues": 324,
+    "watchers": 193,
+    "language": "Rust",
+    "license": "GPL-3.0",
+    "topics": [],
+    "created_at": "2026-02-18T20:01:27Z",
+    "updated_at": "2026-08-27T01:59:14Z",
+    "pushed_at": "2026-08-26T22:30:49Z",
+    "archived": false,
+    "fork": false,
+    "score": 80.84,
+    "score_reasons": [
+      "38,240 stars over 189 days",
+      "estimated 202.1 stars/day since creation",
+      "last push 0.1 days ago",
+      "detectable GPL-3.0 license"
+    ],
+    "homepage": "https://tinyhumans.ai/openhuman",
+    "default_branch": "main",
+    "readme_url": "https://github.com/tinyhumansai/openhuman/blob/main/README.md",
+    "readme_summary": "OpenHuman is your personal AI super intelligence: a brain that remembers everything, a fantastic orchestrator, a deep researcher. Local-first, simple, powerful.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "OpenHuman v0.63.12",
+    "latest_release_url": "https://github.com/tinyhumansai/openhuman/releases/tag/v0.63.12",
+    "latest_release_at": "2026-08-07T11:11:37Z",
+    "analysis": {
+      "positioning": "OpenHuman 是一个个人 AI 超级智能，旨在成为你的大脑，构建本地优先的生活记忆，并作为智能体舰队和工作流的编排器，同时具备深度研究能力。它解决个人数据管理和自动化任务的问题，与普通工具相比，其核心特点是本地优先存储和强大的编排能力。",
+      "target_users": [
+        "个人用户，希望拥有一个能记住生活细节并自动执行任务的 AI 助手。",
+        "开发者，需要构建本地优先的 AI 应用或集成智能体工作流。",
+        "研究人员，利用其深度研究能力进行信息收集和综合分析。"
+      ],
+      "core_capabilities": [
+        "构建本地优先的长期记忆，帮助用户存储和检索个人生活数据。",
+        "编排智能体舰队和工作流，自动化复杂任务，提升效率。",
+        "提供深度研究功能，辅助用户进行信息挖掘和知识整合。"
+      ],
+      "technical_analysis": [
+        "使用 Rust 语言开发，可能带来高性能和内存安全优势。",
+        "强调本地优先，数据存储和处理可能在本地进行，增强隐私和离线可用性。",
+        "集成形态和部署方式未在本次输入中提供，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目在短时间内获得大量关注，可能表明其理念或功能具有吸引力。",
+        "活跃的发布节奏（最新版本 v0.63.12）显示项目处于快速迭代阶段，可能持续改进。",
+        "作为个人 AI 超级智能，其本地优先和编排能力可能引领个人数据管理的新趋势。"
+      ],
+      "limitations": [
+        "项目创建于 2026 年，相对较新，成熟度可能有限，需关注稳定性。",
+        "许可证为 GPL-3.0，可能对商业使用或集成有约束。",
+        "平台支持、安全性和依赖情况未在本次输入中提供，需进一步核实。"
+      ],
+      "opportunities": [
+        "机会假设：开发与 OpenHuman 集成的插件或扩展，增强其记忆和编排能力。",
+        "机会假设：提供针对特定场景（如个人知识管理、自动化办公）的配置模板或教程。",
+        "机会假设：构建测试工具或监控方案，帮助用户评估其性能和可靠性。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 2 月，至今约 6 个月，已发布 v0.63.12，更新频繁，表明开发活跃。Stars 数量较高，但不应直接等同于质量。开放问题 324 个，可能暗示功能迭代快但需关注问题解决效率。整体处于早期快速成长阶段。"
+    }
+  },
+  "anthropics/claude-plugins-official": {
+    "full_name": "anthropics/claude-plugins-official",
+    "html_url": "https://github.com/anthropics/claude-plugins-official",
+    "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+    "stars": 34372,
+    "forks": 3887,
+    "open_issues": 1020,
+    "watchers": 214,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [
+      "claude-code",
+      "mcp",
+      "skills"
+    ],
+    "created_at": "2025-11-20T18:36:20Z",
+    "updated_at": "2026-08-27T01:59:48Z",
+    "pushed_at": "2026-08-26T07:40:55Z",
+    "archived": false,
+    "fork": false,
+    "score": 79.13,
+    "score_reasons": [
+      "34,372 stars over 279 days",
+      "estimated 123.1 stars/day since creation",
+      "last push 0.8 days ago",
+      "detectable Apache-2.0 license",
+      "topics: claude-code, mcp, skills"
+    ],
+    "homepage": "https://code.claude.com/docs/en/plugins",
+    "default_branch": "main",
+    "readme_url": "https://github.com/anthropics/claude-plugins-official/blob/main/README.md",
+    "readme_summary": "A curated directory of high-quality plugins for Claude Code.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {
+      "positioning": "这是 Anthropic 官方维护的 Claude Code 插件目录，用于发现和分发高质量插件，解决插件生态分散、质量参差不齐的问题。与普通插件仓库相比，其明确特点是官方背书和人工筛选，确保插件质量与兼容性。",
+      "target_users": [
+        "使用 Claude Code 的开发者，希望扩展其功能",
+        "需要可靠、高质量插件以提升开发效率的团队"
+      ],
+      "core_capabilities": [
+        "提供经过官方筛选的插件目录，降低用户寻找可信插件的时间成本",
+        "支持通过 MCP 和 Skills 等机制集成插件，增强 Claude Code 的自动化能力",
+        "作为官方渠道，可能提供插件开发规范和最佳实践指导"
+      ],
+      "technical_analysis": [
+        "仓库主要语言为 Python，但插件可能支持多种语言",
+        "从描述看，插件通过 MCP（模型上下文协议）和 Skills 集成，可能以本地或云端方式运行",
+        "具体集成形态和部署方式需进一步核实，本次输入未提供详细信息"
+      ],
+      "why_it_matters": [
+        "官方维护的目录具有权威性，能降低插件选择风险",
+        "高星标和活跃的推送表明社区关注度高，可能形成生态效应",
+        "作为官方项目，可能影响 Claude Code 的未来发展方向"
+      ],
+      "limitations": [
+        "最新版本信息未提供，需核实发布节奏和版本稳定性",
+        "开源问题数较多，可能影响插件质量或维护效率",
+        "许可证为 Apache-2.0，但插件本身可能有不同许可证，需逐一核实"
+      ],
+      "opportunities": [
+        "机会假设：开发插件质量检测工具，帮助目录维护者自动化审核",
+        "机会假设：构建插件依赖管理或自动更新工具，提升用户体验",
+        "机会假设：针对热门插件编写测试套件，增强可靠性"
+      ],
+      "maturity": "从现有信息看，项目创建于2025年11月，但推送活跃，星标数高，可能处于快速成长阶段。无正式发布版本，且开源问题较多，可能仍处于早期或持续迭代中。需进一步核实项目治理和发布流程。"
+    }
+  },
+  "DietrichGebert/ponytail": {
+    "full_name": "DietrichGebert/ponytail",
+    "html_url": "https://github.com/DietrichGebert/ponytail",
+    "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+    "stars": 112660,
+    "forks": 6166,
+    "open_issues": 176,
+    "watchers": 281,
+    "language": "JavaScript",
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "claude",
+      "claude-code",
+      "claude-code-plugin",
+      "cursor-rules",
+      "developer-tools",
+      "llm",
+      "prompt-engineering",
+      "yagni"
+    ],
+    "created_at": "2026-06-12T00:52:37Z",
+    "updated_at": "2026-08-27T02:00:16Z",
+    "pushed_at": "2026-08-07T21:44:01Z",
+    "archived": false,
+    "fork": false,
+    "score": 78.73,
+    "score_reasons": [
+      "112,660 stars over 76 days",
+      "estimated 1481.5 stars/day since creation",
+      "last push 19.2 days ago",
+      "detectable MIT license",
+      "topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin"
+    ],
+    "homepage": "https://ponytail.dev",
+    "default_branch": "main",
+    "readme_url": "https://github.com/DietrichGebert/ponytail/blob/main/README.md",
+    "readme_summary": "He says nothing. He writes one line. It works.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v4.9.0: 53 commits of doing less",
+    "latest_release_url": "https://github.com/DietrichGebert/ponytail/releases/tag/v4.9.0",
+    "latest_release_at": "2026-08-07T21:15:11Z",
+    "analysis": {
+      "positioning": "ponytail 是一个让 AI 代理像最懒的资深开发者那样思考的开源工具，核心理念是“最好的代码是你从未写过的代码”。它通过提示工程和代理技能，引导 AI 在编码时遵循 YAGNI 原则，减少不必要的代码生成，与普通同类工具相比，其明确特点是强调“少即是多”，让 AI 输出更简洁、更精准。",
+      "target_users": [
+        "使用 Claude Code、Cursor 等 AI 编程工具的开发者，希望减少 AI 生成的冗余代码。",
+        "关注代码简洁性和维护成本的团队，希望在 AI 辅助开发中贯彻 YAGNI 原则。",
+        "对提示工程和 AI 代理行为优化感兴趣的研究者或高级用户。"
+      ],
+      "core_capabilities": [
+        "通过特定的提示词或规则，使 AI 代理在编码时保持“懒惰”，只生成必要代码，降低代码复杂度和维护成本。",
+        "可能提供插件或规则集，集成到 Claude Code 或 Cursor 等工具中，自动应用这些行为准则。",
+        "帮助开发者更快地获得可工作的解决方案，减少调试和重构时间。"
+      ],
+      "technical_analysis": [
+        "项目使用 JavaScript 编写，可能以插件或规则文件形式分发，便于集成到支持 JavaScript 生态的 AI 工具中。",
+        "从 topics 看，它支持 Claude Code 插件和 Cursor 规则，表明其以本地配置或插件方式运行，无需云端服务。",
+        "具体部署和运行方式未在输入中详细说明，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "项目在短时间内获得超过 11 万 Stars 和 6 千 Forks，表明其理念受到广泛关注，可能反映了开发者对 AI 生成代码质量的普遍痛点。",
+        "频繁的版本更新（最新 v4.9.0）和活跃的推送表明项目维护积极，社区参与度高。",
+        "它提供了一种新的 AI 协作范式，即通过“懒惰”原则提升代码质量，可能影响未来 AI 编程工具的设计方向。"
+      ],
+      "limitations": [
+        "项目创建于 2026 年，相对较新，成熟度可能有限，需进一步核实其稳定性和文档完整性。",
+        "依赖特定的 AI 工具（如 Claude Code、Cursor），可能不适用于所有 AI 编程环境。",
+        "MIT 许可证允许自由使用，但需注意其提示词或规则可能对 AI 行为产生不可预测的影响，需在实际项目中验证。"
+      ],
+      "opportunities": [
+        "机会假设：可以开发更多针对不同编程语言或框架的“懒惰”规则集，扩展其适用范围。",
+        "机会假设：可以构建可视化配置界面，让非技术用户也能轻松定制 AI 行为。",
+        "机会假设：可以集成到 CI/CD 流程中，自动检查 AI 生成代码的简洁性，作为质量门禁。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 6 月，至今约两个月，但已发布 v4.9.0 版本，更新频繁，Stars 和 Forks 数量极高，表明社区接受度强。然而，Stars 数量不能直接等同于质量，项目仍处于早期阶段，需关注其长期维护和实际效果。"
+    }
+  },
+  "freestylefly/awesome-gpt-image-2": {
+    "full_name": "freestylefly/awesome-gpt-image-2",
+    "html_url": "https://github.com/freestylefly/awesome-gpt-image-2",
+    "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
+    "stars": 21469,
+    "forks": 2145,
+    "open_issues": 13,
+    "watchers": 77,
+    "language": "JavaScript",
+    "license": "MIT",
+    "topics": [
+      "agents",
+      "ai-image-generation",
+      "chatgpt",
+      "dsh-plugin",
+      "gpt-image-2",
+      "image-prompts",
+      "prompt-as-code",
+      "prompt-engineering",
+      "skills",
+      "workflow-automation"
+    ],
+    "created_at": "2026-04-25T09:19:13Z",
+    "updated_at": "2026-08-27T01:59:17Z",
+    "pushed_at": "2026-08-26T08:54:32Z",
+    "archived": false,
+    "fork": false,
+    "score": 78.47,
+    "score_reasons": [
+      "21,469 stars over 124 days",
+      "estimated 173.6 stars/day since creation",
+      "last push 0.7 days ago",
+      "detectable MIT license",
+      "topics: agents, ai-image-generation, chatgpt, dsh-plugin, gpt-image-2"
+    ],
+    "homepage": "https://gpt-image2.canghe.ai",
+    "default_branch": "main",
+    "readme_url": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/README.md",
+    "readme_summary": "Prompt as Code | GPT-Image2 Industrial Prompt Engine & Template Library, 500+ Reverse-Engineered Cases, 20+ Industrial Templates",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {
+      "positioning": "这是一个面向 GPT-Image2 的工业级提示词引擎与模板库，将提示词视为代码（Prompt as Code），通过 530+ 个逆向工程案例和 20+ 套工业级模板，帮助用户高效生成高质量图像，并提炼出可复用的 Skills。与普通提示词集合相比，它强调系统化、工程化和持续更新，适合需要稳定产出和批量生成的场景。",
+      "target_users": [
+        "AI 图像生成开发者，需要快速集成高质量提示词模板到应用中",
+        "提示词工程师，希望借鉴逆向工程案例提升提示词设计能力",
+        "内容创作者和设计师，需要工业级模板来提升图像生成效率和质量"
+      ],
+      "core_capabilities": [
+        "提供 530+ 个逆向工程案例，帮助用户理解并复现高质量图像生成逻辑",
+        "包含 20+ 套工业级模板，覆盖多种场景，可直接用于生产环境",
+        "提炼出 Skills，支持将提示词工程能力模块化，便于复用和扩展"
+      ],
+      "technical_analysis": [
+        "项目使用 JavaScript 编写，可能以 Node.js 工具或库的形式提供",
+        "从 topics 看，支持 DSH 插件和 agents，可能集成到自动化工作流中",
+        "具体部署和运行方式未在输入中提供，需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目活跃度高，创建于 2026 年 4 月，持续更新至 2026 年 8 月，说明维护积极",
+        "获得 21k+ Stars 和 2k+ Forks，表明社区关注度高，可能具有广泛影响力",
+        "强调 Prompt as Code 理念，与当前 AI 工程化趋势契合，对开发者有吸引力"
+      ],
+      "limitations": [
+        "最新版本和发布信息未提供，需核实项目的版本稳定性和发布节奏",
+        "许可证为 MIT，但需确认模板和案例的版权归属及使用限制",
+        "依赖 GPT-Image2 模型，可能受限于 OpenAI 的 API 可用性和成本",
+        "项目处于早期阶段（创建仅 4 个月），成熟度可能不足，需关注后续维护"
+      ],
+      "opportunities": [
+        "机会假设：可开发配套的 CLI 工具或 VS Code 插件，提升提示词编写和调试体验",
+        "机会假设：可构建模板市场或社区贡献机制，丰富模板库并促进生态发展",
+        "机会假设：可集成到 CI/CD 流程中，实现图像生成的自动化测试和回归验证"
+      ],
+      "maturity": "项目创建于 2026 年 4 月，至今约 4 个月，处于快速迭代阶段。Stars 和 Forks 数量较高，但 open issues 仅 13 个，说明社区反馈处理及时。无最新 Release，可能尚未形成稳定的版本发布机制。整体成熟度中等，适合早期采用者，但需关注后续版本稳定性。"
+    }
+  },
+  "VoltAgent/awesome-agent-skills": {
+    "full_name": "VoltAgent/awesome-agent-skills",
+    "html_url": "https://github.com/VoltAgent/awesome-agent-skills",
+    "description": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.",
+    "stars": 32658,
+    "forks": 3460,
+    "open_issues": 13,
+    "watchers": 232,
+    "language": null,
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "awesome",
+      "awesome-list",
+      "claude-code",
+      "claude-code-skills",
+      "claude-skills",
+      "codex-skills",
+      "cursor-skills",
+      "gemini-skills",
+      "opencode-skills",
+      "skills"
+    ],
+    "created_at": "2025-10-28T08:55:32Z",
+    "updated_at": "2026-08-27T01:59:04Z",
+    "pushed_at": "2026-08-26T12:15:01Z",
+    "archived": false,
+    "fork": false,
+    "score": 77.41,
+    "score_reasons": [
+      "32,658 stars over 303 days",
+      "estimated 107.9 stars/day since creation",
+      "last push 0.6 days ago",
+      "detectable MIT license",
+      "topics: agent-skills, ai-agents, awesome, awesome-list, claude-code"
+    ],
+    "homepage": "https://officialskills.sh/",
+    "default_branch": "main",
+    "readme_url": "https://github.com/VoltAgent/awesome-agent-skills/blob/main/README.md",
+    "readme_summary": "A collection of official Agent Skills from leading development teams and the community.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {
+      "positioning": "这是一个精选的智能体技能（Agent Skills）集合，收录了来自官方开发团队和社区的1000多个技能，兼容Claude Code、Codex、Gemini CLI、Cursor等多种主流AI编程工具。它解决了开发者寻找、复用和分享高质量智能体技能的需求，与普通同类工具相比，其明确特点是规模大、来源权威且跨平台兼容。",
+      "target_users": [
+        "使用Claude Code、Codex、Gemini CLI、Cursor等AI编程工具的开发者",
+        "希望快速扩展智能体能力、提升开发效率的团队和个人",
+        "对AI智能体生态感兴趣，希望学习和贡献技能的研究者或爱好者"
+      ],
+      "core_capabilities": [
+        "提供超过1000个经过整理的智能体技能，覆盖多种开发场景，节省搜索和筛选时间",
+        "兼容多种主流AI编程工具，用户无需修改即可在不同环境中使用",
+        "汇集官方和社区来源，确保技能的权威性和多样性，便于用户借鉴最佳实践"
+      ],
+      "technical_analysis": [
+        "本次输入未提供仓库的编程语言信息，需进一步核实",
+        "从描述看，技能以集合形式提供，可能以文件或目录结构组织，具体格式未明确",
+        "兼容多种工具表明技能可能采用通用格式或适配层，但具体实现方式未在输入中说明",
+        "部署或运行方式未提及，需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目拥有超过3.2万星标和3460个分叉，表明社区关注度高，生态活跃",
+        "创建于2025年10月，最近更新于2026年8月，持续维护，可能反映了AI智能体技能领域的快速发展趋势",
+        "作为精选列表，它可能成为开发者获取智能体技能的首选入口，具有生态聚合价值"
+      ],
+      "limitations": [
+        "项目未发布正式版本（latest_release为null），可能仍处于早期阶段，稳定性需观察",
+        "许可证为MIT，但技能内容可能来自不同来源，需核实各自的许可证兼容性",
+        "技能质量参差不齐，社区贡献的技能可能未经严格验证，使用时需自行测试",
+        "兼容性声明虽广，但具体工具版本或配置要求未在输入中说明，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：可以开发一个命令行工具或插件，用于自动下载、更新和管理这些技能，提升使用体验",
+        "机会假设：可以构建技能质量评估或推荐系统，帮助用户筛选最适合其场景的技能",
+        "机会假设：可以创建技能测试框架，验证技能在不同工具中的兼容性和正确性"
+      ],
+      "maturity": "项目创建于2025年10月，最近更新于2026年8月，更新频繁，但无正式版本发布，且存在13个未关闭问题。从现有信息看，项目处于活跃开发阶段，社区参与度高，但成熟度可能尚未达到稳定发布水平。星标数量高表明关注度大，但不能直接等同于质量，需结合技能内容和使用反馈进一步评估。"
+    }
+  },
+  "basecamp/omarchy": {
+    "full_name": "basecamp/omarchy",
+    "html_url": "https://github.com/basecamp/omarchy",
+    "description": "Beautiful, Modern & Opinionated Linux",
+    "stars": 32050,
+    "forks": 3271,
+    "open_issues": 1724,
+    "watchers": 167,
+    "language": "Shell",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2025-06-01T07:26:22Z",
+    "updated_at": "2026-08-27T02:00:01Z",
+    "pushed_at": "2026-08-26T21:56:34Z",
+    "archived": false,
+    "fork": false,
+    "score": 76.36,
+    "score_reasons": [
+      "32,050 stars over 452 days",
+      "estimated 70.9 stars/day since creation",
+      "last push 0.2 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": "https://omarchy.org",
+    "default_branch": "quattro",
+    "readme_url": "https://github.com/basecamp/omarchy/blob/quattro/README.md",
+    "readme_summary": "Omarchy is a beautiful, modern & opinionated Linux distribution by DHH.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v4.0.1",
+    "latest_release_url": "https://github.com/basecamp/omarchy/releases/tag/v4.0.1",
+    "latest_release_at": "2026-08-25T11:24:30Z",
+    "analysis": {
+      "positioning": "Omarchy 是一款由 DHH 打造的现代、美观且高度主观的 Linux 发行版，旨在提供开箱即用的优雅体验。它解决普通 Linux 发行版默认配置平庸、个性化不足的问题，通过预置的定制化设计，让用户无需繁琐配置即可获得一致且精致的桌面环境。",
+      "target_users": [
+        "追求美观与一致性的 Linux 桌面用户",
+        "希望快速部署个性化开发环境的开发者",
+        "对 DHH 设计理念认同的技术爱好者"
+      ],
+      "core_capabilities": [
+        "提供开箱即用的现代化桌面环境，减少配置时间",
+        "通过主观设计语言统一系统外观与交互，提升使用愉悦感",
+        "基于 Shell 脚本实现系统定制，便于用户理解与二次修改"
+      ],
+      "technical_analysis": [
+        "项目以 Shell 为主要开发语言，表明其核心逻辑可能围绕系统配置脚本与自动化部署展开",
+        "作为 Linux 发行版，运行方式为本地安装或虚拟机部署，但本次输入未提供具体安装方式与集成形态，需进一步核实",
+        "从仓库信息看，未提及云端或容器化支持，可能以传统发行版形式分发"
+      ],
+      "why_it_matters": [
+        "项目在短时间内获得高关注度（Stars 3.2 万），且持续更新（最新发布 v4.0.1），表明社区活跃且迭代迅速",
+        "由知名开发者 DHH 主导，其影响力可能吸引大量开发者试用与贡献，形成生态效应",
+        "从现有信息看，其“主观”设计理念可能为 Linux 桌面体验带来差异化方向，值得关注"
+      ],
+      "limitations": [
+        "项目创建于 2025 年，相对年轻，成熟度可能不足，需关注长期维护稳定性",
+        "Open Issues 数量较多（1724），可能反映问题处理速度或社区反馈量大，需核实",
+        "作为发行版，其硬件兼容性与软件生态依赖官方支持，本次输入未提供相关细节，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：可开发基于 Omarchy 的定制化配置工具，帮助用户快速调整系统主题与预装软件",
+        "机会假设：可编写自动化测试脚本，验证不同硬件环境下的安装与运行稳定性",
+        "机会假设：可构建社区插件市场，扩展默认软件包与工作流集成"
+      ],
+      "maturity": "从现有信息看，项目创建于 2025 年，但已发布 v4.0.1，且 Stars 与 Forks 数量较高，表明社区接受度较好。然而，Open Issues 数量较多，且项目历史较短，整体成熟度可能处于早期阶段，需关注后续版本稳定性与问题解决效率。"
+    }
+  },
+  "K-Dense-AI/scientific-agent-skills": {
+    "full_name": "K-Dense-AI/scientific-agent-skills",
+    "html_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 175,000+ scientists worldwide. 163 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+    "stars": 34753,
+    "forks": 3361,
+    "open_issues": 10,
+    "watchers": 159,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-scientist",
+      "bioinformatics",
+      "chemoinformatics",
+      "claude",
+      "claude-skills",
+      "claudecode",
+      "clinical-research",
+      "computational-biology",
+      "data-analysis",
+      "drug-discovery",
+      "genomics",
+      "materials-science",
+      "metabolomics",
+      "proteomics",
+      "scientific-computing",
+      "scientific-visualization"
+    ],
+    "created_at": "2025-10-19T20:54:15Z",
+    "updated_at": "2026-08-27T02:00:04Z",
+    "pushed_at": "2026-08-24T09:22:55Z",
+    "archived": false,
+    "fork": false,
+    "score": 76.11,
+    "score_reasons": [
+      "34,753 stars over 311 days",
+      "estimated 111.7 stars/day since creation",
+      "last push 2.7 days ago",
+      "detectable MIT license",
+      "topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude"
+    ],
+    "homepage": "https://k-dense.ai",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "tt-a1i/archify": {
+    "full_name": "tt-a1i/archify",
+    "html_url": "https://github.com/tt-a1i/archify",
+    "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+    "stars": 18090,
+    "forks": 1256,
+    "open_issues": 29,
+    "watchers": 87,
+    "language": "HTML",
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "architecture-as-code",
+      "architecture-diagram",
+      "claude-skill",
+      "code-visualization",
+      "codex",
+      "coding-agents",
+      "data-flow-diagram",
+      "deepseek-harness",
+      "developer-tools",
+      "diagram-as-code",
+      "diagrams",
+      "diagrams-as-code",
+      "dsh-plugin",
+      "mermaid-alternative",
+      "opencode",
+      "sequence-diagram",
+      "software-architecture",
+      "system-design",
+      "text-to-diagram"
+    ],
+    "created_at": "2026-04-15T05:27:37Z",
+    "updated_at": "2026-08-27T02:00:13Z",
+    "pushed_at": "2026-08-27T01:15:23Z",
+    "archived": false,
+    "fork": false,
+    "score": 75.37,
+    "score_reasons": [
+      "18,090 stars over 134 days",
+      "estimated 135.1 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable MIT license",
+      "topics: agent-skills, architecture-as-code, architecture-diagram, claude-skill, code-visualization"
+    ],
+    "homepage": "https://tt-a1i.github.io/archify/",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "AgriciDaniel/claude-obsidian": {
+    "full_name": "AgriciDaniel/claude-obsidian",
+    "html_url": "https://github.com/AgriciDaniel/claude-obsidian",
+    "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
+    "stars": 13467,
+    "forks": 1400,
+    "open_issues": 138,
+    "watchers": 62,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-note-taking",
+      "ai-second-brain",
+      "claude-code",
+      "claude-code-skill",
+      "claude-memory",
+      "claude-plugin",
+      "karpathy-llm-wiki",
+      "knowledge-graph",
+      "knowledge-management",
+      "note-taking",
+      "notion-alternative",
+      "obsidian",
+      "obsidian-ai",
+      "obsidian-plugin",
+      "obsidian-second-brain",
+      "open-source",
+      "personal-knowledge-management",
+      "pkm",
+      "second-brain"
+    ],
+    "created_at": "2026-04-07T08:59:37Z",
+    "updated_at": "2026-08-27T01:55:58Z",
+    "pushed_at": "2026-08-26T11:43:21Z",
+    "archived": false,
+    "fork": false,
+    "score": 74.93,
+    "score_reasons": [
+      "13,467 stars over 142 days",
+      "estimated 95.0 stars/day since creation",
+      "last push 0.6 days ago",
+      "detectable MIT license",
+      "topics: agent-skills, ai-note-taking, ai-second-brain, claude-code, claude-code-skill"
+    ],
+    "homepage": "skool.com/ai-marketing-hub-pro",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "ConardLi/garden-skills": {
+    "full_name": "ConardLi/garden-skills",
+    "html_url": "https://github.com/ConardLi/garden-skills",
+    "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
+    "stars": 10947,
+    "forks": 1388,
+    "open_issues": 16,
+    "watchers": 57,
+    "language": "CSS",
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "claude",
+      "gpt-image-2",
+      "rag",
+      "skills",
+      "web-design"
+    ],
+    "created_at": "2026-04-21T11:56:17Z",
+    "updated_at": "2026-08-27T01:59:25Z",
+    "pushed_at": "2026-07-12T14:36:31Z",
+    "archived": false,
+    "fork": false,
+    "score": 60.45,
+    "score_reasons": [
+      "10,947 stars over 128 days",
+      "estimated 85.8 stars/day since creation",
+      "last push 45.5 days ago",
+      "detectable MIT license",
+      "topics: agent, claude, gpt-image-2, rag, skills"
+    ],
+    "homepage": "https://github.com/ConardLi/garden-skills",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "anthropics/claude-plugins-community": {
+    "full_name": "anthropics/claude-plugins-community",
+    "html_url": "https://github.com/anthropics/claude-plugins-community",
+    "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
+    "stars": 2214,
+    "forks": 191,
+    "open_issues": 42,
+    "watchers": 24,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [],
+    "created_at": "2026-03-20T02:20:30Z",
+    "updated_at": "2026-08-27T01:57:42Z",
+    "pushed_at": "2026-08-25T20:01:46Z",
+    "archived": false,
+    "fork": false,
+    "score": 60.34,
+    "score_reasons": [
+      "2,214 stars over 160 days",
+      "estimated 13.8 stars/day since creation",
+      "last push 1.2 days ago",
+      "detectable Apache-2.0 license"
+    ],
+    "homepage": null,
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "marin-community/marin": {
+    "full_name": "marin-community/marin",
+    "html_url": "https://github.com/marin-community/marin",
+    "description": "Open-source framework for the research and development of foundation models.",
+    "stars": 2477,
+    "forks": 213,
+    "open_issues": 570,
+    "watchers": 29,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [],
+    "created_at": "2024-03-22T06:29:42Z",
+    "updated_at": "2026-08-27T01:51:25Z",
+    "pushed_at": "2026-08-27T01:13:47Z",
+    "archived": false,
+    "fork": false,
+    "score": 58.7,
+    "score_reasons": [
+      "2,477 stars over 888 days",
+      "estimated 2.8 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable Apache-2.0 license"
+    ],
+    "homepage": "https://marin.community",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  }
+}
