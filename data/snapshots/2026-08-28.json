@@ -1,0 +1,1245 @@
+{
+  "rohitg00/ai-engineering-from-scratch": {
+    "full_name": "rohitg00/ai-engineering-from-scratch",
+    "html_url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+    "description": "Learn it. Build it. Ship it for others.",
+    "stars": 50258,
+    "forks": 8737,
+    "open_issues": 97,
+    "watchers": 318,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "agents",
+      "ai",
+      "ai-agents",
+      "ai-engineering",
+      "computer-vision",
+      "course",
+      "deep-learning",
+      "from-scratch",
+      "generative-ai",
+      "llm",
+      "machine-learning",
+      "mcp",
+      "nlp",
+      "python",
+      "reinforcement-learning",
+      "rust",
+      "swarm-intelligence",
+      "transformers",
+      "tutorial",
+      "typescript"
+    ],
+    "created_at": "2026-03-18T18:38:02Z",
+    "updated_at": "2026-08-28T04:08:48Z",
+    "pushed_at": "2026-08-23T20:29:51Z",
+    "archived": false,
+    "fork": false,
+    "score": 85.89,
+    "score_reasons": [
+      "50,258 stars over 162 days",
+      "estimated 309.5 stars/day since creation",
+      "last push 4.3 days ago",
+      "detectable MIT license",
+      "topics: agents, ai, ai-agents, ai-engineering, computer-vision"
+    ],
+    "homepage": "https://aiengineeringfromscratch.com",
+    "default_branch": "main",
+    "readme_url": "https://github.com/rohitg00/ai-engineering-from-scratch/blob/main/README.md",
+    "readme_summary": "Translated landing pages, committed to the repo. English is canonical; lesson pages are machine-translated on the  translations  branch. See  docs/i18n.md .",
+    "readme_features": [
+      "Attention Is All You Need — Vaswani et al., 2017 → Phase 7",
+      "Language Models are Few-Shot Learners (GPT-3) → Phase 10",
+      "Denoising Diffusion Probabilistic Models → Phase 8",
+      "InstructGPT / RLHF → Phase 10",
+      "Direct Preference Optimization → Phase 10"
+    ],
+    "quick_start": "npx skills add rohitg00/ai-engineering-from-scratch",
+    "latest_release_name": "Edition 2026.08",
+    "latest_release_url": "https://github.com/rohitg00/ai-engineering-from-scratch/releases/tag/v2026.08",
+    "latest_release_at": "2026-08-10T07:05:52Z",
+    "analysis": {
+      "positioning": "这是一个从零开始学习AI工程的开源课程仓库，通过复现经典论文（如Transformer、GPT-3、扩散模型等）帮助学习者深入理解AI核心原理。与普通教程不同，它强调动手构建和发布，并支持多语言翻译，适合系统化学习。",
+      "target_users": [
+        "希望从理论到实践掌握AI工程的学生和开发者",
+        "需要系统学习深度学习、LLM和生成式AI的工程师",
+        "对从零复现经典模型感兴趣的研究者"
+      ],
+      "core_capabilities": [
+        "提供分阶段的学习路径，覆盖从注意力机制到RLHF等关键主题",
+        "通过动手实现模型来加深理解，而非仅依赖现成库",
+        "支持多语言翻译，便于非英语用户学习"
+      ],
+      "technical_analysis": [
+        "主要使用Python，同时涉及Rust和TypeScript，表明可能包含高性能或前端组件",
+        "通过npx命令快速添加课程，集成方式为命令行工具",
+        "部署方式未明确，可能以本地学习为主，需进一步核实"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目拥有高星标和活跃的更新，表明社区关注度高",
+        "覆盖从基础到前沿的AI主题，可能成为系统学习AI工程的重要资源",
+        "MIT许可证允许自由使用和修改，有利于生态发展"
+      ],
+      "limitations": [
+        "课程内容可能依赖特定环境，需核实是否支持所有平台",
+        "翻译版本可能滞后于英文原版，需注意内容一致性",
+        "开源项目可能存在文档不完整或示例过时的问题，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：可以开发配套的练习环境或自动化评估工具，帮助学习者验证实现",
+        "机会假设：可以集成到CI/CD流程中，自动检查代码正确性",
+        "机会假设：可以创建社区论坛或讨论组，促进学习者交流"
+      ],
+      "maturity": "从现有信息看，项目创建于2026年3月，更新频繁，最新版本为2026.08，表明处于快速迭代阶段。高星标和分叉数显示社区活跃，但开放问题较多，可能仍需完善。"
+    }
+  },
+  "calesthio/OpenMontage": {
+    "full_name": "calesthio/OpenMontage",
+    "html_url": "https://github.com/calesthio/OpenMontage",
+    "description": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
+    "stars": 52548,
+    "forks": 6573,
+    "open_issues": 252,
+    "watchers": 298,
+    "language": "Python",
+    "license": "AGPL-3.0",
+    "topics": [
+      "agent",
+      "agentic-ai",
+      "ai",
+      "claude",
+      "copilot",
+      "cursor",
+      "elevenlabs",
+      "ffmpeg",
+      "flux",
+      "image-generation",
+      "open-source",
+      "openai",
+      "python",
+      "remotion",
+      "stable-diffusion",
+      "text-to-speech",
+      "text-to-video",
+      "video-generation",
+      "video-production"
+    ],
+    "created_at": "2026-03-29T15:23:22Z",
+    "updated_at": "2026-08-28T04:13:17Z",
+    "pushed_at": "2026-08-22T18:22:24Z",
+    "archived": false,
+    "fork": false,
+    "score": 83.15,
+    "score_reasons": [
+      "52,548 stars over 152 days",
+      "estimated 346.8 stars/day since creation",
+      "last push 5.4 days ago",
+      "detectable AGPL-3.0 license",
+      "topics: agent, agentic-ai, ai, claude, copilot"
+    ],
+    "homepage": "https://www.openmontage.video/",
+    "default_branch": "main",
+    "readme_url": "https://github.com/calesthio/OpenMontage/blob/main/README.md",
+    "readme_summary": "Monty the Clapper — the official mascot of OpenMontage",
+    "readme_features": [
+      "10+ production pipelines — explainers, talking heads, screen demos, cinematic trailers, animations, podcasts, localization, documentary montages, character animation, and more",
+      "100+ production tools — spanning video generation, image creation, text-to-speech, music, audio mixing, subtitles, enhancement, and analysis",
+      "60+ provider integrations — cloud APIs, local models, stock libraries, open archives, and production runtimes behind one scored selection layer",
+      "700+ agent skill and production-knowledge files — pipeline directors, creative techniques, quality checklists, and deep technology knowledge packs that teach the agent how to use every tool like an expert",
+      "Reference-driven creation — paste a video you like and the agent turns it into a grounded, differentiated production plan instead of forcing you to invent the perfect prompt from scratch"
+    ],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {
+      "positioning": "OpenMontage 定位为全球首个开源、智能体驱动的视频制作系统，旨在将 AI 编程助手转化为完整的视频制作工作室。它解决从创意到成片的复杂视频生产流程问题，与普通同类工具相比，其明确特点是提供 10+ 生产流水线、100+ 工具、60+ 提供商集成和 700+ 智能体技能文件，并支持参考驱动创作，而非依赖用户手动编写提示词。",
+      "target_users": [
+        "AI 开发者与编程助手用户，希望扩展其工具链以生成视频内容",
+        "内容创作者、视频编辑和营销人员，需要自动化制作讲解视频、屏幕演示、预告片等",
+        "需要本地化、纪录片剪辑等专业视频生产能力的团队"
+      ],
+      "core_capabilities": [
+        "提供多种生产流水线，覆盖讲解视频、人物讲解、屏幕演示、电影预告片、动画、播客、本地化、纪录片等场景，用户可直接选择流程生成视频",
+        "集成 100+ 生产工具，涵盖视频生成、图像创建、文本转语音、音乐、混音、字幕、增强和分析，形成一站式制作能力",
+        "通过 60+ 提供商集成（云端 API、本地模型、素材库、开放档案）和评分选择层，智能选择最佳工具组合",
+        "内置 700+ 智能体技能与生产知识文件，指导智能体像专家一样使用每个工具，提升生成质量",
+        "支持参考驱动创作，用户粘贴参考视频即可生成有依据、差异化的制作方案，降低创作门槛"
+      ],
+      "technical_analysis": [
+        "项目使用 Python 语言开发，适合 AI 和视频处理生态",
+        "集成形态多样，支持云端 API 和本地模型，以及素材库和开放档案，但具体部署方式（如本地运行、Docker 等）本次输入未提供，需进一步核实",
+        "从描述看，系统可能以智能体方式运行，与 AI 编程助手（如 Claude、Copilot、Cursor）集成，但具体集成机制和运行环境未明确，需进一步核实"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目拥有 52k+ Stars 和 6.5k+ Forks，社区关注度高，可能表明其解决了视频制作的痛点，并吸引了大量开发者",
+        "项目活跃度较高，最近推送时间为 2026-08-22，且创建于 2026-03-29，短时间内获得大量关注，可能意味着其创新性和实用性得到认可",
+        "作为开源项目，它可能为开发者提供可扩展的视频制作框架，促进 AI 视频生成领域的创新"
+      ],
+      "limitations": [
+        "项目尚无正式发布版本（latest_release 为 null），可能处于早期开发阶段，稳定性和 API 可能变化",
+        "许可证为 AGPL-3.0，可能对商业使用有传染性要求，需评估合规风险",
+        "依赖大量第三方提供商和工具，可能面临服务可用性和成本问题",
+        "具体部署要求、硬件依赖、安全性和隐私处理细节本次输入未提供，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对特定行业（如教育、营销）的定制化流水线模板，降低使用门槛",
+        "机会假设：可构建自动化测试工具，验证不同提供商和工具组合的生成质量与稳定性",
+        "机会假设：可开发运维监控和成本优化工具，帮助用户管理多提供商调用的费用和性能",
+        "机会假设：可提供可视化配置界面，简化流水线和工具的选择与编排"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 3 月，至今约 5 个月，Stars 达 52k，Forks 6.5k，社区活跃度高，但尚无正式发布版本，且存在 252 个开放问题，表明项目仍处于快速迭代和早期采用阶段，成熟度可能不高，需关注稳定性。"
+    }
+  },
+  "thedotmack/claude-mem": {
+    "full_name": "thedotmack/claude-mem",
+    "html_url": "https://github.com/thedotmack/claude-mem",
+    "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+    "stars": 92336,
+    "forks": 8117,
+    "open_issues": 313,
+    "watchers": 291,
+    "language": "JavaScript",
+    "license": "Apache-2.0",
+    "topics": [
+      "ai",
+      "ai-agents",
+      "ai-memory",
+      "anthropic",
+      "artificial-intelligence",
+      "chromadb",
+      "claude",
+      "claude-agent-sdk",
+      "claude-agents",
+      "claude-code",
+      "claude-code-plugin",
+      "claude-skills",
+      "embeddings",
+      "long-term-memory",
+      "mem0",
+      "memory-engine",
+      "openmemory",
+      "rag",
+      "sqlite",
+      "supermemory"
+    ],
+    "created_at": "2025-08-31T20:50:03Z",
+    "updated_at": "2026-08-28T04:13:16Z",
+    "pushed_at": "2026-08-26T22:04:47Z",
+    "archived": false,
+    "fork": false,
+    "score": 82.65,
+    "score_reasons": [
+      "92,336 stars over 361 days",
+      "estimated 255.6 stars/day since creation",
+      "last push 1.3 days ago",
+      "detectable Apache-2.0 license",
+      "topics: ai, ai-agents, ai-memory, anthropic, artificial-intelligence"
+    ],
+    "homepage": "https://claude-mem.ai",
+    "default_branch": "main",
+    "readme_url": "https://github.com/thedotmack/claude-mem/blob/main/README.md",
+    "readme_summary": "Persistent memory compression system built for  Claude Code .",
+    "readme_features": [],
+    "quick_start": "npx claude-mem install",
+    "latest_release_name": "v13.16.1",
+    "latest_release_url": "https://github.com/thedotmack/claude-mem/releases/tag/v13.16.1",
+    "latest_release_at": "2026-08-26T16:54:55Z",
+    "analysis": {
+      "positioning": "claude-mem 是一个为 AI 代理（如 Claude Code）设计的持久记忆压缩系统，它捕获代理在会话中的所有操作，通过 AI 压缩，并在未来会话中注入相关上下文，以解决 AI 代理缺乏长期记忆的问题。与普通同类工具相比，其明确特点是跨会话的上下文持久化，且支持多种代理（如 Claude Code、OpenClaw、Codex 等），并采用本地存储（SQLite、ChromaDB）和嵌入技术。",
+      "target_users": [
+        "使用 Claude Code 或其他 AI 代理进行日常开发的开发者，希望减少重复说明上下文。",
+        "需要长期运行 AI 代理任务的团队，如自动化测试、代码审查或文档生成。",
+        "对 AI 记忆管理感兴趣的研究者或工具开发者，希望集成或扩展记忆功能。"
+      ],
+      "core_capabilities": [
+        "自动捕获代理会话中的操作，无需手动记录。",
+        "利用 AI 压缩会话信息，提取关键上下文，降低存储成本。",
+        "在未来的会话中自动注入相关记忆，提升代理的连续性和效率。"
+      ],
+      "technical_analysis": [
+        "使用 JavaScript 编写，可能基于 Node.js 环境运行。",
+        "支持本地存储（SQLite）和向量数据库（ChromaDB），可能采用嵌入模型进行语义检索。",
+        "通过 npx 命令安装，可能作为 CLI 工具或插件集成到代理中。",
+        "集成形态多样，支持多种代理，可能通过插件或 SDK 方式接入。"
+      ],
+      "why_it_matters": [
+        "解决了 AI 代理会话隔离的痛点，提升开发效率。",
+        "项目活跃度高（近期有发布），社区关注度大（Stars 超 9 万），表明需求强烈。",
+        "支持多种代理，具有广泛的适用性，可能成为 AI 记忆层的标准工具。"
+      ],
+      "limitations": [
+        "项目创建于 2025 年，相对较新，成熟度需进一步观察。",
+        "依赖外部 AI 压缩服务，可能产生额外成本或隐私风险。",
+        "需要核实是否支持所有列出的代理，以及不同代理的集成稳定性。",
+        "许可证为 Apache-2.0，但需确认依赖项是否兼容。"
+      ],
+      "opportunities": [
+        "机会假设：开发可视化界面，帮助用户查看和管理记忆内容。",
+        "机会假设：提供更细粒度的记忆控制，如按项目或任务隔离记忆。",
+        "机会假设：集成更多向量数据库或云存储，增强可扩展性。",
+        "机会假设：为其他代理（如自定义代理）提供 SDK 或插件模板。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2025 年 8 月，但已发布 v13.16.1（2026 年 8 月），更新频繁，Stars 超 9 万，说明社区关注度高。但 Stars 不等于质量，需结合 Issues（313 个）和实际使用反馈评估稳定性。整体处于快速迭代阶段，可能尚未完全稳定。"
+    }
+  },
+  "anthropics/claude-plugins-official": {
+    "full_name": "anthropics/claude-plugins-official",
+    "html_url": "https://github.com/anthropics/claude-plugins-official",
+    "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+    "stars": 34736,
+    "forks": 3915,
+    "open_issues": 1041,
+    "watchers": 219,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [
+      "claude-code",
+      "mcp",
+      "skills"
+    ],
+    "created_at": "2025-11-20T18:36:20Z",
+    "updated_at": "2026-08-28T03:59:48Z",
+    "pushed_at": "2026-08-27T20:05:54Z",
+    "archived": false,
+    "fork": false,
+    "score": 79.39,
+    "score_reasons": [
+      "34,736 stars over 280 days",
+      "estimated 123.9 stars/day since creation",
+      "last push 0.3 days ago",
+      "detectable Apache-2.0 license",
+      "topics: claude-code, mcp, skills"
+    ],
+    "homepage": "https://code.claude.com/docs/en/plugins",
+    "default_branch": "main",
+    "readme_url": "https://github.com/anthropics/claude-plugins-official/blob/main/README.md",
+    "readme_summary": "A curated directory of high-quality plugins for Claude Code.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {
+      "positioning": "Anthropic 官方维护的 Claude Code 插件目录，用于发现和管理高质量插件，解决插件生态分散、质量参差不齐的问题。与普通插件仓库相比，其明确特点是官方背书和策展机制，确保插件质量与兼容性。",
+      "target_users": [
+        "使用 Claude Code 的开发者，希望扩展其功能",
+        "需要可靠、高质量插件的团队，避免自行筛选",
+        "插件开发者，希望发布插件并获得官方认可"
+      ],
+      "core_capabilities": [
+        "提供官方策展的插件目录，帮助用户快速找到高质量插件",
+        "支持通过 MCP 和 Skills 等集成方式扩展 Claude Code 能力",
+        "作为社区插件生态的入口，促进插件发现与分发"
+      ],
+      "technical_analysis": [
+        "仓库主要语言为 Python，但插件可能涉及多种语言",
+        "从 topics 看，支持 MCP（模型上下文协议）和 Skills 集成，可能支持本地或云端运行",
+        "具体运行方式、部署形态等细节本次输入未提供，需进一步核实"
+      ],
+      "why_it_matters": [
+        "官方维护的目录，具有权威性和可信度，降低插件选择风险",
+        "高 Stars 和 Forks 表明社区关注度高，生态活跃",
+        "持续更新（最近推送时间较新），可能反映项目活跃维护"
+      ],
+      "limitations": [
+        "最新 Release 信息未提供，需核实版本发布情况",
+        "Open Issues 数量较多（1041），可能影响问题解决效率",
+        "许可证为 Apache-2.0，但插件本身可能采用不同许可证，需逐一核实",
+        "平台兼容性、安全审查流程等细节未提供，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：开发插件质量评分或推荐算法，帮助用户筛选",
+        "机会假设：构建插件自动化测试工具，验证插件与 Claude Code 的兼容性",
+        "机会假设：开发插件管理 CLI，简化安装、更新和卸载流程"
+      ],
+      "maturity": "从现有信息看，项目创建于 2025 年 11 月，Stars 和 Forks 数量较高，表明社区关注度强，但 Open Issues 较多且无 Release 信息，可能仍处于早期阶段或迭代频繁。综合判断，项目活跃但成熟度需进一步观察，Stars 不代表质量，需关注实际功能与稳定性。"
+    }
+  },
+  "freestylefly/awesome-gpt-image-2": {
+    "full_name": "freestylefly/awesome-gpt-image-2",
+    "html_url": "https://github.com/freestylefly/awesome-gpt-image-2",
+    "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
+    "stars": 23330,
+    "forks": 2311,
+    "open_issues": 17,
+    "watchers": 93,
+    "language": "JavaScript",
+    "license": "MIT",
+    "topics": [
+      "agents",
+      "ai-image-generation",
+      "chatgpt",
+      "dsh-plugin",
+      "gpt-image-2",
+      "image-prompts",
+      "prompt-as-code",
+      "prompt-engineering",
+      "skills",
+      "workflow-automation"
+    ],
+    "created_at": "2026-04-25T09:19:13Z",
+    "updated_at": "2026-08-28T04:12:31Z",
+    "pushed_at": "2026-08-26T08:54:32Z",
+    "archived": false,
+    "fork": false,
+    "score": 78.43,
+    "score_reasons": [
+      "23,330 stars over 125 days",
+      "estimated 187.0 stars/day since creation",
+      "last push 1.8 days ago",
+      "detectable MIT license",
+      "topics: agents, ai-image-generation, chatgpt, dsh-plugin, gpt-image-2"
+    ],
+    "homepage": "https://gpt-image2.canghe.ai",
+    "default_branch": "main",
+    "readme_url": "https://github.com/freestylefly/awesome-gpt-image-2/blob/main/README.md",
+    "readme_summary": "Prompt as Code | GPT-Image2 Industrial Prompt Engine & Template Library, 500+ Reverse-Engineered Cases, 20+ Industrial Templates",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {
+      "positioning": "这是一个面向 GPT-Image2 的工业级提示词引擎与模板库，将提示词视为代码，提供 530+ 个逆向工程案例和 20+ 套工业级模板，并提炼出可复用的 Skills，旨在解决 AI 图像生成中提示词编写低效、不可复用、难以工程化的问题。与普通提示词集合相比，其特点在于系统化的模板、案例逆向工程和 Skills 提炼，强调工程化与持续更新。",
+      "target_users": [
+        "AI 图像生成开发者与提示词工程师，需要高效构建和复用高质量提示词。",
+        "使用 GPT-Image2 进行内容创作的个人或团队，希望提升图像生成效果与一致性。",
+        "对提示词工程和 AI 工作流自动化感兴趣的研究者或爱好者。"
+      ],
+      "core_capabilities": [
+        "提供大量逆向工程案例，帮助用户理解高质量提示词的构成与模式。",
+        "提供工业级模板，可直接应用于实际项目，降低提示词编写门槛。",
+        "提炼 Skills，可能支持将提示词封装为可复用的能力，便于集成到工作流中。"
+      ],
+      "technical_analysis": [
+        "项目使用 JavaScript 编写，可能以插件或库的形式集成到现有开发环境。",
+        "从 topics 看，支持 agents、workflow-automation 和 dsh-plugin，可能提供与代理或工作流工具的集成能力。",
+        "未提供部署或运行方式的具体信息，需进一步核实其本地/云端使用方式。"
+      ],
+      "why_it_matters": [
+        "项目获得 23k+ Stars 和 2.3k+ Forks，表明社区关注度高，可能具有较高的实用价值。",
+        "持续更新（最近推送在 2026-08-26），显示项目活跃，可能持续吸收最新实践。",
+        "定位为“工业级”，可能填补提示词工程化工具链的空白，值得开发者关注。"
+      ],
+      "limitations": [
+        "项目创建时间较短（2026-04-25），成熟度可能有限，需进一步核实代码质量与文档完整性。",
+        "未提供最新 release，可能缺乏稳定版本，存在 API 变动风险。",
+        "依赖 GPT-Image2 模型，可能受限于 OpenAI 平台政策与模型更新。",
+        "许可证为 MIT，但需核实模板和案例的版权归属，避免商业使用风险。"
+      ],
+      "opportunities": [
+        "机会假设：可开发基于该模板库的提示词管理 CLI 工具，提升本地使用效率。",
+        "机会假设：可集成到主流 AI 绘画工作流（如 ComfyUI、Stable Diffusion WebUI）中，扩展应用场景。",
+        "机会假设：可构建提示词效果评测平台，利用案例库进行自动化测试与优化。"
+      ],
+      "maturity": "项目创建于 2026 年 4 月，至今约 4 个月，Stars 达 23k，但无 release，开放 issue 17 个，整体处于早期快速迭代阶段。从更新频率看，项目活跃，但成熟度可能不足，需关注代码稳定性和文档完善度。"
+    }
+  },
+  "DietrichGebert/ponytail": {
+    "full_name": "DietrichGebert/ponytail",
+    "html_url": "https://github.com/DietrichGebert/ponytail",
+    "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+    "stars": 114271,
+    "forks": 6245,
+    "open_issues": 176,
+    "watchers": 279,
+    "language": "JavaScript",
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "claude",
+      "claude-code",
+      "claude-code-plugin",
+      "cursor-rules",
+      "developer-tools",
+      "llm",
+      "prompt-engineering",
+      "yagni"
+    ],
+    "created_at": "2026-06-12T00:52:37Z",
+    "updated_at": "2026-08-28T04:10:11Z",
+    "pushed_at": "2026-08-07T21:44:01Z",
+    "archived": false,
+    "fork": false,
+    "score": 78.18,
+    "score_reasons": [
+      "114,271 stars over 77 days",
+      "estimated 1481.4 stars/day since creation",
+      "last push 20.3 days ago",
+      "detectable MIT license",
+      "topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin"
+    ],
+    "homepage": "https://ponytail.dev",
+    "default_branch": "main",
+    "readme_url": "https://github.com/DietrichGebert/ponytail/blob/main/README.md",
+    "readme_summary": "He says nothing. He writes one line. It works.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v4.9.0: 53 commits of doing less",
+    "latest_release_url": "https://github.com/DietrichGebert/ponytail/releases/tag/v4.9.0",
+    "latest_release_at": "2026-08-07T21:15:11Z",
+    "analysis": {
+      "positioning": "ponytail 是一个 JavaScript 编写的 MIT 许可开源项目，旨在让 AI 代理像最懒惰的高级开发人员一样思考，强调‘最好的代码是你从未写过的代码’。它通过极简的提示工程和 YAGNI 原则，帮助开发者减少不必要的代码生成，与普通 AI 编码工具相比，其核心特点是主动抑制过度工程，鼓励‘少即是多’的解决方案。",
+      "target_users": [
+        "使用 Claude Code、Cursor 等 AI 编码工具的开发者，希望减少 AI 生成的冗余代码",
+        "追求极简主义和 YAGNI 原则的团队，希望在开发流程中强制推行‘不做不必要的事’",
+        "AI 代理工具链的维护者，需要为代理添加‘懒惰’行为约束的插件或规则"
+      ],
+      "core_capabilities": [
+        "通过提示工程和规则，引导 AI 代理在编码时优先考虑最小可行方案，避免过度设计",
+        "提供插件或规则集成，可嵌入 Claude Code、Cursor 等主流 AI 编码环境，改变代理的决策倾向",
+        "以‘一行代码’为输出目标，提升代码简洁性和可维护性，减少后续重构成本"
+      ],
+      "technical_analysis": [
+        "项目使用 JavaScript 编写，可能以 Node.js 包或配置文件形式分发，但具体安装和运行方式未在输入中提供，需进一步核实",
+        "从主题标签看，它可能以 Claude Code 插件或 Cursor 规则的形式集成，属于本地开发工具链的一部分，不涉及云端服务",
+        "许可证为 MIT，允许自由使用和修改，但未提供快速开始文档，部署或配置细节需查阅官方仓库"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目在短时间内获得超过 11 万 Stars 和 6 千 Forks，表明其理念在开发者社区引起强烈共鸣，可能填补了 AI 编码工具中‘反过度工程’的空白",
+        "活跃的发布节奏（v4.9.0，53 个提交）和持续的推送（2026-08-07）显示项目维护活跃，功能迭代快速",
+        "主题标签覆盖 agent-skills、prompt-engineering 等热门领域，可能成为 AI 代理行为调优的重要参考"
+      ],
+      "limitations": [
+        "项目创建于 2026 年 6 月，至今仅约两个月，成熟度可能较低，需核实其稳定性",
+        "未提供官方功能列表和快速开始文档，实际使用门槛和配置复杂度未知",
+        "依赖特定的 AI 代理环境（如 Claude Code、Cursor），可能不适用于所有编码工具",
+        "MIT 许可证虽宽松，但需核实是否包含第三方依赖的许可证兼容性问题"
+      ],
+      "opportunities": [
+        "机会假设：开发针对更多 AI 编码工具（如 GitHub Copilot）的适配插件，扩大适用范围",
+        "机会假设：构建测试套件，验证‘懒惰’提示在不同代码库上的效果，提供量化指标",
+        "机会假设：创建可视化配置界面，帮助非技术用户调整‘懒惰’程度，降低使用门槛"
+      ],
+      "maturity": "从现有信息看，项目处于早期但高速发展阶段：创建于 2026 年 6 月，两个月内获得 11 万 Stars，发布 v4.9.0 且提交频繁，显示社区接受度高和迭代迅速。但 Stars 数量不能直接等同于质量，需关注其代码质量、文档完整性和实际使用反馈。开放问题 176 个，可能暗示功能扩展和社区参与活跃，但需核实问题解决效率。总体而言，项目活跃但成熟度尚浅，需进一步观察。"
+    }
+  },
+  "bilawalsidhu/gods-eye-view": {
+    "full_name": "bilawalsidhu/gods-eye-view",
+    "html_url": "https://github.com/bilawalsidhu/gods-eye-view",
+    "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+    "stars": 8616,
+    "forks": 1884,
+    "open_issues": 83,
+    "watchers": 225,
+    "language": "JavaScript",
+    "license": "NOASSERTION",
+    "topics": [
+      "3d-globe",
+      "cesium",
+      "flight-tracking",
+      "geospatial",
+      "geospatial-intelligence",
+      "gis",
+      "osint",
+      "photogrammetry",
+      "satellite-tracking",
+      "spatial-intelligence",
+      "webgl",
+      "worldview"
+    ],
+    "created_at": "2026-06-22T23:37:22Z",
+    "updated_at": "2026-08-28T04:13:27Z",
+    "pushed_at": "2026-08-28T00:46:30Z",
+    "archived": false,
+    "fork": false,
+    "score": 77.63,
+    "score_reasons": [
+      "8,616 stars over 66 days",
+      "estimated 130.2 stars/day since creation",
+      "last push 0.1 days ago",
+      "topics: 3d-globe, cesium, flight-tracking, geospatial, geospatial-intelligence"
+    ],
+    "homepage": "https://maptheworld.ai/",
+    "default_branch": "main",
+    "readme_url": "https://github.com/bilawalsidhu/gods-eye-view/blob/main/README.md",
+    "readme_summary": "Photorealistic 3D globe. Live aircraft, ships, satellites, earthquakes, traffic, and public cameras, with clearly labeled modeled views where a live feed is unavailable. Hands-free voice control powered by a realtime AI agent.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {
+      "positioning": "这是一个在浏览器中运行的开源卫星侦察模拟器，但使用真实数据，在照片级逼真的3D地球上展示实时飞机、船舶、卫星、地震、交通和公共摄像头。它解决的是如何以直观、沉浸的方式呈现全球空间情报的问题，与普通地图工具相比，其明确特点是结合了真实数据与3D可视化，并支持由实时AI代理驱动的免提语音控制。",
+      "target_users": [
+        "对地理空间情报、OSINT和卫星追踪感兴趣的开发者和研究人员",
+        "需要可视化全球实时动态数据（如航班、船舶、地震）的GIS或数据新闻从业者",
+        "希望探索3D地球交互和WebGL技术的爱好者"
+      ],
+      "core_capabilities": [
+        "在3D地球上实时展示多种空间数据源，提供直观的全球态势感知",
+        "通过语音控制实现免提操作，提升交互效率",
+        "对无法提供实时画面的视图进行明确标注，确保数据透明度"
+      ],
+      "technical_analysis": [
+        "项目使用JavaScript开发，基于Cesium和WebGL技术，实现浏览器端的3D渲染，无需本地安装",
+        "从描述看，数据是实时获取的，可能通过云端API集成，但具体数据源和架构未在输入中提供，需进一步核实",
+        "集成形态为Web应用，部署方式可能为静态托管或需要后端服务，但未提供快速开始信息，资料不足"
+      ],
+      "why_it_matters": [
+        "项目拥有8616颗星和1884个fork，显示社区关注度高，活跃度强",
+        "主题标签涵盖OSINT、地理空间智能等热门领域，可能吸引安全、GIS和可视化开发者",
+        "尽管无正式release，但最近推送在2026年8月，表明项目仍在积极开发中"
+      ],
+      "limitations": [
+        "许可证为NOASSERTION，需核实具体开源许可，可能影响商业使用",
+        "存在83个未关闭问题，可能影响稳定性，需评估",
+        "无正式release，可能处于早期阶段，API和功能可能不稳定",
+        "实时数据依赖外部源，可能受限于数据提供方的可用性和准确性"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对特定行业（如物流、应急管理）的定制化数据图层或分析工具",
+        "机会假设：可集成更多数据源（如天气、社交媒体地理标签）以增强空间情报能力",
+        "机会假设：可优化语音控制模型，支持更多语言和复杂查询，提升用户体验"
+      ],
+      "maturity": "项目创建于2026年6月，推送于2026年8月，开发活跃。Stars和Forks数量高，但无正式release，且存在较多开放问题，表明项目处于快速迭代但未稳定发布阶段。从现有信息看，项目可能具有较高潜力，但成熟度尚需通过版本发布和问题解决情况进一步验证。"
+    }
+  },
+  "tt-a1i/archify": {
+    "full_name": "tt-a1i/archify",
+    "html_url": "https://github.com/tt-a1i/archify",
+    "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+    "stars": 24066,
+    "forks": 1549,
+    "open_issues": 41,
+    "watchers": 99,
+    "language": "JavaScript",
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "architecture-as-code",
+      "architecture-diagram",
+      "claude-skill",
+      "code-visualization",
+      "codex",
+      "coding-agents",
+      "data-flow-diagram",
+      "deepseek-harness",
+      "developer-tools",
+      "diagram-as-code",
+      "diagrams",
+      "diagrams-as-code",
+      "dsh-plugin",
+      "mermaid-alternative",
+      "opencode",
+      "sequence-diagram",
+      "software-architecture",
+      "system-design",
+      "text-to-diagram"
+    ],
+    "created_at": "2026-04-15T05:27:37Z",
+    "updated_at": "2026-08-28T04:13:30Z",
+    "pushed_at": "2026-08-28T04:09:03Z",
+    "archived": false,
+    "fork": false,
+    "score": 77.1,
+    "score_reasons": [
+      "24,066 stars over 135 days",
+      "estimated 178.3 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable MIT license",
+      "topics: agent-skills, architecture-as-code, architecture-diagram, claude-skill, code-visualization"
+    ],
+    "homepage": "https://tt-a1i.github.io/archify/",
+    "default_branch": "main",
+    "readme_url": "https://github.com/tt-a1i/archify/blob/main/README.md",
+    "readme_summary": "**Turn a codebase or system description into a polished, interactive system map — directly in chat.**",
+    "readme_features": [
+      "Layout judgment over generic auto-layout — the agent chooses hierarchy, spacing, routes, and emphasis; shared automatic endpoints spread deterministically instead of piling arrows on one midpoint.",
+      "Typed JSON IR — every renderer-backed mode has a schema and reproducible source.",
+      "Atomic validation before delivery — schema, layout, HTML/SVG, route, and label-to-route clearance checks must all pass before a showcase artifact replaces the last known good output.",
+      "Failures come with a repair receipt — validate --json and deliver --json return stable rule codes, the exact subject, measured evidence, and only supported repair controls instead of a Node stack or an unstructured retry guess.",
+      "Last-good live preview — an optional desktop loop watches one JSON file, refreshes only after the latest candidate passes every gate, and keeps the previous verified diagram visible when a save is incomplete or invalid."
+    ],
+    "quick_start": "",
+    "latest_release_name": "v2.15.0",
+    "latest_release_url": "https://github.com/tt-a1i/archify/releases/tag/v2.15.0",
+    "latest_release_at": "2026-08-17T15:50:19Z",
+    "analysis": {
+      "positioning": "Archify 是一个面向编码代理的 Agent skill，用于将代码库或系统描述转化为美观、可验证的交互式系统地图，以自包含 HTML 形式呈现，支持动画和清晰导出。它区别于普通图表工具的核心在于：由代理自主判断布局而非依赖通用自动布局，提供类型化 JSON 中间表示，并在交付前进行原子化验证，确保图表准确可靠。",
+      "target_users": [
+        "使用 Claude、Codex、OpenCode 等编码代理的开发者，希望在对话中直接生成架构图、流程图、时序图等。",
+        "软件架构师和系统设计人员，需要快速可视化复杂系统、数据流和生命周期，并确保图表与代码或描述一致。",
+        "技术文档编写者，需要生成可嵌入、可交互的图表，并支持导出为清晰图片。"
+      ],
+      "core_capabilities": [
+        "代理驱动的布局设计：代理根据内容选择层级、间距、路由和强调，共享端点自动分散，避免箭头堆积，使图表更清晰易读。",
+        "类型化 JSON 中间表示：每种渲染模式都有 schema，保证图表可复现，便于版本控制和协作。",
+        "交付前原子验证：包括 schema、布局、HTML/SVG、路由和标签到路由的间隙检查，只有全部通过才替换上次良好输出，确保图表质量。",
+        "失败修复收据：验证和交付返回稳定的规则代码、具体对象、测量证据和受支持的修复控制，帮助代理快速定位问题并修复。",
+        "最后良好实时预览：可选桌面循环监视 JSON 文件，仅在最新候选通过所有检查后刷新，保存不完整或无效时保留先前已验证的图表。"
+      ],
+      "technical_analysis": [
+        "项目使用 JavaScript 编写，以 Agent skill 形式集成到编码代理工作流中，可能通过插件或技能机制（如 dsh-plugin）运行。",
+        "图表输出为自包含 HTML，支持动画和导出，可能无需额外运行时，便于分享和嵌入。",
+        "从 topics 看，支持多种代理（Claude、Codex、OpenCode）和 DeepSeek harness，但具体集成方式（如本地 CLI、远程服务）本次输入未提供，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目在短时间内获得 24066 星和 1549 fork，且持续更新（最新发布 v2.15.0），表明社区关注度高，可能成为编码代理图表生成的标准方案。",
+        "它强调验证和可复现性，解决了 AI 生成图表不可靠的问题，对依赖代理生成架构图的开发者有实际价值。",
+        "作为 Mermaid 的替代方案，它提供更精细的布局控制和验证机制，可能吸引追求高质量图表的用户。"
+      ],
+      "limitations": [
+        "项目创建于 2026 年 4 月，相对较新，成熟度可能有限，需进一步核实其稳定性和生产环境表现。",
+        "依赖特定的代理环境（如 Claude、Codex），可能不适用于所有编码代理，且集成方式需进一步核实。",
+        "许可证为 MIT，但采用成本（如学习曲线、配置复杂度）和平台限制（如是否支持所有操作系统）需进一步核实。",
+        "安全方面，自包含 HTML 可能带来 XSS 风险，需核实是否包含安全措施。"
+      ],
+      "opportunities": [
+        "机会假设：可以开发插件或扩展，将 Archify 集成到更多 CI/CD 流程中，自动生成架构图并验证与代码的一致性。",
+        "机会假设：可以构建可视化编辑器或调试工具，帮助用户调整 JSON IR 和布局参数，降低使用门槛。",
+        "机会假设：可以增加对更多图表类型（如甘特图、网络拓扑图）的支持，并优化导出格式（如 PDF、PNG）以满足更多场景。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 4 月，至今约 4 个月，已发布 v2.15.0，更新频繁，表明开发活跃。Stars 和 forks 数量较高，但 open issues 41 个，需关注问题解决效率。整体处于快速迭代阶段，但成熟度可能尚未达到生产级稳定，需进一步观察。"
+    }
+  },
+  "K-Dense-AI/scientific-agent-skills": {
+    "full_name": "K-Dense-AI/scientific-agent-skills",
+    "html_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 175,000+ scientists worldwide. 163 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+    "stars": 35428,
+    "forks": 3407,
+    "open_issues": 10,
+    "watchers": 161,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-scientist",
+      "bioinformatics",
+      "chemoinformatics",
+      "claude",
+      "claude-skills",
+      "claudecode",
+      "clinical-research",
+      "computational-biology",
+      "data-analysis",
+      "drug-discovery",
+      "genomics",
+      "materials-science",
+      "metabolomics",
+      "proteomics",
+      "scientific-computing",
+      "scientific-visualization"
+    ],
+    "created_at": "2025-10-19T20:54:15Z",
+    "updated_at": "2026-08-28T04:10:24Z",
+    "pushed_at": "2026-08-24T09:22:55Z",
+    "archived": false,
+    "fork": false,
+    "score": 75.65,
+    "score_reasons": [
+      "35,428 stars over 312 days",
+      "estimated 113.4 stars/day since creation",
+      "last push 3.8 days ago",
+      "detectable MIT license",
+      "topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude"
+    ],
+    "homepage": "https://k-dense.ai",
+    "default_branch": "main",
+    "readme_url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/README.md",
+    "readme_summary": "These skills enable your AI agent to seamlessly work with specialized scientific libraries, databases, and tools across multiple scientific domains. While the agent can use any Python package or API on its own, these explicitly defined skills provide curated documentation and examples that make it significantly stronger and more reliable for the workflows below:",
+    "readme_features": [
+      "Reproduction, Not Generation, Is AI's Killer App for Science — Why re-running published analyses is the highest-value use of an agent: 78% of papers and 93% of individual analysis tasks reproduced across a 221-study benchmark, because a reproduction can be checked against known numbers while a generated claim cannot."
+    ],
+    "quick_start": "",
+    "latest_release_name": "v2.64.0",
+    "latest_release_url": "https://github.com/K-Dense-AI/scientific-agent-skills/releases/tag/v2.64.0",
+    "latest_release_at": "2026-08-17T23:43:12Z",
+    "analysis": {
+      "positioning": "这是一个面向科学研究的AI智能体技能库，旨在将任何AI智能体转变为AI科学家。它提供163个经过验证的技能和100多个科学数据库，覆盖生物学、化学、医学和药物发现等领域，解决AI在专业科学工作流中可靠性和准确性问题。与普通工具相比，其明确特点是强调复现而非生成，通过可验证的复现流程提升科学研究的可信度。",
+      "target_users": [
+        "科研人员，用于加速文献复现和数据分析",
+        "AI开发者，用于集成科学技能到智能体应用中",
+        "生物医药领域从业者，用于药物发现和临床研究"
+      ],
+      "core_capabilities": [
+        "提供预定义的科学技能，使AI智能体能够无缝使用专业科学库和数据库，提升工作流的可靠性和效率",
+        "强调复现科学分析，通过对照已知数值验证结果，减少生成式AI的不可靠性",
+        "兼容多种主流AI平台和开放标准，便于跨工具复用"
+      ],
+      "technical_analysis": [
+        "项目主要使用Python语言，符合科学计算生态",
+        "采用技能库形式，通过显式定义的技能提供文档和示例，而非依赖智能体自主探索",
+        "集成形态为技能库，兼容Cursor、Claude Code等平台，可能通过标准接口调用",
+        "部署方式未明确，可能作为库或插件集成，需进一步核实"
+      ],
+      "why_it_matters": [
+        "从现有信息看，项目拥有高星标和活跃的发布节奏，表明社区关注度高且持续迭代",
+        "其复现优先的理念可能解决AI在科学领域应用的关键痛点，具有方法论创新价值",
+        "广泛的主题覆盖和平台兼容性可能降低科学AI应用的门槛"
+      ],
+      "limitations": [
+        "成熟度方面，项目创建时间较短但版本迭代快，需核实长期稳定性",
+        "依赖方面，可能依赖特定Python包或API，需核实兼容性",
+        "平台方面，虽然声称兼容多种平台，但实际集成效果需进一步验证",
+        "安全方面，科学数据可能涉及敏感信息，需核实数据隐私保护措施",
+        "采用成本方面，技能库的维护和定制可能需要专业知识，需评估学习曲线"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对特定科学领域的定制技能包，如基因组学或材料科学，以增强垂直应用",
+        "机会假设：可构建自动化测试框架，验证技能在不同平台上的兼容性和复现准确性",
+        "机会假设：可开发可视化工具，帮助用户直观理解技能执行过程和结果验证"
+      ],
+      "maturity": "从现有信息看，项目创建于2025年10月，但已发布v2.64.0版本，更新频繁，说明迭代活跃。Stars数量高，但不应直接等同于质量。Open Issues数量较少，可能表明维护良好，但需结合社区反馈和实际使用情况综合判断。整体处于快速成长阶段，成熟度中等偏上。"
+    }
+  },
+  "google/googletest": {
+    "full_name": "google/googletest",
+    "html_url": "https://github.com/google/googletest",
+    "description": "GoogleTest - Google Testing and Mocking Framework",
+    "stars": 39067,
+    "forks": 10867,
+    "open_issues": 491,
+    "watchers": 1265,
+    "language": "C++",
+    "license": "BSD-3-Clause",
+    "topics": [],
+    "created_at": "2015-07-28T15:07:53Z",
+    "updated_at": "2026-08-28T04:08:33Z",
+    "pushed_at": "2026-08-27T11:15:21Z",
+    "archived": false,
+    "fork": false,
+    "score": 74.59,
+    "score_reasons": [
+      "39,067 stars over 4049 days",
+      "estimated 9.6 stars/day since creation",
+      "last push 0.7 days ago",
+      "detectable BSD-3-Clause license"
+    ],
+    "homepage": "https://google.github.io/googletest/",
+    "default_branch": "main",
+    "readme_url": "https://github.com/google/googletest/blob/main/README.md",
+    "readme_summary": "Our documentation is now live on GitHub Pages at https://google.github.io/googletest/. We recommend browsing the documentation on GitHub Pages rather than directly in the repository.",
+    "readme_features": [
+      "xUnit test framework: \\",
+      "Test discovery: \\",
+      "Rich set of assertions: \\",
+      "User-defined assertions: \\",
+      "Fatal and non-fatal failures: \\"
+    ],
+    "quick_start": "",
+    "latest_release_name": "v1.18.0",
+    "latest_release_url": "https://github.com/google/googletest/releases/tag/v1.18.0",
+    "latest_release_at": "2026-08-10T17:37:46Z",
+    "analysis": {
+      "positioning": "GoogleTest 是 Google 官方出品的 C++ 测试与模拟框架，解决单元测试、测试发现、断言和模拟等核心问题。与普通同类工具相比，它提供丰富的断言、致命/非致命失败机制，并支持用户自定义断言，功能全面且集成度高。",
+      "target_users": [
+        "C++ 开发者，尤其是需要编写单元测试和模拟对象的团队。",
+        "使用 GoogleTest 作为测试框架的持续集成和测试驱动开发场景。"
+      ],
+      "core_capabilities": [
+        "提供 xUnit 风格的测试框架，支持测试发现，简化测试组织与执行。",
+        "丰富的断言集合和用户自定义断言，增强测试表达力和可读性。",
+        "支持致命和非致命失败，灵活控制测试流程，提高调试效率。"
+      ],
+      "technical_analysis": [
+        "基于 C++ 语言，原生支持 C++ 项目，性能高效。",
+        "以本地库形式集成，通过编译链接使用，无云端依赖。",
+        "提供命令行测试运行器，可集成到 CMake 等构建系统。",
+        "部署方式为源码或预编译库，需自行构建，具体集成细节需进一步核实。"
+      ],
+      "why_it_matters": [
+        "由 Google 维护，拥有高星标和活跃的发布节奏，表明社区活跃且持续演进。",
+        "丰富的功能和稳定的 API 使其成为 C++ 测试领域的标杆，值得开发者学习和采用。",
+        "从现有信息看，其文档迁移至 GitHub Pages，便于获取最新资料，降低学习门槛。"
+      ],
+      "limitations": [
+        "主要面向 C++，不支持其他语言，跨语言测试需额外适配。",
+        "依赖 C++ 编译环境，可能增加构建复杂度。",
+        "许可证为 BSD-3-Clause，需注意合规要求。",
+        "具体平台支持（如 Windows/macOS/Linux）和安全性细节未提供，需进一步核实。"
+      ],
+      "opportunities": [
+        "机会假设：可开发 IDE 插件或测试报告生成工具，提升测试结果可视化。",
+        "机会假设：可集成到 CI/CD 流水线，自动化测试执行与结果分析。",
+        "机会假设：可开发模拟对象生成器，简化复杂依赖的模拟。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2015 年，持续更新至 2026 年，最新版本 v1.18.0，Stars 和 Forks 数量高，Issues 数量适中，表明项目成熟稳定且社区活跃。但 Stars 不等同于质量，需结合代码质量和实际使用验证。"
+    }
+  },
+  "AgriciDaniel/claude-obsidian": {
+    "full_name": "AgriciDaniel/claude-obsidian",
+    "html_url": "https://github.com/AgriciDaniel/claude-obsidian",
+    "description": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
+    "stars": 14096,
+    "forks": 1427,
+    "open_issues": 140,
+    "watchers": 63,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-note-taking",
+      "ai-second-brain",
+      "claude-code",
+      "claude-code-skill",
+      "claude-memory",
+      "claude-plugin",
+      "karpathy-llm-wiki",
+      "knowledge-graph",
+      "knowledge-management",
+      "note-taking",
+      "notion-alternative",
+      "obsidian",
+      "obsidian-ai",
+      "obsidian-plugin",
+      "obsidian-second-brain",
+      "open-source",
+      "personal-knowledge-management",
+      "pkm",
+      "second-brain"
+    ],
+    "created_at": "2026-04-07T08:59:37Z",
+    "updated_at": "2026-08-28T04:12:37Z",
+    "pushed_at": "2026-08-26T11:43:21Z",
+    "archived": false,
+    "fork": false,
+    "score": 74.5,
+    "score_reasons": [
+      "14,096 stars over 143 days",
+      "estimated 98.7 stars/day since creation",
+      "last push 1.7 days ago",
+      "detectable MIT license",
+      "topics: agent-skills, ai-note-taking, ai-second-brain, claude-code, claude-code-skill"
+    ],
+    "homepage": "skool.com/ai-marketing-hub-pro",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "OpenCut-app/OpenCut": {
+    "full_name": "OpenCut-app/OpenCut",
+    "html_url": "https://github.com/OpenCut-app/OpenCut",
+    "description": "The open-source CapCut alternative",
+    "stars": 87511,
+    "forks": 8636,
+    "open_issues": 372,
+    "watchers": 394,
+    "language": "TypeScript",
+    "license": "MIT",
+    "topics": [
+      "editor",
+      "oss",
+      "videoeditor"
+    ],
+    "created_at": "2025-06-22T08:02:17Z",
+    "updated_at": "2026-08-28T04:11:50Z",
+    "pushed_at": "2026-08-10T16:38:36Z",
+    "archived": false,
+    "fork": false,
+    "score": 73.92,
+    "score_reasons": [
+      "87,511 stars over 432 days",
+      "estimated 202.6 stars/day since creation",
+      "last push 17.5 days ago",
+      "detectable MIT license",
+      "topics: editor, oss, videoeditor"
+    ],
+    "homepage": "https://opencut.app",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "TauricResearch/TradingAgents": {
+    "full_name": "TauricResearch/TradingAgents",
+    "html_url": "https://github.com/TauricResearch/TradingAgents",
+    "description": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+    "stars": 101314,
+    "forks": 19482,
+    "open_issues": 389,
+    "watchers": 762,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [
+      "agent",
+      "finance",
+      "llm",
+      "multiagent",
+      "trading"
+    ],
+    "created_at": "2024-12-28T03:31:08Z",
+    "updated_at": "2026-08-28T04:11:18Z",
+    "pushed_at": "2026-07-18T15:55:05Z",
+    "archived": false,
+    "fork": false,
+    "score": 72.57,
+    "score_reasons": [
+      "101,314 stars over 608 days",
+      "estimated 166.6 stars/day since creation",
+      "last push 40.5 days ago",
+      "detectable Apache-2.0 license",
+      "topics: agent, finance, llm, multiagent, trading"
+    ],
+    "homepage": "https://arxiv.org/pdf/2412.20138",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "ComposioHQ/awesome-claude-skills": {
+    "full_name": "ComposioHQ/awesome-claude-skills",
+    "html_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "description": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+    "stars": 73663,
+    "forks": 8441,
+    "open_issues": 1337,
+    "watchers": 452,
+    "language": "Python",
+    "license": null,
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "antigravity",
+      "automation",
+      "claude",
+      "claude-code",
+      "codex",
+      "composio",
+      "cursor",
+      "developer-tools",
+      "gemini-cli",
+      "mcp",
+      "openai-codex",
+      "rube",
+      "saas",
+      "skill",
+      "workflow-automation"
+    ],
+    "created_at": "2025-10-17T07:15:01Z",
+    "updated_at": "2026-08-28T04:08:57Z",
+    "pushed_at": "2026-08-10T21:45:44Z",
+    "archived": false,
+    "fork": false,
+    "score": 70.62,
+    "score_reasons": [
+      "73,663 stars over 315 days",
+      "estimated 233.9 stars/day since creation",
+      "last push 17.3 days ago",
+      "topics: agent-skills, ai-agents, antigravity, automation, claude"
+    ],
+    "homepage": "",
+    "default_branch": "master",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "ConardLi/garden-skills": {
+    "full_name": "ConardLi/garden-skills",
+    "html_url": "https://github.com/ConardLi/garden-skills",
+    "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
+    "stars": 11383,
+    "forks": 1416,
+    "open_issues": 16,
+    "watchers": 57,
+    "language": "CSS",
+    "license": "MIT",
+    "topics": [
+      "agent",
+      "claude",
+      "gpt-image-2",
+      "rag",
+      "skills",
+      "web-design"
+    ],
+    "created_at": "2026-04-21T11:56:17Z",
+    "updated_at": "2026-08-28T04:11:18Z",
+    "pushed_at": "2026-07-12T14:36:31Z",
+    "archived": false,
+    "fork": false,
+    "score": 60.54,
+    "score_reasons": [
+      "11,383 stars over 129 days",
+      "estimated 88.5 stars/day since creation",
+      "last push 46.6 days ago",
+      "detectable MIT license",
+      "topics: agent, claude, gpt-image-2, rag, skills"
+    ],
+    "homepage": "https://github.com/ConardLi/garden-skills",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "zedeus/nitter": {
+    "full_name": "zedeus/nitter",
+    "html_url": "https://github.com/zedeus/nitter",
+    "description": "Alternative Twitter front-end",
+    "stars": 13934,
+    "forks": 1148,
+    "open_issues": 156,
+    "watchers": 165,
+    "language": "Nim",
+    "license": "AGPL-3.0",
+    "topics": [
+      "nim",
+      "privacy",
+      "self-hosted",
+      "twitter",
+      "x"
+    ],
+    "created_at": "2019-06-20T13:51:49Z",
+    "updated_at": "2026-08-28T04:09:18Z",
+    "pushed_at": "2026-08-26T11:19:23Z",
+    "archived": true,
+    "fork": false,
+    "score": 59.38,
+    "score_reasons": [
+      "13,934 stars over 2626 days",
+      "estimated 5.3 stars/day since creation",
+      "last push 1.7 days ago",
+      "detectable AGPL-3.0 license",
+      "topics: nim, privacy, self-hosted, twitter, x"
+    ],
+    "homepage": "https://nitter.net",
+    "default_branch": "master",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "marin-community/marin": {
+    "full_name": "marin-community/marin",
+    "html_url": "https://github.com/marin-community/marin",
+    "description": "Open-source framework for the research and development of foundation models.",
+    "stars": 2719,
+    "forks": 230,
+    "open_issues": 584,
+    "watchers": 34,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [],
+    "created_at": "2024-03-22T06:29:42Z",
+    "updated_at": "2026-08-28T04:08:52Z",
+    "pushed_at": "2026-08-28T03:27:38Z",
+    "archived": false,
+    "fork": false,
+    "score": 58.84,
+    "score_reasons": [
+      "2,719 stars over 889 days",
+      "estimated 3.1 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable Apache-2.0 license"
+    ],
+    "homepage": "https://marin.community",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "actions/checkout": {
+    "full_name": "actions/checkout",
+    "html_url": "https://github.com/actions/checkout",
+    "description": "Action for checking out a repo",
+    "stars": 8740,
+    "forks": 2751,
+    "open_issues": 686,
+    "watchers": 208,
+    "language": "TypeScript",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2019-07-19T17:15:33Z",
+    "updated_at": "2026-08-28T04:07:05Z",
+    "pushed_at": "2026-08-10T23:25:25Z",
+    "archived": false,
+    "fork": false,
+    "score": 58.58,
+    "score_reasons": [
+      "8,740 stars over 2596 days",
+      "estimated 3.4 stars/day since creation",
+      "last push 17.2 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": "https://github.com/features/actions",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "JetBrains/go-modern-guidelines": {
+    "full_name": "JetBrains/go-modern-guidelines",
+    "html_url": "https://github.com/JetBrains/go-modern-guidelines",
+    "description": "Help AI coding agents write modern Go",
+    "stars": 2224,
+    "forks": 69,
+    "open_issues": 10,
+    "watchers": 19,
+    "language": "Go",
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agents",
+      "coding-agent",
+      "developer-tools",
+      "go",
+      "golang",
+      "guidelines"
+    ],
+    "created_at": "2025-11-24T12:46:31Z",
+    "updated_at": "2026-08-28T04:11:54Z",
+    "pushed_at": "2026-08-19T17:39:58Z",
+    "archived": false,
+    "fork": false,
+    "score": 50.63,
+    "score_reasons": [
+      "2,224 stars over 277 days",
+      "estimated 8.0 stars/day since creation",
+      "last push 8.4 days ago",
+      "detectable Apache-2.0 license",
+      "topics: ai-agents, coding-agent, developer-tools, go, golang"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  }
+}

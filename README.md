@@ -9,7 +9,7 @@
 [![License](https://img.shields.io/badge/License-MIT-16a34a?style=for-the-badge)](LICENSE)
 
 <!-- DAILY_LATEST_START -->
-**[📖 阅读今日日报](daily/2026/08/2026-08-27.md)** · **[🗓️ 浏览历史](#-日报归档)** · **[💬 推荐项目](CONTRIBUTING.md)** · [English](README_EN.md)
+**[📖 阅读今日日报](daily/2026/08/2026-08-28.md)** · **[🗓️ 浏览历史](#-日报归档)** · **[💬 推荐项目](CONTRIBUTING.md)** · [English](README_EN.md)
 
 </div>
 
@@ -18,13 +18,13 @@
 
 ## 📖 今日日报
 
-### [2026-08-27 · 今日值得关注的开源项目 →](daily/2026/08/2026-08-27.md)
+### [2026-08-28 · 今日值得关注的开源项目 →](daily/2026/08/2026-08-28.md)
 
 | # | 项目 |
 |---:|---|
-| 1 | [MadsLorentzen/ai-job-search](https://github.com/MadsLorentzen/ai-job-search) |
-| 2 | [rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) |
-| 3 | [Alishahryar1/free-claude-code](https://github.com/Alishahryar1/free-claude-code) |
+| 1 | [rohitg00/ai-engineering-from-scratch](https://github.com/rohitg00/ai-engineering-from-scratch) |
+| 2 | [calesthio/OpenMontage](https://github.com/calesthio/OpenMontage) |
+| 3 | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) |
 
 > **推荐阅读方式：** 先看“今日趋势”和 TOP 10 榜单；前三名提供完整分析，其余七项快速浏览，第一名另有独立深挖长文。
 <!-- DAILY_LATEST_END -->
@@ -41,6 +41,7 @@ GitHubHot 不只罗列 Stars。每个入选项目都会从以下角度展开：
 ## 🗓️ 日报归档
 
 <!-- DAILY_INDEX_START -->
+- [2026-08-28 · 🔥 GitHubHot 日报](daily/2026/08/2026-08-28.md)
 - [2026-08-27 · 🔥 GitHubHot 日报](daily/2026/08/2026-08-27.md)
 - [2026-08-26 · 🔥 GitHubHot 日报](daily/2026/08/2026-08-26.md)
 - [2026-08-25 · 🔥 GitHubHot 日报](daily/2026/08/2026-08-25.md)
