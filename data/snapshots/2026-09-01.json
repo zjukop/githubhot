@@ -1,0 +1,1076 @@
+{
+  "affaan-m/ECC": {
+    "full_name": "affaan-m/ECC",
+    "html_url": "https://github.com/affaan-m/ECC",
+    "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "stars": 245272,
+    "forks": 37057,
+    "open_issues": 124,
+    "watchers": 1259,
+    "language": "JavaScript",
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "anthropic",
+      "claude",
+      "claude-code",
+      "developer-tools",
+      "llm",
+      "mcp",
+      "productivity"
+    ],
+    "created_at": "2026-01-18T00:51:51Z",
+    "updated_at": "2026-09-01T01:57:53Z",
+    "pushed_at": "2026-08-31T22:18:39Z",
+    "archived": false,
+    "fork": false,
+    "score": 94.0,
+    "score_reasons": [
+      "245,272 stars over 226 days",
+      "estimated 1085.0 stars/day since creation",
+      "last push 0.2 days ago",
+      "detectable MIT license",
+      "topics: ai-agents, anthropic, claude, claude-code, developer-tools"
+    ],
+    "homepage": "https://ecc.tools",
+    "default_branch": "main",
+    "readme_url": "https://github.com/affaan-m/ECC/blob/main/README.md",
+    "readme_summary": "Run the canonical guided setup from your terminal:",
+    "readme_features": [],
+    "quick_start": "npx ecc-universal setup",
+    "latest_release_name": "ECC 2.2.0: Guided Setup, Antigravity 2.0, and the Nasiko CLI Bridge",
+    "latest_release_url": "https://github.com/affaan-m/ECC/releases/tag/v2.2.0",
+    "latest_release_at": "2026-08-28T19:55:05Z",
+    "analysis": {
+      "positioning": "ECC 是一个面向 AI 代理（如 Claude Code、Codex、Opencode、Cursor）的代理性能优化系统，通过技能、直觉、记忆、安全与研究优先的开发方式，提升代理在复杂任务中的表现。与普通同类工具相比，它强调系统化的性能优化和跨平台兼容性。",
+      "target_users": [
+        "使用 Claude Code、Codex、Opencode、Cursor 等 AI 编程工具的开发者",
+        "需要提升 AI 代理在复杂开发任务中效率与安全性的团队",
+        "对 AI 代理行为优化和性能调优感兴趣的研究者"
+      ],
+      "core_capabilities": [
+        "提供技能、直觉、记忆等模块，增强代理的上下文理解和决策能力",
+        "内置安全机制，降低代理误操作风险",
+        "支持多种主流 AI 代理平台，提供统一的优化方案"
+      ],
+      "technical_analysis": [
+        "项目使用 JavaScript 编写，可能基于 Node.js 生态，通过 npx 命令快速启动，表明其易于集成到现有开发流程",
+        "提供命令行工具（npx ecc-universal setup），支持本地运行，可能涉及本地配置和云端服务",
+        "集成形态为 CLI 工具，可嵌入 CI/CD 或开发者日常使用，具体架构细节需进一步核实"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目拥有极高的 Stars 和 Forks，表明社区关注度很高，可能成为 AI 代理优化领域的重要工具",
+        "频繁的更新和最新版本发布显示项目活跃，持续迭代能力较强",
+        "跨平台支持多个主流 AI 代理，可能解决开发者工具碎片化问题"
+      ],
+      "limitations": [
+        "项目创建时间较短（2026年1月），成熟度可能有限，需进一步核实稳定性",
+        "依赖 npx 和 Node.js 环境，可能对非 JavaScript 开发者有门槛",
+        "安全机制的具体实现和效果需进一步核实，许可证为 MIT 但需确认无隐藏限制"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对特定代理（如 Claude Code）的深度优化插件，扩展 ECC 的功能",
+        "机会假设：构建可视化配置界面，降低非技术用户的使用门槛",
+        "机会假设：提供性能监控和报告功能，帮助用户量化优化效果"
+      ],
+      "maturity": "从现有信息看，项目创建于2026年1月，至今约8个月，已发布多个版本（最新为2.2.0），更新频繁，Stars 和 Forks 数量极高，但 Stars 不等同于质量。开放问题数量适中，表明项目处于快速迭代期，但成熟度仍需时间验证。"
+    }
+  },
+  "zhaoxuya520/reverse-skill": {
+    "full_name": "zhaoxuya520/reverse-skill",
+    "html_url": "https://github.com/zhaoxuya520/reverse-skill",
+    "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base  Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
+    "stars": 33191,
+    "forks": 4507,
+    "open_issues": 19,
+    "watchers": 101,
+    "language": "PowerShell",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2026-05-13T14:37:57Z",
+    "updated_at": "2026-09-01T01:59:41Z",
+    "pushed_at": "2026-08-31T07:23:08Z",
+    "archived": false,
+    "fork": false,
+    "score": 84.3,
+    "score_reasons": [
+      "33,191 stars over 110 days",
+      "estimated 300.4 stars/day since creation",
+      "last push 0.8 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": null,
+    "default_branch": "main",
+    "readme_url": "https://github.com/zhaoxuya520/reverse-skill/blob/main/README.md",
+    "readme_summary": "Navigate the dark waters, sail against the stream.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "reverse-skill v1.0.1",
+    "latest_release_url": "https://github.com/zhaoxuya520/reverse-skill/releases/tag/v1.0.1",
+    "latest_release_at": "2026-08-08T10:16:19Z",
+    "analysis": {
+      "positioning": "reverse-skill 是一个面向逆向工程、授权渗透测试与安全研究的技能路由包，通过 AI 自动路由、按需自举工具链和自进化经验库，为 AI 编程客户端提供安全技能支持。与普通同类工具相比，其明确特点是集成了 AI 路由与工具链自举，并能自动进化知识库，而不仅仅是静态技能列表。",
+      "target_users": [
+        "安全研究人员和逆向工程师，用于日常逆向分析任务。",
+        "授权渗透测试人员，在合规测试场景中快速搭建工具链。",
+        "使用 Claude Code、Kiro、Cursor、Cline 等 AI 编程客户端的开发者，希望增强 AI 的安全技能。"
+      ],
+      "core_capabilities": [
+        "AI 自动路由：根据任务需求智能选择技能路径，提高效率。",
+        "按需自举工具链：自动安装和配置所需工具，减少手动准备时间。",
+        "自进化经验库：持续积累和更新知识，使技能包随使用而增强。"
+      ],
+      "technical_analysis": [
+        "主要语言为 PowerShell，可能涉及 Windows 环境下的脚本自动化。",
+        "集成形态为技能路由包，支持多种 AI 客户端，可能通过插件或配置方式集成。",
+        "部署方式可能为本地安装，但具体运行机制和云端依赖未在输入中提供，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目在短时间内获得大量关注（Stars 33191），且持续更新（最新发布 v1.0.1），表明社区活跃度高。",
+        "其自进化知识库和 AI 路由能力可能代表安全工具与 AI 结合的新方向，对开发者有吸引力。",
+        "支持多种主流 AI 客户端，可能降低安全技能集成的门槛。"
+      ],
+      "limitations": [
+        "项目创建时间较短（2026年5月），成熟度可能有限，需关注稳定性。",
+        "主要语言为 PowerShell，可能限制非 Windows 平台的使用。",
+        "许可证为 MIT，但具体依赖和合规性需进一步核实。",
+        "安全工具的使用需注意授权和法律责任，本项目定位为授权测试，但用户需自行确保合规。"
+      ],
+      "opportunities": [
+        "机会假设：开发跨平台版本，支持 Linux 和 macOS，扩大用户基础。",
+        "机会假设：提供可视化配置界面，简化技能路由和工具链管理。",
+        "机会假设：集成更多 AI 客户端，或开发插件市场，促进生态发展。"
+      ],
+      "maturity": "从现有信息看，项目创建于2026年5月，最新发布为2026年8月的 v1.0.1，更新频繁，Stars 和 Forks 数量较高，但 open issues 有19个，表明项目处于早期活跃阶段，成熟度中等，需关注后续迭代和社区反馈。"
+    }
+  },
+  "THU-MAIC/OpenMAIC": {
+    "full_name": "THU-MAIC/OpenMAIC",
+    "html_url": "https://github.com/THU-MAIC/OpenMAIC",
+    "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
+    "stars": 27254,
+    "forks": 4772,
+    "open_issues": 238,
+    "watchers": 143,
+    "language": "TypeScript",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2026-03-11T10:13:16Z",
+    "updated_at": "2026-09-01T01:59:58Z",
+    "pushed_at": "2026-08-31T22:04:19Z",
+    "archived": false,
+    "fork": false,
+    "score": 83.43,
+    "score_reasons": [
+      "27,254 stars over 174 days",
+      "estimated 156.9 stars/day since creation",
+      "last push 0.2 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": null,
+    "default_branch": "main",
+    "readme_url": "https://github.com/THU-MAIC/OpenMAIC/blob/main/README.md",
+    "readme_summary": "Get an immersive, multi-agent learning experience in just one click",
+    "readme_features": [
+      "One-click lesson generation — Describe a topic or attach your materials; the AI builds a full lesson in minutes",
+      "Multi-agent classroom — AI teachers and peers lecture, discuss, and interact with you in real time",
+      "Rich scene types — Slides, quizzes, interactive HTML simulations, and project-based learning (PBL)",
+      "Whiteboard & TTS — Agents draw diagrams, write formulas, and explain out loud",
+      "Export anywhere — Download editable .pptx slides or interactive .html pages"
+    ],
+    "quick_start": "",
+    "latest_release_name": "OpenMAIC v1.0.0 — Build courses with an agent",
+    "latest_release_url": "https://github.com/THU-MAIC/OpenMAIC/releases/tag/v1.0.0",
+    "latest_release_at": "2026-08-27T13:13:53Z",
+    "analysis": {
+      "positioning": "OpenMAIC 是一个开源的多智能体交互式课堂平台，旨在通过一键生成沉浸式多智能体学习体验。它解决了传统在线学习缺乏互动和个性化的问题，与普通同类工具相比，其明确特点是提供多智能体实时互动、丰富的场景类型（如幻灯片、测验、交互式 HTML 模拟和项目式学习）以及白板和语音合成功能，并能导出可编辑的 PPTX 或交互式 HTML 文件。",
+      "target_users": [
+        "教育工作者：快速创建互动课程，用于课堂教学或在线教学。",
+        "学习者：通过多智能体互动获得个性化学习体验，适合自学或补充学习。",
+        "课程开发者：利用一键生成和导出功能，高效制作可分发的内容。"
+      ],
+      "core_capabilities": [
+        "一键生成课程：用户描述主题或上传材料，AI 在几分钟内构建完整课程，大幅降低课程制作门槛。",
+        "多智能体实时互动：AI 教师和同伴实时讲解、讨论和互动，提升学习沉浸感和参与度。",
+        "丰富场景与导出：支持幻灯片、测验、交互式 HTML 模拟和项目式学习，并可导出为可编辑的 PPTX 或交互式 HTML，便于复用和分发。"
+      ],
+      "technical_analysis": [
+        "项目使用 TypeScript 开发，表明代码具有类型安全性，适合大型前端或全栈项目。",
+        "从功能看，可能涉及前端交互、AI 模型集成和实时通信，但具体本地/云端方式、集成形态和部署方式在本次输入中未提供，需进一步核实。",
+        "最新发布 v1.0.0 表明已有正式版本，但快速开始指南为空，可能影响上手体验。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目在短时间内获得 27254 星和 4772 fork，表明社区关注度较高，可能具有创新性和实用价值。",
+        "MIT 许可证允许自由使用和修改，有利于开发者二次开发和集成。",
+        "活跃的发布（2026-08-27 发布 v1.0.0）和持续更新（2026-08-31 推送）表明项目处于积极维护状态。"
+      ],
+      "limitations": [
+        "项目创建于 2026-03-11，至今约 5 个月，可能仍处于早期阶段，需核实稳定性。",
+        "快速开始指南为空，可能影响新用户上手，需核实文档完整性。",
+        "开放问题 238 个，可能表明存在未解决的 bug 或功能请求，需评估影响。",
+        "具体部署方式、依赖要求、平台兼容性和安全措施未提供，需进一步核实。"
+      ],
+      "opportunities": [
+        "机会假设：开发课程模板库，扩展场景类型，提升生成课程的多样性。",
+        "机会假设：集成更多 AI 模型或支持自定义模型，增强多智能体交互的智能性。",
+        "机会假设：提供云托管服务或 Docker 镜像，简化部署，降低使用门槛。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 3 月，最新发布 v1.0.0（2026-08-27），且持续更新，表明已进入正式版本阶段。Stars 和 Forks 数量较高，但不应直接等同于质量；开放问题较多，可能仍需完善。总体而言，项目处于早期但活跃的开发阶段，成熟度中等。"
+    }
+  },
+  "tt-a1i/archify": {
+    "full_name": "tt-a1i/archify",
+    "html_url": "https://github.com/tt-a1i/archify",
+    "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+    "stars": 38931,
+    "forks": 2488,
+    "open_issues": 95,
+    "watchers": 132,
+    "language": "JavaScript",
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "architecture-as-code",
+      "architecture-diagram",
+      "claude-skill",
+      "code-visualization",
+      "codex",
+      "coding-agents",
+      "data-flow-diagram",
+      "deepseek-harness",
+      "developer-tools",
+      "diagram-as-code",
+      "diagrams",
+      "diagrams-as-code",
+      "dsh-plugin",
+      "mermaid-alternative",
+      "opencode",
+      "sequence-diagram",
+      "software-architecture",
+      "system-design",
+      "text-to-diagram"
+    ],
+    "created_at": "2026-04-15T05:27:37Z",
+    "updated_at": "2026-09-01T01:59:51Z",
+    "pushed_at": "2026-08-31T14:16:46Z",
+    "archived": false,
+    "fork": false,
+    "score": 80.17,
+    "score_reasons": [
+      "38,931 stars over 139 days",
+      "estimated 280.4 stars/day since creation",
+      "last push 0.5 days ago",
+      "detectable MIT license",
+      "topics: agent-skills, architecture-as-code, architecture-diagram, claude-skill, code-visualization"
+    ],
+    "homepage": "https://tt-a1i.github.io/archify/",
+    "default_branch": "main",
+    "readme_url": "https://github.com/tt-a1i/archify/blob/main/README.md",
+    "readme_summary": "**Turn a codebase or system description into a polished, interactive system map — directly in chat.**",
+    "readme_features": [
+      "Layout judgment over generic auto-layout — the agent chooses hierarchy, spacing, routes, and emphasis; shared automatic endpoints spread deterministically instead of piling arrows on one midpoint.",
+      "Typed JSON IR — every renderer-backed mode has a schema and reproducible source.",
+      "Atomic validation before delivery — schema, layout, HTML/SVG, route, and label-to-route clearance checks must all pass before a showcase artifact replaces the last known good output.",
+      "Failures come with a repair receipt — validate --json and deliver --json return stable rule codes, the exact subject, measured evidence, and only supported repair controls instead of a Node stack or an unstructured retry guess.",
+      "Last-good live preview — an optional desktop loop watches one JSON file, refreshes only after the latest candidate passes every gate, and keeps the previous verified diagram visible when a save is incomplete or invalid."
+    ],
+    "quick_start": "",
+    "latest_release_name": "v2.16.0",
+    "latest_release_url": "https://github.com/tt-a1i/archify/releases/tag/v2.16.0",
+    "latest_release_at": "2026-08-30T11:17:04Z",
+    "analysis": {
+      "positioning": "Archify 是一个面向编码代理的 Agent skill，用于将代码库或系统描述转化为美观、可验证的交互式系统地图，生成自包含 HTML 图表，支持动画和清晰导出。它强调布局判断、类型化 JSON 中间表示和原子化验证，区别于普通图表工具，提供可复现、可修复的图表生成流程。",
+      "target_users": [
+        "使用 Claude、Codex、OpenCode 等编码代理的开发者，希望在对话中直接生成架构图、时序图等。",
+        "软件架构师和系统设计人员，需要快速可视化复杂系统并确保图表准确性。",
+        "技术文档编写者，需要生成可嵌入、可交互的图表以增强文档表现力。"
+      ],
+      "core_capabilities": [
+        "智能布局判断：代理根据内容选择层级、间距、路由和强调，而非依赖通用自动布局，使图表更符合逻辑。",
+        "类型化 JSON 中间表示：每种渲染模式都有 schema，保证图表来源可复现，便于版本控制和协作。",
+        "原子化验证：交付前进行 schema、布局、HTML/SVG、路由和标签-路由冲突检查，确保图表质量。",
+        "失败修复收据：提供稳定的规则代码、精确主题和测量证据，指导用户进行受支持的修复，而非盲目重试。",
+        "最后良好预览：桌面循环监视 JSON 文件，仅在最新候选通过所有检查后刷新，保留上一个有效图表，提升迭代效率。"
+      ],
+      "technical_analysis": [
+        "项目使用 JavaScript 开发，采用 MIT 许可证，属于开源工具。",
+        "从描述看，Archify 作为 Agent skill 集成到编码代理中，可能以本地或云端方式运行，但具体部署形态未在输入中明确。",
+        "它生成自包含 HTML 图表，支持动画和导出，可能通过 CLI 或桌面循环进行交互，但详细运行方式需进一步核实。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，Archify 解决了编码代理生成图表时缺乏验证和可修复性的痛点，通过原子化验证和修复收据提升了可靠性。",
+        "项目活跃度较高，最新发布 v2.16.0 在 2026-08-30，且持续更新，表明维护活跃。",
+        "其主题覆盖多个编码代理平台（如 Claude、Codex、OpenCode），可能成为跨平台图表生成的标准方案。"
+      ],
+      "limitations": [
+        "项目创建于 2026-04-15，相对较新，成熟度可能有限，需进一步核实其稳定性。",
+        "依赖编码代理环境，可能受限于代理的上下文长度或执行能力，需核实。",
+        "许可证为 MIT，但采用成本（如学习曲线、集成复杂度）未在输入中说明，需进一步核实。",
+        "安全方面，生成 HTML 可能涉及脚本执行，需核实是否包含安全防护措施。"
+      ],
+      "opportunities": [
+        "机会假设：可开发插件或扩展，将 Archify 集成到更多 CI/CD 流程中，实现图表自动生成和验证。",
+        "机会假设：可构建可视化编辑器，降低非技术用户使用门槛，扩大用户群。",
+        "机会假设：可提供模板库或社区分享平台，促进图表复用和最佳实践传播。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 4 月，至 2026 年 8 月已发布 v2.16.0，更新频繁，Stars 达 38931，表明社区关注度高。但 Stars 不等于质量，项目仍处于早期阶段，需关注 issue 解决速度和功能稳定性。"
+    }
+  },
+  "k1tbyte/Wand-Enhancer": {
+    "full_name": "k1tbyte/Wand-Enhancer",
+    "html_url": "https://github.com/k1tbyte/Wand-Enhancer",
+    "description": "Advanced UX and interoperability extension for Wand (WeMod) app",
+    "stars": 23401,
+    "forks": 59615,
+    "open_issues": 54,
+    "watchers": 111,
+    "language": "C#",
+    "license": "Apache-2.0",
+    "topics": [
+      "csharp",
+      "wand",
+      "wand-enhancer",
+      "wand-pro",
+      "wemod",
+      "wpf"
+    ],
+    "created_at": "2024-11-17T20:02:10Z",
+    "updated_at": "2026-09-01T01:54:47Z",
+    "pushed_at": "2026-08-30T17:49:30Z",
+    "archived": false,
+    "fork": false,
+    "score": 79.45,
+    "score_reasons": [
+      "23,401 stars over 652 days",
+      "estimated 35.9 stars/day since creation",
+      "last push 1.3 days ago",
+      "detectable Apache-2.0 license",
+      "topics: csharp, wand, wand-enhancer, wand-pro, wemod"
+    ],
+    "homepage": "https://gitlab.com/kitbyte/wand-enhancer",
+    "default_branch": "master",
+    "readme_url": "https://github.com/k1tbyte/Wand-Enhancer/blob/master/README.md",
+    "readme_summary": "An open-source interoperability tool designed to extend local client-side configurations and improve the UX of the Wand application.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "1.0.9.4",
+    "latest_release_url": "https://github.com/k1tbyte/Wand-Enhancer/releases/tag/1.0.9.4",
+    "latest_release_at": "2026-07-21T21:08:04Z",
+    "analysis": {
+      "positioning": "Wand-Enhancer 是一个面向 Wand（WeMod）应用的开源扩展工具，旨在通过本地客户端配置增强和改善用户体验，提供高级 UX 和互操作性。与普通同类工具相比，其明确特点是专注于本地配置扩展和互操作性，而非云端服务。",
+      "target_users": [
+        "使用 Wand（WeMod）应用并希望自定义或增强其功能的用户",
+        "对游戏修改器有高级需求，需要更灵活配置的开发者或高级用户"
+      ],
+      "core_capabilities": [
+        "扩展本地客户端配置，允许用户更精细地控制 Wand 应用的行为",
+        "改善用户体验，可能通过优化界面交互或提供额外功能实现",
+        "作为开源工具，支持社区参与和定制"
+      ],
+      "technical_analysis": [
+        "使用 C# 语言开发，基于 WPF 框架，表明是 Windows 桌面应用",
+        "从描述看，可能以本地客户端扩展形式运行，与 Wand 应用集成",
+        "具体部署和运行方式未在输入中提供，需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目活跃度较高，从 Stars 和 Forks 数量看，可能受到社区广泛关注",
+        "持续更新（最新发布在 2026 年），表明维护活跃",
+        "作为开源项目，为 Wand 用户提供了自定义和扩展的可能性，可能填补官方功能的空白"
+      ],
+      "limitations": [
+        "项目创建时间较短（2024 年），成熟度可能有限",
+        "依赖 Wand 应用，其稳定性受上游影响",
+        "平台限制：仅支持 Windows（基于 WPF）",
+        "安全风险：扩展本地配置可能涉及敏感操作，需谨慎使用",
+        "许可证为 Apache-2.0，但采用成本需考虑社区支持情况"
+      ],
+      "opportunities": [
+        "机会假设：可开发更多 UX 增强功能，如主题定制或界面优化",
+        "机会假设：可集成自动化测试，确保与 Wand 不同版本的兼容性",
+        "机会假设：可提供文档或示例，降低用户使用门槛"
+      ],
+      "maturity": "从现有信息看，项目创建于 2024 年，但已发布多个版本（最新 1.0.9.4），且更新频繁，表明处于积极开发阶段。Stars 和 Forks 数量较高，可能反映社区关注度，但不等同于质量。开放问题 54 个，需关注解决效率。总体而言，项目活跃但成熟度仍需观察。"
+    }
+  },
+  "K-Dense-AI/scientific-agent-skills": {
+    "full_name": "K-Dense-AI/scientific-agent-skills",
+    "html_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+    "stars": 40779,
+    "forks": 3777,
+    "open_issues": 25,
+    "watchers": 181,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-scientist",
+      "bioinformatics",
+      "chemoinformatics",
+      "claude",
+      "claude-skills",
+      "claudecode",
+      "clinical-research",
+      "computational-biology",
+      "data-analysis",
+      "drug-discovery",
+      "genomics",
+      "materials-science",
+      "metabolomics",
+      "proteomics",
+      "scientific-computing",
+      "scientific-visualization"
+    ],
+    "created_at": "2025-10-19T20:54:15Z",
+    "updated_at": "2026-09-01T01:56:33Z",
+    "pushed_at": "2026-08-31T17:14:03Z",
+    "archived": false,
+    "fork": false,
+    "score": 78.1,
+    "score_reasons": [
+      "40,779 stars over 316 days",
+      "estimated 129.0 stars/day since creation",
+      "last push 0.4 days ago",
+      "detectable MIT license",
+      "topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude"
+    ],
+    "homepage": "https://k-dense.ai",
+    "default_branch": "main",
+    "readme_url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/README.md",
+    "readme_summary": "These skills enable your AI agent to seamlessly work with specialized scientific libraries, databases, and tools across multiple scientific domains. While the agent can use any Python package or API on its own, these explicitly defined skills provide curated documentation and examples that make it significantly stronger and more reliable for the workflows below:",
+    "readme_features": [
+      "Reproduction, Not Generation, Is AI's Killer App for Science — Why re-running published analyses is the highest-value use of an agent: 78% of papers and 93% of individual analysis tasks reproduced across a 221-study benchmark, because a reproduction can be checked against known numbers while a generated claim cannot."
+    ],
+    "quick_start": "",
+    "latest_release_name": "v2.65.0",
+    "latest_release_url": "https://github.com/K-Dense-AI/scientific-agent-skills/releases/tag/v2.65.0",
+    "latest_release_at": "2026-08-29T22:55:14Z",
+    "analysis": {
+      "positioning": "这是一个面向科学研究的AI智能体技能库，旨在将任何AI智能体转变为AI科学家。它提供165个经过验证的技能和100多个科学数据库，覆盖生物学、化学、医学和药物发现等领域，与Cursor、Claude Code等工具兼容。其核心特点是强调复现而非生成，通过复现已发表的分析来确保结果的可靠性。",
+      "target_users": [
+        "科研人员：希望利用AI智能体加速文献复现和数据分析。",
+        "AI开发者：需要为科学领域定制智能体技能，集成到现有工作流。",
+        "生物信息学、化学信息学等领域的从业者：需要访问专业数据库和工具。"
+      ],
+      "core_capabilities": [
+        "提供预定义的技能，使AI智能体能够无缝使用专业科学库、数据库和工具，提升工作流的效率和可靠性。",
+        "强调复现性，通过对照已知数值验证结果，减少生成式AI的不可靠性。",
+        "覆盖多学科领域，支持从基因组学到材料科学的广泛研究场景。"
+      ],
+      "technical_analysis": [
+        "项目使用Python语言，符合科学计算生态。",
+        "采用开放Agent技能标准，支持多种AI代理平台，如Cursor和Claude Code，表明其集成形态为技能包或插件。",
+        "从描述看，技能可能以本地或云端方式运行，但具体部署方式未在输入中提供，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "拥有超过4万星标和近3800次fork，表明社区关注度高，活跃度强。",
+        "频繁的版本更新（最新v2.65.0）和持续推送，显示项目维护活跃。",
+        "覆盖多学科且兼容主流AI工具，可能成为科学AI应用的基础设施。"
+      ],
+      "limitations": [
+        "项目创建于2025年10月，相对较新，长期稳定性需观察。",
+        "依赖外部科学数据库和API，其可用性和许可可能影响使用。",
+        "MIT许可证虽宽松，但技能内容可能涉及特定数据库的使用条款，需核实。",
+        "未提供快速开始文档，上手难度可能较高，需进一步核实。"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对特定学科（如药物发现）的定制技能包，增强垂直领域应用。",
+        "机会假设：构建自动化测试框架，验证技能在不同AI代理上的兼容性和复现性。",
+        "机会假设：提供可视化工具或仪表盘，帮助用户监控技能执行和结果验证。"
+      ],
+      "maturity": "项目创建于2025年10月，但已发布至v2.65.0，更新频繁，显示快速迭代。星标数超过4万，fork近3800，社区参与度高。开放问题仅25个，相对较少，表明维护良好。从现有信息看，项目处于活跃发展阶段，但成立时间短，长期成熟度需进一步观察。"
+    }
+  },
+  "jingyaogong/minimind": {
+    "full_name": "jingyaogong/minimind",
+    "html_url": "https://github.com/jingyaogong/minimind",
+    "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
+    "stars": 56187,
+    "forks": 7326,
+    "open_issues": 56,
+    "watchers": 256,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [
+      "artificial-intelligence",
+      "large-language-model"
+    ],
+    "created_at": "2024-07-27T04:34:12Z",
+    "updated_at": "2026-09-01T01:59:48Z",
+    "pushed_at": "2026-08-31T10:08:14Z",
+    "archived": false,
+    "fork": false,
+    "score": 78.09,
+    "score_reasons": [
+      "56,187 stars over 766 days",
+      "estimated 73.4 stars/day since creation",
+      "last push 0.7 days ago",
+      "detectable Apache-2.0 license",
+      "topics: artificial-intelligence, large-language-model"
+    ],
+    "homepage": "https://jingyaogong.github.io/minimind",
+    "default_branch": "master",
+    "readme_url": "https://github.com/jingyaogong/minimind/blob/master/README.md",
+    "readme_summary": "大语言模型（Large Language Model, LLM）的出现，引发了全球范围内对 AI 的空前关注。无论是 ChatGPT、DeepSeek 还是 Qwen，都以惊艳的效果让人真切感受到这场技术浪潮的冲击力。然而，动辄数百亿参数的模型规模，使得它们对个人设备而言不仅难以训练，甚至连部署都显得遥不可及。打开大模型的“黑盒子”，真正去理解其内部运作机制，本应是一件令人心潮澎湃的事。遗憾的是，绝大多数探索最终都止步于使用 LoRA 等技术对现有大模型做少量微调，学习一些新指令或特定任务。这更像是在教牛顿如何使用 21 世纪的智能手机——虽然有趣，却偏离了理解物理本质的初衷。",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "MiniMind Docs",
+    "latest_release_url": "https://github.com/jingyaogong/minimind/releases/tag/v2",
+    "latest_release_at": "2025-10-21T14:37:05Z",
+    "analysis": {
+      "positioning": "MiniMind 是一个从零开始训练 64M 参数大语言模型的开源项目，旨在让个人开发者用约 2 小时即可完成训练，从而打开大模型黑盒子，理解其内部运作机制。与仅对现有模型微调的工具不同，它强调从头训练，降低学习门槛，适合教学和研究。",
+      "target_users": [
+        "对 LLM 内部原理感兴趣的 AI 学习者和研究者",
+        "希望在个人设备上快速实验和训练小型语言模型的开发者",
+        "需要低成本教学演示或原型验证的教师和工程师"
+      ],
+      "core_capabilities": [
+        "支持在约 2 小时内从零训练 64M 参数模型，大幅降低训练时间和资源门槛",
+        "提供完整训练流程，帮助用户深入理解 LLM 的构建过程",
+        "基于 Python 实现，易于集成到现有 AI 学习或研究环境"
+      ],
+      "technical_analysis": [
+        "项目使用 Python 语言，便于快速开发和社区协作",
+        "从现有信息看，训练可能支持本地运行，但具体硬件要求和云端支持未在输入中提供，需进一步核实",
+        "集成形态和部署方式未在输入中明确，需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目拥有 56k+ Stars 和 7k+ Forks，社区关注度高，表明其理念和实现受到广泛认可",
+        "持续更新（最近推送时间 2026-08-31）且有正式文档发布，显示项目活跃度较高",
+        "Apache-2.0 许可证允许自由使用和修改，有利于开发者学习和二次开发"
+      ],
+      "limitations": [
+        "模型参数仅 64M，能力有限，可能不适合复杂任务",
+        "训练时间 2 小时可能依赖特定硬件，实际环境需验证",
+        "项目成熟度需进一步核实，例如文档完整性、依赖管理及社区支持情况"
+      ],
+      "opportunities": [
+        "机会假设：可开发基于 MiniMind 的教学课程或交互式实验平台，帮助初学者理解 LLM",
+        "机会假设：可集成到 CI/CD 流程中，用于自动化测试小型语言模型的训练和推理",
+        "机会假设：可扩展模型架构或提供更多预训练配置，满足不同场景需求"
+      ],
+      "maturity": "从 Stars 和 Forks 数量看，项目受到广泛关注，但 Stars 不等于质量。项目有正式 Release（MiniMind Docs）且最近更新频繁，表明维护活跃。但 open issues 有 56 个，需关注问题解决效率。整体上，项目处于快速迭代阶段，成熟度中等偏上。"
+    }
+  },
+  "Osmantic/ODS": {
+    "full_name": "Osmantic/ODS",
+    "html_url": "https://github.com/Osmantic/ODS",
+    "description": "Turn your PC, Mac, or Linux box into an AI server.  LLM inference, chat UI, voice, agents, workflows, RAG, and image generation.",
+    "stars": 5527,
+    "forks": 777,
+    "open_issues": 1526,
+    "watchers": 39,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [
+      "ai-agents",
+      "amd",
+      "comfyui",
+      "docker",
+      "llama-cpp",
+      "llm",
+      "local-ai",
+      "n8n",
+      "nvidia",
+      "open-webui",
+      "rag",
+      "self-hosted",
+      "speech-to-text",
+      "strix-halo",
+      "text-to-speech",
+      "workflow-automation"
+    ],
+    "created_at": "2026-02-09T13:14:58Z",
+    "updated_at": "2026-09-01T01:59:11Z",
+    "pushed_at": "2026-08-31T23:14:12Z",
+    "archived": false,
+    "fork": false,
+    "score": 74.8,
+    "score_reasons": [
+      "5,527 stars over 204 days",
+      "estimated 27.2 stars/day since creation",
+      "last push 0.1 days ago",
+      "detectable Apache-2.0 license",
+      "topics: ai-agents, amd, comfyui, docker, llama-cpp"
+    ],
+    "homepage": "https://discord.gg/qGVygYada3",
+    "default_branch": "main",
+    "readme_url": "https://github.com/Osmantic/ODS/blob/main/README.md",
+    "readme_summary": "**Turn your PC, Mac, or Linux box into a private AI server.**",
+    "readme_features": [
+      "One command — detects your GPU, picks the right model, generates credentials, launches everything",
+      "Chatting in under 2 minutes — bootstrap mode gives you a working model instantly while your full model downloads in the background",
+      "Full service stack, pre-wired — chat, agents, voice, workflows, search, RAG, image generation, privacy tools, observability, and developer tools. All talking to each other out of the box",
+      "Fully moddable — every service is an extension. Drop in a folder, run ods enable, done"
+    ],
+    "quick_start": "",
+    "latest_release_name": "ODS 2.6.0",
+    "latest_release_url": "https://github.com/Osmantic/ODS/releases/tag/v2.6.0",
+    "latest_release_at": "2026-07-28T14:37:53Z",
+    "analysis": {
+      "positioning": "ODS 是一个将个人电脑、Mac 或 Linux 设备转化为私有 AI 服务器的开源项目，旨在通过一条命令自动检测 GPU、选择模型并启动完整服务栈，解决本地 AI 部署复杂、集成困难的问题。与普通同类工具相比，其明确特点是提供开箱即用的全栈集成，包括聊天、语音、代理、工作流、RAG 和图像生成，并支持通过扩展机制高度定制。",
+      "target_users": [
+        "希望快速搭建私有 AI 服务的个人开发者或技术爱好者",
+        "需要本地化 AI 能力的企业或团队，注重数据隐私和离线运行",
+        "对 AI 代理、工作流自动化和多模态生成感兴趣的研究者或开发者"
+      ],
+      "core_capabilities": [
+        "一键部署：自动检测硬件并选择合适模型，生成凭据并启动所有服务，降低入门门槛",
+        "快速启动：引导模式可在 2 分钟内提供可用模型，同时后台下载完整模型，提升体验",
+        "全栈集成：预置聊天、代理、语音、工作流、搜索、RAG、图像生成、隐私工具和可观测性，服务间自动通信",
+        "高度可扩展：每个服务都是扩展，通过放置文件夹并运行命令即可启用，便于定制和功能增强"
+      ],
+      "technical_analysis": [
+        "基于 Python 开发，采用 Apache-2.0 许可证，便于开源社区参与和二次开发",
+        "支持 Docker 容器化部署，兼容 NVIDIA、AMD 等 GPU，并针对 Strix Halo 等硬件优化，体现本地优先的设计",
+        "集成 llama-cpp、ComfyUI、Open WebUI、n8n 等成熟组件，形成模块化服务架构，支持 RAG、语音和图像生成等能力",
+        "从现有信息看，项目可能采用本地推理和云端管理相结合的方式，但具体架构细节需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目活跃度高，创建于 2026 年 2 月，持续更新至 2026 年 8 月，并发布了 2.6.0 版本，表明维护者积极迭代",
+        "Star 数达 5527，Fork 数 777，社区关注度较高，可能吸引更多贡献者和生态建设",
+        "覆盖 AI 代理、RAG、工作流自动化等热门领域，为开发者提供一站式本地 AI 解决方案，降低集成成本"
+      ],
+      "limitations": [
+        "开放问题数达 1526，可能表明项目仍存在较多未解决缺陷或功能请求，成熟度需进一步评估",
+        "依赖 Docker 和特定 GPU 硬件，可能对非技术用户或老旧设备不友好",
+        "安全方面需核实：本地服务暴露、凭据管理、多用户隔离等机制是否完善",
+        "许可证为 Apache-2.0，但需确认所有依赖组件的许可证兼容性"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对特定行业（如医疗、金融）的预配置扩展包，简化合规部署",
+        "机会假设：提供更完善的监控和日志分析工具，帮助用户诊断服务栈问题",
+        "机会假设：集成更多模型格式和推理引擎，扩大硬件兼容性",
+        "机会假设：开发自动化测试框架，验证不同硬件和配置下的稳定性"
+      ],
+      "maturity": "从现有信息看，项目处于快速迭代阶段，创建半年内发布多个版本，Star 和 Fork 数量较高，社区活跃。但开放问题数量较多，可能影响稳定性。综合判断，项目功能丰富但成熟度中等，适合技术尝鲜者，生产环境需谨慎评估。"
+    }
+  },
+  "every-app/open-seo": {
+    "full_name": "every-app/open-seo",
+    "html_url": "https://github.com/every-app/open-seo",
+    "description": "Open source alternative to Semrush and Ahrefs",
+    "stars": 15784,
+    "forks": 1901,
+    "open_issues": 121,
+    "watchers": 47,
+    "language": "TypeScript",
+    "license": "MIT",
+    "topics": [
+      "backlink-analysis",
+      "google-search-console-mcp",
+      "keyword-research",
+      "mcp",
+      "seo",
+      "seo-tools",
+      "site-audit"
+    ],
+    "created_at": "2026-02-27T18:57:41Z",
+    "updated_at": "2026-09-01T01:59:42Z",
+    "pushed_at": "2026-08-24T00:19:23Z",
+    "archived": false,
+    "fork": false,
+    "score": 71.92,
+    "score_reasons": [
+      "15,784 stars over 185 days",
+      "estimated 85.2 stars/day since creation",
+      "last push 8.1 days ago",
+      "detectable MIT license",
+      "topics: backlink-analysis, google-search-console-mcp, keyword-research, mcp, seo"
+    ],
+    "homepage": "https://openseo.so",
+    "default_branch": "main",
+    "readme_url": "https://github.com/every-app/open-seo/blob/main/README.md",
+    "readme_summary": "OpenSEO is an SEO tool for _the people_. If tools like Semrush or Ahrefs are too expensive or bloated, OpenSEO is a pay-as-you-go alternative that you actually control.",
+    "readme_features": [
+      "Best in class MCP and AI Skills.",
+      "Modern, simple UI.",
+      "Focused workflows instead of a bloated, complex SEO suite.",
+      "No subscriptions.",
+      "Bring your own DataForSEO API key and pay only for what you use."
+    ],
+    "quick_start": "",
+    "latest_release_name": "v0.1.6",
+    "latest_release_url": "https://github.com/every-app/open-seo/releases/tag/v0.1.6",
+    "latest_release_at": "2026-08-19T18:35:38Z",
+    "analysis": {
+      "positioning": "OpenSEO 是一个开源的 SEO 工具，旨在作为 Semrush 和 Ahrefs 的替代品，解决现有工具昂贵、臃肿的问题。它提供按需付费的灵活模式，用户自带 DataForSEO API 密钥，仅需为实际使用付费，同时强调现代简洁的界面和专注的工作流，而非复杂的功能套件。",
+      "target_users": [
+        "对 Semrush 或 Ahrefs 价格敏感的个人开发者或小型团队，希望以低成本获得核心 SEO 功能。",
+        "需要灵活控制成本、按需使用 SEO 数据服务的用户，例如自由职业者或初创公司。",
+        "偏好简洁界面和专注工作流，而非功能臃肿的复杂套件的 SEO 从业者。"
+      ],
+      "core_capabilities": [
+        "提供关键词研究、反向链接分析和网站审计等核心 SEO 功能，帮助用户优化网站表现。",
+        "集成 MCP（模型上下文协议）和 AI 技能，可能支持与 AI 工具链的协同，提升自动化分析能力。",
+        "无订阅模式，用户自带 API 密钥，按实际用量付费，降低长期成本并增强控制力。"
+      ],
+      "technical_analysis": [
+        "项目使用 TypeScript 开发，可能提供类型安全和现代 JavaScript 生态的兼容性。",
+        "从描述看，它可能以本地或云端方式运行，但具体部署形态（如自托管、Docker 或 SaaS）未在输入中明确，需进一步核实。",
+        "集成形态可能包括 MCP 服务器或 AI 技能，但具体接口和扩展方式未提供，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "项目在短时间内获得较高关注（Stars 和 Forks 数量可观），且近期有活跃的发布和更新，表明社区兴趣和开发持续性。",
+        "作为开源替代品，它可能吸引对成本敏感或希望掌控数据隐私的用户，填补市场空白。",
+        "MCP 和 AI 技能的集成可能使其在 AI 驱动的 SEO 工作流中具有前瞻性，值得开发者关注。"
+      ],
+      "limitations": [
+        "项目仍处于早期阶段（最新版本 v0.1.6），可能缺少成熟的功能和稳定性保障。",
+        "依赖 DataForSEO API，用户需自行获取密钥并承担相应费用，可能增加使用门槛。",
+        "开源问题数量（121）可能表明存在未解决的缺陷或功能请求，需评估项目维护质量。",
+        "许可证为 MIT，但具体依赖项或第三方服务的合规性需进一步核实。"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对特定 SEO 场景的插件或扩展，如与 CMS 平台（WordPress、Ghost）的集成。",
+        "机会假设：可构建基于 MCP 的 AI 代理工具，实现自动化 SEO 报告生成或优化建议。",
+        "机会假设：可提供 Docker 镜像或一键部署脚本，简化自托管流程，吸引更多技术用户。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 2 月，至 2026 年 8 月已发布 v0.1.6，更新频繁，表明处于快速迭代阶段。Stars 和 Forks 数量较高，但不应直接等同于质量；开放问题较多，可能反映社区活跃但项目尚未稳定。整体成熟度较低，适合早期采用者，但需谨慎评估生产环境使用风险。"
+    }
+  },
+  "handsomestWei/patent-disclosure-skill": {
+    "full_name": "handsomestWei/patent-disclosure-skill",
+    "html_url": "https://github.com/handsomestWei/patent-disclosure-skill",
+    "description": "中国专利.skill：专利点挖掘与交底书（发明/实用/外观）编写，通俗解读专利，嗅探政策动向，辅助审查答复。",
+    "stars": 6267,
+    "forks": 733,
+    "open_issues": 8,
+    "watchers": 18,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "chinese",
+      "disclosure",
+      "obsidian",
+      "patent",
+      "skill"
+    ],
+    "created_at": "2026-04-07T15:44:15Z",
+    "updated_at": "2026-09-01T01:59:39Z",
+    "pushed_at": "2026-08-31T10:12:00Z",
+    "archived": false,
+    "fork": false,
+    "score": 69.85,
+    "score_reasons": [
+      "6,267 stars over 146 days",
+      "estimated 42.8 stars/day since creation",
+      "last push 0.7 days ago",
+      "detectable MIT license",
+      "topics: chinese, disclosure, obsidian, patent, skill"
+    ],
+    "homepage": "https://skillhub.cn/skills/patent-disclosure-skill",
+    "default_branch": "main",
+    "readme_url": "https://github.com/handsomestWei/patent-disclosure-skill/blob/main/README.md",
+    "readme_summary": "有设计文档和代码，但**专利点还没梳**？交底书要**框图 + 可改 Word**？",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {
+      "positioning": "这是一个面向中国专利撰写场景的智能辅助工具，旨在帮助用户从技术方案中挖掘专利点，并自动生成符合要求的交底书（包括发明、实用新型和外观设计），同时提供专利通俗解读、政策动向嗅探和审查答复辅助。与普通文档模板工具相比，它深度结合了专利业务逻辑，并支持在 Obsidian 中集成使用，强调框图生成和可编辑 Word 输出。",
+      "target_users": [
+        "企业研发人员或专利工程师，需要快速将技术成果转化为专利交底书。",
+        "知识产权代理机构的代理人，用于提高撰写效率和审查答复质量。",
+        "独立发明人或科研人员，希望了解专利政策并撰写专利申请文件。"
+      ],
+      "core_capabilities": [
+        "专利点挖掘：从技术描述中识别可专利的创新点，降低专利挖掘门槛。",
+        "交底书自动生成：支持发明、实用、外观三种类型，输出包含框图的文档，并可导出为可编辑的 Word 文件。",
+        "辅助审查答复：提供审查意见的解读和答复建议，提升授权概率。",
+        "政策动向嗅探：跟踪专利相关政策变化，帮助用户把握申请时机。"
+      ],
+      "technical_analysis": [
+        "项目使用 Python 语言开发，可能涉及自然语言处理或规则引擎来实现专利点识别。",
+        "从描述看，它可能以 Obsidian 插件或技能（skill）的形式集成，属于本地优先的工具，数据可能存储在本地。",
+        "未提供部署或运行方式的详细信息，需进一步核实是否支持云端服务或仅限本地使用。"
+      ],
+      "why_it_matters": [
+        "该项目在短时间内获得较高关注（Stars 6267），且持续更新（最近推送在 2026-08-31），表明社区活跃度高。",
+        "它填补了专利撰写自动化领域的空白，尤其针对中国专利体系，具有实用价值。",
+        "开源 MIT 许可证允许自由使用和二次开发，适合集成到企业知识产权管理流程中。"
+      ],
+      "limitations": [
+        "项目尚未发布正式版本（latest_release 为 null），可能处于早期阶段，功能稳定性需验证。",
+        "依赖 Obsidian 环境，可能限制非 Obsidian 用户的使用。",
+        "专利撰写涉及法律风险，自动生成的内容可能需要专业审核，不能完全替代人工判断。",
+        "未提供安全或隐私相关说明，处理敏感技术信息时需谨慎。"
+      ],
+      "opportunities": [
+        "机会假设：开发一个 Web 服务或 API 版本，使非 Obsidian 用户也能通过浏览器使用。",
+        "机会假设：增加多语言支持，以覆盖其他国家的专利体系。",
+        "机会假设：构建一个插件市场或模板库，让用户共享和复用交底书模板。",
+        "机会假设：集成专利数据库检索，自动进行现有技术对比，增强专利点挖掘的准确性。"
+      ],
+      "maturity": "项目创建于 2026 年 4 月，至今约 5 个月，Stars 达 6267，Forks 733，Issues 仅 8 个，说明社区关注度高但问题反馈较少。无正式 Release，且最近推送在 8 月底，表明项目仍在积极开发中。从现有信息看，项目处于早期但活跃阶段，成熟度中等偏低，需关注后续版本发布和稳定性。"
+    }
+  },
+  "p-e-w/heretic": {
+    "full_name": "p-e-w/heretic",
+    "html_url": "https://github.com/p-e-w/heretic",
+    "description": "Fully automatic censorship removal for language models",
+    "stars": 29679,
+    "forks": 3253,
+    "open_issues": 81,
+    "watchers": 141,
+    "language": "Python",
+    "license": "AGPL-3.0",
+    "topics": [
+      "abliteration",
+      "llm",
+      "transformer"
+    ],
+    "created_at": "2025-09-21T05:46:16Z",
+    "updated_at": "2026-09-01T01:59:11Z",
+    "pushed_at": "2026-08-17T16:57:44Z",
+    "archived": false,
+    "fork": false,
+    "score": 69.44,
+    "score_reasons": [
+      "29,679 stars over 345 days",
+      "estimated 86.1 stars/day since creation",
+      "last push 14.4 days ago",
+      "detectable AGPL-3.0 license",
+      "topics: abliteration, llm, transformer"
+    ],
+    "homepage": "https://heretic-project.org",
+    "default_branch": "master",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "firecrawl/pdf-inspector": {
+    "full_name": "firecrawl/pdf-inspector",
+    "html_url": "https://github.com/firecrawl/pdf-inspector",
+    "description": "Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions.",
+    "stars": 17393,
+    "forks": 1200,
+    "open_issues": 195,
+    "watchers": 53,
+    "language": "Rust",
+    "license": "MIT",
+    "topics": [
+      "markdown",
+      "nodejs",
+      "ocr-routing",
+      "pdf",
+      "pdf-classification",
+      "pdf-extraction",
+      "pdf-parser",
+      "python",
+      "rust",
+      "text-extraction"
+    ],
+    "created_at": "2026-02-06T19:44:47Z",
+    "updated_at": "2026-09-01T01:55:46Z",
+    "pushed_at": "2026-08-21T23:46:04Z",
+    "archived": false,
+    "fork": false,
+    "score": 68.06,
+    "score_reasons": [
+      "17,393 stars over 206 days",
+      "estimated 84.3 stars/day since creation",
+      "last push 10.1 days ago",
+      "detectable MIT license",
+      "topics: markdown, nodejs, ocr-routing, pdf, pdf-classification"
+    ],
+    "homepage": "https://firecrawl.github.io/pdf-inspector/",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "checkstyle/checkstyle": {
+    "full_name": "checkstyle/checkstyle",
+    "html_url": "https://github.com/checkstyle/checkstyle",
+    "description": "Checkstyle is a development tool to help programmers write Java code that adheres to a coding standard. By default it supports the Google Java Style Guide and Sun Code Conventions, but is highly configurable. It can be invoked with an ANT task and a command line program.",
+    "stars": 9423,
+    "forks": 4207,
+    "open_issues": 764,
+    "watchers": 221,
+    "language": "Java",
+    "license": "LGPL-2.1",
+    "topics": [
+      "code-quality",
+      "command-line-tool",
+      "hacktoberfest",
+      "java",
+      "static-analysis",
+      "static-code-analysis"
+    ],
+    "created_at": "2013-08-31T02:05:05Z",
+    "updated_at": "2026-09-01T01:58:56Z",
+    "pushed_at": "2026-09-01T00:02:27Z",
+    "archived": false,
+    "fork": false,
+    "score": 65.37,
+    "score_reasons": [
+      "9,423 stars over 4749 days",
+      "estimated 2.0 stars/day since creation",
+      "last push 0.1 days ago",
+      "detectable LGPL-2.1 license",
+      "topics: code-quality, command-line-tool, hacktoberfest, java, static-analysis"
+    ],
+    "homepage": "https://checkstyle.org",
+    "default_branch": "master",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "kaifcodec/user-scanner": {
+    "full_name": "kaifcodec/user-scanner",
+    "html_url": "https://github.com/kaifcodec/user-scanner",
+    "description": "🕵️‍♂️ (2-in-1) Email & Username OSINT suite for deep data extraction just from a single Email/Username. Analyzes 465+ actively maintained scan vectors (175+ email / 290+ username) for security research, investigations, and digital footprinting.",
+    "stars": 4276,
+    "forks": 449,
+    "open_issues": 11,
+    "watchers": 35,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "cybersecurity",
+      "cybersecurity-tools",
+      "email-osint",
+      "ethical-hacking",
+      "ethical-hacking-tools",
+      "identification",
+      "infosec",
+      "osint",
+      "osint-email",
+      "osint-tool",
+      "osint-tools",
+      "osint-username",
+      "pentesting",
+      "python",
+      "redteam-tools",
+      "redteaming",
+      "threat-intelligence"
+    ],
+    "created_at": "2025-10-19T04:21:48Z",
+    "updated_at": "2026-09-01T01:59:53Z",
+    "pushed_at": "2026-08-31T17:05:47Z",
+    "archived": false,
+    "fork": false,
+    "score": 62.87,
+    "score_reasons": [
+      "4,276 stars over 317 days",
+      "estimated 13.5 stars/day since creation",
+      "last push 0.4 days ago",
+      "detectable MIT license",
+      "topics: cybersecurity, cybersecurity-tools, email-osint, ethical-hacking, ethical-hacking-tools"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "majd/ipatool": {
+    "full_name": "majd/ipatool",
+    "html_url": "https://github.com/majd/ipatool",
+    "description": "Command-line tool that allows searching and downloading app packages (known as ipa files) for iOS, iPadOS, tvOS, and visionOS from the App Store.",
+    "stars": 10562,
+    "forks": 897,
+    "open_issues": 24,
+    "watchers": 74,
+    "language": "Go",
+    "license": "MIT",
+    "topics": [
+      "apple",
+      "appstore",
+      "cli",
+      "command-line",
+      "command-line-tool",
+      "go",
+      "golang",
+      "golang-library",
+      "ios",
+      "ipa",
+      "itunes",
+      "macos",
+      "research",
+      "reverse-engineering",
+      "security",
+      "swift",
+      "tool"
+    ],
+    "created_at": "2021-05-22T08:27:21Z",
+    "updated_at": "2026-09-01T01:55:20Z",
+    "pushed_at": "2026-08-31T19:43:41Z",
+    "archived": false,
+    "fork": false,
+    "score": 59.6,
+    "score_reasons": [
+      "10,562 stars over 1928 days",
+      "estimated 5.5 stars/day since creation",
+      "last push 0.3 days ago",
+      "detectable MIT license",
+      "topics: apple, appstore, cli, command-line, command-line-tool"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "pollen-robotics/microduck_rl": {
+    "full_name": "pollen-robotics/microduck_rl",
+    "html_url": "https://github.com/pollen-robotics/microduck_rl",
+    "description": "RL training environments for Microduck (mjlab)",
+    "stars": 1159,
+    "forks": 196,
+    "open_issues": 15,
+    "watchers": 4,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [],
+    "created_at": "2025-12-06T13:00:59Z",
+    "updated_at": "2026-09-01T01:59:09Z",
+    "pushed_at": "2026-08-31T20:05:49Z",
+    "archived": false,
+    "fork": false,
+    "score": 59.08,
+    "score_reasons": [
+      "1,159 stars over 269 days",
+      "estimated 4.3 stars/day since creation",
+      "last push 0.2 days ago",
+      "detectable Apache-2.0 license"
+    ],
+    "homepage": "https://pollen-robotics.com/microduck",
+    "default_branch": "develop",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  }
+}
