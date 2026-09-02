@@ -1,0 +1,951 @@
+{
+  "affaan-m/ECC": {
+    "full_name": "affaan-m/ECC",
+    "html_url": "https://github.com/affaan-m/ECC",
+    "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "stars": 245785,
+    "forks": 37089,
+    "open_issues": 128,
+    "watchers": 1265,
+    "language": "JavaScript",
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "anthropic",
+      "claude",
+      "claude-code",
+      "developer-tools",
+      "llm",
+      "mcp",
+      "productivity"
+    ],
+    "created_at": "2026-01-18T00:51:51Z",
+    "updated_at": "2026-09-02T01:59:52Z",
+    "pushed_at": "2026-08-31T22:18:39Z",
+    "archived": false,
+    "fork": false,
+    "score": 93.49,
+    "score_reasons": [
+      "245,785 stars over 227 days",
+      "estimated 1082.5 stars/day since creation",
+      "last push 1.2 days ago",
+      "detectable MIT license",
+      "topics: ai-agents, anthropic, claude, claude-code, developer-tools"
+    ],
+    "homepage": "https://ecc.tools",
+    "default_branch": "main",
+    "readme_url": "https://github.com/affaan-m/ECC/blob/main/README.md",
+    "readme_summary": "Run the canonical guided setup from your terminal:",
+    "readme_features": [],
+    "quick_start": "npx ecc-universal setup",
+    "latest_release_name": "ECC 2.2.0: Guided Setup, Antigravity 2.0, and the Nasiko CLI Bridge",
+    "latest_release_url": "https://github.com/affaan-m/ECC/releases/tag/v2.2.0",
+    "latest_release_at": "2026-08-28T19:55:05Z",
+    "analysis": {
+      "positioning": "ECC 是一个面向 AI 代理（如 Claude Code、Codex、Opencode、Cursor）的代理性能优化系统，通过技能、直觉、记忆、安全与研究优先的开发方式，提升代理在复杂任务中的表现。与普通工具相比，它强调系统化的性能调优和跨平台兼容性。",
+      "target_users": [
+        "使用 Claude Code、Codex、Opencode、Cursor 等 AI 编程工具的开发者",
+        "需要优化 AI 代理在复杂开发任务中性能的团队",
+        "对 AI 代理安全性和研究型开发流程感兴趣的技术人员"
+      ],
+      "core_capabilities": [
+        "提供技能、直觉、记忆等模块，增强代理的上下文理解和决策能力",
+        "内置安全机制，降低代理误操作风险",
+        "支持多种代理平台，提供统一的优化方案"
+      ],
+      "technical_analysis": [
+        "项目使用 JavaScript 编写，可能便于与 Node.js 生态集成",
+        "通过 npx 命令提供快速启动，表明支持命令行安装和运行",
+        "集成形态可能包括 CLI 工具和 MCP（模型上下文协议），但具体细节需进一步核实"
+      ],
+      "why_it_matters": [
+        "从现有信息看，项目拥有极高的 Stars 和 Forks，表明社区关注度很高",
+        "频繁的更新和最新版本发布显示项目活跃，可能持续改进",
+        "针对主流 AI 代理工具提供优化，可能填补性能调优领域的空白"
+      ],
+      "limitations": [
+        "项目创建时间较短（2026年1月），成熟度可能有限",
+        "开源问题数量较多，可能影响稳定性",
+        "许可证为 MIT，但依赖和兼容性需进一步核实",
+        "安全机制的具体实现和效果未在输入中提供，需核实"
+      ],
+      "opportunities": [
+        "机会假设：开发针对特定代理（如 Claude Code）的深度优化插件",
+        "机会假设：构建可视化配置界面，简化 ECC 的设置和监控",
+        "机会假设：提供性能基准测试工具，帮助用户量化优化效果"
+      ],
+      "maturity": "从现有信息看，项目创建于2026年1月，但已发布多个版本，最新版本为2.2.0，且更新频繁（最近推送在2026年8月）。Stars 和 Forks 数量极高，但不应直接等同于质量，需结合代码质量和社区反馈评估。总体处于快速迭代阶段，可能尚未完全稳定。"
+    }
+  },
+  "Gitlawb/openclaude": {
+    "full_name": "Gitlawb/openclaude",
+    "html_url": "https://github.com/Gitlawb/openclaude",
+    "description": "runs anywhere. uses anything",
+    "stars": 31349,
+    "forks": 8951,
+    "open_issues": 71,
+    "watchers": 221,
+    "language": "TypeScript",
+    "license": "NOASSERTION",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-tools",
+      "cli",
+      "coding"
+    ],
+    "created_at": "2026-04-01T03:15:49Z",
+    "updated_at": "2026-09-02T01:59:37Z",
+    "pushed_at": "2026-09-02T00:15:38Z",
+    "archived": false,
+    "fork": false,
+    "score": 84.41,
+    "score_reasons": [
+      "31,349 stars over 154 days",
+      "estimated 203.6 stars/day since creation",
+      "last push 0.1 days ago",
+      "topics: ai, ai-agent, ai-tools, cli, coding"
+    ],
+    "homepage": "https://openclaude.gitlawb.com",
+    "default_branch": "main",
+    "readme_url": "https://github.com/Gitlawb/openclaude/blob/main/README.md",
+    "readme_summary": "OpenClaude is an open-source coding-agent CLI for cloud and local model providers.",
+    "readme_features": [
+      "One CLI across cloud APIs and local model backends — no per-provider tooling",
+      "Guided provider setup and saved profiles with /provider",
+      "Coding-agent workflows in one place: bash, file tools, grep, glob, agents, tasks, MCP, and web tools",
+      "A bundled VS Code extension for launch integration and theme support",
+      "A pixel-art hero companion who fires an arrow every time you press Enter (really — see Meet your buddy)"
+    ],
+    "quick_start": "",
+    "latest_release_name": "v0.30.0",
+    "latest_release_url": "https://github.com/Gitlawb/openclaude/releases/tag/v0.30.0",
+    "latest_release_at": "2026-08-31T02:25:05Z",
+    "analysis": {
+      "positioning": "OpenClaude 是一个开源的编码代理命令行工具，旨在统一云端和本地模型提供商的访问，解决开发者需要为不同提供商安装不同工具的问题。其明确特点是提供单一 CLI 界面，支持多种模型后端，并集成了编码代理工作流、VS Code 扩展以及一个像素艺术伙伴的趣味功能。",
+      "target_users": [
+        "使用多种 AI 模型提供商的开发者，希望统一管理云端和本地模型。",
+        "需要在命令行中进行编码辅助、文件操作和任务自动化的开发者。",
+        "喜欢定制开发环境并尝试新工具的技术爱好者。"
+      ],
+      "core_capabilities": [
+        "统一 CLI 访问云端和本地模型，简化多提供商切换流程。",
+        "内置编码代理工作流，包括 bash、文件工具、grep、glob、agents、tasks、MCP 和 web 工具，提升开发效率。",
+        "提供引导式提供商设置和保存配置文件，方便快速配置。",
+        "捆绑 VS Code 扩展，支持启动集成和主题，增强开发体验。"
+      ],
+      "technical_analysis": [
+        "项目使用 TypeScript 开发，表明代码具有类型安全性，适合大型 CLI 项目。",
+        "支持云端 API 和本地模型后端，体现混合架构设计，可能涉及网络请求和本地进程管理。",
+        "集成 VS Code 扩展，说明其不仅限于 CLI，还提供编辑器集成，可能通过扩展 API 通信。",
+        "部署和运行方式未在输入中详细说明，需进一步核实是否支持多种安装方式或平台。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目拥有较高的 Stars 和 Forks，表明社区关注度较高，可能具有活跃的贡献者基础。",
+        "其统一多提供商的能力切中开发者痛点，可能减少工具碎片化，提升工作流效率。",
+        "频繁的版本更新（最新 v0.30.0）显示项目处于积极迭代状态，可能持续引入新功能。"
+      ],
+      "limitations": [
+        "许可证为 NOASSERTION，需进一步核实其开源许可条款，可能影响商业使用。",
+        "项目创建时间较新（2026年4月），成熟度可能有限，需关注稳定性。",
+        "输入未提供快速开始文档，需核实安装和配置的易用性。",
+        "平台支持范围未明确，需确认是否支持主流操作系统。"
+      ],
+      "opportunities": [
+        "机会假设：可开发插件或扩展，增强对更多模型提供商的支持，扩大生态。",
+        "机会假设：可构建自动化测试工具，验证不同模型后端的兼容性，提升项目可靠性。",
+        "机会假设：可开发可视化配置界面，降低非技术用户的使用门槛。",
+        "机会假设：可提供容器化部署方案，简化本地模型环境的搭建。"
+      ],
+      "maturity": "从现有信息看，项目创建于2026年4月，至2026年9月已发布 v0.30.0，更新频繁，表明开发活跃。Stars 和 Forks 数量较高，但 Stars 不等于质量，需结合 Issues 数量（71）和实际使用反馈评估。整体处于快速迭代阶段，但成熟度可能仍需时间验证。"
+    }
+  },
+  "THU-MAIC/OpenMAIC": {
+    "full_name": "THU-MAIC/OpenMAIC",
+    "html_url": "https://github.com/THU-MAIC/OpenMAIC",
+    "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
+    "stars": 29569,
+    "forks": 4979,
+    "open_issues": 236,
+    "watchers": 149,
+    "language": "TypeScript",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2026-03-11T10:13:16Z",
+    "updated_at": "2026-09-02T01:59:53Z",
+    "pushed_at": "2026-09-02T01:50:09Z",
+    "archived": false,
+    "fork": false,
+    "score": 83.65,
+    "score_reasons": [
+      "29,569 stars over 175 days",
+      "estimated 169.3 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": null,
+    "default_branch": "main",
+    "readme_url": "https://github.com/THU-MAIC/OpenMAIC/blob/main/README.md",
+    "readme_summary": "Get an immersive, multi-agent learning experience in just one click",
+    "readme_features": [
+      "One-click lesson generation — Describe a topic or attach your materials; the AI builds a full lesson in minutes",
+      "Multi-agent classroom — AI teachers and peers lecture, discuss, and interact with you in real time",
+      "Rich scene types — Slides, quizzes, interactive HTML simulations, and project-based learning (PBL)",
+      "Whiteboard & TTS — Agents draw diagrams, write formulas, and explain out loud",
+      "Export anywhere — Download editable .pptx slides or interactive .html pages"
+    ],
+    "quick_start": "",
+    "latest_release_name": "OpenMAIC v1.0.0 — Build courses with an agent",
+    "latest_release_url": "https://github.com/THU-MAIC/OpenMAIC/releases/tag/v1.0.0",
+    "latest_release_at": "2026-08-27T13:13:53Z",
+    "analysis": {
+      "positioning": "OpenMAIC 是一个开源的多智能体交互式课堂平台，旨在通过一键生成沉浸式多智能体学习体验。它解决了传统在线学习缺乏互动和个性化的问题，与普通同类工具相比，其明确特点是提供多智能体课堂，AI 教师和同伴实时讲解、讨论和互动，并支持丰富的场景类型和导出功能。",
+      "target_users": [
+        "教育工作者，用于快速创建互动课程和课件",
+        "学习者，寻求沉浸式和个性化的学习体验",
+        "课程开发者，用于生成包含测验、模拟和项目式学习的多样化教学内容"
+      ],
+      "core_capabilities": [
+        "一键生成课程：用户描述主题或上传材料，AI 在几分钟内构建完整课程，节省备课时间",
+        "多智能体互动：AI 教师和同伴实时讲解、讨论和互动，提升学习参与度和理解深度",
+        "丰富场景支持：支持幻灯片、测验、交互式 HTML 模拟和项目式学习，满足不同教学需求",
+        "白板与语音合成：智能体可绘制图表、书写公式并语音讲解，增强教学表现力",
+        "导出功能：可下载可编辑的 .pptx 幻灯片或交互式 .html 页面，便于复用和分享"
+      ],
+      "technical_analysis": [
+        "项目使用 TypeScript 开发，可能具备类型安全和现代前端特性",
+        "从描述看，课程生成和智能体交互可能依赖云端 AI 服务，但具体本地/云端方式未明确，需进一步核实",
+        "集成形态可能为 Web 应用，支持导出 PPTX 和 HTML，但部署方式（如 Docker、云服务）未提供，需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目活跃度较高，从创建到最新发布仅数月，且持续更新，可能处于快速迭代阶段",
+        "Stars 和 Forks 数量可观，可能已获得社区关注，但需注意 Stars 不等于质量",
+        "多智能体教育应用是前沿方向，该项目可能为开发者提供创新实验平台"
+      ],
+      "limitations": [
+        "项目创建时间较短，可能处于早期阶段，稳定性和功能完整性需进一步验证",
+        "依赖 AI 服务，可能涉及外部 API 调用，存在成本和网络依赖风险",
+        "许可证为 MIT，但需核实第三方依赖的许可证兼容性",
+        "平台支持范围（如浏览器、操作系统）未明确，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：可开发课程模板库，丰富场景类型，提升用户体验",
+        "机会假设：可集成学习管理系统（LMS）或视频会议工具，扩展应用场景",
+        "机会假设：可提供本地化部署方案，满足数据隐私要求",
+        "机会假设：可开发插件系统，允许第三方扩展智能体行为或场景"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 3 月，最新发布 v1.0.0 于 2026 年 8 月，更新频繁，但 Stars 和 Forks 数量较高，可能已获得一定关注。然而，项目仍处于早期阶段，开放问题较多，成熟度可能有限，需进一步观察其稳定性和社区支持。"
+    }
+  },
+  "browser-use/video-use": {
+    "full_name": "browser-use/video-use",
+    "html_url": "https://github.com/browser-use/video-use",
+    "description": "Edit videos with coding agents",
+    "stars": 22987,
+    "forks": 2816,
+    "open_issues": 80,
+    "watchers": 143,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2026-04-12T01:34:42Z",
+    "updated_at": "2026-09-02T01:59:55Z",
+    "pushed_at": "2026-08-30T09:45:51Z",
+    "archived": false,
+    "fork": false,
+    "score": 78.66,
+    "score_reasons": [
+      "22,987 stars over 143 days",
+      "estimated 160.7 stars/day since creation",
+      "last push 2.7 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": "https://github.com/browser-use/video-use/blob/main/README.md",
+    "readme_summary": "Introducing **video-use** — edit videos with Claude Code. 100% open source.",
+    "readme_features": [
+      "Cuts out filler words (umm, uh, false starts) and dead space between takes",
+      "Auto color grades every segment (warm cinematic, neutral punch, or any custom ffmpeg chain)",
+      "30ms audio fades at every cut so you never hear a pop",
+      "Burns subtitles in your style — 2-word UPPERCASE chunks by default, fully customizable",
+      "Generates animation overlays via HyperFrames, Remotion, Manim, or PIL — spawned in parallel sub-agents, one per animation"
+    ],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {
+      "positioning": "video-use 是一个基于 Claude Code 的开源视频编辑工具，旨在通过编码代理实现视频编辑自动化。它解决了传统视频编辑中繁琐、重复的手动操作问题，如去除填充词、调色、添加字幕和动画等。与普通视频编辑软件相比，其特点在于完全由代码驱动，支持自定义 ffmpeg 链和并行子代理生成动画，实现了高度自动化和可编程性。",
+      "target_users": [
+        "视频创作者和内容编辑者，希望自动化处理视频剪辑中的重复性任务。",
+        "开发者和技术爱好者，熟悉 Claude Code 和编程，愿意通过代码控制视频编辑流程。",
+        "需要批量处理视频或集成到自动化工作流中的团队或个人。"
+      ],
+      "core_capabilities": [
+        "自动去除填充词和死区，提升视频节奏和流畅度。",
+        "自动调色，支持多种风格或自定义 ffmpeg 链，增强视觉一致性。",
+        "自动添加音频淡入淡出，避免剪辑爆音。",
+        "自定义字幕样式，支持大写分块，提升可读性。",
+        "通过并行子代理生成动画覆盖层，支持多种工具，丰富视频表现力。"
+      ],
+      "technical_analysis": [
+        "项目使用 Python 语言开发，基于 Claude Code 作为编码代理，可能依赖 Claude API 进行智能决策。",
+        "从功能看，它可能本地运行，调用 ffmpeg 处理视频，并支持外部工具如 HyperFrames、Remotion、Manim 或 PIL 生成动画。",
+        "集成形态为命令行工具或库，具体部署方式未在输入中提供，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "该项目将 AI 编码代理引入视频编辑领域，展示了自动化复杂多媒体任务的潜力。",
+        "拥有 22987 星和 2816 fork，表明社区关注度高，活跃度强，可能吸引更多开发者贡献。",
+        "MIT 许可证允许自由使用和修改，降低了采用门槛，适合开发者学习和二次开发。"
+      ],
+      "limitations": [
+        "最新版本未发布，可能处于早期开发阶段，功能稳定性需验证。",
+        "依赖 Claude Code，可能需要付费 API 或特定环境，增加使用成本。",
+        "视频编辑涉及大量计算资源，性能优化和硬件要求需进一步核实。",
+        "未提供快速开始文档，上手难度可能较高，需查阅官方文档。"
+      ],
+      "opportunities": [
+        "机会假设：开发图形化界面或 Web 界面，降低非技术用户的使用门槛。",
+        "机会假设：集成更多视频处理工具，如语音识别、场景检测，扩展自动化能力。",
+        "机会假设：提供云服务或 Docker 镜像，简化部署和扩展。",
+        "机会假设：创建插件系统，允许用户自定义编辑流程和动画模板。"
+      ],
+      "maturity": "项目创建于 2026 年 4 月，最近更新于 2026 年 8 月，活跃度较高。Stars 和 forks 数量可观，但最新版本未发布，且存在 80 个开放问题，表明项目仍处于快速迭代阶段，成熟度中等，需关注稳定性。"
+    }
+  },
+  "unclecode/crawl4ai": {
+    "full_name": "unclecode/crawl4ai",
+    "html_url": "https://github.com/unclecode/crawl4ai",
+    "description": "🚀🤖 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN",
+    "stars": 80875,
+    "forks": 8358,
+    "open_issues": 170,
+    "watchers": 413,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [],
+    "created_at": "2024-05-09T09:48:50Z",
+    "updated_at": "2026-09-02T01:57:31Z",
+    "pushed_at": "2026-09-01T07:58:26Z",
+    "archived": false,
+    "fork": false,
+    "score": 78.57,
+    "score_reasons": [
+      "80,875 stars over 846 days",
+      "estimated 95.6 stars/day since creation",
+      "last push 0.8 days ago",
+      "detectable Apache-2.0 license"
+    ],
+    "homepage": "https://crawl4ai.com",
+    "default_branch": "main",
+    "readme_url": "https://github.com/unclecode/crawl4ai/blob/main/README.md",
+    "readme_summary": "Reliable, large-scale web extraction, now built to be _**drastically more cost-effective**_ than any of the existing solutions.",
+    "readme_features": [
+      "Test new features in real-world scenarios",
+      "Gather feedback before final releases",
+      "Ensure stability for production users",
+      "Allow early adopters to try new features"
+    ],
+    "quick_start": "",
+    "latest_release_name": "Release v0.9.3",
+    "latest_release_url": "https://github.com/unclecode/crawl4ai/releases/tag/v0.9.3",
+    "latest_release_at": "2026-08-31T11:34:14Z",
+    "analysis": {
+      "positioning": "Crawl4AI 是一个面向大语言模型（LLM）的开源网络爬虫与抓取工具，旨在提供可靠、大规模的网络内容提取，并宣称比现有解决方案更具成本效益。与普通爬虫相比，它可能更注重为 LLM 应用提供结构化、易于消费的数据，并强调在真实场景中测试新功能、收集反馈以确保生产稳定性。",
+      "target_users": [
+        "需要为 LLM 应用获取网络数据的开发者",
+        "构建大规模数据管道的数据工程师",
+        "需要高效、低成本网络抓取解决方案的研究人员"
+      ],
+      "core_capabilities": [
+        "提供可靠的大规模网络内容提取，满足生产环境需求",
+        "强调成本效益，可能通过优化抓取策略降低资源消耗",
+        "支持在真实场景中测试新功能，确保稳定性和用户反馈"
+      ],
+      "technical_analysis": [
+        "项目使用 Python 编写，适合数据科学和 AI 生态",
+        "从描述看，可能提供本地运行或集成到现有 Python 工作流的方式，但具体部署形态未提供",
+        "集成形态可能包括 API 或库调用，但本次输入未提供详细信息，需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目拥有 80k+ Stars 和 8k+ Forks，表明社区关注度高，活跃度强",
+        "持续发布新版本（如 v0.9.3），且最近有更新，显示项目维护活跃",
+        "面向 LLM 的定位契合当前 AI 应用对网络数据的需求，可能成为重要基础设施"
+      ],
+      "limitations": [
+        "项目创建于 2024 年，相对较新，成熟度可能有限",
+        "存在 170 个开放问题，需关注问题解决效率",
+        "许可证为 Apache-2.0，但采用成本（如资源消耗）未提供，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对特定 LLM 应用的数据预处理工具，如自动清洗和格式化",
+        "机会假设：可集成到主流 AI 框架（如 LangChain）作为数据源插件",
+        "机会假设：可提供云服务或托管版本，降低用户部署门槛"
+      ],
+      "maturity": "项目自 2024 年 5 月创建，至今已获得 80k+ Stars，表明社区接受度高。最新版本 v0.9.3 于 2026 年 8 月发布，且仓库最近有推送，显示持续维护。但开放问题较多，且项目历史较短，整体成熟度可能处于快速迭代阶段，需关注稳定性。"
+    }
+  },
+  "jingyaogong/minimind": {
+    "full_name": "jingyaogong/minimind",
+    "html_url": "https://github.com/jingyaogong/minimind",
+    "description": "🧠 Train a 64M-parameter LLM from scratch in just 2h!",
+    "stars": 57133,
+    "forks": 7429,
+    "open_issues": 59,
+    "watchers": 260,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [
+      "artificial-intelligence",
+      "large-language-model"
+    ],
+    "created_at": "2024-07-27T04:34:12Z",
+    "updated_at": "2026-09-02T01:58:17Z",
+    "pushed_at": "2026-08-31T10:08:14Z",
+    "archived": false,
+    "fork": false,
+    "score": 77.69,
+    "score_reasons": [
+      "57,133 stars over 767 days",
+      "estimated 74.5 stars/day since creation",
+      "last push 1.7 days ago",
+      "detectable Apache-2.0 license",
+      "topics: artificial-intelligence, large-language-model"
+    ],
+    "homepage": "https://jingyaogong.github.io/minimind",
+    "default_branch": "master",
+    "readme_url": "https://github.com/jingyaogong/minimind/blob/master/README.md",
+    "readme_summary": "大语言模型（Large Language Model, LLM）的出现，引发了全球范围内对 AI 的空前关注。无论是 ChatGPT、DeepSeek 还是 Qwen，都以惊艳的效果让人真切感受到这场技术浪潮的冲击力。然而，动辄数百亿参数的模型规模，使得它们对个人设备而言不仅难以训练，甚至连部署都显得遥不可及。打开大模型的“黑盒子”，真正去理解其内部运作机制，本应是一件令人心潮澎湃的事。遗憾的是，绝大多数探索最终都止步于使用 LoRA 等技术对现有大模型做少量微调，学习一些新指令或特定任务。这更像是在教牛顿如何使用 21 世纪的智能手机——虽然有趣，却偏离了理解物理本质的初衷。",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "MiniMind Docs",
+    "latest_release_url": "https://github.com/jingyaogong/minimind/releases/tag/v2",
+    "latest_release_at": "2025-10-21T14:37:05Z",
+    "analysis": {
+      "positioning": "MiniMind 是一个从零开始训练 64M 参数大语言模型的开源项目，旨在让个人开发者仅用 2 小时即可完成训练，从而打开大模型的黑盒子，深入理解其内部运作机制。与仅对现有大模型进行微调的工具不同，它强调从零构建，降低学习门槛。",
+      "target_users": [
+        "对 LLM 内部原理感兴趣的 AI 学习者和研究者",
+        "希望在个人设备上快速实验和训练小型语言模型的开发者",
+        "需要教学演示或快速原型验证的 AI 教育者"
+      ],
+      "core_capabilities": [
+        "支持从零训练 64M 参数的语言模型，训练时间仅需 2 小时，大幅降低硬件和时间成本",
+        "提供完整的训练流程，帮助用户理解模型内部机制，而非仅停留在微调层面",
+        "基于 Python 实现，易于扩展和集成到现有 AI 工作流"
+      ],
+      "technical_analysis": [
+        "项目使用 Python 语言开发，便于数据科学和机器学习社区使用",
+        "从现有信息看，训练过程可能支持本地运行，但具体硬件要求和云端支持未在输入中提供，需进一步核实",
+        "集成形态和部署方式未在输入中明确，需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目拥有 57k+ Stars 和 7.4k+ Forks，社区关注度高，活跃度强",
+        "从现有信息看，项目持续更新（最近推送时间为 2026 年），且有最新发布版本，表明维护活跃",
+        "其从零训练的理念填补了个人开发者深入理解 LLM 的空白，具有教育和技术探索价值"
+      ],
+      "limitations": [
+        "模型参数规模较小（64M），可能不适合复杂任务，需评估实际应用场景",
+        "训练时间和硬件要求未在输入中详细说明，需进一步核实",
+        "许可证为 Apache-2.0，但具体依赖和平台兼容性未提供，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：可开发基于 MiniMind 的交互式教学工具，帮助初学者可视化训练过程",
+        "机会假设：可集成到 CI/CD 流程中，用于自动化测试小型语言模型的训练和推理",
+        "机会假设：可扩展模型架构或提供预训练权重，以支持更多下游任务"
+      ],
+      "maturity": "项目创建于 2024 年，目前拥有 57k+ Stars 和 7.4k+ Forks，开放问题仅 59 个，且最近更新频繁（2026 年），并发布了最新版本，表明项目处于活跃维护阶段，社区接受度高，但 Stars 数量不能直接等同于质量，需结合代码和文档进一步评估。"
+    }
+  },
+  "K-Dense-AI/scientific-agent-skills": {
+    "full_name": "K-Dense-AI/scientific-agent-skills",
+    "html_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+    "stars": 41571,
+    "forks": 3828,
+    "open_issues": 28,
+    "watchers": 185,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-scientist",
+      "bioinformatics",
+      "chemoinformatics",
+      "claude",
+      "claude-skills",
+      "claudecode",
+      "clinical-research",
+      "computational-biology",
+      "data-analysis",
+      "drug-discovery",
+      "genomics",
+      "materials-science",
+      "metabolomics",
+      "proteomics",
+      "scientific-computing",
+      "scientific-visualization"
+    ],
+    "created_at": "2025-10-19T20:54:15Z",
+    "updated_at": "2026-09-02T01:57:26Z",
+    "pushed_at": "2026-08-31T17:14:03Z",
+    "archived": false,
+    "fork": false,
+    "score": 77.69,
+    "score_reasons": [
+      "41,571 stars over 317 days",
+      "estimated 131.1 stars/day since creation",
+      "last push 1.4 days ago",
+      "detectable MIT license",
+      "topics: agent-skills, ai-scientist, bioinformatics, chemoinformatics, claude"
+    ],
+    "homepage": "https://k-dense.ai",
+    "default_branch": "main",
+    "readme_url": "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/README.md",
+    "readme_summary": "These skills enable your AI agent to seamlessly work with specialized scientific libraries, databases, and tools across multiple scientific domains. While the agent can use any Python package or API on its own, these explicitly defined skills provide curated documentation and examples that make it significantly stronger and more reliable for the workflows below:",
+    "readme_features": [
+      "Reproduction, Not Generation, Is AI's Killer App for Science — Why re-running published analyses is the highest-value use of an agent: 78% of papers and 93% of individual analysis tasks reproduced across a 221-study benchmark, because a reproduction can be checked against known numbers while a generated claim cannot."
+    ],
+    "quick_start": "",
+    "latest_release_name": "v2.65.0",
+    "latest_release_url": "https://github.com/K-Dense-AI/scientific-agent-skills/releases/tag/v2.65.0",
+    "latest_release_at": "2026-08-29T22:55:14Z",
+    "analysis": {
+      "positioning": "这是一个将任意AI代理转化为AI科学家的技能库，提供165个经过验证的科学技能和100多个科学数据库，覆盖生物学、化学、医学和药物发现等领域。与普通工具相比，它强调复现而非生成，通过可验证的复现流程提升科学研究的可靠性。",
+      "target_users": [
+        "科学家和研究人员，需要AI辅助进行文献复现、数据分析等科研工作",
+        "开发者，希望将科学技能集成到Cursor、Claude Code等AI代理中",
+        "生物信息学、化学信息学、药物发现等领域的从业者"
+      ],
+      "core_capabilities": [
+        "提供经过验证的科学技能，使AI代理能更可靠地处理专业科学工作流",
+        "支持多种AI代理平台，包括Cursor、Claude Code、Codex等，兼容开放Agent技能标准",
+        "覆盖多个科学领域，包括基因组学、蛋白质组学、代谢组学、材料科学等"
+      ],
+      "technical_analysis": [
+        "项目主要使用Python语言，便于科学计算生态集成",
+        "以技能库形式提供，通过文档和示例增强AI代理能力，而非独立应用",
+        "本地或云端方式未在输入中明确，需进一步核实",
+        "集成形态为Agent技能，兼容多种代理平台，部署方式可能涉及安装技能包"
+      ],
+      "why_it_matters": [
+        "拥有41571颗星和3828个fork，显示社区高度关注和采用",
+        "频繁更新，最新版本v2.65.0于2026年8月发布，表明项目活跃维护",
+        "强调复现而非生成，可能解决AI在科学领域可信度问题，具有创新价值"
+      ],
+      "limitations": [
+        "成熟度方面，虽然版本号高，但创建于2025年10月，历史较短，需进一步验证稳定性",
+        "依赖外部科学数据库和API，可能受限于数据可用性和许可",
+        "平台兼容性虽广，但具体集成细节和性能未在输入中提供，需核实",
+        "采用成本可能涉及学习技能定义和适配现有工作流"
+      ],
+      "opportunities": [
+        "机会假设：开发针对特定科学领域的定制技能包，如临床研究或药物发现",
+        "机会假设：构建技能评估和基准测试工具，帮助用户选择最佳技能组合",
+        "机会假设：集成更多AI代理平台，或提供可视化配置界面降低使用门槛"
+      ],
+      "maturity": "项目创建于2025年10月，但已发布v2.65.0，更新频繁，显示快速迭代。Stars和Forks数量高，表明社区活跃，但创建时间短，长期稳定性需观察。Open Issues数量适中，可能反映维护良好。综合看，项目处于早期但高速发展阶段。"
+    }
+  },
+  "Imbad0202/academic-research-skills": {
+    "full_name": "Imbad0202/academic-research-skills",
+    "html_url": "https://github.com/Imbad0202/academic-research-skills",
+    "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+    "stars": 44937,
+    "forks": 3551,
+    "open_issues": 18,
+    "watchers": 127,
+    "language": "Python",
+    "license": "NOASSERTION",
+    "topics": [
+      "academic-pipeline",
+      "academic-writing",
+      "ai-research",
+      "claude",
+      "claude-code",
+      "literature-review",
+      "peer-review",
+      "prompt-engineering"
+    ],
+    "created_at": "2026-02-26T06:31:01Z",
+    "updated_at": "2026-09-02T01:59:35Z",
+    "pushed_at": "2026-09-01T17:57:41Z",
+    "archived": false,
+    "fork": false,
+    "score": 75.62,
+    "score_reasons": [
+      "44,937 stars over 188 days",
+      "estimated 239.3 stars/day since creation",
+      "last push 0.3 days ago",
+      "topics: academic-pipeline, academic-writing, ai-research, claude, claude-code"
+    ],
+    "homepage": "https://buymeacoffee.com/crucify020v",
+    "default_branch": "main",
+    "readme_url": "https://github.com/Imbad0202/academic-research-skills/blob/main/README.md",
+    "readme_summary": "A comprehensive suite of Claude Code skills for academic research, covering the full pipeline from research to publication.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v3.21.1 — Bounded workflow substrates, sealed bakeoffs, and transport hardening",
+    "latest_release_url": "https://github.com/Imbad0202/academic-research-skills/releases/tag/v3.21.1",
+    "latest_release_at": "2026-08-24T11:21:21Z",
+    "analysis": {
+      "positioning": "这是一套面向学术研究全流程的 Claude Code 技能包，覆盖从文献调研、写作、同行评审到修改定稿的完整管线，旨在将 AI 辅助研究标准化、流程化。与普通同类工具相比，其明确特点是聚焦学术出版场景，提供结构化的研究到发表工作流，而非通用聊天或写作辅助。",
+      "target_users": [
+        "学术研究人员、研究生和科研工作者，需要系统化完成文献综述、论文写作与投稿前准备。",
+        "使用 Claude Code 的开发者或研究者，希望将 AI 集成到学术研究流程中。"
+      ],
+      "core_capabilities": [
+        "提供从研究到发表的端到端技能，覆盖研究、写作、评审、修订和定稿各阶段，帮助用户规范研究流程。",
+        "通过结构化技能模块，可能提升学术写作质量和评审效率，减少重复性工作。"
+      ],
+      "technical_analysis": [
+        "项目语言为 Python，但核心是 Claude Code 技能集，可能以提示词或脚本形式存在，需进一步核实。",
+        "从描述看，技能集可能以本地或云端方式运行，依赖 Claude Code 环境，具体集成形态和部署方式未在输入中提供，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "项目拥有高 Stars 和 Forks，且持续更新（最新发布 v3.21.1），表明社区关注度和活跃度较高，可能反映了学术 AI 工具的需求。",
+        "从现有信息看，其系统化覆盖学术研究全流程，可能为开发者提供可复用的技能模板，值得关注其实现方式和最佳实践。"
+      ],
+      "limitations": [
+        "许可证为 NOASSERTION，需核实其开源许可和商用限制。",
+        "依赖 Claude Code 平台，可能限制非 Claude 用户使用；具体功能细节和文档未在输入中提供，需进一步核实。",
+        "项目创建时间较短（2026年2月），成熟度可能有限，需关注其稳定性和长期维护。"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对不同学科（如医学、工程）的定制化技能包，扩展其适用性。",
+        "机会假设：可集成到 CI/CD 流程中，实现论文自动审查和格式校验，提升研究效率。",
+        "机会假设：可开发可视化界面或插件，降低非技术用户的使用门槛。"
+      ],
+      "maturity": "从现有信息看，项目创建于2026年2月，最新发布在2026年8月，更新频繁，且 Stars 和 Forks 数量较高，表明社区采用度较高。但创建时间较短，需进一步观察其长期稳定性和维护持续性。"
+    }
+  },
+  "VoltAgent/awesome-design-md": {
+    "full_name": "VoltAgent/awesome-design-md",
+    "html_url": "https://github.com/VoltAgent/awesome-design-md",
+    "description": "A collection of DESIGN.md files analysis by popular brand design systems. Drop one into your project and let coding agents generate a matching UI.",
+    "stars": 112830,
+    "forks": 12775,
+    "open_issues": 320,
+    "watchers": 440,
+    "language": null,
+    "license": "MIT",
+    "topics": [
+      "awesome-list",
+      "design-md",
+      "design-system",
+      "design-tokens",
+      "figma",
+      "google-stitch",
+      "landing-page",
+      "vibe-coding",
+      "vibe-design",
+      "vibecoding"
+    ],
+    "created_at": "2026-03-31T16:37:01Z",
+    "updated_at": "2026-09-02T02:00:12Z",
+    "pushed_at": "2026-07-31T12:32:42Z",
+    "archived": false,
+    "fork": false,
+    "score": 75.27,
+    "score_reasons": [
+      "112,830 stars over 154 days",
+      "estimated 730.8 stars/day since creation",
+      "last push 32.6 days ago",
+      "detectable MIT license",
+      "topics: awesome-list, design-md, design-system, design-tokens, figma"
+    ],
+    "homepage": "https://getdesign.md/",
+    "default_branch": "main",
+    "readme_url": "https://github.com/VoltAgent/awesome-design-md/blob/main/README.md",
+    "readme_summary": "Curated collection of DESIGN.md analysis by developer focused websites.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {
+      "positioning": "这是一个精选的 DESIGN.md 文件集合，旨在帮助开发者将流行品牌的设计系统分析文件直接放入项目，让编码代理生成匹配的 UI。它解决了从设计到代码的鸿沟，与普通设计资源库相比，其特点在于提供可直接用于 AI 编码代理的结构化设计规范文件。",
+      "target_users": [
+        "使用 AI 编码代理（如 vibe coding）进行前端开发的开发者",
+        "希望快速生成符合特定品牌设计风格的 UI 的设计师或开发者",
+        "需要参考知名网站设计系统进行项目初始化的团队"
+      ],
+      "core_capabilities": [
+        "提供精选的 DESIGN.md 文件，涵盖多个流行品牌设计系统，便于直接集成到项目中",
+        "通过结构化设计规范，使编码代理能够生成匹配的 UI，提升开发效率",
+        "作为 awesome-list，持续收集和整理设计系统分析，形成知识库"
+      ],
+      "technical_analysis": [
+        "仓库未提供语言信息，可能为纯文档集合，不涉及代码实现",
+        "从描述看，文件以 DESIGN.md 形式存在，属于静态资源，可本地或云端使用",
+        "集成形态为文件复制，部署方式简单，无特定运行环境要求",
+        "本次输入未提供更多技术细节，需进一步核实"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目拥有极高的 Stars 和 Forks，表明社区关注度很高，可能成为设计系统与 AI 编码结合的重要资源",
+        "活跃的推送和大量主题标签（如 vibe-coding、design-tokens）显示其与当前开发趋势紧密相关",
+        "对于采用 AI 辅助开发的团队，它可能提供标准化设计输入，减少 UI 生成的不确定性"
+      ],
+      "limitations": [
+        "仓库没有发布正式版本，可能处于早期阶段，文件质量和覆盖范围需进一步评估",
+        "未提供许可证以外的使用限制信息，但 MIT 许可证相对宽松",
+        "依赖外部编码代理对 DESIGN.md 的理解能力，效果可能因代理而异",
+        "本次输入未提供文件内容示例，需核实其实际可用性"
+      ],
+      "opportunities": [
+        "机会假设：可以开发一个 CLI 工具，自动下载并注入 DESIGN.md 到项目中，简化集成流程",
+        "机会假设：可以构建一个在线平台，预览不同设计系统的效果，并生成定制化的 DESIGN.md",
+        "机会假设：可以编写测试用例，验证不同编码代理对 DESIGN.md 的响应质量，形成最佳实践指南"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 3 月，最近推送在 2026 年 7 月，更新活跃。Stars 和 Forks 数量极高，但无正式发布版本，且存在较多开放问题，可能处于快速迭代阶段。高关注度可能反映其概念吸引力，但实际成熟度需结合内容质量和社区反馈判断。"
+    }
+  },
+  "firecrawl/pdf-inspector": {
+    "full_name": "firecrawl/pdf-inspector",
+    "html_url": "https://github.com/firecrawl/pdf-inspector",
+    "description": "Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions.",
+    "stars": 17963,
+    "forks": 1223,
+    "open_issues": 196,
+    "watchers": 56,
+    "language": "Rust",
+    "license": "MIT",
+    "topics": [
+      "markdown",
+      "nodejs",
+      "ocr-routing",
+      "pdf",
+      "pdf-classification",
+      "pdf-extraction",
+      "pdf-parser",
+      "python",
+      "rust",
+      "text-extraction"
+    ],
+    "created_at": "2026-02-06T19:44:47Z",
+    "updated_at": "2026-09-02T01:57:46Z",
+    "pushed_at": "2026-09-01T17:35:02Z",
+    "archived": false,
+    "fork": false,
+    "score": 73.08,
+    "score_reasons": [
+      "17,963 stars over 207 days",
+      "estimated 86.7 stars/day since creation",
+      "last push 0.4 days ago",
+      "detectable MIT license",
+      "topics: markdown, nodejs, ocr-routing, pdf, pdf-classification"
+    ],
+    "homepage": "https://firecrawl.github.io/pdf-inspector/",
+    "default_branch": "main",
+    "readme_url": "https://github.com/firecrawl/pdf-inspector/blob/main/README.md",
+    "readme_summary": "Fast Rust library for PDF classification and text extraction. By default it detects whether a PDF is text-based or scanned, extracts text with position awareness, and converts to clean Markdown without OCR. Native Rust and CLI consumers can opt into selective OCR. Includes bindings for Python, Node.js, and browser WebAssembly.",
+    "readme_features": [
+      "Smart classification — Detect TextBased, Scanned, ImageBased, or Mixed PDFs in ~10-50ms by sampling content streams. Returns a confidence score (0.0-1.0) and per-page OCR routing.",
+      "Text extraction — Position-aware extraction with font info, X/Y coordinates, and automatic multi-column reading order.",
+      "Markdown conversion — Headings (H1-H4 via font size ratios), bullet/numbered/letter lists, code blocks (monospace font detection), tables (rectangle-based and heuristic), bold/italic formatting, URL linking, and page breaks.",
+      "Table detection — Dual-mode: rectangle-based detection from PDF drawing ops, plus heuristic detection from text alignment. Handles financial tables, footnotes, and continuation tables across pages.",
+      "CID font support — ToUnicode CMap decoding for Type0/Identity-H fonts, UTF-16BE, UTF-8, and Latin-1 encodings."
+    ],
+    "quick_start": "",
+    "latest_release_name": "1.15.0 — Selective OCR for scanned and mixed PDFs",
+    "latest_release_url": "https://github.com/firecrawl/pdf-inspector/releases/tag/v1.15.0",
+    "latest_release_at": "2026-08-17T18:07:57Z",
+    "analysis": {
+      "positioning": "pdf-inspector 是一个用 Rust 编写的快速 PDF 检查与分类库，旨在智能区分扫描版与文本型 PDF，并提取文本、转换为 Markdown，帮助开发者做出路由决策。与普通 PDF 解析库相比，它内置了基于内容流采样的快速分类（约 10-50ms）和置信度评分，支持按页 OCR 路由，并原生支持多语言绑定。",
+      "target_users": [
+        "需要快速判断 PDF 类型以路由到不同处理流程的开发者",
+        "构建文档处理管道、需要提取文本并转换为 Markdown 的团队",
+        "使用 Python、Node.js 或浏览器 WebAssembly 的跨平台开发者"
+      ],
+      "core_capabilities": [
+        "智能分类：在毫秒级内识别文本型、扫描型、图像型或混合型 PDF，并给出置信度分数，支持按页 OCR 路由。",
+        "位置感知文本提取：保留字体信息、坐标和阅读顺序，支持多列布局。",
+        "Markdown 转换：自动识别标题、列表、代码块、表格、粗斜体、链接和分页符，生成结构化文档。",
+        "表格检测：结合矩形绘制操作和文本对齐启发式，处理跨页表格和脚注。",
+        "CID 字体支持：解码 Type0/Identity-H 字体，支持多种编码。"
+      ],
+      "technical_analysis": [
+        "使用 Rust 编写，提供 Python、Node.js 和 WebAssembly 绑定，支持本地运行和浏览器集成。",
+        "默认不依赖 OCR，但可选启用选择性 OCR，适合混合文档处理。",
+        "提供 CLI 消费方式，部署灵活，可嵌入现有服务或作为独立工具。",
+        "本次输入未提供具体部署或运行方式细节，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，项目活跃度较高（约 1.8 万 Stars，近期有发布），且聚焦于 PDF 分类与提取的细分领域，解决了扫描版与文本型 PDF 路由的痛点。",
+        "多语言绑定和 WebAssembly 支持降低了集成门槛，可能吸引广泛开发者。",
+        "其快速分类和置信度评分特性可能为文档处理管道带来效率提升。"
+      ],
+      "limitations": [
+        "项目创建于 2026 年，相对较新，成熟度需进一步观察。",
+        "OCR 为可选功能，可能依赖外部 OCR 引擎，具体依赖未在输入中说明。",
+        "许可证为 MIT，但需核实依赖项许可证兼容性。",
+        "平台支持范围（如操作系统）未明确，需进一步核实。"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对特定行业（如金融、法律）的 PDF 分类与提取模板，增强表格和复杂布局处理。",
+        "机会假设：可构建基于 pdf-inspector 的云服务或 API 封装，提供按需 OCR 路由和文档转换服务。",
+        "机会假设：可编写集成测试和基准测试套件，验证不同 PDF 变体下的分类准确性和性能。"
+      ],
+      "maturity": "从现有信息看，项目拥有约 1.8 万 Stars 和 1223 Forks，发布频率较高（最新版本 1.15.0），但创建时间较短（2026 年 2 月），且存在 196 个开放问题，表明项目处于快速迭代阶段，但成熟度仍需时间验证。"
+    }
+  },
+  "3b1b/manim": {
+    "full_name": "3b1b/manim",
+    "html_url": "https://github.com/3b1b/manim",
+    "description": "Animation engine for explanatory math videos",
+    "stars": 92583,
+    "forks": 7619,
+    "open_issues": 493,
+    "watchers": 955,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "3b1b-videos",
+      "animation",
+      "explanatory-math-videos",
+      "python"
+    ],
+    "created_at": "2015-03-22T18:50:58Z",
+    "updated_at": "2026-09-02T01:58:25Z",
+    "pushed_at": "2026-09-01T20:13:14Z",
+    "archived": false,
+    "fork": false,
+    "score": 70.68,
+    "score_reasons": [
+      "92,583 stars over 4181 days",
+      "estimated 22.1 stars/day since creation",
+      "last push 0.2 days ago",
+      "detectable MIT license",
+      "topics: 3b1b-videos, animation, explanatory-math-videos, python"
+    ],
+    "homepage": null,
+    "default_branch": "master",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "handsomestWei/patent-disclosure-skill": {
+    "full_name": "handsomestWei/patent-disclosure-skill",
+    "html_url": "https://github.com/handsomestWei/patent-disclosure-skill",
+    "description": "中国专利.skill：专利点挖掘与交底书（发明/实用/外观）编写，通俗解读专利，嗅探政策动向，辅助审查答复。",
+    "stars": 6751,
+    "forks": 761,
+    "open_issues": 6,
+    "watchers": 18,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "chinese",
+      "disclosure",
+      "obsidian",
+      "patent",
+      "skill"
+    ],
+    "created_at": "2026-04-07T15:44:15Z",
+    "updated_at": "2026-09-02T01:59:21Z",
+    "pushed_at": "2026-09-01T08:57:57Z",
+    "archived": false,
+    "fork": false,
+    "score": 70.06,
+    "score_reasons": [
+      "6,751 stars over 147 days",
+      "estimated 45.8 stars/day since creation",
+      "last push 0.7 days ago",
+      "detectable MIT license",
+      "topics: chinese, disclosure, obsidian, patent, skill"
+    ],
+    "homepage": "https://skillhub.cn/skills/patent-disclosure-skill",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "iv-org/invidious": {
+    "full_name": "iv-org/invidious",
+    "html_url": "https://github.com/iv-org/invidious",
+    "description": "Invidious is an alternative front-end to YouTube",
+    "stars": 23781,
+    "forks": 2674,
+    "open_issues": 475,
+    "watchers": 198,
+    "language": "Crystal",
+    "license": "AGPL-3.0",
+    "topics": [
+      "agplv3",
+      "hacktoberfest",
+      "invidious",
+      "libre",
+      "video",
+      "watch",
+      "youtube",
+      "youtube-video"
+    ],
+    "created_at": "2018-02-07T00:43:42Z",
+    "updated_at": "2026-09-02T01:59:32Z",
+    "pushed_at": "2026-08-28T21:50:40Z",
+    "archived": false,
+    "fork": false,
+    "score": 62.86,
+    "score_reasons": [
+      "23,781 stars over 3129 days",
+      "estimated 7.6 stars/day since creation",
+      "last push 4.2 days ago",
+      "detectable AGPL-3.0 license",
+      "topics: agplv3, hacktoberfest, invidious, libre, video"
+    ],
+    "homepage": "https://invidious.io",
+    "default_branch": "master",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "averygan/reclip": {
+    "full_name": "averygan/reclip",
+    "html_url": "https://github.com/averygan/reclip",
+    "description": "Download videos from almost any website. Lightweight, self-hosted media downloader with a clean web UI.",
+    "stars": 7696,
+    "forks": 1318,
+    "open_issues": 47,
+    "watchers": 43,
+    "language": "HTML",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2026-03-31T04:29:13Z",
+    "updated_at": "2026-09-02T01:58:35Z",
+    "pushed_at": "2026-07-09T17:49:44Z",
+    "archived": false,
+    "fork": false,
+    "score": 59.73,
+    "score_reasons": [
+      "7,696 stars over 155 days",
+      "estimated 49.7 stars/day since creation",
+      "last push 54.3 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": null,
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  }
+}
