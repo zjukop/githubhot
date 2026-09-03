@@ -1,0 +1,1202 @@
+{
+  "NousResearch/hermes-agent": {
+    "full_name": "NousResearch/hermes-agent",
+    "html_url": "https://github.com/NousResearch/hermes-agent",
+    "description": "The agent that grows with you",
+    "stars": 240154,
+    "forks": 49142,
+    "open_issues": 38611,
+    "watchers": 938,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "anthropic",
+      "chatgpt",
+      "claude",
+      "claude-code",
+      "codex",
+      "hermes",
+      "hermes-agent",
+      "llm",
+      "nous-research",
+      "openai"
+    ],
+    "created_at": "2025-07-22T22:22:28Z",
+    "updated_at": "2026-09-03T01:59:07Z",
+    "pushed_at": "2026-09-03T01:55:00Z",
+    "archived": false,
+    "fork": false,
+    "score": 97.33,
+    "score_reasons": [
+      "240,154 stars over 407 days",
+      "estimated 589.8 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable MIT license",
+      "topics: ai, ai-agent, ai-agents, anthropic, chatgpt"
+    ],
+    "homepage": "https://hermes-agent.nousresearch.com",
+    "default_branch": "main",
+    "readme_url": "https://github.com/NousResearch/hermes-agent/blob/main/README.md",
+    "readme_summary": "**The self-improving AI agent built by Nous Research.** It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing when idle. It's not tied to your laptop — talk to it from Telegram while it works on a cloud VM.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "Hermes Agent v0.21.0 (v2026.8.31)",
+    "latest_release_url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.31",
+    "latest_release_at": "2026-08-31T19:29:49Z",
+    "analysis": {
+      "positioning": "Hermes Agent 是一个由 Nous Research 构建的自我改进型 AI 代理，旨在通过内置的学习循环，从经验中创建技能、在使用中改进技能、主动持久化知识、搜索历史对话，并跨会话构建用户模型，从而解决传统 AI 代理缺乏长期记忆和自适应能力的问题。与普通同类工具相比，其明确特点是具备自我改进能力，且可运行于低成本基础设施。",
+      "target_users": [
+        "希望部署低成本、可自我进化 AI 代理的开发者或研究者",
+        "需要跨平台（如 Telegram）远程管理 AI 代理的个人用户",
+        "寻求在云端或服务器上运行持久化 AI 助手的团队"
+      ],
+      "core_capabilities": [
+        "自我改进：从经验中创建技能并在使用中优化，提升长期任务表现",
+        "持久记忆：主动保存知识并搜索历史对话，构建用户模型，实现跨会话连续性",
+        "灵活部署：支持低至 5 美元的 VPS、GPU 集群或近零成本的 serverless 基础设施，降低运行门槛"
+      ],
+      "technical_analysis": [
+        "语言为 Python，便于 AI 生态集成",
+        "支持本地或云端运行，可通过 Telegram 等接口远程交互，体现集成形态的灵活性",
+        "部署方式多样，涵盖 VPS、GPU 集群和 serverless，但具体架构细节未提供，需进一步核实"
+      ],
+      "why_it_matters": [
+        "从现有信息看，其自我改进和持久记忆能力可能代表 AI 代理的新方向，值得关注",
+        "项目活跃度高（最新发布 v0.21.0，更新时间近），表明持续迭代",
+        "高 Stars 和 Forks 可能反映社区关注度，但需注意不等于质量"
+      ],
+      "limitations": [
+        "本次输入未提供官方功能列表和快速开始指南，需进一步核实具体能力",
+        "开源问题数较高（38611），可能暗示存在较多待解决事项，需评估维护压力",
+        "许可证为 MIT，但依赖项、平台兼容性及安全措施未提供，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对特定领域的技能包，利用其自我改进能力提升垂直场景效率",
+        "机会假设：可构建与 Telegram 等聊天平台深度集成的管理工具，优化远程交互体验",
+        "机会假设：可设计测试框架验证其学习循环的有效性，或开发监控运维方案以应对 serverless 部署"
+      ],
+      "maturity": "从现有信息看，项目创建于 2025 年 7 月，最新发布在 2026 年 8 月，更新频繁，表明处于快速迭代期。Stars 和 Forks 数量高，但 Open Issues 也高，可能反映社区活跃但存在维护挑战。整体成熟度可能处于早期成长阶段，需结合代码质量与文档进一步判断。"
+    }
+  },
+  "affaan-m/ECC": {
+    "full_name": "affaan-m/ECC",
+    "html_url": "https://github.com/affaan-m/ECC",
+    "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "stars": 246378,
+    "forks": 37157,
+    "open_issues": 134,
+    "watchers": 1266,
+    "language": "JavaScript",
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "anthropic",
+      "claude",
+      "claude-code",
+      "developer-tools",
+      "llm",
+      "mcp",
+      "productivity"
+    ],
+    "created_at": "2026-01-18T00:51:51Z",
+    "updated_at": "2026-09-03T01:59:50Z",
+    "pushed_at": "2026-09-03T00:48:58Z",
+    "archived": false,
+    "fork": false,
+    "score": 94.04,
+    "score_reasons": [
+      "246,378 stars over 228 days",
+      "estimated 1080.4 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable MIT license",
+      "topics: ai-agents, anthropic, claude, claude-code, developer-tools"
+    ],
+    "homepage": "https://ecc.tools",
+    "default_branch": "main",
+    "readme_url": "https://github.com/affaan-m/ECC/blob/main/README.md",
+    "readme_summary": "Run the canonical guided setup from your terminal:",
+    "readme_features": [],
+    "quick_start": "npx ecc-universal setup",
+    "latest_release_name": "ECC 2.2.0: Guided Setup, Antigravity 2.0, and the Nasiko CLI Bridge",
+    "latest_release_url": "https://github.com/affaan-m/ECC/releases/tag/v2.2.0",
+    "latest_release_at": "2026-08-28T19:55:05Z",
+    "analysis": {
+      "positioning": "ECC 是一个面向 AI 代理（如 Claude Code、Codex 等）的性能优化系统，通过技能、直觉、记忆和安全机制提升代理效率。与普通工具相比，它强调研究优先的开发理念，并提供跨平台的统一引导设置。",
+      "target_users": [
+        "使用 Claude Code、Codex、Opencode、Cursor 等 AI 编程工具的开发者",
+        "需要优化 AI 代理性能、安全性和记忆管理的团队",
+        "从事 AI 代理相关研究和实验的研究人员"
+      ],
+      "core_capabilities": [
+        "提供技能和直觉模块，增强 AI 代理的决策能力",
+        "内置记忆系统，帮助代理在会话间保持上下文",
+        "集成安全机制，降低代理误操作风险",
+        "支持多种代理平台，实现统一配置和部署"
+      ],
+      "technical_analysis": [
+        "项目使用 JavaScript 编写，可能基于 Node.js 生态，便于跨平台运行",
+        "通过 npx 命令提供快速启动，表明采用命令行工具形式，本地运行",
+        "集成形态可能包括 CLI 和 MCP（模型上下文协议），但具体细节需进一步核实",
+        "部署方式以本地为主，但云端支持情况未在输入中明确，需进一步核实"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目拥有极高的关注度（Stars 数超过 24 万），可能反映了社区对 AI 代理优化的强烈需求",
+        "活跃的发布记录（最新版本 2.2.0）表明项目持续迭代，功能更新频繁",
+        "支持多种主流 AI 代理工具，可能成为跨平台代理优化的标准方案"
+      ],
+      "limitations": [
+        "项目创建于 2026 年，相对较新，成熟度可能有限，需进一步核实",
+        "开源问题数（134）相对较高，可能表明存在一些待解决的缺陷或需求",
+        "许可证为 MIT，但依赖项和第三方组件的许可证需进一步核实",
+        "安全机制的具体实现和有效性未在输入中提供，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：开发针对特定代理（如 Claude Code）的深度优化插件，增强 ECC 的定制能力",
+        "机会假设：构建可视化配置界面，降低非技术用户的使用门槛",
+        "机会假设：提供企业级安全审计和合规报告功能，吸引企业用户",
+        "机会假设：开发性能监控和基准测试工具，帮助用户量化优化效果"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 1 月，最新发布在 2026 年 8 月，更新频繁，表明处于快速迭代阶段。Stars 数量极高，但需注意 Stars 不等同于质量。开源问题数较多，可能反映社区活跃但需关注解决效率。整体上，项目可能处于早期但高速发展期，成熟度需进一步观察。"
+    }
+  },
+  "mattpocock/skills": {
+    "full_name": "mattpocock/skills",
+    "html_url": "https://github.com/mattpocock/skills",
+    "description": "Skills for Real Engineers. Straight from my .agents directory.",
+    "stars": 245285,
+    "forks": 20856,
+    "open_issues": 450,
+    "watchers": 1370,
+    "language": "Shell",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2026-02-03T11:15:53Z",
+    "updated_at": "2026-09-03T02:00:05Z",
+    "pushed_at": "2026-08-24T14:20:17Z",
+    "archived": false,
+    "fork": false,
+    "score": 85.4,
+    "score_reasons": [
+      "245,285 stars over 212 days",
+      "estimated 1159.1 stars/day since creation",
+      "last push 9.5 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": "https://aihero.dev/skills",
+    "default_branch": "main",
+    "readme_url": "https://github.com/mattpocock/skills/blob/main/README.md",
+    "readme_summary": "My agent skills that I use every day to do real engineering - not vibe coding.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v1.2.3",
+    "latest_release_url": "https://github.com/mattpocock/skills/releases/tag/v1.2.3",
+    "latest_release_at": "2026-08-06T14:05:28Z",
+    "analysis": {
+      "positioning": "Skills 是一个面向真实工程师的代理技能集合，直接来自维护者的 .agents 目录，旨在提供日常工程实践所需的技能，而非用于“氛围编码”。它解决的是如何将工程经验沉淀为可复用的代理技能，与普通工具相比，其特点在于源自真实工作流，强调实用性。",
+      "target_users": [
+        "使用 AI 代理进行日常编码的软件工程师",
+        "希望将个人工程实践系统化、可复用的开发者",
+        "对代理技能（agent skills）感兴趣的技术团队"
+      ],
+      "core_capabilities": [
+        "提供可直接用于真实工程任务的技能，帮助工程师高效完成编码、调试等操作",
+        "技能来源于维护者的实际使用，可能涵盖多种开发场景，提升工作流自动化水平",
+        "作为开源项目，允许用户借鉴和定制技能，促进工程经验的共享与演进"
+      ],
+      "technical_analysis": [
+        "项目使用 Shell 语言，表明技能可能以脚本形式存在，便于在命令行环境中集成",
+        "从描述看，技能来自 .agents 目录，可能用于配置 AI 代理，但具体集成方式未在本次输入中提供，需进一步核实",
+        "未提供本地/云端部署信息，技术架构细节资料不足"
+      ],
+      "why_it_matters": [
+        "项目获得 245k Stars 和 20k+ Forks，表明社区关注度极高，可能反映了开发者对实用代理技能的需求",
+        "有活跃的发布记录（v1.2.3）和持续更新（pushed_at 2026-08-24），显示项目处于维护状态",
+        "MIT 许可证允许自由使用和修改，降低了采用门槛，可能吸引更多开发者参与"
+      ],
+      "limitations": [
+        "项目创建于 2026-02-03，相对较新，成熟度可能有限，需进一步核实功能完整性",
+        "存在 450 个开放问题，可能影响稳定性，需关注问题解决速度",
+        "未提供官方功能列表和快速开始文档，上手难度和具体能力需进一步核实",
+        "许可证为 MIT，但依赖项和安全性未提供信息，需评估供应链风险"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对不同工程场景的技能包，扩展项目生态",
+        "机会假设：提供可视化配置界面或 CLI 工具，简化技能安装与管理",
+        "机会假设：建立技能测试框架，确保技能在不同环境下的可靠性",
+        "机会假设：集成主流 AI 代理平台，提升跨平台兼容性"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 2 月，至 2026 年 8 月已有 245k Stars 和 20k Forks，社区关注度极高。有最新发布 v1.2.3（2026-08-06）和近期推送（2026-08-24），表明项目活跃维护。但开放问题较多（450），且创建时间较短，整体成熟度可能处于早期阶段，需进一步观察功能稳定性和社区治理。"
+    }
+  },
+  "Gitlawb/openclaude": {
+    "full_name": "Gitlawb/openclaude",
+    "html_url": "https://github.com/Gitlawb/openclaude",
+    "description": "runs anywhere. uses anything",
+    "stars": 32011,
+    "forks": 8998,
+    "open_issues": 74,
+    "watchers": 224,
+    "language": "TypeScript",
+    "license": "NOASSERTION",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-tools",
+      "cli",
+      "coding"
+    ],
+    "created_at": "2026-04-01T03:15:49Z",
+    "updated_at": "2026-09-03T01:57:53Z",
+    "pushed_at": "2026-09-02T00:15:38Z",
+    "archived": false,
+    "fork": false,
+    "score": 84.02,
+    "score_reasons": [
+      "32,011 stars over 155 days",
+      "estimated 206.6 stars/day since creation",
+      "last push 1.1 days ago",
+      "topics: ai, ai-agent, ai-tools, cli, coding"
+    ],
+    "homepage": "https://openclaude.gitlawb.com",
+    "default_branch": "main",
+    "readme_url": "https://github.com/Gitlawb/openclaude/blob/main/README.md",
+    "readme_summary": "OpenClaude is an open-source coding-agent CLI for cloud and local model providers.",
+    "readme_features": [
+      "One CLI across cloud APIs and local model backends — no per-provider tooling",
+      "Guided provider setup and saved profiles with /provider",
+      "Coding-agent workflows in one place: bash, file tools, grep, glob, agents, tasks, MCP, and web tools",
+      "A bundled VS Code extension for launch integration and theme support",
+      "A pixel-art hero companion who fires an arrow every time you press Enter (really — see Meet your buddy)"
+    ],
+    "quick_start": "",
+    "latest_release_name": "v0.30.0",
+    "latest_release_url": "https://github.com/Gitlawb/openclaude/releases/tag/v0.30.0",
+    "latest_release_at": "2026-08-31T02:25:05Z",
+    "analysis": {
+      "positioning": "OpenClaude 是一个开源的编码代理命令行工具，旨在统一云端与本地模型提供商的访问，解决开发者需为不同提供商分别配置工具的问题。其特点在于通过单一 CLI 提供跨云与本地模型的后端支持，并集成编码代理工作流、VS Code 扩展及趣味性的像素伙伴交互。",
+      "target_users": [
+        "使用多种 AI 模型提供商（云端 API 与本地模型）的开发者，希望统一管理编码代理工具。",
+        "需要在命令行环境中执行编码任务（如 bash、文件操作、代码搜索）的开发者。",
+        "偏好使用 VS Code 并希望集成 AI 代理与主题支持的开发者。"
+      ],
+      "core_capabilities": [
+        "提供统一的 CLI 界面，支持云端 API 和本地模型后端，减少切换工具的成本。",
+        "内置引导式提供商设置与配置文件管理，简化多提供商环境下的配置流程。",
+        "集成多种编码代理工作流工具，包括 bash、文件工具、grep、glob、代理、任务、MCP 和 Web 工具，提升开发效率。",
+        "附带 VS Code 扩展，支持启动集成与主题，增强编辑器内体验。"
+      ],
+      "technical_analysis": [
+        "项目使用 TypeScript 开发，表明其注重类型安全与可维护性。",
+        "从描述看，支持云端与本地模型，可能采用插件式架构，但具体实现细节未提供。",
+        "集成形态包括 CLI 和 VS Code 扩展，运行方式可能涉及本地进程与远程 API 调用，但需进一步核实。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目在短时间内获得较高关注（Stars 3.2 万），可能反映了开发者对统一多模型 CLI 工具的需求。",
+        "活跃的发布节奏（最新版本 v0.30.0，更新于 2026-08-31）表明项目处于持续迭代中，可能具备较好的功能演进能力。",
+        "其功能覆盖编码代理的多个方面，可能为开发者提供一站式解决方案，减少工具链碎片化。"
+      ],
+      "limitations": [
+        "许可证为 NOASSERTION，需进一步核实其开源许可条款，可能影响商业使用或分发。",
+        "项目创建于 2026-04-01，至今约 5 个月，成熟度可能有限，需关注稳定性。",
+        "本次输入未提供快速开始文档，需进一步核实其易用性和文档完整性。",
+        "依赖的模型提供商列表及本地模型支持范围未明确，需进一步核实。"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对不同模型提供商的性能对比工具，帮助用户选择最优后端。",
+        "机会假设：可构建基于 OpenClaude 的自动化测试框架，验证其在不同环境下的稳定性。",
+        "机会假设：可开发插件市场或扩展机制，丰富其工具集，提升生态吸引力。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 4 月，最新版本 v0.30.0 发布于 2026 年 8 月，更新频繁，表明处于快速迭代阶段。Stars 3.2 万和 Forks 8998 显示社区关注度较高，但开放问题 74 个，需关注问题解决效率。整体成熟度可能处于早期成长阶段，需进一步观察稳定性。"
+    }
+  },
+  "JuliusBrussee/caveman": {
+    "full_name": "JuliusBrussee/caveman",
+    "html_url": "https://github.com/JuliusBrussee/caveman",
+    "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
+    "stars": 102657,
+    "forks": 5970,
+    "open_issues": 106,
+    "watchers": 241,
+    "language": "Go",
+    "license": "NOASSERTION",
+    "topics": [
+      "ai",
+      "anthropic",
+      "caveman",
+      "claude",
+      "claude-code",
+      "llm",
+      "meme",
+      "prompt-engineering",
+      "skill",
+      "tokens"
+    ],
+    "created_at": "2026-04-04T10:03:00Z",
+    "updated_at": "2026-09-03T01:57:53Z",
+    "pushed_at": "2026-09-02T13:48:52Z",
+    "archived": false,
+    "fork": false,
+    "score": 81.29,
+    "score_reasons": [
+      "102,657 stars over 152 days",
+      "estimated 676.9 stars/day since creation",
+      "last push 0.5 days ago",
+      "topics: ai, anthropic, caveman, claude, claude-code"
+    ],
+    "homepage": "https://docs.caveman.so/docs/quickstart",
+    "default_branch": "main",
+    "readme_url": "https://github.com/JuliusBrussee/caveman/blob/main/README.md",
+    "readme_summary": "You pay for AI by the token, and your agent writes like it knows that. Caveman make agent stop. Same brain. Fewer words. Smaller bill.",
+    "readme_features": [],
+    "quick_start": "npx skills add JuliusBrussee/caveman",
+    "latest_release_name": "bin-v1.1.5",
+    "latest_release_url": "https://github.com/JuliusBrussee/caveman/releases/tag/bin-v1.1.5",
+    "latest_release_at": "2026-09-02T13:43:33Z",
+    "analysis": {
+      "positioning": "Caveman 是一个针对 Claude Code 的 Skill，通过将 AI 助手的输出风格改为‘穴居人式’的简短表达，从而减少约 65% 的 token 消耗，降低使用成本。与普通同类工具相比，它不改变模型能力，仅通过语言风格优化实现成本节约，具有鲜明的 meme 文化特征。",
+      "target_users": [
+        "重度使用 Claude Code 的开发者，希望降低 API 费用",
+        "对 token 成本敏感的个人开发者或小型团队",
+        "喜欢尝试趣味性、meme 风格工具的开发者"
+      ],
+      "core_capabilities": [
+        "通过预设的‘穴居人’语言风格指令，强制 AI 输出更简短的回复，从而减少 token 使用量",
+        "作为 Claude Code 的 Skill 集成，用户可通过 npx 命令快速安装，无需复杂配置",
+        "在保持任务完成质量的前提下，实现约 65% 的 token 削减，直接降低使用成本"
+      ],
+      "technical_analysis": [
+        "项目语言为 Go，但核心功能是作为 Claude Code 的 Skill 包，通过 npx 命令分发，运行于 Node.js 环境",
+        "集成形态为 Claude Code 的插件式 Skill，用户通过命令行安装，属于本地配置而非云端服务",
+        "从现有信息看，其实现可能依赖于 Claude Code 的 Skill 机制，通过注入提示词或规则来改变模型输出风格，但具体实现细节需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目在短时间内获得超过 10 万 Star，表明其概念在开发者社区中引起广泛共鸣，具有较高的关注度",
+        "它提供了一种新颖的 token 优化思路，即通过改变输出风格而非压缩上下文，可能启发其他成本优化工具的开发",
+        "活跃的发布记录（最新版本 bin-v1.1.5）和持续的推送表明项目处于积极维护状态，开发者可期待后续改进"
+      ],
+      "limitations": [
+        "许可证为 NOASSERTION，需进一步核实其开源许可条款，可能影响商业使用",
+        "项目主要针对 Claude Code，对其他 AI 工具或平台的兼容性未知，需进一步核实",
+        "‘穴居人’风格可能不适用于所有场景，如正式文档或复杂技术解释，可能影响输出质量",
+        "token 削减比例（65%）可能因任务类型而异，实际效果需用户自行验证"
+      ],
+      "opportunities": [
+        "机会假设：可开发类似风格优化工具，但针对不同语言或专业领域（如法律、医疗）定制风格，以平衡成本与专业性",
+        "机会假设：可集成到 CI/CD 流程中，自动为代码审查或文档生成提供低成本 AI 输出",
+        "机会假设：可开发可视化工具，帮助用户监控 token 节省量，并优化不同任务下的风格配置"
+      ],
+      "maturity": "项目创建于 2026 年 4 月，至今约 5 个月，已发布多个版本（最新 v1.1.5），更新频繁。Star 数超过 10 万，但 Star 数不代表质量，需关注实际使用反馈。Open Issues 106 个，表明社区活跃，但项目仍处于早期阶段，成熟度中等偏低。"
+    }
+  },
+  "ChromeDevTools/chrome-devtools-mcp": {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "html_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "description": "Chrome DevTools for coding agents",
+    "stars": 50663,
+    "forks": 3555,
+    "open_issues": 89,
+    "watchers": 253,
+    "language": "TypeScript",
+    "license": "Apache-2.0",
+    "topics": [
+      "browser",
+      "chrome",
+      "chrome-devtools",
+      "debugging",
+      "devtools",
+      "mcp",
+      "mcp-server",
+      "puppeteer"
+    ],
+    "created_at": "2025-09-11T10:39:55Z",
+    "updated_at": "2026-09-03T01:59:31Z",
+    "pushed_at": "2026-09-03T00:09:47Z",
+    "archived": false,
+    "fork": false,
+    "score": 77.88,
+    "score_reasons": [
+      "50,663 stars over 357 days",
+      "estimated 142.1 stars/day since creation",
+      "last push 0.1 days ago",
+      "detectable Apache-2.0 license",
+      "topics: browser, chrome, chrome-devtools, debugging, devtools"
+    ],
+    "homepage": "https://developer.chrome.com/docs/devtools/agents",
+    "default_branch": "main",
+    "readme_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/blob/main/README.md",
+    "readme_summary": "Chrome DevTools for agents (`chrome-devtools-mcp`) lets your coding agent (such as Antigravity, Claude, Cursor or Copilot) control and inspect a live Chrome browser. It acts as a Model-Context-Protocol (MCP) server, giving your AI coding assistant access to the full power of Chrome DevTools for reliable automation, in-depth debugging, and performance analysis. A [CLI][cli] is also provided for use without MCP.",
+    "readme_features": [],
+    "quick_start": "{\n  \"mcpServers\": {\n    \"chrome-devtools\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"chrome-devtools-mcp@latest\"]\n    }\n  }\n}",
+    "latest_release_name": "chrome-devtools-mcp: v1.8.0",
+    "latest_release_url": "https://github.com/ChromeDevTools/chrome-devtools-mcp/releases/tag/chrome-devtools-mcp-v1.8.0",
+    "latest_release_at": "2026-08-25T11:35:48Z",
+    "analysis": {
+      "positioning": "chrome-devtools-mcp 是一个基于模型上下文协议（MCP）的服务器，使编码代理（如 Claude、Cursor 等）能够控制并检查实时 Chrome 浏览器，从而获得完整的 Chrome DevTools 能力，用于可靠的自动化、深度调试和性能分析。与普通同类工具相比，它直接集成 DevTools 的全部功能，并通过 MCP 标准协议与 AI 代理无缝协作，同时提供 CLI 供非 MCP 场景使用。",
+      "target_users": [
+        "使用 AI 编码助手（如 Claude、Cursor、Copilot）的开发者，需要让代理操作浏览器进行端到端测试或调试。",
+        "需要自动化浏览器交互、性能分析或前端调试的 QA 工程师和 DevOps 人员。",
+        "对 MCP 生态感兴趣，希望扩展代理能力的工具开发者。"
+      ],
+      "core_capabilities": [
+        "提供实时浏览器控制，使 AI 代理能够导航、点击、填写表单等，实现自动化测试和网页操作。",
+        "暴露 DevTools 的调试功能，包括网络监控、控制台日志、DOM 检查，帮助代理深入分析前端问题。",
+        "支持性能分析，允许代理收集性能指标，辅助优化网页加载和运行时性能。"
+      ],
+      "technical_analysis": [
+        "项目使用 TypeScript 开发，类型安全，适合大型代码库维护。",
+        "作为 MCP 服务器运行，通过标准协议与客户端通信，支持本地启动（如 npx 命令），无需云端服务。",
+        "集成形态为命令行工具，可嵌入到支持 MCP 的 IDE 或代理中，部署简单，只需 Node.js 环境。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目在短时间内获得超过 5 万星标，表明社区关注度极高，可能成为 AI 驱动浏览器自动化的标准方案。",
+        "它填补了 AI 代理与真实浏览器交互的空白，使代理能执行更复杂的端到端任务，提升开发效率。",
+        "活跃的发布节奏（最新 v1.8.0）和持续的代码推送显示项目维护积极，生态信号良好。"
+      ],
+      "limitations": [
+        "项目创建于 2025 年 9 月，相对较新，可能仍处于快速迭代阶段，API 稳定性需进一步核实。",
+        "依赖 Chrome 浏览器和 Node.js 环境，可能不适用于无头服务器或受限环境。",
+        "许可证为 Apache-2.0，但使用成本（如是否需要付费功能）未在输入中说明，需进一步核实。"
+      ],
+      "opportunities": [
+        "机会假设：可开发基于该 MCP 服务器的测试框架，用于自动化回归测试和视觉验证。",
+        "机会假设：集成到 CI/CD 管道中，实现 AI 驱动的浏览器性能监控和告警。",
+        "机会假设：扩展支持更多浏览器或移动设备模拟，增强跨平台测试能力。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2025 年 9 月，最新发布 v1.8.0（2026 年 8 月），更新频繁，但开放问题 89 个，表明仍在活跃开发中。Stars 数量高但不等同于质量，需关注 issue 解决效率和文档完善度。总体处于快速成长阶段，成熟度中等。"
+    }
+  },
+  "debpalash/VoiceStudio": {
+    "full_name": "debpalash/VoiceStudio",
+    "html_url": "https://github.com/debpalash/VoiceStudio",
+    "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+    "stars": 14831,
+    "forks": 2115,
+    "open_issues": 10,
+    "watchers": 71,
+    "language": "Python",
+    "license": "AGPL-3.0",
+    "topics": [
+      "ai",
+      "audiobook",
+      "cuda",
+      "dubbing",
+      "elevenlabs-alternative",
+      "huggingface",
+      "local-first",
+      "mlx",
+      "omnivoice-studio",
+      "speech-to-text",
+      "tauri",
+      "text-to-speech",
+      "transcription",
+      "translate",
+      "tts",
+      "voice-ai",
+      "voice-cloning",
+      "voice-generation",
+      "voicestudio",
+      "workflow"
+    ],
+    "created_at": "2026-04-09T21:40:26Z",
+    "updated_at": "2026-09-03T02:00:02Z",
+    "pushed_at": "2026-09-02T11:02:23Z",
+    "archived": false,
+    "fork": false,
+    "score": 77.57,
+    "score_reasons": [
+      "14,831 stars over 146 days",
+      "estimated 101.5 stars/day since creation",
+      "last push 0.6 days ago",
+      "detectable AGPL-3.0 license",
+      "topics: ai, audiobook, cuda, dubbing, elevenlabs-alternative"
+    ],
+    "homepage": "https://voicestudio.sh",
+    "default_branch": "main",
+    "readme_url": "https://github.com/debpalash/VoiceStudio/blob/main/README.md",
+    "readme_summary": "Clone voices, dub video, dictate, and produce long-form audio on your own hardware. 16 TTS engines · 11 ASR engines · 646-language catalogue · macOS, Windows, Linux, and Docker No account, API key, subscription, or usage meter for the local workflow.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v0.5.1 — VoiceStudio",
+    "latest_release_url": "https://github.com/debpalash/VoiceStudio/releases/tag/v0.5.1",
+    "latest_release_at": "2026-08-28T15:24:35Z",
+    "analysis": {
+      "positioning": "VoiceStudio 是一个开源的、完全本地的 ElevenLabs 替代品，旨在让用户在自己的硬件上完成语音克隆、视频配音、听写、转录和有声书制作，支持 646 种语言。与普通同类工具相比，其明确特点是无需账户、API 密钥或订阅，且本地工作流无使用计量，强调隐私和自主控制。",
+      "target_users": [
+        "需要离线或本地语音处理的内容创作者，如有声书制作者、视频配音员。",
+        "注重数据隐私的个人用户，希望避免云端 API 依赖。",
+        "开发者或企业，希望在内部部署语音 AI 工具，集成到自有工作流。"
+      ],
+      "core_capabilities": [
+        "支持语音克隆和语音设计，可生成个性化声音。",
+        "提供视频配音、听写、转录和有声书创建功能，覆盖从短片段到长音频的制作需求。",
+        "集成 16 种 TTS 引擎和 11 种 ASR 引擎，支持 646 种语言，提供广泛的语言覆盖和引擎选择。"
+      ],
+      "technical_analysis": [
+        "项目主要使用 Python，并涉及 Tauri（可能用于桌面界面），表明可能采用混合架构，后端为 Python，前端为 Web 技术。",
+        "支持 macOS、Windows、Linux 和 Docker，提供跨平台部署选项，本地优先，无云端依赖。",
+        "主题标签包含 CUDA 和 MLX，暗示支持 GPU 加速（NVIDIA 和 Apple Silicon），可能针对不同硬件优化。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，项目活跃度高（近期有发布和推送），且获得 14k+ Stars，表明社区关注度较高。",
+        "作为 ElevenLabs 的本地替代品，它可能吸引对成本、隐私或离线能力敏感的开发者。",
+        "多引擎和多语言支持可能使其成为语音 AI 实验和集成的灵活基础。"
+      ],
+      "limitations": [
+        "许可证为 AGPL-3.0，可能对商业闭源集成有传染性，需评估合规风险。",
+        "项目创建于 2026 年，相对较新，成熟度可能有限，需核实稳定性和文档完整性。",
+        "本地运行可能对硬件有要求（如 GPU），需核实最低配置和性能表现。",
+        "本次输入未提供安全审计、依赖漏洞或社区支持细节，需进一步核实。"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对特定行业的预配置工作流，如教育、播客或影视配音，降低使用门槛。",
+        "机会假设：可构建 Docker 镜像或 Kubernetes 部署模板，简化服务器端集成和扩展。",
+        "机会假设：可开发插件或 API 封装，便于与其他工具（如视频编辑器、CMS）集成。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 4 月，最新版本 v0.5.1 于 2026 年 8 月发布，推送活跃，Stars 达 14.8k，但开放问题仅 10 个，可能表明维护良好。然而，Stars 不等同于质量，项目仍处于早期版本，成熟度需结合社区反馈和实际使用评估。"
+    }
+  },
+  "DietrichGebert/ponytail": {
+    "full_name": "DietrichGebert/ponytail",
+    "html_url": "https://github.com/DietrichGebert/ponytail",
+    "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+    "stars": 121679,
+    "forks": 6577,
+    "open_issues": 201,
+    "watchers": 300,
+    "language": "JavaScript",
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "claude",
+      "claude-code",
+      "claude-code-plugin",
+      "cursor-rules",
+      "developer-tools",
+      "llm",
+      "prompt-engineering",
+      "yagni"
+    ],
+    "created_at": "2026-06-12T00:52:37Z",
+    "updated_at": "2026-09-03T02:00:08Z",
+    "pushed_at": "2026-08-07T21:44:01Z",
+    "archived": false,
+    "fork": false,
+    "score": 75.19,
+    "score_reasons": [
+      "121,679 stars over 83 days",
+      "estimated 1465.2 stars/day since creation",
+      "last push 26.2 days ago",
+      "detectable MIT license",
+      "topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin"
+    ],
+    "homepage": "https://ponytail.dev",
+    "default_branch": "main",
+    "readme_url": "https://github.com/DietrichGebert/ponytail/blob/main/README.md",
+    "readme_summary": "He says nothing. He writes one line. It works.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v4.9.0: 53 commits of doing less",
+    "latest_release_url": "https://github.com/DietrichGebert/ponytail/releases/tag/v4.9.0",
+    "latest_release_at": "2026-08-07T21:15:11Z",
+    "analysis": {
+      "positioning": "ponytail 是一个面向 AI 代理的 JavaScript 工具，旨在让代理像最懒惰的高级开发人员一样思考，强调“最好的代码是未编写的代码”。它通过极简的提示工程，引导 AI 代理避免过度工程化，直接生成最简可行方案，与普通同类工具相比，其核心特点是“少做”而非“多做”。",
+      "target_users": [
+        "使用 Claude Code 或 Cursor 等 AI 编程工具的开发者，希望减少 AI 生成的冗余代码。",
+        "追求 YAGNI（你不会需要它）原则的团队，希望在开发中强制保持代码简洁。",
+        "AI 代理的集成者或插件开发者，需要为代理注入“懒惰”思维模式。"
+      ],
+      "core_capabilities": [
+        "通过提示工程改变 AI 代理的决策倾向，使其优先考虑最小实现，避免不必要的功能。",
+        "提供一种“什么都不说，只写一行”的交互模式，让代理输出极简代码。",
+        "作为 Claude Code 插件或 Cursor 规则集成，可无缝嵌入现有 AI 工作流。"
+      ],
+      "technical_analysis": [
+        "语言为 JavaScript，可能以插件或规则文件形式分发，但具体实现细节未提供。",
+        "从 topics 看，支持 Claude Code 插件和 Cursor 规则，可能通过配置文件或提示注入方式工作。",
+        "本地/云端方式、部署或运行方式未在输入中说明，需进一步核实。"
+      ],
+      "why_it_matters": [
+        "项目在短时间内获得 12 万+ Stars，表明其理念在开发者社区引起强烈共鸣，可能成为 AI 编程领域的新范式。",
+        "频繁的版本更新（v4.9.0）和活跃的推送（2026-08-07）显示项目处于快速迭代中，生态信号积极。",
+        "它挑战了 AI 编程中“生成更多代码”的默认行为，可能推动更高效的 AI 协作方式。"
+      ],
+      "limitations": [
+        "项目创建于 2026 年，非常年轻，成熟度可能不足，需关注 API 稳定性。",
+        "依赖特定的 AI 代理（如 Claude Code），可能不适用于所有 AI 工具。",
+        "许可证为 MIT，但商业使用中的责任和保证需自行评估。",
+        "实际效果可能因提示工程和模型版本而异，需要测试验证。"
+      ],
+      "opportunities": [
+        "机会假设：开发配套的测试工具，用于评估 AI 代理在应用 ponytail 后代码简洁度的提升。",
+        "机会假设：为其他 AI 编程工具（如 GitHub Copilot）提供适配版本，扩大适用范围。",
+        "机会假设：构建可视化配置界面，让用户自定义“懒惰”程度，提升用户体验。"
+      ],
+      "maturity": "项目创建于 2026 年 6 月，至今约 2 个月，但已发布 v4.9.0，更新频繁，Stars 数极高（12 万+），表明社区关注度极高。然而，Stars 不等同于质量，项目仍处于早期阶段，需关注 issue 处理速度和功能稳定性。"
+    }
+  },
+  "Imbad0202/academic-research-skills": {
+    "full_name": "Imbad0202/academic-research-skills",
+    "html_url": "https://github.com/Imbad0202/academic-research-skills",
+    "description": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+    "stars": 45583,
+    "forks": 3585,
+    "open_issues": 18,
+    "watchers": 129,
+    "language": "Python",
+    "license": "NOASSERTION",
+    "topics": [
+      "academic-pipeline",
+      "academic-writing",
+      "ai-research",
+      "claude",
+      "claude-code",
+      "literature-review",
+      "peer-review",
+      "prompt-engineering"
+    ],
+    "created_at": "2026-02-26T06:31:01Z",
+    "updated_at": "2026-09-03T02:00:05Z",
+    "pushed_at": "2026-09-01T17:57:41Z",
+    "archived": false,
+    "fork": false,
+    "score": 75.17,
+    "score_reasons": [
+      "45,583 stars over 189 days",
+      "estimated 241.4 stars/day since creation",
+      "last push 1.3 days ago",
+      "topics: academic-pipeline, academic-writing, ai-research, claude, claude-code"
+    ],
+    "homepage": "https://buymeacoffee.com/crucify020v",
+    "default_branch": "main",
+    "readme_url": "https://github.com/Imbad0202/academic-research-skills/blob/main/README.md",
+    "readme_summary": "A comprehensive suite of Claude Code skills for academic research, covering the full pipeline from research to publication.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v3.21.1 — Bounded workflow substrates, sealed bakeoffs, and transport hardening",
+    "latest_release_url": "https://github.com/Imbad0202/academic-research-skills/releases/tag/v3.21.1",
+    "latest_release_at": "2026-08-24T11:21:21Z",
+    "analysis": {
+      "positioning": "面向学术研究的Claude Code技能套件，覆盖从文献调研到写作、评审、修订直至定稿的完整流程，解决科研人员利用AI进行学术写作时缺乏结构化流程的问题。与普通同类工具相比，其明确特点是将研究过程拆分为可复用的技能模块，并强调从研究到发表的端到端支持。",
+      "target_users": [
+        "需要系统化AI辅助学术写作的研究人员、研究生和学者",
+        "使用Claude Code进行文献综述、论文撰写和同行评审的科研团队",
+        "希望将AI集成到学术出版工作流中的编辑或审稿人"
+      ],
+      "core_capabilities": [
+        "提供从研究到最终定稿的完整技能链，帮助用户按阶段推进学术项目",
+        "覆盖文献综述、学术写作、同行评审等关键环节，提升研究效率与质量",
+        "通过结构化技能模块，降低AI辅助学术工作的使用门槛"
+      ],
+      "technical_analysis": [
+        "项目语言为Python，但核心是Claude Code技能，可能以提示词或脚本形式存在",
+        "从描述看，技能套件可能以本地或云端方式与Claude Code集成，具体运行方式需进一步核实",
+        "当前输入未提供部署细节，如是否依赖特定Claude版本或外部服务，需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目获得45583星和3585次fork，显示社区高度关注，可能填补了AI学术工作流规范化的空白",
+        "最新版本v3.21.1于2026年8月发布，且仓库持续更新，表明项目活跃演进",
+        "主题涵盖学术管道、提示工程等，对希望利用Claude Code提升科研生产力的开发者具有参考价值"
+      ],
+      "limitations": [
+        "许可证为NOASSERTION，需核实其开源许可条款，可能影响商业使用",
+        "项目依赖Claude Code，可能受限于Anthropic平台或API的可用性",
+        "当前输入未提供功能列表和快速开始指南，实际使用复杂度和文档完整性需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对不同学科（如医学、工程）的定制化技能包，扩展适用场景",
+        "机会假设：可构建自动化测试框架，验证技能在不同研究场景下的输出质量",
+        "机会假设：可开发可视化工作流编辑器，帮助用户编排和定制研究流程"
+      ],
+      "maturity": "从45583星和3585次fork看，项目获得广泛关注，但星数不等于质量。最新版本v3.21.1于2026年8月发布，仓库最近推送在2026年9月，显示持续维护。仅有18个开放问题，可能表明项目相对稳定。综合判断，项目处于活跃发展阶段，但成熟度需结合代码质量和文档进一步评估。"
+    }
+  },
+  "firecrawl/pdf-inspector": {
+    "full_name": "firecrawl/pdf-inspector",
+    "html_url": "https://github.com/firecrawl/pdf-inspector",
+    "description": "Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions.",
+    "stars": 18534,
+    "forks": 1246,
+    "open_issues": 203,
+    "watchers": 56,
+    "language": "Rust",
+    "license": "MIT",
+    "topics": [
+      "markdown",
+      "nodejs",
+      "ocr-routing",
+      "pdf",
+      "pdf-classification",
+      "pdf-extraction",
+      "pdf-parser",
+      "python",
+      "rust",
+      "text-extraction"
+    ],
+    "created_at": "2026-02-06T19:44:47Z",
+    "updated_at": "2026-09-03T02:00:02Z",
+    "pushed_at": "2026-09-03T00:05:22Z",
+    "archived": false,
+    "fork": false,
+    "score": 73.36,
+    "score_reasons": [
+      "18,534 stars over 208 days",
+      "estimated 89.0 stars/day since creation",
+      "last push 0.1 days ago",
+      "detectable MIT license",
+      "topics: markdown, nodejs, ocr-routing, pdf, pdf-classification"
+    ],
+    "homepage": "https://firecrawl.github.io/pdf-inspector/",
+    "default_branch": "main",
+    "readme_url": "https://github.com/firecrawl/pdf-inspector/blob/main/README.md",
+    "readme_summary": "Fast Rust library for PDF classification and text extraction. By default it detects whether a PDF is text-based or scanned, extracts text with position awareness, and converts to clean Markdown without OCR. Native Rust and CLI consumers can opt into selective OCR. Includes bindings for Python, Node.js, and browser WebAssembly.",
+    "readme_features": [
+      "Smart classification — Detect TextBased, Scanned, ImageBased, or Mixed PDFs in ~10-50ms by sampling content streams. Returns a confidence score (0.0-1.0) and per-page OCR routing.",
+      "Text extraction — Position-aware extraction with font info, X/Y coordinates, and automatic multi-column reading order.",
+      "Markdown conversion — Headings (H1-H4 via font size ratios), bullet/numbered/letter lists, code blocks (monospace font detection), tables (rectangle-based and heuristic), bold/italic formatting, URL linking, and page breaks.",
+      "Table detection — Dual-mode: rectangle-based detection from PDF drawing ops, plus heuristic detection from text alignment. Handles financial tables, footnotes, and continuation tables across pages.",
+      "CID font support — ToUnicode CMap decoding for Type0/Identity-H fonts, UTF-16BE, UTF-8, and Latin-1 encodings."
+    ],
+    "quick_start": "",
+    "latest_release_name": "1.15.0 — Selective OCR for scanned and mixed PDFs",
+    "latest_release_url": "https://github.com/firecrawl/pdf-inspector/releases/tag/v1.15.0",
+    "latest_release_at": "2026-08-17T18:07:57Z",
+    "analysis": {
+      "positioning": "pdf-inspector 是一个用 Rust 编写的快速 PDF 检查与分类库，旨在智能区分扫描版与文本型 PDF，并提取文本、转换为 Markdown，以辅助路由决策。与普通 PDF 解析库相比，其独特之处在于内置基于内容流采样的快速分类（约 10-50 毫秒），返回置信度分数，并支持按页 OCR 路由，从而避免对文本型 PDF 进行不必要的 OCR。",
+      "target_users": [
+        "需要将 PDF 自动分类并路由到 OCR 或文本提取流程的开发者",
+        "构建文档处理管道、需要从 PDF 中提取结构化内容（如表格、标题）的团队",
+        "使用 Python、Node.js 或浏览器环境，希望集成高性能 PDF 处理能力的开发者"
+      ],
+      "core_capabilities": [
+        "智能分类：快速检测 PDF 类型（文本型、扫描型、图像型或混合型），提供置信度分数和按页 OCR 路由建议，帮助优化处理流程。",
+        "位置感知文本提取：提取文本时保留字体信息、坐标，并自动处理多栏阅读顺序，便于后续布局分析。",
+        "Markdown 转换：将 PDF 内容转换为带标题、列表、代码块、表格、格式和链接的 Markdown，提升内容可读性和可移植性。",
+        "表格检测：结合矩形绘制和文本对齐启发式，处理跨页表格、脚注等复杂情况，提高表格提取准确性。",
+        "CID 字体支持：支持 Type0/Identity-H 字体和多种编码，确保对非标准字体的文本提取正确性。"
+      ],
+      "technical_analysis": [
+        "语言与性能：采用 Rust 实现，强调速度，适合对延迟敏感的场景。",
+        "集成形态：提供 Python、Node.js 绑定和浏览器 WebAssembly，支持多种语言环境，便于嵌入现有技术栈。",
+        "运行方式：库本身可本地运行，CLI 和原生 Rust 消费者可选择性启用 OCR，但 OCR 功能可能依赖外部服务或模型，具体部署方式需进一步核实。",
+        "部署：由于是库，可集成到服务端或客户端应用，但浏览器端可能受限于 WebAssembly 性能和内存，需评估。"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目在短时间内获得较高关注（Stars 1.8 万+），且持续更新（最新版本 1.15.0 于 2026-08-17 发布），表明社区活跃。",
+        "其智能分类和 OCR 路由能力可显著减少不必要的 OCR 计算，提升文档处理效率，对大规模文档管道有实际价值。",
+        "多语言绑定和 WebAssembly 支持降低了集成门槛，使不同技术栈的开发者都能受益。"
+      ],
+      "limitations": [
+        "OCR 功能为选择性启用，可能依赖外部 OCR 引擎或服务，具体集成方式和成本需进一步核实。",
+        "项目创建于 2026 年，相对较新，成熟度可能有限，需关注 API 稳定性和长期维护。",
+        "许可证为 MIT，但依赖项可能引入其他许可证，需审查。",
+        "表格检测和 Markdown 转换的准确性可能受 PDF 复杂布局影响，需在真实场景中验证。"
+      ],
+      "opportunities": [
+        "机会假设：可开发基于 pdf-inspector 的文档路由服务，自动将扫描 PDF 发送到 OCR 管道，文本 PDF 直接进入文本提取，优化处理成本。",
+        "机会假设：为常见框架（如 LangChain、LlamaIndex）编写集成插件，使 PDF 分类和提取能力无缝接入 RAG 流程。",
+        "机会假设：构建可视化调试工具，展示分类置信度和提取结果，帮助用户调整参数。",
+        "机会假设：针对特定领域（如财务、法律）优化表格提取规则，并贡献回上游。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 2 月，至 2026 年 9 月已获得 1.8 万+ Stars 和 1200+ Forks，且发布频率较高（最新版本 1.15.0），表明项目处于快速迭代阶段。但 Stars 数量不等于质量，仍需关注 issue 解决速度和文档完善度。整体看，项目活跃度较高，但成熟度可能仍处于早期。"
+    }
+  },
+  "protocolbuffers/protobuf": {
+    "full_name": "protocolbuffers/protobuf",
+    "html_url": "https://github.com/protocolbuffers/protobuf",
+    "description": "Protocol Buffers - Google's data interchange format",
+    "stars": 71940,
+    "forks": 16271,
+    "open_issues": 310,
+    "watchers": 2010,
+    "language": "C++",
+    "license": "NOASSERTION",
+    "topics": [
+      "marshalling",
+      "protobuf",
+      "protobuf-runtime",
+      "protoc",
+      "protocol-buffers",
+      "protocol-compiler",
+      "rpc",
+      "serialization"
+    ],
+    "created_at": "2014-08-26T15:52:15Z",
+    "updated_at": "2026-09-03T01:54:14Z",
+    "pushed_at": "2026-09-03T01:59:58Z",
+    "archived": false,
+    "fork": false,
+    "score": 72.41,
+    "score_reasons": [
+      "71,940 stars over 4390 days",
+      "estimated 16.4 stars/day since creation",
+      "last push 0.0 days ago",
+      "topics: marshalling, protobuf, protobuf-runtime, protoc, protocol-buffers"
+    ],
+    "homepage": "http://protobuf.dev",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "blader/humanizer": {
+    "full_name": "blader/humanizer",
+    "html_url": "https://github.com/blader/humanizer",
+    "description": "Agent skill that removes signs of AI-generated writing from text",
+    "stars": 40460,
+    "forks": 3498,
+    "open_issues": 28,
+    "watchers": 227,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-writing",
+      "claude-code",
+      "codex",
+      "cursor",
+      "prompt-engineering",
+      "writing-tools"
+    ],
+    "created_at": "2026-01-18T05:30:15Z",
+    "updated_at": "2026-09-03T02:00:34Z",
+    "pushed_at": "2026-08-19T05:58:53Z",
+    "archived": false,
+    "fork": false,
+    "score": 72.09,
+    "score_reasons": [
+      "40,460 stars over 228 days",
+      "estimated 177.6 stars/day since creation",
+      "last push 14.8 days ago",
+      "detectable MIT license",
+      "topics: agent-skills, ai-writing, claude-code, codex, cursor"
+    ],
+    "homepage": "https://skills.sh/blader/humanizer",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "google-research/timesfm": {
+    "full_name": "google-research/timesfm",
+    "html_url": "https://github.com/google-research/timesfm",
+    "description": "TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Google Research for time-series forecasting.",
+    "stars": 29877,
+    "forks": 2867,
+    "open_issues": 234,
+    "watchers": 197,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [],
+    "created_at": "2024-04-29T21:26:26Z",
+    "updated_at": "2026-09-03T02:00:35Z",
+    "pushed_at": "2026-09-02T21:37:52Z",
+    "archived": false,
+    "fork": false,
+    "score": 71.35,
+    "score_reasons": [
+      "29,877 stars over 856 days",
+      "estimated 34.9 stars/day since creation",
+      "last push 0.2 days ago",
+      "detectable Apache-2.0 license"
+    ],
+    "homepage": "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/",
+    "default_branch": "master",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "vercel-labs/portless": {
+    "full_name": "vercel-labs/portless",
+    "html_url": "https://github.com/vercel-labs/portless",
+    "description": "Replace port numbers with stable, named local URLs. For humans and agents.",
+    "stars": 11794,
+    "forks": 383,
+    "open_issues": 122,
+    "watchers": 24,
+    "language": "TypeScript",
+    "license": "Apache-2.0",
+    "topics": [],
+    "created_at": "2026-02-15T14:43:03Z",
+    "updated_at": "2026-09-03T01:59:46Z",
+    "pushed_at": "2026-08-29T23:58:02Z",
+    "archived": false,
+    "fork": false,
+    "score": 66.24,
+    "score_reasons": [
+      "11,794 stars over 199 days",
+      "estimated 59.1 stars/day since creation",
+      "last push 4.1 days ago",
+      "detectable Apache-2.0 license"
+    ],
+    "homepage": "https://portless.sh",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "fmtlib/fmt": {
+    "full_name": "fmtlib/fmt",
+    "html_url": "https://github.com/fmtlib/fmt",
+    "description": "A modern formatting library",
+    "stars": 24297,
+    "forks": 2985,
+    "open_issues": 9,
+    "watchers": 322,
+    "language": "C++",
+    "license": "MIT",
+    "topics": [
+      "c-plus-plus",
+      "chrono",
+      "cpp",
+      "cross-platform",
+      "floating-point",
+      "formatting",
+      "multiplatform",
+      "output",
+      "performance",
+      "printf",
+      "ranges",
+      "unicode"
+    ],
+    "created_at": "2012-12-07T16:26:46Z",
+    "updated_at": "2026-09-03T02:00:01Z",
+    "pushed_at": "2026-09-02T18:18:06Z",
+    "archived": false,
+    "fork": false,
+    "score": 63.09,
+    "score_reasons": [
+      "24,297 stars over 5017 days",
+      "estimated 4.8 stars/day since creation",
+      "last push 0.3 days ago",
+      "detectable MIT license",
+      "topics: c-plus-plus, chrono, cpp, cross-platform, floating-point"
+    ],
+    "homepage": "https://fmt.dev",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "pacifio/atlas": {
+    "full_name": "pacifio/atlas",
+    "html_url": "https://github.com/pacifio/atlas",
+    "description": "Source control for agents. Use multiple coding agents, track their changes and query them in one place",
+    "stars": 2911,
+    "forks": 190,
+    "open_issues": 26,
+    "watchers": 16,
+    "language": "Rust",
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-coding-assistant",
+      "claude-code",
+      "codex",
+      "coding-agents",
+      "git",
+      "gitops",
+      "kilo-code",
+      "mcp",
+      "mcp-client",
+      "opencode",
+      "opencode-ai",
+      "opencode-skills",
+      "self-hosted",
+      "skills"
+    ],
+    "created_at": "2026-05-14T16:48:52Z",
+    "updated_at": "2026-09-03T01:56:56Z",
+    "pushed_at": "2026-09-02T18:49:24Z",
+    "archived": false,
+    "fork": false,
+    "score": 63.0,
+    "score_reasons": [
+      "2,911 stars over 111 days",
+      "estimated 26.1 stars/day since creation",
+      "last push 0.3 days ago",
+      "detectable MIT license",
+      "topics: ai, ai-coding-assistant, claude-code, codex, coding-agents"
+    ],
+    "homepage": "https://www.tryatlas.cc/",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "zyronon/TypeWords": {
+    "full_name": "zyronon/TypeWords",
+    "html_url": "https://github.com/zyronon/TypeWords",
+    "description": "Practice English, one strike, one step forward; 练习英语，一次敲击，一点进步；",
+    "stars": 9338,
+    "forks": 1131,
+    "open_issues": 42,
+    "watchers": 46,
+    "language": "Vue",
+    "license": "GPL-3.0",
+    "topics": [
+      "english-learn",
+      "learn-english",
+      "memorizing-words",
+      "type-words",
+      "typing-practice",
+      "typingspeedtest"
+    ],
+    "created_at": "2023-08-03T10:39:02Z",
+    "updated_at": "2026-09-03T02:00:33Z",
+    "pushed_at": "2026-08-28T09:35:23Z",
+    "archived": false,
+    "fork": false,
+    "score": 60.66,
+    "score_reasons": [
+      "9,338 stars over 1127 days",
+      "estimated 8.3 stars/day since creation",
+      "last push 5.7 days ago",
+      "detectable GPL-3.0 license",
+      "topics: english-learn, learn-english, memorizing-words, type-words, typing-practice"
+    ],
+    "homepage": "https://typewords.cc",
+    "default_branch": "master",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "superlinked/sie": {
+    "full_name": "superlinked/sie",
+    "html_url": "https://github.com/superlinked/sie",
+    "description": "Open-source inference server and production cluster for all the models your agent needs.",
+    "stars": 3080,
+    "forks": 299,
+    "open_issues": 17,
+    "watchers": 43,
+    "language": "Python",
+    "license": "Apache-2.0",
+    "topics": [
+      "bge",
+      "colbert",
+      "data-pipeline",
+      "deep-learning",
+      "embeddings",
+      "inference",
+      "inference-server",
+      "information-retrieval",
+      "llm",
+      "ml",
+      "mlops",
+      "natural-language-processing",
+      "nlp",
+      "python",
+      "reranking",
+      "retrieval",
+      "retrieval-augmented-generation",
+      "semantic-search",
+      "splade",
+      "vector-search"
+    ],
+    "created_at": "2023-11-07T10:45:53Z",
+    "updated_at": "2026-09-03T02:00:21Z",
+    "pushed_at": "2026-08-27T19:29:54Z",
+    "archived": false,
+    "fork": false,
+    "score": 52.26,
+    "score_reasons": [
+      "3,080 stars over 1031 days",
+      "estimated 3.0 stars/day since creation",
+      "last push 6.3 days ago",
+      "detectable Apache-2.0 license",
+      "topics: bge, colbert, data-pipeline, deep-learning, embeddings"
+    ],
+    "homepage": "https://superlinked.com",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "sngyai/Sequoia-X": {
+    "full_name": "sngyai/Sequoia-X",
+    "html_url": "https://github.com/sngyai/Sequoia-X",
+    "description": "A股自动选股系统 — 多种技术形态自动扫描，收盘后自动运行并推送飞书",
+    "stars": 6116,
+    "forks": 1253,
+    "open_issues": 23,
+    "watchers": 104,
+    "language": "Python",
+    "license": null,
+    "topics": [
+      "a-shares",
+      "akshare",
+      "baostock",
+      "pandas",
+      "python",
+      "stock-screening",
+      "ta-lib",
+      "trading",
+      "turtle-trade"
+    ],
+    "created_at": "2018-07-20T16:33:48Z",
+    "updated_at": "2026-09-03T02:00:18Z",
+    "pushed_at": "2026-07-10T23:17:43Z",
+    "archived": false,
+    "fork": false,
+    "score": 41.97,
+    "score_reasons": [
+      "6,116 stars over 2966 days",
+      "estimated 2.1 stars/day since creation",
+      "last push 54.1 days ago",
+      "topics: a-shares, akshare, baostock, pandas, python"
+    ],
+    "homepage": "",
+    "default_branch": "master",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  }
+}
