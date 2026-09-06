@@ -1,0 +1,989 @@
+{
+  "NousResearch/hermes-agent": {
+    "full_name": "NousResearch/hermes-agent",
+    "html_url": "https://github.com/NousResearch/hermes-agent",
+    "description": "The agent that grows with you",
+    "stars": 242050,
+    "forks": 49734,
+    "open_issues": 40077,
+    "watchers": 949,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-agents",
+      "anthropic",
+      "chatgpt",
+      "claude",
+      "claude-code",
+      "codex",
+      "hermes",
+      "hermes-agent",
+      "llm",
+      "nous-research",
+      "openai"
+    ],
+    "created_at": "2025-07-22T22:22:28Z",
+    "updated_at": "2026-09-06T02:39:10Z",
+    "pushed_at": "2026-09-06T00:00:21Z",
+    "archived": false,
+    "fork": false,
+    "score": 97.28,
+    "score_reasons": [
+      "242,050 stars over 410 days",
+      "estimated 590.1 stars/day since creation",
+      "last push 0.1 days ago",
+      "detectable MIT license",
+      "topics: ai, ai-agent, ai-agents, anthropic, chatgpt"
+    ],
+    "homepage": "https://hermes-agent.nousresearch.com",
+    "default_branch": "main",
+    "readme_url": "https://github.com/NousResearch/hermes-agent/blob/main/README.md",
+    "readme_summary": "**The self-improving AI agent built by Nous Research.** It's the only agent with a built-in learning loop — it creates skills from experience, improves them during use, nudges itself to persist knowledge, searches its own past conversations, and builds a deepening model of who you are across sessions. Run it on a $5 VPS, a GPU cluster, or serverless infrastructure that costs nearly nothing when idle. It's not tied to your laptop — talk to it from Telegram while it works on a cloud VM.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "Hermes Agent v0.21.0 (v2026.8.31)",
+    "latest_release_url": "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.8.31",
+    "latest_release_at": "2026-08-31T19:29:49Z",
+    "analysis": {
+      "positioning": "Hermes Agent 是由 Nous Research 构建的自我改进型 AI 代理，旨在通过内置学习循环，从经验中创建技能、在使用中改进技能、主动持久化知识、搜索历史对话，并跨会话构建用户模型，解决传统代理缺乏长期记忆和自适应能力的问题。与普通同类工具相比，其明确特点是具备持续学习和个性化能力，且部署灵活，可运行于低成本 VPS 或云端。",
+      "target_users": [
+        "希望拥有长期记忆和个性化交互的 AI 代理开发者",
+        "需要在云端或低资源环境部署自主代理的个人开发者或研究者",
+        "通过 Telegram 等远程方式管理代理的用户"
+      ],
+      "core_capabilities": [
+        "自我改进：从经验中创建并优化技能，提升任务执行能力",
+        "持久记忆：主动保存知识并搜索过往对话，形成跨会话的用户模型",
+        "灵活部署：支持低成本 VPS、GPU 集群或近零成本的无服务器基础设施"
+      ],
+      "technical_analysis": [
+        "语言为 Python，便于 AI 生态集成",
+        "支持云端 VM 运行，可通过 Telegram 交互，表明具备远程控制能力",
+        "部署方式多样，涵盖 VPS、GPU 集群和无服务器，但具体架构细节未提供"
+      ],
+      "why_it_matters": [
+        "从现有信息看，其自我改进和持久记忆特性可能推动代理从工具向伙伴演进",
+        "高星标和分叉数表明社区关注度高，活跃的发布和更新显示项目持续演进",
+        "作为 Nous Research 的项目，可能受益于其在 AI 领域的研究积累"
+      ],
+      "limitations": [
+        "开源问题数较高，需核实项目稳定性和维护响应速度",
+        "许可证为 MIT，但需确认依赖项许可证兼容性",
+        "自我改进和记忆功能可能带来隐私和安全风险，需评估数据保护措施",
+        "部署和运行成本虽低，但具体资源需求未明确，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：可开发插件或工具，用于可视化代理的学习过程和记忆图谱",
+        "机会假设：可构建集成测试框架，验证自我改进功能在不同场景下的可靠性",
+        "机会假设：可开发运维监控方案，优化云端部署的资源使用和成本控制"
+      ],
+      "maturity": "从现有信息看，项目创建于 2025 年 7 月，最新版本为 v0.21.0，更新频繁，显示处于快速迭代阶段。星标和分叉数极高，但开源问题数也高，可能反映社区活跃但需关注问题解决效率。整体成熟度可能处于早期但发展迅速，需进一步观察稳定性。"
+    }
+  },
+  "affaan-m/ECC": {
+    "full_name": "affaan-m/ECC",
+    "html_url": "https://github.com/affaan-m/ECC",
+    "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "stars": 249987,
+    "forks": 37619,
+    "open_issues": 157,
+    "watchers": 1283,
+    "language": "JavaScript",
+    "license": "MIT",
+    "topics": [
+      "ai-agents",
+      "anthropic",
+      "claude",
+      "claude-code",
+      "developer-tools",
+      "llm",
+      "mcp",
+      "productivity"
+    ],
+    "created_at": "2026-01-18T00:51:51Z",
+    "updated_at": "2026-09-06T02:39:48Z",
+    "pushed_at": "2026-09-05T21:47:27Z",
+    "archived": false,
+    "fork": false,
+    "score": 93.94,
+    "score_reasons": [
+      "249,987 stars over 231 days",
+      "estimated 1081.8 stars/day since creation",
+      "last push 0.2 days ago",
+      "detectable MIT license",
+      "topics: ai-agents, anthropic, claude, claude-code, developer-tools"
+    ],
+    "homepage": "https://ecc.tools",
+    "default_branch": "main",
+    "readme_url": "https://github.com/affaan-m/ECC/blob/main/README.md",
+    "readme_summary": "Run the canonical guided setup from your terminal:",
+    "readme_features": [],
+    "quick_start": "npx ecc-universal setup",
+    "latest_release_name": "ECC 2.2.0: Guided Setup, Antigravity 2.0, and the Nasiko CLI Bridge",
+    "latest_release_url": "https://github.com/affaan-m/ECC/releases/tag/v2.2.0",
+    "latest_release_at": "2026-08-28T19:55:05Z",
+    "analysis": {
+      "positioning": "ECC 是一个面向 AI 代理（如 Claude Code、Codex、Opencode、Cursor）的性能优化系统，通过技能、本能、记忆、安全与研究优先的开发方法，提升代理的效率和可靠性。与普通同类工具相比，其明确特点是提供统一的引导式设置和跨平台支持，旨在成为代理开发的综合基础设施。",
+      "target_users": [
+        "使用 Claude Code、Codex、Opencode、Cursor 等 AI 编程代理的开发者",
+        "需要优化代理性能、增强记忆与安全性的团队",
+        "从事 AI 代理工具链研究和开发的技术人员"
+      ],
+      "core_capabilities": [
+        "提供引导式设置（npx ecc-universal setup），简化安装与配置流程",
+        "整合技能、本能、记忆与安全机制，增强代理的上下文感知和决策能力",
+        "支持多种主流 AI 代理平台，实现跨工具的一致体验"
+      ],
+      "technical_analysis": [
+        "项目以 JavaScript 为主要语言，通过 npm 包（npx）分发，便于快速启动",
+        "从描述看，可能采用本地运行方式，但具体架构未提供，需进一步核实",
+        "集成形态为 CLI 工具，支持多种代理平台，但云端/本地细节资料不足"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目拥有极高的 Stars 和 Forks，表明社区关注度显著，可能成为 AI 代理优化领域的重要参考",
+        "频繁的版本更新和近期发布表明项目处于活跃开发状态，功能迭代较快",
+        "其跨平台支持特性可能帮助开发者统一管理不同代理工具，提升开发效率"
+      ],
+      "limitations": [
+        "项目创建于 2026 年，相对较新，成熟度需进一步观察",
+        "开源问题数量较多，可能影响稳定性，需关注 issue 解决情况",
+        "许可证为 MIT，但依赖项和第三方组件的合规性需核实",
+        "具体安全机制和性能优化细节未在输入中提供，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对特定代理平台的深度集成插件，增强 ECC 的功能",
+        "机会假设：围绕 ECC 构建性能监控和可视化工具，帮助用户量化优化效果",
+        "机会假设：提供企业级部署方案，包括安全审计和合规性支持"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 1 月，最新版本于 2026 年 8 月发布，更新频繁，表明开发活跃。Stars 和 Forks 数量极高，但不应直接等同于质量，需结合 issue 解决率和实际使用反馈评估。整体处于快速成长阶段，成熟度中等偏上。"
+    }
+  },
+  "mattpocock/skills": {
+    "full_name": "mattpocock/skills",
+    "html_url": "https://github.com/mattpocock/skills",
+    "description": "Skills for Real Engineers. Straight from my .agents directory.",
+    "stars": 252760,
+    "forks": 21327,
+    "open_issues": 466,
+    "watchers": 1411,
+    "language": "Shell",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2026-02-03T11:15:53Z",
+    "updated_at": "2026-09-06T02:39:54Z",
+    "pushed_at": "2026-09-04T08:45:43Z",
+    "archived": false,
+    "fork": false,
+    "score": 89.23,
+    "score_reasons": [
+      "252,760 stars over 215 days",
+      "estimated 1177.6 stars/day since creation",
+      "last push 1.7 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": "https://aihero.dev/skills",
+    "default_branch": "main",
+    "readme_url": "https://github.com/mattpocock/skills/blob/main/README.md",
+    "readme_summary": "My agent skills that I use every day to do real engineering - not vibe coding.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v1.2.3",
+    "latest_release_url": "https://github.com/mattpocock/skills/releases/tag/v1.2.3",
+    "latest_release_at": "2026-08-06T14:05:28Z",
+    "analysis": {
+      "positioning": "这是一个面向真实工程师的AI代理技能集合，直接来自作者日常使用的.agents目录，旨在解决‘氛围编码’问题，提供实用、可靠的工程技能而非花哨演示。与普通同类工具相比，其特点在于源自真实工作流，强调工程实用性。",
+      "target_users": [
+        "使用AI辅助编程的专业软件工程师",
+        "希望将AI技能融入日常开发流程的团队"
+      ],
+      "core_capabilities": [
+        "提供可直接复用的代理技能，帮助工程师高效完成实际工程任务",
+        "技能来源于真实工程实践，可能涵盖代码审查、测试、调试等场景，提升开发效率与质量"
+      ],
+      "technical_analysis": [
+        "项目使用Shell语言，可能以脚本形式提供技能，便于在命令行环境中集成",
+        "从描述看，技能可能作为代理配置（.agents目录）的一部分，运行方式可能涉及本地执行或与AI代理框架集成",
+        "本次输入未提供具体集成形态和部署细节，需进一步核实"
+      ],
+      "why_it_matters": [
+        "项目拥有极高的关注度（Stars超过25万），表明其理念或内容引发了广泛共鸣",
+        "作者强调‘真实工程’而非‘氛围编码’，可能切中当前AI编程工具实用性不足的痛点",
+        "活跃的更新和发布（最新发布v1.2.3）显示项目持续演进，可能提供不断优化的技能集"
+      ],
+      "limitations": [
+        "项目创建时间较短（2026年2月），成熟度可能有限，需进一步验证技能稳定性",
+        "许可证为MIT，但具体依赖和平台兼容性未提供，需核实",
+        "安全方面，技能可能涉及代码执行，需审查其安全性",
+        "采用成本：虽然开源免费，但可能需要适配特定AI代理环境，存在学习成本"
+      ],
+      "opportunities": [
+        "机会假设：可开发配套的文档或教程，帮助用户快速上手并定制自己的技能集",
+        "机会假设：可创建技能市场或社区贡献机制，丰富技能库，增强生态",
+        "机会假设：可开发测试框架验证技能在不同环境下的可靠性，提升企业采用信心"
+      ],
+      "maturity": "从现有信息看，项目创建于2026年2月，至今约7个月，已发布v1.2.3版本，更新频繁，但Stars数量极高（25万+）可能受外部因素影响，不能直接等同于质量。Issues数量466个，表明社区反馈活跃，但项目仍处于早期阶段，成熟度需进一步观察。"
+    }
+  },
+  "anomalyco/opencode": {
+    "full_name": "anomalyco/opencode",
+    "html_url": "https://github.com/anomalyco/opencode",
+    "description": "The open source coding agent.",
+    "stars": 204714,
+    "forks": 26706,
+    "open_issues": 5694,
+    "watchers": 791,
+    "language": "TypeScript",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2025-04-30T20:08:00Z",
+    "updated_at": "2026-09-06T02:37:30Z",
+    "pushed_at": "2026-09-06T02:30:23Z",
+    "archived": false,
+    "fork": false,
+    "score": 88.96,
+    "score_reasons": [
+      "204,714 stars over 493 days",
+      "estimated 415.0 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": "https://opencode.ai",
+    "default_branch": "dev",
+    "readme_url": "https://github.com/anomalyco/opencode/blob/dev/README.md",
+    "readme_summary": "curl -fsSL https://opencode.ai/install | bash",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v1.18.29",
+    "latest_release_url": "https://github.com/anomalyco/opencode/releases/tag/v1.18.29",
+    "latest_release_at": "2026-09-04T23:47:16Z",
+    "analysis": {
+      "positioning": "opencode 是一个开源的编码智能体，旨在通过命令行方式提供自动化的代码生成与编辑能力。它解决开发者在日常编码中重复性任务耗时的问题，与普通代码补全工具相比，其明确特点是作为独立智能体运行，可执行更复杂的编码流程。",
+      "target_users": [
+        "开发者，特别是使用命令行工作流的程序员",
+        "需要自动化代码生成与重构的团队",
+        "在 CI/CD 或本地环境中寻求编码辅助的工程师"
+      ],
+      "core_capabilities": [
+        "提供一键安装脚本，简化部署流程",
+        "作为编码智能体，可能支持代码生成、修改与解释等任务",
+        "通过命令行接口集成到现有开发工具链中"
+      ],
+      "technical_analysis": [
+        "项目使用 TypeScript 开发，表明代码类型安全且适合大型应用",
+        "从安装命令看，采用远程脚本方式部署，可能支持本地或云端运行",
+        "未提供集成形态细节，需进一步核实是否支持 IDE 插件或 API 调用"
+      ],
+      "why_it_matters": [
+        "从现有信息看，项目获得超过 20 万星标和 2.6 万分支，显示社区关注度极高",
+        "发布频率高（最新版本 v1.18.29 于 2026-09-04 发布），表明维护活跃",
+        "作为开源编码智能体，可能为开发者提供替代商业服务的自由选择"
+      ],
+      "limitations": [
+        "项目创建于 2025-04-30，相对较新，成熟度需进一步观察",
+        "开放问题数量较多（5694），可能影响稳定性，需核实问题解决效率",
+        "未提供安全审计或依赖信息，采用时需评估供应链风险",
+        "许可证为 MIT，但需确认所有依赖的兼容性"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对特定框架的编码智能体插件，扩展其应用场景",
+        "机会假设：构建基于 opencode 的自动化代码审查工具，提升团队效率",
+        "机会假设：设计可视化界面或 Web 前端，降低命令行使用门槛"
+      ],
+      "maturity": "从现有信息看，项目创建时间短但迭代迅速，发布版本频繁，星标和分支数量巨大，显示社区活跃度高。开放问题较多，可能处于快速演进期，成熟度中等，需关注问题解决速度和稳定性。"
+    }
+  },
+  "DietrichGebert/ponytail": {
+    "full_name": "DietrichGebert/ponytail",
+    "html_url": "https://github.com/DietrichGebert/ponytail",
+    "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+    "stars": 128038,
+    "forks": 6847,
+    "open_issues": 218,
+    "watchers": 318,
+    "language": "JavaScript",
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-agents",
+      "claude",
+      "claude-code",
+      "claude-code-plugin",
+      "cursor-rules",
+      "developer-tools",
+      "llm",
+      "prompt-engineering",
+      "yagni"
+    ],
+    "created_at": "2026-06-12T00:52:37Z",
+    "updated_at": "2026-09-06T02:39:42Z",
+    "pushed_at": "2026-09-04T12:35:29Z",
+    "archived": false,
+    "fork": false,
+    "score": 87.45,
+    "score_reasons": [
+      "128,038 stars over 86 days",
+      "estimated 1487.5 stars/day since creation",
+      "last push 1.6 days ago",
+      "detectable MIT license",
+      "topics: agent-skills, ai-agents, claude, claude-code, claude-code-plugin"
+    ],
+    "homepage": "https://ponytail.dev",
+    "default_branch": "main",
+    "readme_url": "https://github.com/DietrichGebert/ponytail/blob/main/README.md",
+    "readme_summary": "He says nothing. He writes one line. It works.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v4.9.0: 53 commits of doing less",
+    "latest_release_url": "https://github.com/DietrichGebert/ponytail/releases/tag/v4.9.0",
+    "latest_release_at": "2026-08-07T21:15:11Z",
+    "analysis": {
+      "positioning": "ponytail 是一个面向 AI 代理的 JavaScript 工具，旨在让 AI 代理像最懒惰的高级开发人员一样思考，强调“最好的代码是你从未写过的代码”。它通过提供代理技能和提示工程，帮助 AI 代理在编码时遵循 YAGNI 原则，减少不必要的代码生成，从而提升开发效率。与普通同类工具相比，其明确特点是专注于“少做”，而非增加更多功能。",
+      "target_users": [
+        "使用 Claude Code 或 Cursor 等 AI 编程工具的开发者",
+        "希望减少 AI 生成冗余代码、提升代码简洁性的团队",
+        "关注 YAGNI 原则和高效开发的个人开发者"
+      ],
+      "core_capabilities": [
+        "提供代理技能，使 AI 代理在编码时保持极简，只生成必要代码",
+        "通过提示工程引导 AI 代理的行为，减少过度设计",
+        "集成于 Claude Code 和 Cursor 等环境，作为插件或规则使用"
+      ],
+      "technical_analysis": [
+        "项目使用 JavaScript 编写，可能以 npm 包或插件形式分发",
+        "从 topics 看，它支持 Claude Code 插件和 Cursor 规则，可能通过配置文件或插件机制集成",
+        "具体部署和运行方式未在输入中提供，需进一步核实"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目获得了极高的关注度（128k stars），表明其理念可能引起广泛共鸣",
+        "活跃的发布节奏（v4.9.0 包含 53 个提交）显示项目持续演进",
+        "它可能为 AI 编程提供一种新的范式，即通过“少写代码”来提升代码质量和开发效率"
+      ],
+      "limitations": [
+        "项目创建于 2026 年，相对较新，成熟度可能有限",
+        "依赖特定的 AI 代理环境（如 Claude Code、Cursor），可能不适用于所有场景",
+        "许可证为 MIT，但需核实其依赖项是否兼容",
+        "安全性和稳定性需进一步测试，尤其是对 AI 行为的影响"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对不同 AI 代理的适配器，扩大集成范围",
+        "机会假设：可提供可视化配置界面，帮助用户自定义“懒惰”程度",
+        "机会假设：可建立社区规则库，分享不同场景下的最佳实践"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 6 月，最新发布在 8 月，更新频繁，但存在 218 个开放问题，可能处于快速迭代阶段。Stars 数量高，但需注意其时间短，可能受营销影响，不能直接等同于质量。整体成熟度中等，需关注问题解决速度和稳定性。"
+    }
+  },
+  "anthropics/skills": {
+    "full_name": "anthropics/skills",
+    "html_url": "https://github.com/anthropics/skills",
+    "description": "Public repository for Agent Skills",
+    "stars": 174588,
+    "forks": 20677,
+    "open_issues": 1209,
+    "watchers": 1121,
+    "language": "Python",
+    "license": null,
+    "topics": [
+      "agent-skills"
+    ],
+    "created_at": "2025-09-22T15:53:31Z",
+    "updated_at": "2026-09-06T02:34:37Z",
+    "pushed_at": "2026-09-03T16:37:14Z",
+    "archived": false,
+    "fork": false,
+    "score": 82.55,
+    "score_reasons": [
+      "174,588 stars over 348 days",
+      "estimated 501.0 stars/day since creation",
+      "last push 2.4 days ago",
+      "topics: agent-skills"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": "https://github.com/anthropics/skills/blob/main/README.md",
+    "readme_summary": "Skills are folders of instructions, scripts, and resources that Claude loads dynamically to improve performance on specialized tasks. Skills teach Claude how to complete specific tasks in a repeatable way, whether that's creating documents with your company's brand guidelines, analyzing data using your organization's specific workflows, or automating personal tasks.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {
+      "positioning": "Anthropics 官方发布的 Agent Skills 公共仓库，用于存放和共享可复用的技能包，每个技能包含指令、脚本和资源，使 Claude 能按需加载以完成特定任务。它解决了通用模型在专业场景下表现不足的问题，通过标准化技能格式实现任务流程的复用与定制，与普通工具相比，其特点是与 Claude 深度集成且由官方维护。",
+      "target_users": [
+        "希望定制 Claude 行为的企业开发者，用于将公司品牌规范或内部工作流封装为技能。",
+        "个人开发者或自动化爱好者，用于创建个人任务自动化技能，如文档生成或数据分析。",
+        "AI 应用集成商，需要为特定行业场景提供可复用的技能包。"
+      ],
+      "core_capabilities": [
+        "技能封装：将指令、脚本和资源组织为文件夹，便于动态加载和复用。",
+        "任务专业化：针对特定任务（如品牌文档创建、特定数据分析流程）提供定制化指导。",
+        "可重复性：确保 Claude 在类似任务中表现一致，减少随机性。"
+      ],
+      "technical_analysis": [
+        "仓库主要语言为 Python，表明技能可能以 Python 脚本为主要实现方式。",
+        "从描述看，技能由 Claude 动态加载，可能通过 API 或本地集成方式调用，但具体机制未在输入中说明。",
+        "未提供许可证、最新版本和快速开始信息，技术细节和部署方式需进一步核实。"
+      ],
+      "why_it_matters": [
+        "由 Anthropics 官方维护，且获得 17 万+ Stars 和 2 万+ Forks，表明社区关注度极高，可能成为 Agent 技能的标准格式。",
+        "活跃的更新（最近推送时间 2026-09-03）和大量开放问题（1209）显示项目仍在快速迭代，开发者可参与贡献或提前适配。",
+        "技能机制可能降低 Claude 在垂直领域应用的门槛，为开发者提供新的扩展点。"
+      ],
+      "limitations": [
+        "许可证未提供，需核实使用和分发限制。",
+        "无最新版本发布信息，可能处于早期阶段，API 或格式可能不稳定。",
+        "依赖 Claude 模型，可能受限于 Anthropic 的服务可用性和成本。",
+        "安全问题：技能包含脚本，需防范恶意技能代码。"
+      ],
+      "opportunities": [
+        "机会假设：可开发技能市场或管理工具，帮助用户发现、安装和版本管理技能。",
+        "机会假设：为常见行业（如法律、医疗）创建预置技能包，加速垂直应用。",
+        "机会假设：构建技能测试框架，验证技能在不同场景下的可靠性和安全性。"
+      ],
+      "maturity": "项目创建于 2025 年 9 月，至 2026 年 9 月仍在活跃推送，但无正式版本发布，Stars 数量高但不等同于成熟度。开放问题较多，可能处于快速迭代期，核心 API 可能变动，建议关注官方文档和社区反馈。"
+    }
+  },
+  "ruvnet/ruflo": {
+    "full_name": "ruvnet/ruflo",
+    "html_url": "https://github.com/ruvnet/ruflo",
+    "description": "🌊 The original agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+    "stars": 70715,
+    "forks": 8419,
+    "open_issues": 930,
+    "watchers": 454,
+    "language": "TypeScript",
+    "license": "MIT",
+    "topics": [
+      "agentic-ai",
+      "agentic-framework",
+      "agentic-workflow",
+      "agents",
+      "ai-agents",
+      "ai-assistant",
+      "ai-skills",
+      "autonomous-agents",
+      "claude-code",
+      "codex",
+      "dsh-plugin",
+      "harness",
+      "mcp-server",
+      "multi-agent",
+      "multi-agent-systems",
+      "npm",
+      "skills",
+      "swarm",
+      "swarm-intelligence",
+      "typescript"
+    ],
+    "created_at": "2025-06-02T21:24:20Z",
+    "updated_at": "2026-09-06T02:39:54Z",
+    "pushed_at": "2026-09-05T15:57:31Z",
+    "archived": false,
+    "fork": false,
+    "score": 81.99,
+    "score_reasons": [
+      "70,715 stars over 460 days",
+      "estimated 153.7 stars/day since creation",
+      "last push 0.4 days ago",
+      "detectable MIT license",
+      "topics: agentic-ai, agentic-framework, agentic-workflow, agents, ai-agents"
+    ],
+    "homepage": "https://Cognitum.One",
+    "default_branch": "main",
+    "readme_url": "https://github.com/ruvnet/ruflo/blob/main/README.md",
+    "readme_summary": "**An agent meta-harness for Claude Code and Codex.**",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v3.38.21 — MCP HTTP bridge memory-persistence fix",
+    "latest_release_url": "https://github.com/ruvnet/ruflo/releases/tag/v3.38.21",
+    "latest_release_at": "2026-09-02T13:40:40Z",
+    "analysis": {
+      "positioning": "ruflo 是一个面向 Claude Code 和 Codex 的智能体元框架（agent meta-harness），用于部署多智能体群体、协调自主工作流并构建对话式 AI 系统。它通过自适应记忆、自学习智能和 RAG 集成，为开发者提供统一的智能体编排层，区别于普通工具链，它强调多智能体协同与原生集成多种 AI 编码助手。",
+      "target_users": [
+        "使用 Claude Code 或 Codex 的开发者，希望扩展其能力为多智能体协作系统",
+        "构建复杂自主工作流或对话式 AI 应用的团队，需要记忆和 RAG 支持",
+        "对 swarm 智能和多智能体系统感兴趣的 AI 工程师和研究者"
+      ],
+      "core_capabilities": [
+        "提供自适应记忆机制，使智能体能够跨会话保持上下文，提升对话连续性",
+        "支持自学习智能，使系统能从交互中改进行为，减少人工干预",
+        "集成 RAG，允许智能体访问外部知识库，增强回答准确性",
+        "原生集成 Claude Code、Codex、Hermes 等多种工具，简化多智能体部署"
+      ],
+      "technical_analysis": [
+        "项目使用 TypeScript 开发，类型安全且适合构建复杂系统",
+        "从描述看，支持本地和云端部署，但具体方式未提供，需进一步核实",
+        "集成形态包括 MCP 服务器和 npm 包，可嵌入现有开发流程",
+        "最新版本提及 MCP HTTP bridge 和内存持久化修复，表明采用模块化架构，但运行方式细节不足"
+      ],
+      "why_it_matters": [
+        "从现有信息看，该项目在短时间内获得大量关注（Stars 超过 7 万），表明其解决了开发者痛点",
+        "频繁的版本更新（最新 v3.38.21）和活跃的推送（2026-09-05）显示项目维护活跃",
+        "主题覆盖 agentic AI、多智能体、swarm 等热门方向，可能成为该领域的重要基础设施"
+      ],
+      "limitations": [
+        "项目创建于 2025 年 6 月，相对较新，成熟度需进一步评估",
+        "存在 930 个开放问题，可能影响稳定性，需关注解决速度",
+        "依赖 Claude Code 和 Codex 等特定平台，可能限制在其他环境中的使用",
+        "许可证为 MIT，但商业使用需注意第三方集成条款",
+        "具体部署和运维要求未在输入中提供，需进一步核实"
+      ],
+      "opportunities": [
+        "机会假设：开发针对特定行业（如金融、医疗）的预配置智能体模板，降低使用门槛",
+        "机会假设：构建可视化编排工具，帮助非技术用户设计多智能体工作流",
+        "机会假设：提供性能监控和调试插件，帮助开发者优化智能体行为",
+        "机会假设：扩展更多 AI 后端集成，如 OpenAI、Gemini，增强生态兼容性"
+      ],
+      "maturity": "从现有信息看，项目创建于 2025 年 6 月，但已发布至 v3.38.21，且最近更新在 2026 年 9 月，表明迭代迅速。Stars 数量高但不等同于质量，开放问题较多，整体处于快速演进阶段，稳定性有待观察。"
+    }
+  },
+  "cathrynlavery/diagram-design": {
+    "full_name": "cathrynlavery/diagram-design",
+    "html_url": "https://github.com/cathrynlavery/diagram-design",
+    "description": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+    "stars": 31734,
+    "forks": 2044,
+    "open_issues": 32,
+    "watchers": 99,
+    "language": "HTML",
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "claude-code",
+      "codex",
+      "data-visualization",
+      "diagrams",
+      "drawio",
+      "mermaid",
+      "svg"
+    ],
+    "created_at": "2026-04-16T18:01:16Z",
+    "updated_at": "2026-09-06T02:38:23Z",
+    "pushed_at": "2026-09-03T02:53:29Z",
+    "archived": false,
+    "fork": false,
+    "score": 77.32,
+    "score_reasons": [
+      "31,734 stars over 142 days",
+      "estimated 222.9 stars/day since creation",
+      "last push 3.0 days ago",
+      "detectable MIT license",
+      "topics: agent-skills, claude-code, codex, data-visualization, diagrams"
+    ],
+    "homepage": "https://cathrynlavery.github.io/diagram-design/",
+    "default_branch": "main",
+    "readme_url": "https://github.com/cathrynlavery/diagram-design/blob/main/README.md",
+    "readme_summary": "**Editorial diagrams your designer won't hate.**",
+    "readme_features": [],
+    "quick_start": "/plugin marketplace add cathrynlavery/diagram-design\n/plugin install diagram-design@diagram-design",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {
+      "positioning": "diagram-design 是一个提供 38 种编辑级图表类型的开源项目，专为 Claude Code、Codex 和 Pi 等 AI 代理设计。它解决 AI 生成图表质量差、样式丑陋的问题，通过自包含的 HTML+SVG 实现，强调无阴影、无 Mermaid 风格，输出专业美观的图表。",
+      "target_users": [
+        "使用 Claude Code、Codex 或 Pi 进行开发并需要高质量图表的开发者",
+        "需要将图表集成到文档或演示中的技术写作者和设计师",
+        "希望 AI 代理生成符合编辑标准图表的团队"
+      ],
+      "core_capabilities": [
+        "提供 38 种图表类型，覆盖多种编辑场景，满足多样化需求",
+        "自包含的 HTML+SVG 格式，无需外部依赖，易于嵌入和分享",
+        "设计上避免阴影和 Mermaid 风格，确保图表简洁专业，提升可读性"
+      ],
+      "technical_analysis": [
+        "项目主要使用 HTML 和 SVG，表明图表以静态文件形式存在，易于在浏览器中渲染",
+        "通过插件市场安装，集成到 Claude Code 等代理环境，属于本地或代理内运行方式",
+        "未提供部署或云端服务信息，需进一步核实是否支持在线生成或 API 调用"
+      ],
+      "why_it_matters": [
+        "高星数（31.7k）和活跃的 fork（2k）表明社区关注度高，可能成为 AI 图表生成的标准",
+        "针对 AI 代理的定位填补了现有工具在图表质量上的空白，具有实用价值",
+        "MIT 许可证允许自由使用和修改，有利于生态发展"
+      ],
+      "limitations": [
+        "最新发布版本未提供，可能缺乏正式版本管理，需核实项目稳定性",
+        "仅支持 HTML+SVG，可能不适用于需要其他格式（如 PNG、PDF）的场景",
+        "依赖特定 AI 代理（Claude Code、Codex、Pi），可能限制在其他平台的使用"
+      ],
+      "opportunities": [
+        "机会假设：开发一个在线预览或转换工具，将 SVG 转换为 PNG/PDF，扩大使用范围",
+        "机会假设：创建插件扩展，支持更多 AI 代理或 IDE，提升集成度",
+        "机会假设：提供自动化测试框架，确保图表在不同浏览器中的渲染一致性"
+      ],
+      "maturity": "项目创建于 2026 年 4 月，最近更新在 2026 年 9 月，显示活跃开发。Stars 数量高但不等同于质量，需关注 issue 数量（32）和缺少正式发布版本，可能处于早期但快速迭代阶段。"
+    }
+  },
+  "blader/humanizer": {
+    "full_name": "blader/humanizer",
+    "html_url": "https://github.com/blader/humanizer",
+    "description": "Agent skill that removes signs of AI-generated writing from text",
+    "stars": 43525,
+    "forks": 3649,
+    "open_issues": 37,
+    "watchers": 233,
+    "language": "Python",
+    "license": "MIT",
+    "topics": [
+      "agent-skills",
+      "ai-writing",
+      "claude-code",
+      "codex",
+      "cursor",
+      "prompt-engineering",
+      "writing-tools"
+    ],
+    "created_at": "2026-01-18T05:30:15Z",
+    "updated_at": "2026-09-06T02:39:30Z",
+    "pushed_at": "2026-08-19T05:58:53Z",
+    "archived": false,
+    "fork": false,
+    "score": 70.88,
+    "score_reasons": [
+      "43,525 stars over 231 days",
+      "estimated 188.5 stars/day since creation",
+      "last push 17.9 days ago",
+      "detectable MIT license",
+      "topics: agent-skills, ai-writing, claude-code, codex, cursor"
+    ],
+    "homepage": "https://skills.sh/blader/humanizer",
+    "default_branch": "main",
+    "readme_url": "https://github.com/blader/humanizer/blob/main/README.md",
+    "readme_summary": "Humanizer rewrites AI-sounding text so it reads like a person wrote it, without changing what it says. Because it is just Markdown, it works with any agent that supports skills.",
+    "readme_features": [],
+    "quick_start": "/humanizer\n\n[paste your text here]",
+    "latest_release_name": "Humanizer v2.11.1",
+    "latest_release_url": "https://github.com/blader/humanizer/releases/tag/v2.11.1",
+    "latest_release_at": "2026-08-18T00:59:37Z",
+    "analysis": {
+      "positioning": "Humanizer 是一个代理技能（Agent skill），用于去除文本中的人工智能生成痕迹，使内容读起来像人写的，同时不改变原意。与普通改写工具相比，它采用纯 Markdown 形式，可无缝集成到任何支持技能（skills）的代理中，如 Claude Code、Codex、Cursor 等。",
+      "target_users": [
+        "使用 AI 写作辅助工具但需要输出更自然、更人性化的内容创作者、营销人员、学生等。",
+        "依赖 Claude Code、Codex、Cursor 等代理进行写作或内容生成的开发者，希望集成去 AI 化功能。"
+      ],
+      "core_capabilities": [
+        "重写 AI 风格文本，使其读起来像人类撰写，同时保持原意不变。",
+        "以 Markdown 技能形式提供，可通过简单的命令（如 /humanizer）在任何支持技能的代理中调用，实现跨平台复用。"
+      ],
+      "technical_analysis": [
+        "项目主要语言为 Python，但核心技能以 Markdown 形式存在，可能依赖 Python 脚本处理文本。",
+        "采用本地或云端方式未明确，从输入信息看，它作为代理技能运行，可能随代理在本地或云端执行。",
+        "集成形态为代理技能，支持 Claude Code、Codex、Cursor 等，部署简单，只需将技能文件放入代理的技能目录即可。"
+      ],
+      "why_it_matters": [
+        "项目获得 43525 个星标和 3649 个分叉，表明社区关注度高，可能成为 AI 写作后处理的标准技能。",
+        "活跃的发布（最新 v2.11.1）和持续的更新（最近推送 2026-08-19）显示项目维护积极，功能迭代快。",
+        "对于使用 AI 写作的开发者，该技能可提升输出质量，减少人工校对成本，且易于集成到现有工作流。"
+      ],
+      "limitations": [
+        "本次输入未提供官方功能列表，需进一步核实具体支持的语言、改写强度控制等细节。",
+        "项目创建于 2026-01-18，相对较新，但版本已到 v2.11.1，成熟度需结合代码质量评估。",
+        "许可证为 MIT，允许自由使用，但需注意其依赖的代理（如 Claude Code）可能有各自的使用条款。",
+        "未提供性能、隐私或安全方面的信息，需进一步核实文本处理是否在本地完成，以及是否上传数据。"
+      ],
+      "opportunities": [
+        "机会假设：可开发针对不同写作风格（如学术、商务、创意）的定制化 humanizer 配置，扩展技能的可调参数。",
+        "机会假设：可构建测试套件，评估改写后文本的“人性化”程度，并集成到 CI/CD 流程中。",
+        "机会假设：可开发插件或扩展，将 humanizer 集成到更多编辑器或写作平台，提升易用性。"
+      ],
+      "maturity": "从现有信息看，项目创建于 2026 年 1 月，至今约 7 个月，已发布 v2.11.1，更新频繁，星标数高（43525），但开放问题 37 个，表明项目处于快速迭代期，功能可能尚不稳定，需关注 issue 解决情况。星标数高不代表质量，但活跃的发布和社区关注度暗示项目有较好的发展势头。"
+    }
+  },
+  "nvm-sh/nvm": {
+    "full_name": "nvm-sh/nvm",
+    "html_url": "https://github.com/nvm-sh/nvm",
+    "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions. $nvm: 3ArcxqLtXMmBnWbbtfwQgVL3MNnDsggzgGDtXMnjpump",
+    "stars": 94929,
+    "forks": 10424,
+    "open_issues": 389,
+    "watchers": 1089,
+    "language": "Shell",
+    "license": "MIT",
+    "topics": [
+      "bash",
+      "install",
+      "lts",
+      "node",
+      "node-js",
+      "nodejs",
+      "nvm",
+      "nvmrc",
+      "posix",
+      "posix-compliant",
+      "shell",
+      "version-manager",
+      "zsh"
+    ],
+    "created_at": "2010-04-15T17:47:47Z",
+    "updated_at": "2026-09-06T02:32:22Z",
+    "pushed_at": "2026-09-04T22:40:55Z",
+    "archived": false,
+    "fork": false,
+    "score": 70.29,
+    "score_reasons": [
+      "94,929 stars over 5987 days",
+      "estimated 15.9 stars/day since creation",
+      "last push 1.2 days ago",
+      "detectable MIT license",
+      "topics: bash, install, lts, node, node-js"
+    ],
+    "homepage": "",
+    "default_branch": "master",
+    "readme_url": "https://github.com/nvm-sh/nvm/blob/master/README.md",
+    "readme_summary": "`nvm` allows you to quickly install and use different versions of node via the command line.",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": "v0.40.7",
+    "latest_release_url": "https://github.com/nvm-sh/nvm/releases/tag/v0.40.7",
+    "latest_release_at": "2026-08-18T06:22:50Z",
+    "analysis": {
+      "positioning": "nvm 是一个基于 POSIX 兼容 bash 脚本的 Node.js 版本管理器，用于在命令行中快速安装和切换多个 Node.js 版本。与普通同类工具相比，它强调轻量、无需守护进程，并支持通过 .nvmrc 文件实现项目级版本自动切换。",
+      "target_users": [
+        "需要在同一台机器上维护多个 Node.js 项目的开发者，尤其是前端和全栈工程师。",
+        "在 CI/CD 或本地开发环境中需要灵活切换 Node.js 版本以匹配项目要求的团队。"
+      ],
+      "core_capabilities": [
+        "通过命令行快速安装、切换和卸载不同版本的 Node.js，提升开发环境配置效率。",
+        "支持 .nvmrc 文件，便于项目成员统一 Node.js 版本，减少环境不一致问题。",
+        "提供 LTS 版本管理，帮助用户稳定使用长期支持版本。"
+      ],
+      "technical_analysis": [
+        "项目以 Shell 语言实现，遵循 POSIX 标准，可在多种 Unix-like 系统（如 Linux、macOS）上运行。",
+        "作为本地命令行工具，无需云端服务或守护进程，安装后直接通过 shell 函数集成到用户环境。",
+        "从现有信息看，其运行方式为在 shell 中加载脚本，通过修改 PATH 环境变量实现版本切换。"
+      ],
+      "why_it_matters": [
+        "项目拥有高星标和大量 fork，且持续发布新版本（如 v0.40.7），表明社区活跃且维护频繁。",
+        "作为 Node.js 生态中的基础工具，其稳定性和广泛使用使其成为开发者管理多版本环境的可靠选择。"
+      ],
+      "limitations": [
+        "仅支持 POSIX 兼容系统，Windows 用户需借助 WSL 或 Cygwin，可能增加使用门槛。",
+        "作为 bash 脚本，其性能和功能可能不如编译型工具，但通常足以满足日常需求。",
+        "本次输入未提供安全审计或漏洞报告信息，需进一步核实。"
+      ],
+      "opportunities": [
+        "机会假设：开发图形化界面或桌面应用，以降低非命令行用户的使用门槛。",
+        "机会假设：集成到 IDE 或编辑器插件中，提供版本切换的可视化操作。",
+        "机会假设：开发自动化测试工具，验证不同 Node.js 版本下项目的兼容性。"
+      ],
+      "maturity": "项目自 2010 年创建，至今持续更新，最新版本发布于 2026 年，显示长期维护。高星标和 fork 数反映社区广泛采用，但星标不等于质量；开放问题数量适中，整体成熟度较高。"
+    }
+  },
+  "magnitudedev/magnitude": {
+    "full_name": "magnitudedev/magnitude",
+    "html_url": "https://github.com/magnitudedev/magnitude",
+    "description": "Open source inference server that runs the best local models for your hardware, plugged into the agent you already use. Works with Pi, OpenCode, Hermes, OpenClaw, Codex, Claude Code, Oh My Pi, and Cline.",
+    "stars": 3245,
+    "forks": 233,
+    "open_issues": 15,
+    "watchers": 21,
+    "language": "TypeScript",
+    "license": "Apache-2.0",
+    "topics": [],
+    "created_at": "2026-06-12T09:06:26Z",
+    "updated_at": "2026-09-06T02:39:24Z",
+    "pushed_at": "2026-09-06T02:14:47Z",
+    "archived": false,
+    "fork": false,
+    "score": 65.5,
+    "score_reasons": [
+      "3,245 stars over 86 days",
+      "estimated 37.9 stars/day since creation",
+      "last push 0.0 days ago",
+      "detectable Apache-2.0 license"
+    ],
+    "homepage": "https://magnitude.dev",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "fmtlib/fmt": {
+    "full_name": "fmtlib/fmt",
+    "html_url": "https://github.com/fmtlib/fmt",
+    "description": "A modern formatting library",
+    "stars": 25575,
+    "forks": 3043,
+    "open_issues": 14,
+    "watchers": 327,
+    "language": "C++",
+    "license": "MIT",
+    "topics": [
+      "c-plus-plus",
+      "chrono",
+      "cpp",
+      "cross-platform",
+      "floating-point",
+      "formatting",
+      "multiplatform",
+      "output",
+      "performance",
+      "printf",
+      "ranges",
+      "unicode"
+    ],
+    "created_at": "2012-12-07T16:26:46Z",
+    "updated_at": "2026-09-06T02:16:21Z",
+    "pushed_at": "2026-09-05T22:40:31Z",
+    "archived": false,
+    "fork": false,
+    "score": 63.26,
+    "score_reasons": [
+      "25,575 stars over 5020 days",
+      "estimated 5.1 stars/day since creation",
+      "last push 0.2 days ago",
+      "detectable MIT license",
+      "topics: c-plus-plus, chrono, cpp, cross-platform, floating-point"
+    ],
+    "homepage": "https://fmt.dev",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "bikini/exploitarium": {
+    "full_name": "bikini/exploitarium",
+    "html_url": "https://github.com/bikini/exploitarium",
+    "description": "A single archive of public exploit PoCs and vulnerability research writeups. At the time I post these, none have been reported. Feel free to report them yourself and take credit for the CVE if handed out lulz. Please do not abuse these. I do this so to allure people into the field, and I've always found this is the most efficient way.",
+    "stars": 4716,
+    "forks": 1254,
+    "open_issues": 7,
+    "watchers": 114,
+    "language": "Python",
+    "license": null,
+    "topics": [],
+    "created_at": "2026-06-23T05:14:11Z",
+    "updated_at": "2026-09-06T02:33:39Z",
+    "pushed_at": "2026-07-15T23:21:55Z",
+    "archived": false,
+    "fork": false,
+    "score": 59.44,
+    "score_reasons": [
+      "4,716 stars over 75 days",
+      "estimated 63.0 stars/day since creation",
+      "last push 52.1 days ago"
+    ],
+    "homepage": "",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "BraveOPotato/FckSignups": {
+    "full_name": "BraveOPotato/FckSignups",
+    "html_url": "https://github.com/BraveOPotato/FckSignups",
+    "description": "A list of tools that are open-source, in-browser, and require no-signups!",
+    "stars": 2915,
+    "forks": 199,
+    "open_issues": 452,
+    "watchers": 10,
+    "language": "TypeScript",
+    "license": "GPL-3.0",
+    "topics": [],
+    "created_at": "2026-05-07T19:05:56Z",
+    "updated_at": "2026-09-06T02:35:28Z",
+    "pushed_at": "2026-08-22T01:59:09Z",
+    "archived": false,
+    "fork": false,
+    "score": 58.48,
+    "score_reasons": [
+      "2,915 stars over 121 days",
+      "estimated 24.0 stars/day since creation",
+      "last push 15.0 days ago",
+      "detectable GPL-3.0 license"
+    ],
+    "homepage": "https://nosignups.net",
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "WorldFlowAI/everything-claude-code": {
+    "full_name": "WorldFlowAI/everything-claude-code",
+    "html_url": "https://github.com/WorldFlowAI/everything-claude-code",
+    "description": "Claude Code toolkit - agents, commands, skills, rules, and hooks for productive AI-assisted development",
+    "stars": 2379,
+    "forks": 364,
+    "open_issues": 9,
+    "watchers": 34,
+    "language": "JavaScript",
+    "license": null,
+    "topics": [],
+    "created_at": "2026-01-23T12:41:36Z",
+    "updated_at": "2026-09-06T02:33:15Z",
+    "pushed_at": "2026-01-23T12:42:00Z",
+    "archived": false,
+    "fork": false,
+    "score": 43.54,
+    "score_reasons": [
+      "2,379 stars over 226 days",
+      "estimated 10.5 stars/day since creation",
+      "last push 225.6 days ago"
+    ],
+    "homepage": null,
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  },
+  "humanlayer/skills": {
+    "full_name": "humanlayer/skills",
+    "html_url": "https://github.com/humanlayer/skills",
+    "description": "",
+    "stars": 2743,
+    "forks": 77,
+    "open_issues": 7,
+    "watchers": 6,
+    "language": "TypeScript",
+    "license": "MIT",
+    "topics": [],
+    "created_at": "2026-03-18T03:23:23Z",
+    "updated_at": "2026-09-06T02:39:53Z",
+    "pushed_at": "2026-08-13T15:05:30Z",
+    "archived": false,
+    "fork": false,
+    "score": 41.53,
+    "score_reasons": [
+      "2,743 stars over 172 days",
+      "estimated 16.0 stars/day since creation",
+      "last push 23.5 days ago",
+      "detectable MIT license"
+    ],
+    "homepage": null,
+    "default_branch": "main",
+    "readme_url": null,
+    "readme_summary": "",
+    "readme_features": [],
+    "quick_start": "",
+    "latest_release_name": null,
+    "latest_release_url": null,
+    "latest_release_at": null,
+    "analysis": {}
+  }
+}
