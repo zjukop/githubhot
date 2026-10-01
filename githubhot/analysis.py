@@ -140,7 +140,7 @@ class OpenAICompatibleClient(GitHubModelsClient):
 
     def _complete(self, payload: dict[str, Any]) -> dict[str, Any]:
         payload = {**payload, "thinking": {"type": "disabled"}}
-        return super()._complete(payload)
+        return super(OpenAICompatibleClient, self)._complete(payload)
 
 
 def parse_analysis_response(body: dict[str, Any]) -> dict[str, Any]:
