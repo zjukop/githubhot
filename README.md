@@ -9,7 +9,7 @@
 [![License](https://img.shields.io/badge/License-MIT-16a34a?style=for-the-badge)](LICENSE)
 
 <!-- DAILY_LATEST_START -->
-**[📖 阅读今日日报](daily/2026/10/2026-10-06.md)** · **[🗓️ 浏览历史](#-日报归档)** · **[💬 推荐项目](CONTRIBUTING.md)** · [English](README_EN.md)
+**[📖 阅读今日日报](daily/2026/10/2026-10-07.md)** · **[🗓️ 浏览历史](#-日报归档)** · **[💬 推荐项目](CONTRIBUTING.md)** · [English](README_EN.md)
 
 </div>
 
@@ -18,13 +18,13 @@
 
 ## 📖 今日日报
 
-### [2026-10-06 · 今日值得关注的开源项目 →](daily/2026/10/2026-10-06.md)
+### [2026-10-07 · 今日值得关注的开源项目 →](daily/2026/10/2026-10-07.md)
 
 | # | 项目 |
 |---:|---|
 | 1 | [KKKKhazix/AIHOT](https://github.com/KKKKhazix/AIHOT) |
-| 2 | [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) |
-| 3 | [eternity4719/HowToLiveBetter](https://github.com/eternity4719/HowToLiveBetter) |
+| 2 | [eternity4719/HowToLiveBetter](https://github.com/eternity4719/HowToLiveBetter) |
+| 3 | [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) |
 
 > **推荐阅读方式：** 先看“今日趋势”和 TOP 10 榜单；前三名提供完整分析，其余七项快速浏览，第一名另有独立深挖长文。
 <!-- DAILY_LATEST_END -->
@@ -41,6 +41,7 @@ GitHubHot 不只罗列 Stars。每个入选项目都会从以下角度展开：
 ## 🗓️ 日报归档
 
 <!-- DAILY_INDEX_START -->
+- [2026-10-07 · 🔥 GitHubHot 日报](daily/2026/10/2026-10-07.md)
 - [2026-10-06 · 🔥 GitHubHot 日报](daily/2026/10/2026-10-06.md)
 - [2026-10-05 · 🔥 GitHubHot 日报](daily/2026/10/2026-10-05.md)
 - [2026-10-04 · 🔥 GitHubHot 日报](daily/2026/10/2026-10-04.md)
