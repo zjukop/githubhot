@@ -9,7 +9,7 @@
 [![License](https://img.shields.io/badge/License-MIT-16a34a?style=for-the-badge)](LICENSE)
 
 <!-- DAILY_LATEST_START -->
-**[📖 阅读今日日报](daily/2026/10/2026-10-11.md)** · **[🗓️ 浏览历史](#-日报归档)** · **[💬 推荐项目](CONTRIBUTING.md)** · [English](README_EN.md)
+**[📖 阅读今日日报](daily/2026/10/2026-10-12.md)** · **[🗓️ 浏览历史](#-日报归档)** · **[💬 推荐项目](CONTRIBUTING.md)** · [English](README_EN.md)
 
 </div>
 
@@ -18,12 +18,12 @@
 
 ## 📖 今日日报
 
-### [2026-10-11 · 今日值得关注的开源项目 →](daily/2026/10/2026-10-11.md)
+### [2026-10-12 · 今日值得关注的开源项目 →](daily/2026/10/2026-10-12.md)
 
 | # | 项目 |
 |---:|---|
-| 1 | [storytold/lightcraft](https://github.com/storytold/lightcraft) |
-| 2 | [storytold/filmcraft](https://github.com/storytold/filmcraft) |
+| 1 | [storytold/filmcraft](https://github.com/storytold/filmcraft) |
+| 2 | [storytold/lightcraft](https://github.com/storytold/lightcraft) |
 | 3 | [storytold/pdfcraft](https://github.com/storytold/pdfcraft) |
 
 > **推荐阅读方式：** 先看“今日趋势”和 TOP 10 榜单；前三名提供完整分析，其余七项快速浏览，第一名另有独立深挖长文。
@@ -41,6 +41,7 @@ GitHubHot 不只罗列 Stars。每个入选项目都会从以下角度展开：
 ## 🗓️ 日报归档
 
 <!-- DAILY_INDEX_START -->
+- [2026-10-12 · 🔥 GitHubHot 日报](daily/2026/10/2026-10-12.md)
 - [2026-10-11 · 🔥 GitHubHot 日报](daily/2026/10/2026-10-11.md)
 - [2026-10-10 · 🔥 GitHubHot 日报](daily/2026/10/2026-10-10.md)
 - [2026-10-09 · 🔥 GitHubHot 日报](daily/2026/10/2026-10-09.md)
