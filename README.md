@@ -9,7 +9,7 @@
 [![License](https://img.shields.io/badge/License-MIT-16a34a?style=for-the-badge)](LICENSE)
 
 <!-- DAILY_LATEST_START -->
-**[📖 阅读今日日报](daily/2026/11/2026-11-03.md)** · **[🗓️ 浏览历史](#-日报归档)** · **[💬 推荐项目](CONTRIBUTING.md)** · [English](README_EN.md)
+**[📖 阅读今日日报](daily/2026/11/2026-11-04.md)** · **[🗓️ 浏览历史](#-日报归档)** · **[💬 推荐项目](CONTRIBUTING.md)** · [English](README_EN.md)
 
 </div>
 
@@ -18,7 +18,7 @@
 
 ## 📖 今日日报
 
-### [2026-11-03 · 今日值得关注的开源项目 →](daily/2026/11/2026-11-03.md)
+### [2026-11-04 · 今日值得关注的开源项目 →](daily/2026/11/2026-11-04.md)
 
 | # | 项目 |
 |---:|---|
@@ -41,6 +41,7 @@ GitHubHot 不只罗列 Stars。每个入选项目都会从以下角度展开：
 ## 🗓️ 日报归档
 
 <!-- DAILY_INDEX_START -->
+- [2026-11-04 · 🔥 GitHubHot 日报](daily/2026/11/2026-11-04.md)
 - [2026-11-03 · 🔥 GitHubHot 日报](daily/2026/11/2026-11-03.md)
 - [2026-11-02 · 🔥 GitHubHot 日报](daily/2026/11/2026-11-02.md)
 - [2026-11-01 · 🔥 GitHubHot 日报](daily/2026/11/2026-11-01.md)
